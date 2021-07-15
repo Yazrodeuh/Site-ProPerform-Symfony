@@ -1,6 +1,38 @@
 :root{
     --blue-color: rgb(37, 76, 141);
     --rouge-color: rgb(220, 25, 169);
+
+    --immo-bleu-colorn: rgb(93, 169, 221);
+    --immo-bleu-colord: rgb(147, 190, 230);
+    --immo-bleu-colorl: rgb(225, 233, 246);
+
+    --immo-violet-colorn: rgb(136, 130, 189);
+    --immo-violet-colord: rgb(154, 149, 200);
+    --immo-violet-colorl: rgb(238, 236, 246);
+
+    --immo-orange-colorn: rgb(244, 131, 101);
+    --immo-orange-colord: rgb(249, 169, 127);
+    --immo-orange-colorl: rgb(253, 236, 228);
+
+    /*--me-accomapagne-colorn: rgb(0, 149, 193);*/
+    --me-accomapagne-colord: rgb(92, 36, 131);
+    --me-accomapagne-colorl: rgb(236, 225, 240);
+
+    /*--me-enligne-colorn: rgb(2, 141, 128);*/
+    --me-enligne-colord: rgb(177, 102, 191);
+    --me-enligne-colorl: rgb(251, 227, 255);
+
+    --initial-colorn: rgb(180, 45, 45);
+    --initial-colord: rgb(214, 29, 29);
+    --initial-colorl: rgb(255, 226, 226) ;
+
+    --renouvellement-colorn: rgb(202, 71, 27);
+    --renouvellement-colord: rgb(232, 78, 25);
+    --renouvellement-colorl: rgb(255, 232, 225);
+
+    --chambrehotes-colorn: rgb(227, 123, 27);
+    --chambrehotes-colord: rgb(255, 124, 0);
+    --chambrehotes-colorl: rgb(255, 232, 210);
 }
 
 html {

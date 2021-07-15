@@ -38,6 +38,13 @@ class Moduledescription
     /**
      * @var string
      *
+     * @ORM\Column(name="nomModuleDesc", type="string", length=150, nullable=false)
+     */
+    private string $nommoduledesc;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="aliasModuleDesc", type="string", length=5, nullable=false)
      */
     private string $aliasmoduledesc;
@@ -69,13 +76,6 @@ class Moduledescription
      * @ORM\Column(name="orgaPedagoModuleDesc", type="text", length=65535, nullable=false)
      */
     private string $orgapedagomoduledesc;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="documentsModuleDesc", type="string", length=150, nullable=false)
-     */
-    private string $documentsmoduledesc;
 
     /**
      * @var float
@@ -144,6 +144,22 @@ class Moduledescription
     public function setGrandtitremoduledesc(string $grandtitremoduledesc): void
     {
         $this->grandtitremoduledesc = $grandtitremoduledesc;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNommoduledesc(): string
+    {
+        return $this->nommoduledesc;
+    }
+
+    /**
+     * @param string $nommoduledesc
+     */
+    public function setNommoduledesc(string $nommoduledesc): void
+    {
+        $this->nommoduledesc = $nommoduledesc;
     }
 
     /**
@@ -227,22 +243,6 @@ class Moduledescription
     }
 
     /**
-     * @return string
-     */
-    public function getDocumentsmoduledesc(): string
-    {
-        return $this->documentsmoduledesc;
-    }
-
-    /**
-     * @param string $documentsmoduledesc
-     */
-    public function setDocumentsmoduledesc(string $documentsmoduledesc): void
-    {
-        $this->documentsmoduledesc = $documentsmoduledesc;
-    }
-
-    /**
      * @return float
      */
     public function getPrixmoduledesc(): float
@@ -289,6 +289,7 @@ class Moduledescription
     {
         $this->idrubriqueformation = $idrubriqueformation;
     }
+
 
 
 

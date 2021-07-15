@@ -25,15 +25,15 @@
             {% for module in modulesFormation %}
                 <div class="formation_propose js-scroll fade-in-bottom">
                     <div class="formation_propose_header flexOne">
-                        {% if module.getPetittitremoduledesc() is not null %}
+                        {% if module.petittitremoduledesc is not null %}
                             <div class="formation_propose_header_titre_1">
-                                {{ module.getPetittitremoduledesc() | raw }}
+                                {{ module.petittitremoduledesc | raw }}
                             </div>
                         {% endif %}
                         <div class="formation_propose_header_titre_2">
-                            {{ module.getGrandtitremoduledesc() | raw }}
+                            {{ module.grandtitremoduledesc | raw }}
                         </div>
-                        <div class="alias">{{ module.getAliasmoduledesc() | raw }}</div>
+                        <div class="alias">{{ module.aliasmoduledesc | raw }}</div>
                     </div>
                     <div class="formation_propose_body flexEight">
                         <div class="flexThree">
@@ -41,7 +41,7 @@
                                 DURÉE
                             </div>
                             <div class="formation_propose_duree">
-                                <strong>{{ module.getDureemoduledesc() | raw }}</strong>
+                                <strong>{{ module.dureemoduledesc | raw }}</strong>
                             </div>
                         </div>
                         <div class="flexEight">
@@ -49,18 +49,18 @@
                                 OBJECTIFS
                             </div>
                             <div class="formation_propose_contenu">
-                                {{ module.getObjectifsmoduledesc() | raw }}
+                                {{ module.objectifsmoduledesc | raw }}
                             </div>
                         </div>
                         <div class="formation_propose_informations">
-                            <a href="'. $item->documentsFormations .'#toolbar=0">Plus d'informations</a>
+                            <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
                         </div>
                     </div>
                     <div class="formation_propose_footer flexOne">
                         <div class="formation_propose_footer_prix">
                             <div class="formation_propose_triangle"></div>
                             <div class="formation_propose_prix">
-                                <strong>{{ module.getPrixmoduledesc() | raw }}</strong> €*
+                                <strong>{{ module.prixmoduledesc | raw }}</strong> €*
                             </div>
                             <div class="formation_propose_inscription">
                                 <a href=/inscription_formulaire>JE M'INSCRIS</a>

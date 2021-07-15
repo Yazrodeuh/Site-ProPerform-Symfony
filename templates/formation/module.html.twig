@@ -1,0 +1,111 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+
+{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href=""> {% endblock %}
+
+{% block body %}
+    <style>
+        .espace{
+            margin: 2% 0;
+        }
+
+        .titreCouleur{
+            color: var({{ moduleFormation.couleurModuleComplet }});
+            font-size: 1.15vw;
+        }
+    </style>
+    <div style="width: 70%; margin: auto; ">
+        <div style="display: flex; justify-content: center; font-size: 1.3vw">
+            <div style="width: 20%; background-color: var({{ moduleFormation.couleurModuleComplet }}); color: white; text-align: center; margin: 2% auto 1%">
+                {{ moduleFormation.getSectionmodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="titreCouleur" style="text-align: center; font-size: 1.4vw;">
+            <strong>{{ moduleFormation.getNommodulecomplet() | raw }}</strong>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                Prérequis :
+            </div>
+            <div>
+                {{ moduleFormation.getPrerequismodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                Public visé :
+            </div>
+            <div>
+                {{ moduleFormation.getPublicmodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                La durée de la formation :
+            </div>
+            <div>
+                {{ moduleFormation.getDureemodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                Délais d'accès :
+            </div>
+            <div>
+                {{ moduleFormation.getDelaismodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                Lieux de formations :
+            </div>
+            <div>
+                {{ moduleFormation.getLieumodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                Les objectifs :
+            </div>
+            <div>
+                {{ moduleFormation.getObjectifsmodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                Modalités pédagogiques :
+            </div>
+            <div>
+                {{ moduleFormation.getModalitesmodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                Programme :
+            </div>
+            <div class="titreCouleur">
+                {{ moduleFormation.getSectionmodulecomplet() | raw ~ ' ' ~ moduleFormation.getNommodulecomplet() | raw }}
+            </div>
+            <div>
+                {{ moduleFormation.getProgrammemodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                Tarifs :
+            </div>
+            <div>
+                {{ moduleFormation.getTarifsmodulecomplet() | raw }}
+            </div>
+        </div>
+        <div class="espace">
+            <div class="titreCouleur">
+                La valeur ajoutée de nos formations :
+            </div>
+            <div>
+                {{ moduleFormation.getValeurmodulecomplet() | raw }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

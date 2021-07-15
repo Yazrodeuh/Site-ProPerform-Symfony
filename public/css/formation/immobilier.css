@@ -1,18 +1,3 @@
-:root{
-
-    --immo-bleu-colorn: rgb(93, 169, 221);
-    --immo-bleu-colord: rgb(147, 190, 230);
-    --immo-bleu-colorl: rgb(225, 233, 246);
-
-    --immo-violet-colorn: rgb(136, 130, 189);
-    --immo-violet-colord: rgb(154, 149, 200);
-    --immo-violet-colorl: rgb(238, 236, 246);
-
-    --immo-orange-colorn: rgb(244, 131, 101);
-    --immo-orange-colord: rgb(249, 169, 127);
-    --immo-orange-colorl: rgb(253, 236, 228);
-}
-
 main{
     background-image: url("/img/png/ProPerform202104-Page-IMMOfrise.png");
     background-size: 100% auto;
