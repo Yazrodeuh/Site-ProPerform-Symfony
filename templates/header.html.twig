@@ -1,0 +1,79 @@
+<div id="bandeau_top" class="headerBandeau">
+    <a class="facebook" href="https://www.facebook.com/ProPerform-Formations-professionnelles-103678311893050"></a>
+</div>
+<nav id="nav_fixed_on_scroll">
+    <div id="header_navigation" >
+        <div class="nav_burger">
+            <div>
+                <ul>
+                    <li><a href="$tabLien[accueil]">ACCUEIL</a></li>
+                    <li class="bg_blue"><span>FORMATIONS</span>
+                        <ul>
+                            <li> <a href="$tabLien[immobilier]">Immobilier</a></li>
+                            <li> <a href="$tabLien[permisexploitation]">Permis d\'exploitation</a></li>
+                            <li> <a href="$tabLien[microentreprise]">Micro-entreprise</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="$tabLien[equipe]">EQUIPE</a></li>
+                    <li> <span>LES LOCAUX</span>
+                        <ul>
+                            <li><?php echo'<a href="' . $tabLien["montpellier"] . '">Montpellier</a>';?></li>
+                            <li><?php echo'<a href="' . $tabLien["nimes"] . '">Nîmes</a>';?></li>
+                        </ul>
+                    </li>
+                    <li> <?php echo'<a href="' . $tabLien["contact"] . '">';?>CONTACT</a></li>
+                    <li class="bg_blue"> <?php echo'<a href="' . $tabLien["actu"] . '">';?>ACTUALITES</a></li>
+                    <li>
+                        <?php
+                                    if (isset($_SESSION['idUtilisateur'])) {
+                                        echo '<a href="/utilisateur/connecte">MON ESPACE</a>';
+                        }else{
+                        echo '<a href="/connexion">MON ESPACE</a>';
+                        }
+                        ?>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_navbar_burger">
+            <span class="header_navbar_burger_icons"></span>
+        </div>
+        <div id="header_nav" class="nav">
+            <div id="menuAccueil" class="containerFcenterRow flexOne ">
+                <a href="{{ path('index') }}">
+                    <img srcset="{{ asset('img/png/maison-blanche.png') }}" src="{{ asset('img/png/maison-blanche.png') }}" alt="maison">
+                </a>
+            </div>
+            <div id="menu" class="flexEight">
+                <div class="section"> <span class="title"> FORMATIONS</span>
+                    <div class="test">
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'immobilier'}) }}">Immobilier</a></div>
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'permis-dexploitation'}) }}">Permis d'exploitation</a></div>
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Micro-entreprise</a></div>
+                    </div>
+                </div>
+                <div class="section"> <a class="title" href="$tabLien[equipe]">L'EQUIPE</a></div>
+                <div class="section"> <span class="title">LES LOCAUX</span>
+                    <div class="test">
+                        <div><a class="sousMenu" href="$tabLien[montpellier]">Montpellier</a></div>
+                        <div><a class="sousMenu" href="$tabLien[nimes]">Nîmes</a></div>
+                    </div>
+                </div>
+                <div class="section"><a class="title" href="$tabLien[contact]">CONTACT</a></div>
+                <div class="section"><a class="title" href="$tabLien[actu]">ACTUALITES</a></div>
+            </div>
+            <div id="menuEspace" class="containerFcenterRow flexOne">
+                {# <?php
+                                if (isset($_SESSION['idUtilisateur'])) {
+                                    echo '<a href="/utilisateur/connecte">MON ESPACE</a>';
+                }else{
+                echo '<a href="/connexion">MON ESPACE</a>';
+                }
+                ?> #}
+
+                <a href="connexion">MON ESPACE</a>
+
+            </div>
+        </div>
+    </div>
+</nav>

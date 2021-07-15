@@ -1,0 +1,48 @@
+
+footer {
+    background-color: var(--blue-color);
+    margin: auto;
+    padding: 0.4% 0;
+    width: 100%;
+    position: absolute;
+    font-size: 11px;
+}
+
+footer a {
+    /*color: rgb(118, 179, 225);*/
+    color: white;
+    letter-spacing: 2px;
+}
+
+.master {
+    display: flex;
+    background-color: transparent;
+    margin: auto;
+    width: 100%;
+}
+
+.master div{
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width:960px){
+
+    footer{
+        padding-bottom: 7vh;
+    }
+
+    .master{
+        flex-direction: column;
+    }
+
+    .master div{
+        padding: 3%;
+    }
+
+}
+
+
+
+
+

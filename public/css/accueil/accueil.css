@@ -1,0 +1,433 @@
+:root{
+    --formation-immo-colorl: rgb(187, 227, 250);
+    --formation-exploit-colorl: rgb(254, 223, 178);
+    --formation-microe-colorl: rgb(236, 225, 240);
+    --formation-entreprise-colorl : rgb(190, 240, 200);
+
+    --formation-immo-colord: rgb(0, 159, 227);
+    --formation-exploit-colord: rgb(232, 78, 25);
+    --formation-microe-colord: rgb(92, 36, 131);
+    --formation-entreprise-colord : rgb(105, 165, 40);
+}
+
+
+#body_view{
+    background-image: none;
+}
+
+.entete{
+    text-align: center;
+    position: relative;
+    background-image: url("/img/png/equipe-top.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.datadoc{
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    width: 7%;
+}
+
+.datadoc img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.entete_top img{
+    width: 100%;
+    height: 100%;
+}
+
+.entete_1{
+    text-align: left;
+    color: var(--blue-color);
+    padding-top: 18%;
+    width: 40%;
+    margin: 0 5% 0 auto;
+}
+
+.entete_1 h1{
+    font-size: 2vw;
+    text-indent: -11%;
+}
+
+.entete_1 h1 span{
+    padding: 0 1%;
+}
+
+.entete_1 h1 span:nth-child(1){
+    color: rgb(221, 8, 16);
+    background-color: white;
+}
+
+.entete_1 h1 span:nth-child(2){
+    color: white;
+    background-color:rgb(221, 8, 16);
+}
+.entete_1 h1 span:nth-child(4){
+    color: white;
+    background-color: var(--blue-color);
+}
+
+.entete_1 img{
+    width: 60%;
+}
+
+.entete_bot{
+    font-size: 2.7vh;
+    color: black;
+    width: 68%;
+    margin: 0.8% auto;
+    padding-top: 2%;
+    padding-bottom: 9%;
+}
+
+.formations{
+    width: 85%;
+    margin: -8.5% auto 0 auto;
+}
+
+.formation{
+    margin: 1% 2.5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.formation div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image_formation{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.image_formation img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.text_formation{
+    position: absolute;
+    top: 70%;
+    font-size: 1.15vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    padding: 1% 0;
+
+}
+
+.formation:nth-child(1) .text_formation{
+    color: var(--formation-immo-colord);
+}
+
+.formation:nth-child(2) .text_formation{
+    color: var(--formation-exploit-colord);
+}
+
+.formation:nth-child(3) .text_formation{
+    color: var(--formation-microe-colord);
+}
+
+.formation:nth-child(4) .text_formation{
+    color: var(--formation-entreprise-colord);
+}
+
+.bouton_formation{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(230, 230, 230, 0.8);
+}
+
+.bouton_formation:hover{
+    opacity: 1;
+}
+
+.bouton_formation a{
+    border: 3px solid white;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.1vw;
+    padding: 1%;
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.formation:nth-child(1) .bouton_formation a{
+    background-color: var(--formation-immo-colord);
+}
+
+.formation:nth-child(1) .bouton_formation a:hover{
+    background-color: white;
+    color: var(--formation-immo-colord);
+    font-weight: bold;
+}
+
+.formation:nth-child(2) .bouton_formation a{
+    background-color: var(--formation-exploit-colord);
+}
+
+.formation:nth-child(2) .bouton_formation a:hover{
+    background-color: white;
+    color: var(--formation-exploit-colord);
+    font-weight: bold;
+}
+
+.formation:nth-child(3) .bouton_formation a{
+    background-color: var(--formation-microe-colord);
+}
+
+.formation:nth-child(3) .bouton_formation a:hover{
+    background-color: white;
+    color: var(--formation-microe-colord);
+    font-weight: bold;
+}
+
+.formation:nth-child(4) .bouton_formation a{
+    background-color: var(--formation-entreprise-colord);
+}
+
+.formation:nth-child(4) .bouton_formation a:hover{
+    background-color: white;
+    color: var(--formation-entreprise-colord);
+    font-weight: bold;
+}
+
+.atouts{
+    background-color: var(--blue-color);
+    color: white;
+    margin: 1% 0;
+    padding: 0.8% 0;
+}
+
+.titre_grand{
+    text-align: center;
+    font-size: 220%;
+}
+
+.atout_liste{
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.atout_liste li {
+    list-style: none;
+    font-size: 1vw;
+    padding: 0.2% 0;
+    margin-left: 12%;
+}
+
+.atout_liste li:before, .info_personne {
+    content: "•";
+    color: red
+}
+
+.confiance{
+    color: var(--blue-color);
+}
+
+.avis{
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.avis a{
+    background-color: var(--blue-color);
+    padding: 1% 3%;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.avis a:hover{
+    border: 2px solid var(--blue-color);
+    background-color: transparent;
+    color: var(--blue-color);
+}
+
+#equipe{
+    color: var(--blue-color);
+    background-color: rgb(170, 225, 250);
+    padding: 1%;
+    margin: 1% 0;
+}
+
+.equipe_description{
+    text-align: justify;
+    width: 90%;
+    font-size: 110%;
+}
+
+#equipe_contenu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 110%;
+}
+
+#equipe_contenu_tete{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#equipe_contenu_tete div{
+    /*border: 1px solid black;*/
+    cursor: pointer;
+}
+
+.equipe_contenu_prenom{
+    display: flex;
+    flex-direction: row;
+    margin: auto 0 auto auto;
+    width: 93%;
+}
+
+.equipe_contenu_prenom div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    width: 9%;
+}
+
+#arretPrefectoral_1{
+    cursor: pointer;
+}
+
+@media screen and (max-width:960px){
+
+    .entete_1 img{
+        width: 70%;
+    }
+
+    .entete_bot{
+        font-size: 1.5vh;
+        width: 95%;
+    }
+
+    .formations{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .formation{
+        margin: 4% auto;
+        width: 100%;
+    }
+
+    .image_formation img{
+        width: 15em;
+    }
+
+    .text_formation{
+        font-size: 4.7vw;
+    }
+
+    .bouton_formation a{
+        border: 2px solid white;
+        border-radius: 30px;
+        font-size: 3.4vw;
+        padding: 1% 2.5%;
+        width: 80%;
+    }
+
+    .titre_grand{
+        text-align: center;
+        font-size: 4.7vw;
+        padding: 0.5%;
+    }
+
+    .atout_liste{
+        width: 95%;
+    }
+
+    .atout_liste li{
+        font-size: 1.5vh;
+        padding: 0.2% 0;
+        margin-left: 0;
+    }
+
+    .equipe_description{
+        text-align: justify;
+        width: 85%;
+        font-size: 90%;
+    }
+}
+
+
+
+.contact_organisme{
+    border: 5px solid var(--blue-color);
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.organisme_texte{
+    font-size: 90%;
+    width: 55%;
+    text-align: end;
+}
+
+.organisme{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.organisme img{
+    width: 80%;
+}
+
+.bot_contact{
+    background-color: var(--blue-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bot_contact div{
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5% 0;
+    font-size: 0.9vw;
+}
+
+.bot_contact div:first-child{
+    font-size: 150%;
+    letter-spacing: 3px;
+}
+
+.bot_contact a{
+    color: white;
+}
+
