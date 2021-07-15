@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Entity\Modulecomplet;
+use App\Entity\Moduledescription;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,8 +17,10 @@ class FormationController extends AbstractController
     public function formation(Request $request, string $nomFormation=''): Response
     {
 
+        $contenuFormation = $this->getDoctrine()->getManager()->getRepository(Moduledescription::class);
+
         return match ($nomFormation) {
-            "immobilier" => $this->render('formation/immobilier.html.twig', ['controller_name' => 'FormationController']),
+            "immobilier" => $this->render('formation/immobilier.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 1))]),
             "permis-dexploitation" => $this->render('formation/permisExploitation.html.twig', ['controller_name' => 'FormationController']),
             "micro-entreprise" => $this->render('formation/microEntreprise.html.twig', ['controller_name' => 'FormationController']),
             "entreprise" => $this->render('formation/entreprise.html.twig', ['controller_name' => 'FormationController']),

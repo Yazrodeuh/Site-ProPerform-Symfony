@@ -22,61 +22,55 @@
             <strong>Vous pouvez composer votre formation librement selon vos besoins et votre domaine d'activité en choisissant une ou plusieurs thématiques suivantes d'une durée de 7h chacune. </strong>
         </div>
         <div class="box_formation_propose">
-
-            <?php
-                foreach ($tab as $item){
-                    echo '<div class="formation_propose js-scroll fade-in-bottom">
-            <div class="formation_propose_header flexOne">';
-                if($item->petitTitreFormations != null) {
-                echo '<div class="formation_propose_header_titre_1">
-                    ' . $item->petitTitreFormations . '
-                </div>';
-                }
-                echo '<div class="formation_propose_header_titre_2">
-                    '. $item->grandTitreFormations .'
+            {% for module in modulesFormation %}
+                <div class="formation_propose js-scroll fade-in-bottom">
+                    <div class="formation_propose_header flexOne">
+                        {% if module.getPetittitremoduledesc() is not null %}
+                            <div class="formation_propose_header_titre_1">
+                                {{ module.getPetittitremoduledesc() | raw }}
+                            </div>
+                        {% endif %}
+                        <div class="formation_propose_header_titre_2">
+                            {{ module.getGrandtitremoduledesc() | raw }}
+                        </div>
+                        <div class="alias">{{ module.getAliasmoduledesc() | raw }}</div>
+                    </div>
+                    <div class="formation_propose_body flexEight">
+                        <div class="flexThree">
+                            <div class="formation_propose_titre_section">
+                                DURÉE
+                            </div>
+                            <div class="formation_propose_duree">
+                                <strong>{{ module.getDureemoduledesc() | raw }}</strong>
+                            </div>
+                        </div>
+                        <div class="flexEight">
+                            <div class="formation_propose_titre_section">
+                                OBJECTIFS
+                            </div>
+                            <div class="formation_propose_contenu">
+                                {{ module.getObjectifsmoduledesc() | raw }}
+                            </div>
+                        </div>
+                        <div class="formation_propose_informations">
+                            <a href="'. $item->documentsFormations .'#toolbar=0">Plus d'informations</a>
+                        </div>
+                    </div>
+                    <div class="formation_propose_footer flexOne">
+                        <div class="formation_propose_footer_prix">
+                            <div class="formation_propose_triangle"></div>
+                            <div class="formation_propose_prix">
+                                <strong>{{ module.getPrixmoduledesc() | raw }}</strong> €*
+                            </div>
+                            <div class="formation_propose_inscription">
+                                <a href=/inscription_formulaire>JE M'INSCRIS</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="alias">'. $item->aliasFormations .'</div>
-            </div>
-            <div class="formation_propose_body flexEight">
-                <div class="flexThree">
-                    <div class="formation_propose_titre_section">
-                        DURÉE
-                    </div>
-                    <div class="formation_propose_duree">
-                        <strong> '. $item->dureeFormations .' </strong>
-                    </div>
-                </div>
-                <div class="flexEight">
-                    <div class="formation_propose_titre_section">
-                        OBJECTIFS
-                    </div>
-                    <div class="formation_propose_contenu">
-                        '. $item->objectifsFormations .'
-                    </div>
-                </div>
-                <div class="formation_propose_informations">
-                    <a href="'. $item->documentsFormations .'#toolbar=0">Plus d\'informations</a>
-                </div>
-            </div>
-            <div class="formation_propose_footer flexOne">
-                <div class="formation_propose_footer_prix">
-                    <div class="formation_propose_triangle"> </div>
-                    <div class="formation_propose_prix">
-                        <strong>'. $item->prixFormations .'</strong> €*
-                    </div>
-                    <div class="formation_propose_inscription">
-                        <a href=/inscription_formulaire>JE M\'INSCRIS</a>
-                    </div>
-                </div>
-            </div>
-        </div>';
-        }
-        ?>
-
+            {% endfor %}
+        </div>
     </div>
-
-    </div>
-
     <div class="lieu js-scroll fade-in-bottom">
         <div class="lieu_titre">
             LIEUX
@@ -106,5 +100,4 @@
             </div>
         </div>
     </div>
-
 {% endblock %}
