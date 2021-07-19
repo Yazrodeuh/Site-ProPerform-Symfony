@@ -141,6 +141,9 @@ function handleScrollAnimation(){
     }
 }
 
+document.onscroll = function (){
+    console.log("oui");
+}
 
 window.addEventListener("scroll", function () {
     handleScrollAnimation();

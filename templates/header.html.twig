@@ -57,14 +57,14 @@
                         <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'permis-dexploitation'}) }}">Permis d'exploitation</a>
                             <div class="sousMenuBlock2">
                                 {% for module in headerModulesPe %}
-                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}"> {{ module.grandtitremoduledesc | raw }}</a></div>
+                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'permis-dexploitation', 'nomModule': module.nommoduledesc}) }}"> {{ module.grandtitremoduledesc | raw }}</a></div>
                                 {% endfor %}
                             </div>
                         </div>
                         <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Micro-entreprise</a>
                             <div class="sousMenuBlock2">
                                 {% for module in headerModulesMe %}
-                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}"> {{ module.grandtitremoduledesc | raw }}</a></div>
+                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.nommoduledesc}) }}"> {{ module.grandtitremoduledesc | raw }}</a></div>
                                 {% endfor %}
                             </div>
                         </div>

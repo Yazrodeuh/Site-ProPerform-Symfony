@@ -56,7 +56,7 @@ class FormationController extends DefaultController
                 return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(7)]);
             }elseif ($nomModule == "renouvellement"){
                 return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(8)]);
-            }elseif ($nomModule == "chambre-d'hotes"){
+            }elseif ($nomModule == "chambres-dhotes"){
                 return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(9)]);
             }
         }elseif ($nomFormation == "micro-entreprise"){

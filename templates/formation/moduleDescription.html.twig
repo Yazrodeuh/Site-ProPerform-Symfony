@@ -50,7 +50,15 @@
                     </div>
                 {% endif %}
                 <div class="formation_propose_informations">
-                    <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                    {% if module.idrubriqueformation == 1 %}
+                        <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                    {% elseif module.idrubriqueformation == 2 %}
+                        <a href="{{ path('module', {'nomFormation': 'permis-dexploitation', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                    {% elseif module.idrubriqueformation == 3 %}
+                        <a href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                    {% elseif module.idrubriqueformation == 4 %}
+                        <a href="{{ path('module', {'nomFormation': 'entreprise', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                    {% endif %}
                 </div>
             </div>
             <div class="formation_propose_footer flexOne">
