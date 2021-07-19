@@ -46,20 +46,38 @@
             </div>
             <div id="menu" class="flexEight">
                 <div class="section"> <span class="title"> FORMATIONS</span>
-                    <div class="test">
-                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'immobilier'}) }}">Immobilier</a></div>
-                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'permis-dexploitation'}) }}">Permis d'exploitation</a></div>
-                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Micro-entreprise</a></div>
+                    <div class="sousMenuBlock1">
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'immobilier'}) }}">Immobilier</a>
+                            <div class="sousMenuBlock2">
+                                {% for module in headerModulesImmo %}
+                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}"> {{ module.petittitremoduledesc | raw }} {{ module.grandtitremoduledesc | raw }}</a></div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'permis-dexploitation'}) }}">Permis d'exploitation</a>
+                            <div class="sousMenuBlock2">
+                                {% for module in headerModulesPe %}
+                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}"> {{ module.grandtitremoduledesc | raw }}</a></div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Micro-entreprise</a>
+                            <div class="sousMenuBlock2">
+                                {% for module in headerModulesMe %}
+                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}"> {{ module.grandtitremoduledesc | raw }}</a></div>
+                                {% endfor %}
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="section"> <a class="title" href="$tabLien[equipe]">L'EQUIPE</a></div>
+                <div class="section"> <a class="title" href="{{ path('equipe')}}">L'EQUIPE</a></div>
                 <div class="section"> <span class="title">LES LOCAUX</span>
-                    <div class="test">
-                        <div><a class="sousMenu" href="$tabLien[montpellier]">Montpellier</a></div>
-                        <div><a class="sousMenu" href="$tabLien[nimes]">Nîmes</a></div>
+                    <div class="sousMenuBlock1">
+                        <div><a class="sousMenu" href="{{ path('locaux', {'ville': 'montpellier'})}}">Montpellier</a></div>
+                        <div><a class="sousMenu" href="{{ path('locaux', {'ville': 'nimes'})}}">Nîmes</a></div>
                     </div>
                 </div>
-                <div class="section"><a class="title" href="$tabLien[contact]">CONTACT</a></div>
+                <div class="section"><a class="title" href="{{ path('contact')}}">CONTACT</a></div>
                 <div class="section"><a class="title" href="$tabLien[actu]">ACTUALITES</a></div>
             </div>
             <div id="menuEspace" class="containerFcenterRow flexOne">

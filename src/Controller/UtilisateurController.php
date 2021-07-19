@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class UtilisateurController extends AbstractController
+class UtilisateurController extends DefaultController
 {
     #[Route('/utilisateur', name: 'utilisateur')]
     public function index(): Response

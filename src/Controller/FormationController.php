@@ -4,12 +4,11 @@ namespace App\Controller;
 
 use App\Entity\Modulecomplet;
 use App\Entity\Moduledescription;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class FormationController extends AbstractController
+class FormationController extends DefaultController
 {
     /**
      * @Route("/formations/{nomFormation}", name="formation")

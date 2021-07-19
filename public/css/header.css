@@ -31,7 +31,7 @@ header{
     z-index: 9999;
     position: relative;
     font-size: 14px;
-    padding: 0.1% 0;
+    padding: 0;
 }
 
 .title{
@@ -79,15 +79,30 @@ header{
     border-right: 1px solid cyan;
 }
 
-#menu .test{
+.sousMenuBlock1, .sousMenuBlock2{
     display: none;
     position: absolute;
     width: 100%;
+    top: 100%;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-#menu div:hover div{
+.sousMenuBlock2{
+    left: 100%;
+    top: 0;
+    min-height: 100%;
+}
+
+.sousMenuBlock1 div:not(.sousMenuBlock2), .sousMenuBlock2 div{
+    display: flex;
+}
+
+#menu div.section:hover div.sousMenuBlock1:not(.sousMenuBlock2){
+    display: flex;
+}
+
+#menu div.sousMenuBlock1 div:hover div.sousMenuBlock2{
     display: flex;
 }
 
@@ -95,7 +110,8 @@ header{
     color: var(--blue-color);
     width: 100%;
     text-align: left;
-    padding: 0.3em 3em 0.3em 1em;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    border-bottom: 1px solid var(--blue-color);
 }
 
 .sousMenu:hover{

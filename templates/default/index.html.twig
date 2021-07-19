@@ -28,8 +28,7 @@
                 <strong>Immobilier</strong>
             </div>
             <div class="bouton_formation">
-                <!--<a href="' . $tabLien["immobilier"] . '">Découvrir la formation</a>-->
-                <a href="{# path('') #}">Découvrir la formation</a>
+                <a href="{{ path('formation', {'nomFormation': 'immobilier'}) }}">Découvrir la formation</a>
             </div>
         </div>
         <div class="formation flexOne">
@@ -40,8 +39,7 @@
                 <strong>Permis d'exploitation</strong>
             </div>
             <div class="bouton_formation">
-                <!--<a href="' . $tabLien["permisexploitation"] . '">Découvrir la formation</a>-->
-                <a href="{# path('') #}">Découvrir la formation</a>
+                <a href="{{ path('formation', {'nomFormation': 'permis-dexploitation'}) }}">Découvrir la formation</a>
             </div>
         </div>
         <div class="formation flexOne">
@@ -52,8 +50,7 @@
                 <strong>Micro-entreprise</strong>
             </div>
             <div class=" bouton_formation">
-                <!--<a href="' . $tabLien["microentreprise"] . '">Découvrir la formation</a>-->
-                <a href="{# path('') #}">Découvrir la formation</a>
+                <a href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Découvrir la formation</a>
             </div>
         </div>
         <div class="formation flexOne">
