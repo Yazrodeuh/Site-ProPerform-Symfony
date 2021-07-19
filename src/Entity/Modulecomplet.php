@@ -110,8 +110,7 @@ class Modulecomplet
      *
      * @ORM\Column(name="couleurModuleComplet", type="string", length=50, nullable=false)
      */
-    private string $couleurModuleComplet;
-
+    private string $couleurmodulecomplet;
 
     /**
      * @return int
@@ -324,17 +323,17 @@ class Modulecomplet
     /**
      * @return string
      */
-    public function getCouleurModuleComplet(): string
+    public function getCouleurmodulecomplet(): string
     {
-        return $this->couleurModuleComplet;
+        return $this->couleurmodulecomplet;
     }
 
     /**
-     * @param string $couleurModuleComplet
+     * @param string $couleurmodulecomplet
      */
-    public function setCouleurModuleComplet(string $couleurModuleComplet): void
+    public function setCouleurmodulecomplet(string $couleurmodulecomplet): void
     {
-        $this->couleurModuleComplet = $couleurModuleComplet;
+        $this->couleurmodulecomplet = $couleurmodulecomplet;
     }
 
 

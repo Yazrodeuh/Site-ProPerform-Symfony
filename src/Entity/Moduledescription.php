@@ -22,11 +22,11 @@ class Moduledescription
     private int $idmoduledesc;
 
     /**
-     * @var string
+     * @var string|null
      *
-     * @ORM\Column(name="petitTitreModuleDesc", type="string", length=50, nullable=false)
+     * @ORM\Column(name="petitTitreModuleDesc", type="string", length=50, nullable=true)
      */
-    private string $petittitremoduledesc;
+    private ?string $petittitremoduledesc;
 
     /**
      * @var string
@@ -43,11 +43,11 @@ class Moduledescription
     private string $nommoduledesc;
 
     /**
-     * @var string
+     * @var string|null
      *
-     * @ORM\Column(name="aliasModuleDesc", type="string", length=5, nullable=false)
+     * @ORM\Column(name="aliasModuleDesc", type="string", length=5, nullable=true)
      */
-    private string $aliasmoduledesc;
+    private ?string $aliasmoduledesc;
 
     /**
      * @var string
@@ -57,25 +57,25 @@ class Moduledescription
     private string $dureemoduledesc;
 
     /**
-     * @var string
+     * @var string|null
      *
-     * @ORM\Column(name="pourQuiModuleDesc", type="text", length=65535, nullable=false)
+     * @ORM\Column(name="pourQuiModuleDesc", type="text", length=65535, nullable=true)
      */
-    private string $pourquimoduledesc;
+    private ?string $pourquimoduledesc;
 
     /**
-     * @var string
+     * @var string|null
      *
-     * @ORM\Column(name="objectifsModuleDesc", type="text", length=65535, nullable=false)
+     * @ORM\Column(name="objectifsModuleDesc", type="text", length=65535, nullable=true)
      */
-    private string $objectifsmoduledesc;
+    private ?string $objectifsmoduledesc;
 
     /**
-     * @var string
+     * @var string|null
      *
-     * @ORM\Column(name="orgaPedagoModuleDesc", type="text", length=65535, nullable=false)
+     * @ORM\Column(name="orgaPedagoModuleDesc", type="text", length=65535, nullable=true)
      */
-    private string $orgapedagomoduledesc;
+    private ?string $orgapedagomoduledesc;
 
     /**
      * @var float
@@ -85,11 +85,11 @@ class Moduledescription
     private float $prixmoduledesc;
 
     /**
-     * @var string
+     * @var string|null
      *
-     * @ORM\Column(name="lieuModuleDesc", type="text", length=65535, nullable=false)
+     * @ORM\Column(name="lieuModuleDesc", type="text", length=65535, nullable=true)
      */
-    private string $lieumoduledesc;
+    private ?string $lieumoduledesc;
 
     /**
      * @var int
@@ -115,17 +115,17 @@ class Moduledescription
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPetittitremoduledesc(): string
+    public function getPetittitremoduledesc(): ?string
     {
         return $this->petittitremoduledesc;
     }
 
     /**
-     * @param string $petittitremoduledesc
+     * @param string|null $petittitremoduledesc
      */
-    public function setPetittitremoduledesc(string $petittitremoduledesc): void
+    public function setPetittitremoduledesc(?string $petittitremoduledesc): void
     {
         $this->petittitremoduledesc = $petittitremoduledesc;
     }
@@ -163,17 +163,17 @@ class Moduledescription
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getAliasmoduledesc(): string
+    public function getAliasmoduledesc(): ?string
     {
         return $this->aliasmoduledesc;
     }
 
     /**
-     * @param string $aliasmoduledesc
+     * @param string|null $aliasmoduledesc
      */
-    public function setAliasmoduledesc(string $aliasmoduledesc): void
+    public function setAliasmoduledesc(?string $aliasmoduledesc): void
     {
         $this->aliasmoduledesc = $aliasmoduledesc;
     }
@@ -195,49 +195,49 @@ class Moduledescription
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPourquimoduledesc(): string
+    public function getPourquimoduledesc(): ?string
     {
         return $this->pourquimoduledesc;
     }
 
     /**
-     * @param string $pourquimoduledesc
+     * @param string|null $pourquimoduledesc
      */
-    public function setPourquimoduledesc(string $pourquimoduledesc): void
+    public function setPourquimoduledesc(?string $pourquimoduledesc): void
     {
         $this->pourquimoduledesc = $pourquimoduledesc;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getObjectifsmoduledesc(): string
+    public function getObjectifsmoduledesc(): ?string
     {
         return $this->objectifsmoduledesc;
     }
 
     /**
-     * @param string $objectifsmoduledesc
+     * @param string|null $objectifsmoduledesc
      */
-    public function setObjectifsmoduledesc(string $objectifsmoduledesc): void
+    public function setObjectifsmoduledesc(?string $objectifsmoduledesc): void
     {
         $this->objectifsmoduledesc = $objectifsmoduledesc;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getOrgapedagomoduledesc(): string
+    public function getOrgapedagomoduledesc(): ?string
     {
         return $this->orgapedagomoduledesc;
     }
 
     /**
-     * @param string $orgapedagomoduledesc
+     * @param string|null $orgapedagomoduledesc
      */
-    public function setOrgapedagomoduledesc(string $orgapedagomoduledesc): void
+    public function setOrgapedagomoduledesc(?string $orgapedagomoduledesc): void
     {
         $this->orgapedagomoduledesc = $orgapedagomoduledesc;
     }
@@ -259,17 +259,17 @@ class Moduledescription
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getLieumoduledesc(): string
+    public function getLieumoduledesc(): ?string
     {
         return $this->lieumoduledesc;
     }
 
     /**
-     * @param string $lieumoduledesc
+     * @param string|null $lieumoduledesc
      */
-    public function setLieumoduledesc(string $lieumoduledesc): void
+    public function setLieumoduledesc(?string $lieumoduledesc): void
     {
         $this->lieumoduledesc = $lieumoduledesc;
     }
@@ -289,7 +289,6 @@ class Moduledescription
     {
         $this->idrubriqueformation = $idrubriqueformation;
     }
-
 
 
 

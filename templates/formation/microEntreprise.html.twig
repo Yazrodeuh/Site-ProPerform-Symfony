@@ -1,8 +1,14 @@
-<main>
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+
+{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href="{{ asset('css/formation/microEntreprise.css') }}"> {% endblock %}
+
+{% block body %}
     <div class="image_top">
         <div class="image_top_titre js-scroll slide-right">
             <!--Créer sa micro-entreprise-->
-            <img srcset="/images/webp/ProPerform202104-MICRO-Titre.webp 1x, /images/png/ProPerform202104-MICRO-Titre.png 2x" src="/images/png/ProPerform202104-MICRO-Titre.png" alt="">
+            <img srcset="{{ asset('img/png/ProPerform202104-MICRO-Titre.png') }}" src="{{ asset('img/png/ProPerform202104-MICRO-Titre.png') }}" alt="">
         </div>
         <div class="image_top_texte js-scroll fade-in-bottom">
             <p><strong>Vous avez pour projet de créer une micro-entreprise ?
@@ -15,62 +21,7 @@
         <div class="stages_presentation js-scroll fade-in-bottom">
             <strong>Nous vous proposons ainsi une formule : </strong>
         </div>
-        <div class="box_formation_propose">
-            <?php
-            foreach ($tab as $item){
-                echo '<div class="formation_propose js-scroll fade-in-bottom">
-            <div class="formation_propose_header flexOne">
-                <div class="formation_propose_header_titre_1">
-                    '. $item->petitTitreFormations .'
-                </div>
-                <div class="formation_propose_header_titre_2">
-                    '. $item->grandTitreFormations .'
-                </div>
-            </div>
-            <div class="formation_propose_body flexEight">
-                <div class="flexThree">
-                    <div class="formation_propose_titre_section">
-                        DURÉE
-                    </div>
-                    <div class="formation_propose_duree">
-                        <strong> '. $item->dureeFormations .' </strong>
-                    </div>
-                </div>
-                <div class="flexEight">
-                    <div class="formation_propose_titre_section">
-                        OBJECTIFS
-                    </div>
-                    <div class="formation_propose_contenu">
-                        '. $item->objectifsFormations .'
-                    </div>
-                </div>
-                <div class="formation_propose_informations">
-                    <a href="'. $item->documentsFormations .'#toolbar=0">Plus d\'informations</a>
-                </div>
-            </div>
-            <div class="formation_propose_footer flexOne">
-                <div class="formation_propose_footer_prix">
-                    <div class="formation_propose_triangle"> </div>
-                    <div class="formation_propose_prix">
-                        <strong>'. $item->prixFormations .'</strong> €*
-                    </div>
-                    <div class="formation_propose_inscription">
-                        <a href=/inscription_formulaire>JE M\'INSCRIS</a>
-                    </div>
-                </div>
-                <div class="formation_propose_lieu">
-                    <div>
-                        LIEUX
-                    </div>
-                    <div>
-                        '. $item->lieuFormations .'
-                    </div>
-                </div>
-            </div>
-        </div>';
-        }
-        ?>
-    </div>
+        {% include 'formation/moduleDescription.html.twig' %}
     </div>
     <div class="tva js-scroll fade-in-bottom">
         <em>* TVA non applicable selon Art. 261.4.4 a du CGI</em>
@@ -85,4 +36,4 @@
             </div>
         </div>
     </div>
-</main>
+{% endblock %}

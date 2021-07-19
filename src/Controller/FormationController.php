@@ -38,26 +38,37 @@ class FormationController extends AbstractController
         $module = $this->getDoctrine()->getManager()->getRepository(Modulecomplet::class);
 
         if($nomFormation == "immobilier"){
-            if($nomModule == "bases-juridiques-transaction"){
-                return $this->render('formation/module.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(1)]);
-            }elseif ($nomModule == "bases-juridiques-gestion-locative"){
-                return $this->render('formation/module.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(2)]);
-            }elseif ($nomModule == "deontologie-discrimination"){
-                return $this->render('formation/module.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(3)]);
-            }elseif ($nomModule == "actualites-juridiques-transaction"){
-                return $this->render('formation/module.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(4)]);
-            }elseif ($nomModule == "actualites-juridiques-gestion-locative"){
-                return $this->render('formation/module.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(5)]);
-            }elseif ($nomModule == "rgpd-tracfin"){
-                return $this->render('formation/module.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(6)]);
+            switch ($nomModule){
+                case "bases-juridiques-transaction":
+                    return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(1)]);
+                case "bases-juridiques-gestion-locative":
+                    return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(2)]);
+                case "deontologie-discrimination":
+                    return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(3)]);
+                case "actualites-juridiques-transaction":
+                    return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(4)]);
+                case "actualites-juridiques-gestion-locative":
+                    return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(5)]);
+                case "rgpd-tracfin":
+                    return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(6)]);
             }
         }elseif ($nomFormation == "permis-dexploitation"){
-
+            if($nomModule == "initial"){
+                return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(7)]);
+            }elseif ($nomModule == "renouvellement"){
+                return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(8)]);
+            }elseif ($nomModule == "chambre-d'hotes"){
+                return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(9)]);
+            }
         }elseif ($nomFormation == "micro-entreprise"){
-
-        }elseif ($nomFormation == "entreprise"){
+            if($nomModule == "accompagne"){
+                return $this->render('formation/moduleComplet.html.twig', ['controller_name' => 'FormationController', 'moduleFormation' => $module->find(10)]);
+            }
+        }elseif ($nomFormation == "entreprise") {
 
         }
+
+        return $this->render('');
 
     }
 

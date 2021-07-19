@@ -11,13 +11,13 @@
         }
 
         .titreCouleur{
-            color: var({{ moduleFormation.couleurModuleComplet }});
+            color: var({{ moduleFormation.couleurModuleComplet ~ 'n' }});
             font-size: 1.15vw;
         }
     </style>
     <div style="width: 70%; margin: auto; ">
         <div style="display: flex; justify-content: center; font-size: 1.3vw">
-            <div style="width: 20%; background-color: var({{ moduleFormation.couleurModuleComplet }}); color: white; text-align: center; margin: 2% auto 1%">
+            <div style="width: 20%; background-color: var({{ moduleFormation.couleurModuleComplet ~ 'd'}}); color: white; text-align: center; margin: 2% auto 1%">
                 {{ moduleFormation.getSectionmodulecomplet() | raw }}
             </div>
         </div>
@@ -80,11 +80,11 @@
                 {{ moduleFormation.getModalitesmodulecomplet() | raw }}
             </div>
         </div>
-        <div class="espace">
-            <div class="titreCouleur">
-                Programme :
+        <div class="espace" style="background-color: var({{ moduleFormation.couleurModuleComplet ~ 'l'}}); padding: 1%">
+            <div class="titreCouleur" style="text-align: center">
+                Programme
             </div>
-            <div class="titreCouleur">
+            <div class="titreCouleur" style="text-align: center">
                 {{ moduleFormation.getSectionmodulecomplet() | raw ~ ' ' ~ moduleFormation.getNommodulecomplet() | raw }}
             </div>
             <div>
@@ -99,8 +99,8 @@
                 {{ moduleFormation.getTarifsmodulecomplet() | raw }}
             </div>
         </div>
-        <div class="espace">
-            <div class="titreCouleur">
+        <div class="espace" style="background-color: var({{ moduleFormation.couleurModuleComplet ~ 'l'}}); padding: 1%">
+            <div class="titreCouleur" style="color: var(--blue-color); text-align: center">
                 La valeur ajoutée de nos formations :
             </div>
             <div>

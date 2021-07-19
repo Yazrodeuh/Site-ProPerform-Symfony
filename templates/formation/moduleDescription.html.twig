@@ -1,0 +1,79 @@
+<div class="box_formation_propose">
+    {% for module in modulesFormation %}
+        <div class="formation_propose js-scroll fade-in-bottom">
+            <div class="formation_propose_header flexOne">
+                {% if module.petittitremoduledesc is defined and module.petittitremoduledesc is not null %}
+                    <div class="formation_propose_header_titre_1">
+                        {{ module.petittitremoduledesc | raw }}
+                    </div>
+                {% endif %}
+                <div class="formation_propose_header_titre_2">
+                    {{ module.grandtitremoduledesc | raw }}
+                </div>
+                <div class="alias">{{ module.aliasmoduledesc | raw }}</div>
+            </div>
+            <div class="formation_propose_body flexEight">
+                <div class="flexThree">
+                    <div class="formation_propose_titre_section">
+                        DURÉE
+                    </div>
+                    <div class="formation_propose_duree">
+                        <strong>{{ module.dureemoduledesc | raw }}</strong>
+                    </div>
+                </div>
+                {% if module.pourquimoduledesc is defined and module.pourquimoduledesc is not null %}
+                    <div class="flexEight">
+                        <div class="formation_propose_titre_section">
+                            POUR QUI
+                        </div>
+                        <div class="formation_propose_contenu">
+                            {{ module.pourquimoduledesc | raw }}
+                        </div>
+                    </div>
+                {% endif %}
+                <div class="flexEight">
+                    <div class="formation_propose_titre_section">
+                        OBJECTIFS
+                    </div>
+                    <div class="formation_propose_contenu">
+                        {{ module.objectifsmoduledesc | raw }}
+                    </div>
+                </div>
+                {% if module.orgapedagomoduledesc is defined and module.orgapedagomoduledesc is not null %}
+                    <div class="flexEight">
+                        <div class="formation_propose_titre_section">
+                            ORGANISATION PEDAGOGIQUE
+                        </div>
+                        <div class="formation_propose_contenu">
+                            {{ module.orgapedagomoduledesc | raw }}
+                        </div>
+                    </div>
+                {% endif %}
+                <div class="formation_propose_informations">
+                    <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                </div>
+            </div>
+            <div class="formation_propose_footer flexOne">
+                <div class="formation_propose_footer_prix">
+                    <div class="formation_propose_triangle"></div>
+                    <div class="formation_propose_prix">
+                        <strong>{{ module.prixmoduledesc | raw }}</strong> €*
+                    </div>
+                    <div class="formation_propose_inscription">
+                        <a href=/inscription_formulaire>JE M'INSCRIS</a>
+                    </div>
+                </div>
+                {% if module.lieumoduledesc is defined and module.lieumoduledesc is not null %}
+                    <div class="formation_propose_lieu">
+                        <div>
+                            LIEUX
+                        </div>
+                        <div>
+                            {{ module.lieumoduledesc | raw }}
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
