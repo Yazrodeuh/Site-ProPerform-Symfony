@@ -48,11 +48,5 @@ class EntrepriseController extends DefaultController
         return $this->render('entreprise/mentionLegales.html.twig', ['controller_name' => 'EntrepriseController']);
     }
 
-    /**
-     * @Route("/contact", name="contact")
-     */
-    public function contact(): Response
-    {
-        return $this->render('entreprise/contact.html.twig', ['controller_name' => 'EntrepriseController']);
-    }
+
 }

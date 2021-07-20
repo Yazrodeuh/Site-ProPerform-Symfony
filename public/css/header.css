@@ -92,6 +92,7 @@ header{
     left: 100%;
     top: 0;
     min-height: 100%;
+    border-left: 2px solid rgb(221, 8, 16);
 }
 
 .sousMenuBlock1 div:not(.sousMenuBlock2), .sousMenuBlock2 div{
