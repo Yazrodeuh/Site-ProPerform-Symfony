@@ -91,7 +91,7 @@
 }
 
 .formation{
-    margin: 1% 2.5%;
+    margin: 1% 5%; /* //TODO margin cote 2.5 si entreprise */
     display: flex;
     flex-direction: column;
     position: relative;

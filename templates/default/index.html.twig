@@ -19,7 +19,7 @@
             <div>Engagée depuis plus de 10 dans le secteur de la formation, Pro’Perform propose des formations qualifiées et qualifiantes afin de répondre à vos besoins d’évolution professionnelle.</div>
         </div>
     </div>
-    <div class="formations containerFcenterRow js-scroll fade-in-bottom ">
+    <div class="formations containerFcenterRow js-scroll fade-in-bottom">
         <div class="formation flexOne">
             <div class="image_formation flexOne">
                 <img srcset="{{ asset('img/png/immo.png') }}" src="{{ asset('img/png/immo.png') }}" alt="immobilier">
@@ -53,7 +53,7 @@
                 <a href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Découvrir la formation</a>
             </div>
         </div>
-        <div class="formation flexOne">
+        <!--<div class="formation flexOne">
             <div class="image_formation flexOne">
                 <img srcset="{{ asset('img/png/entreprise.png') }}" src="{{ asset('img/png/entreprise.png') }}" alt="micro-entreprise">
             </div>
@@ -61,10 +61,9 @@
                 <strong>Entreprise</strong>
             </div>
             <div class="bouton_formation">
-                <!--<a href="' . $tabLien["microentreprise"] . '">Découvrir la formation</a>-->
-                <a href="{# path('') #}">Découvrir la formation</a>
+                <a href="{{ path('formation', {'nomFormation': 'entreprise'}) }}">Découvrir la formation</a>
             </div>
-        </div>
+        </div>-->
     </div>
     <div class="atouts js-scroll fade-in-bottom">
         <div class="titre_grand">

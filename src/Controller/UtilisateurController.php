@@ -84,4 +84,6 @@ class UtilisateurController extends DefaultController
 
         return $this->render('utilisateur/formulaire.html.twig', ['controller_name' => 'UtilisateurController', 'my_form'=>$formInscrit->createView()]);
     }
+
+
 }
