@@ -1,0 +1,575 @@
+.option_actu{
+    position: fixed;
+    left: 2%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+    padding-left: 0.7%;
+    border-left: 2px ridge rgb(176, 176, 176);
+}
+
+.option_actu .choixoption{
+    padding: 2%;
+    margin: 2% auto;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.9vw;
+}
+
+.option_actu .choixoption img{
+    width: 15%;
+    padding-right: 3%;
+}
+
+.option_actu .choixoption:hover, .option_actu .selected{
+    box-shadow: 1px 1px 12px #555;
+    border-radius: 5px;
+}
+
+.pageActu{
+    margin: 5% 18%;
+}
+
+.actualites{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+.actualite{
+    margin: 3%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*border: 1px solid black;*/
+    width: 44%;
+
+}
+
+.actualite a{
+    padding: 1%;
+    height: 100%;
+    border: 2px solid var(--blue-color);
+
+
+    background-image: linear-gradient(to top, white 0%, lightskyblue 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: right top;
+    transition: all .4s ease-out;
+}
+
+.actualite a:hover{
+    transform: scale(1.05);
+    background-position: right bottom;
+}
+
+.actualite .img_actu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actualite  img{
+    width: 90%;
+}
+
+.actualite .actu_titre{
+    font-size: 1.35vw;
+    text-align: center;
+    margin: 1% auto;
+    width: 100%;
+    font-weight: bold;
+}
+
+.actualite .publication{
+    text-align: center;
+    font-size: 0.75vw;
+    color: #909090;
+}
+
+.actualite .actu_desc{
+    font-size: 0.95vw;
+    text-align: justify;
+    margin: 1%;
+}
+
+.info_actu{
+    position: fixed;
+    right: 0.3vw;
+    top: 30vh;
+    width: 17%;
+    height: 55%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info_actu .info_actu_titre{
+    letter-spacing: 1px;
+    padding: 1% 0;
+}
+
+.info_actu_titre span:nth-child(1){
+    font-size: 0.9vw;
+}
+
+.info_actu_titre span:nth-child(2){
+    font-size: 0.7vw;
+}
+
+.info_actu div fieldset{
+    border-radius: 5px;
+    border: 1px solid var(--blue-color);
+}
+
+.info_actu div:first-child a, .buttonActu button{
+    background-color: var(--blue-color);
+    letter-spacing: 1px;
+    color: white;
+    font-size: 0.9vw;
+    padding: 1% 0;
+    width: 100%;
+    margin: 2% auto;
+    display: block;
+    border-radius: 5px;
+    border: 2px solid var(--blue-color);
+}
+
+.info_actu div:first-child a:hover, .buttonActu button:hover{
+    color: var(--blue-color);
+    background : linear-gradient(90deg, white, lightskyblue);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.info_actu input{
+    padding: 1%;
+    width: 95%;
+    margin: auto;
+}
+
+.actu-checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 2% auto;
+}
+
+.input_checkbox{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1% 0;
+}
+
+.input_checkbox input{
+    width: 7%;
+    margin: 0 1%;
+}
+
+.input_checkbox label{
+    padding: 0;
+    margin: 0;
+    font-size: 0.8vw;
+}
+
+.numero_page{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto auto 3%;
+}
+
+.numero_page div{
+    text-align: center;
+    font-weight: bold;
+}
+
+.numero_page div:first-child, .numero_page div:last-child{
+    cursor: pointer;
+}
+
+.acceptForm{
+    font-size: 0.55vw;
+    margin: 1% 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.acceptForm a{
+    background-color: transparent;
+    border: none;
+    color: var(--blue-color);
+}
+
+.acceptForm a:hover{
+    background-color: transparent;
+    border: none;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+.actualites-num{
+    width: 40%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.actualite-num{
+    padding: 1%;
+    margin: 2% 0;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.actualite-num hr{
+    width: 90%;
+    border: 1px solid black;
+}
+
+.actualite-num a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.actualite-num .actu_titre{
+    font-size: 1.4vw;
+    text-align: center;
+    margin: 1% auto;
+    padding: 0.5%;
+    width: 90%;
+    text-shadow: 0.03em 0.03em black;
+}
+
+.actualite-num .publication{
+    text-align: center;
+    font-size: 0.8vw;
+    color: #909090;
+}
+
+.actualite-num .actu_desc{
+    font-size: 1vw;
+    text-align: justify;
+    width: 90%;
+    margin: 1% auto;
+    color: black;
+    text-indent: 2vw;
+}
+
+.actualite-num .actu_texte{
+    width: 90%;
+    margin: auto;
+    color: black;
+    text-align: justify;
+}
+
+.actualite-num .actu_texte p{
+    background-color: transparent;
+    color: black;
+}
+
+.actualite-num .actu_texte ul{
+    padding-left: 5%;
+}
+
+.actualite-num .classImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.actualite-num .classImg div{
+    width: 100%;
+    padding: 0.2%;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.actualite-num .classImg img{
+    width: 100%;
+}
+
+.lien_reseaux-num{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 1%;
+    top: 70%;
+    width: 7vw;
+}
+
+.lien_reseaux-num div{
+    width: 100%;
+    margin: 10% 0;
+}
+
+.lien_reseaux-num div a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-image: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .4s ease-out;
+}
+
+.lien_reseaux-num div:nth-child(1) a{
+    background-image: linear-gradient(to right, rgb(60, 90, 153) 50%, white 50%);
+}
+
+.lien_reseaux-num div:nth-child(2) a{
+    background-image: linear-gradient(to right, rgb(0, 123, 182) 50%, white 50%);
+}
+
+.lien_reseaux-num div a:hover{
+    background-position: left bottom;
+}
+
+.lien_reseaux-num div a img{
+    width: 30%;
+    background-color: transparent;
+}
+
+.lien_reseaux-num div:nth-child(1) a span{
+    background-color: transparent;
+    color: white;
+    text-align: center;width: 5vw;
+}
+
+.lien_reseaux-num div:nth-child(2) a span{
+    background-color: transparent;
+    color: white;
+    text-align: center;width: 5vw;
+}
+
+.lien_reseaux-num div a span{
+    background-color: transparent;
+    color: white;
+    text-align: center;width: 5vw;
+}
+
+.lienFormation-num{
+    position: fixed;
+    color: black;
+    left: 5%;
+    top: 25%;
+    width: 17vw;
+    border-radius: 10px;
+}
+
+.lienFormation-num a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.lienFormation-num a img{
+    width: 50%;
+    padding-right: 2%;
+}
+
+.partagerReseaux{
+    display: none;
+}
+
+.editActu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    right: 22%;
+    top: 50%;
+    height: 10vh;
+}
+
+.editActu div a{
+    border: 1px solid var(--blue-color);
+    border-radius: 10px;
+    height: 4vh;
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+@media screen and (max-width:960px){
+
+
+    .option_actu{
+        display: none;
+    }
+
+    .actualites{
+        margin: 5% 1%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .actualite{
+        width: 90%;
+        margin: 3% auto;
+    }
+
+
+    .actualite .img_actu img{
+        width: 50vw;
+        margin: auto;
+    }
+
+    .actualite .actu_titre{
+        font-size: 5.3vw;
+    }
+
+    .actualite .publication{
+        font-size: 3.3vw;
+    }
+
+    .actualite .actu_desc{
+        font-size: 4.3vw;
+    }
+
+
+
+
+    .info_actu{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 90%;
+        margin: 0 auto 3%;
+        height: 55vh;
+    }
+
+    .info_actu .info_actu_titre{
+        letter-spacing: 1px;
+        padding: 1% 0;
+    }
+
+    .info_actu_titre span:nth-child(1){
+        font-size: 4.3vw;
+    }
+
+    .info_actu_titre span:nth-child(2){
+        font-size: 4.3vw;
+    }
+
+    .info_actu div:first-child a, .buttonActu button{
+        font-size: 3.7vw;
+    }
+
+    .input_checkbox label{
+        font-size: 3.5vw;
+    }
+
+    .acceptForm{
+        font-size: 2.6vw;
+        margin: 2% 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: justify;
+    }
+
+    .acceptForm input{
+        width: 30%;
+        margin: 0 1%;
+    }
+
+
+    .actualites-num{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .actualite-num .classImg img{
+        width: 50%;
+    }
+    .actualite-num .actu_titre{
+        font-size: 5.7vw;
+
+    }
+
+    .actualite-num .publication{
+        font-size: 3.3vw;
+    }
+
+    .actualite-num .actu_desc{
+        font-size: 4.5vw;
+        width: 100%;
+    }
+
+    .actualite-num .actu_texte{
+        width: 100%;
+        margin: auto;
+        color: black;
+        text-align: justify;
+    }
+
+    .lien_reseaux-num{
+        display: none;
+    }
+
+    .lienFormation-num{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 93%;
+        margin: 2% auto 0;
+    }
+
+    .lienFormation-num a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 4.5vw;
+        text-align: center;
+        padding: 1%;
+    }
+
+    .lienFormation-num a img{
+        width: 20%;
+        padding-right: 2%;
+    }
+
+
+    .partagerReseaux{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+}

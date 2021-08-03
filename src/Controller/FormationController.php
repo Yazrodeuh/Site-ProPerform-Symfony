@@ -8,10 +8,15 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * Class FormationController
+ * @package App\Controller
+ * @Route ("/formations")
+ */
 class FormationController extends DefaultController
 {
     /**
-     * @Route("/formations/{nomFormation}", name="formation")
+     * @Route("/{nomFormation}", name="formation")
      */
     public function formation(Request $request, string $nomFormation=''): Response
     {
@@ -29,7 +34,7 @@ class FormationController extends DefaultController
 
 
     /**
-     * @Route("/formations/{nomFormation}/{nomModule}", name="module")
+     * @Route("/{nomFormation}/{nomModule}", name="module")
      */
     public function module(Request $request, string $nomFormation, string $nomModule): Response
     {

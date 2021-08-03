@@ -3,12 +3,13 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\ActualiteRepository;
 
 /**
  * Actualite
  *
  * @ORM\Table(name="actualite")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass=ActualiteRepository::class)
  */
 class Actualite
 {

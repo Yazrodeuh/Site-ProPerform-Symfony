@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+
+{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href="{{ asset('css/actualites/actualites.css') }}"> {% endblock %}
+{% block javascripts %} {{ parent() }} <script defer src="{{ asset('js/actualites/actualites.js') }}"></script>
+
+{% block body %}
+
+
+    <div class="option_actu" id="option_actu">
+        <div class="choixoption" id="tout">
+            Toutes les actualités</div>
+        <div class="choixoption" id="formations">
+            <img srcset="{{ asset('img/png/formationRond.png') }}" src="{{ asset('img/png/formationRond.png') }}" alt="">Formations
+        </div>
+        <div class="choixoption" id="immo">
+            <img srcset="{{ asset('img/png/immo.png') }}" src="{{ asset('img/png/immo.png') }}" alt=""> Immobilier
+        </div>
+        <div class="choixoption" id="pe">
+            <img srcset="{{ asset('img/png/pe.png') }}" src="{{ asset('img/png/pe.png') }}" alt=""> Débit de boissons
+        </div>
+        <div class="choixoption" id="me">
+            <img srcset="{{ asset('img/png/me.png') }}" src="{{ asset('img/png/me.png') }}" alt=""> Création d'entreprise
+        </div>
+    </div>
+
+    <div class="pageActu">
+        <!--<div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slide first">
+                    <img src="villa2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="IMG-28462.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="IMG-60522.png" alt="">
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>-->
+        <div class="actualites" id="actualites">
+
+            {% for actu in actualites %}
+
+            <!--foreach ($tab as $key => $item){
+
+            $mois = array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+            $date = explode("-", $item->dateActualite);
+            $dateAjd = $date[2] . " " . $mois[$date[1] -1] . " " . $date[0];
+
+            $rubrique = str_replace(" ", "_", $item->aliasNomRubrique);
+
+            echo '--><div class="actualite '. $rubrique .'"> <a href="/actualite/n°'. $item->idActualite .'">';
+
+                    echo '<div class="img_actu">
+                        <img srcset="'.$item->imageActualite .' 1x, '. $item->imageActualite .' 2x" src="'. $item->imageActualite .'" alt="">
+                    </div>';
+
+                    echo '<div class="actu_titre">'. $item->titreActualite .'</div>';
+
+                    echo '<div class="publication"> Publié le ' . $dateAjd. ' - Actualité ' . $item->aliasNomRubrique . '</div>';
+
+
+                    echo '<div class="actu_desc">'. $item->descriptionActualite .'</div>';
+                    echo '</a></div>';
+            }
+            }else{
+            echo '<h3> Aucune actualité a été publié, revenez plus tard ! </h3>';
+            }*/
+            ?>
+
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+    <div class="numero_page">
+        <div id="nbActuTotal" style="display: none"></div>
+        <div id="left"> << </div>
+        <div id="numPageBot"></div>
+        <div id="right"> >> </div>
+    </div>
+
+
+{% endblock %}

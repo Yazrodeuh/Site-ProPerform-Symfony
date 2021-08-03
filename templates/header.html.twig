@@ -61,7 +61,7 @@
                                 {% endfor %}
                             </div>
                         </div>
-                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Micro-entreprise</a>
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Auto-Entrepreneur</a>
                             <div class="sousMenuBlock2">
                                 {% for module in headerModulesMe %}
                                     <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.nommoduledesc}) }}"> {{ module.grandtitremoduledesc | raw }}</a></div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="section"><a class="title" href="{{ path('contact')}}">CONTACT</a></div>
-                <div class="section"><a class="title" href="$tabLien[actu]">ACTUALITES</a></div>
+                <div class="section"><a class="title" href="{{ path('actualites') }}">ACTUALITES</a></div>
             </div>
             <div id="menuEspace" class="containerFcenterRow flexOne">
                 {# <?php
