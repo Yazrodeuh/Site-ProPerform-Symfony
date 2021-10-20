@@ -1,5 +1,7 @@
 :root{
     --blue-color: rgb(37, 76, 141);
+    --red-color: rgb(217, 8, 20);
+    --red-color-l: rgba(217, 8, 20, 0.5);
     --rouge-color: rgb(220, 25, 169);
 
     --immo-bleu-colorn: rgb(93, 169, 221);
@@ -41,8 +43,13 @@ html {
 
 body{
     /*font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;*/
-    font-family: Verdana, serif;
+    /*font-family: Verdana, serif;*/
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
     margin: auto;
+}
+
+main{
+    font-size: 20px;
 }
 
 #body_view{
