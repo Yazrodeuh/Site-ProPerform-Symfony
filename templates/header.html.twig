@@ -1,7 +1,19 @@
 <div id="bandeau_top" class="headerBandeau">
-    <a class="facebook" href="https://www.facebook.com/ProPerform-Formations-professionnelles-103678311893050"></a>
+    <div class="reseaux">
+        <div>
+            <a href="https://www.facebook.com/FormationsProperform/">
+                <img src="{{ asset('img/header/facebook-logo.png') }}" alt="Facebook" width="35" height="35">
+            </a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/company/pro-perform-formations/">
+                <img src="{{ asset('img/header/linkedin.jpg') }}" alt="Linkedin" width="35" height="35">
+            </a>
+        </div>
+    </div>
+
 </div>
-<nav id="nav_fixed_on_scroll">
+<div id="nav_fixed_on_scroll">
     <div id="header_navigation" >
         <div class="nav_burger">
             <div>
@@ -39,51 +51,31 @@
             <span class="header_navbar_burger_icons"></span>
         </div>
         <div id="header_nav" class="nav">
-            <div id="menuAccueil" class="containerFcenterRow flexOne ">
+            <div class="flexOne menuAccueil">
                 <a href="{{ path('index') }}">
-                    <img srcset="{{ asset('img/png/maison-blanche.png') }}" src="{{ asset('img/png/maison-blanche.png') }}" alt="maison">
+                    <img srcset="{{ asset('img/header/maison-blanche.png') }}" src="{{ asset('img/header/maison-blanche.png') }}" alt="accueil Pro'Perform" title="accueil" aria-label="Pro'Perform-accueil" width="20" height="20">
                 </a>
             </div>
-            <div id="menu" class="flexEight">
-                <div class="section"> <span class="title"> FORMATIONS</span>
+            <div class="flexEight menuPricipal">
+                <div class="titleMenu"> <a class="title"> Formations</a>
                     <div class="sousMenuBlock1">
-                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'immobilier'}) }}">Immobilier</a>
-                            <div class="sousMenuBlock2">
-                                {% for module in headerModulesImmo %}
-                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}"> {{ module.petittitremoduledesc | raw }} {{ module.grandtitremoduledesc | raw }}</a></div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'permis-dexploitation'}) }}">Permis d'exploitation</a>
-                            <div class="sousMenuBlock2">
-                                {% for module in headerModulesPe %}
-                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'permis-dexploitation', 'nomModule': module.nommoduledesc}) }}"> {{ module.grandtitremoduledesc | raw }}</a></div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Auto-Entrepreneur</a>
-                            <div class="sousMenuBlock2">
-                                {% for module in headerModulesMe %}
-                                    <div><a class="sousMenu" href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.nommoduledesc}) }}"> {{ module.grandtitremoduledesc | raw }}</a></div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <!--<div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'entreprise'}) }}">Entreprise</a>
-
-                        </div>-->
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'immobilier'}) }}">Immobilier</a></div>
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'permis-dexploitation'}) }}">Permis d'exploitation</a></div>
+                        <div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'micro-entreprise'}) }}">Auto-Entrepreneur</a></div>
+                        <!--<div> <a class="sousMenu" href="{{ path('formation', {'nomFormation': 'entreprise'}) }}">Entreprise</a></div>-->
                     </div>
                 </div>
-                <div class="section"> <a class="title" href="{{ path('equipe')}}">L'EQUIPE</a></div>
-                <div class="section"> <span class="title">LES LOCAUX</span>
+                <div class="titleMenu"> <a class="title" href="{{ path('equipe')}}">L'équipe</a></div>
+                <div class="titleMenu"> <a class="title">Les locaux</a>
                     <div class="sousMenuBlock1">
                         <div><a class="sousMenu" href="{{ path('locaux', {'ville': 'montpellier'})}}">Montpellier</a></div>
                         <div><a class="sousMenu" href="{{ path('locaux', {'ville': 'nimes'})}}">Nîmes</a></div>
                     </div>
                 </div>
-                <div class="section"><a class="title" href="{{ path('contact')}}">CONTACT</a></div>
-                <div class="section"><a class="title" href="{{ path('actualites') }}">ACTUALITES</a></div>
+                <div class="titleMenu"><a class="title" href="{{ path('contact')}}">Contact</a></div>
+                <div class="titleMenu"><a class="title" href="{{ path('actualites') }}">Actualités</a></div>
             </div>
-            <div id="menuEspace" class="containerFcenterRow flexOne">
+            <div class="flexOne menuEspace">
                 {# <?php
                                 if (isset($_SESSION['idUtilisateur'])) {
                                     echo '<a href="/utilisateur/connecte">MON ESPACE</a>';
@@ -92,9 +84,9 @@
                 }
                 ?> #}
 
-                <a href="connexion">MON ESPACE</a>
+                <a href="connexion">Mon espace</a>
 
             </div>
         </div>
     </div>
-</nav>
+</div>

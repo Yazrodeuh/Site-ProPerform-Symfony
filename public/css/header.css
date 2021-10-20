@@ -2,20 +2,40 @@ header{
     position: relative;
     width: 100%;
     top : 0;
+    font-size: 18px;
+
+    font-weight: 500;
 }
 
 .headerBandeau{
-    background-image: url("/img/png/logoPro.png"), url("/img/png/boussoleTop.png");
+    background-image: url("/img/header/logoPro.png"), url("/img/header/boussoleTop.png");
     background-size: 25% auto, 15% auto;
     background-repeat: no-repeat, no-repeat;
     background-position: center, right;
     padding: 4%;
 }
 
-.facebook{
+.reseaux{
     position: absolute;
     right: 5%;
     bottom: 17%;
+    display: flex;
+    justify-content: space-around;
+    width: 5%;
+
+}
+
+.reseaux div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseaux a{
+    display: flex;
+}
+
+.facebook{
     background-image: url("/img/png/facebook.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -26,57 +46,74 @@ header{
 
 .nav{
     display: flex;
-    align-items: center;
     background-color : var(--blue-color);
-    z-index: 9999;
+    z-index: 100;
     position: relative;
-    font-size: 14px;
     padding: 0;
 }
-
-.title{
-    color: white;
-    padding: 0 2.75em;
-    letter-spacing: 4px;
-    height: 100%;
-
-    font-size: 0.8vw;
-    align-items: center;
-    justify-content: center;
+.menuAccueil{
     display: flex;
-    cursor: pointer;
-
-    background-image: linear-gradient(to right, white 0%, lightskyblue 50%, transparent 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .4s ease-out;
+    justify-content: center;
+    align-items: center;
 }
 
-.title:hover{
-    background-position: left bottom;
-    color: black;
+.menuAccueil a{
+    display: flex;
 }
 
+.menuAccueil img{
 
-#menuAccueil img{
-    width: 1em;
 }
 
-#menu{
-    height: 100%;
+.menuPricipal{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#menu .section{
-    border-left: 1px solid cyan;
+.titleMenu{
+    border-left: 1px solid var(--red-color);
     position: relative;
+    display: flex;
 }
 
-#menu .section:last-child{
-    border-right: 1px solid cyan;
+.titleMenu:last-child{
+    border-right: 1px solid var(--red-color);
+}
+
+
+.title{
+    display: flex;
+    color: white;
+    padding: 0 2.75em;
+    height: 100%;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    background-image: linear-gradient(to top, var(--red-color-l) 0%, var(--red-color) 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: right top;
+    transition: all .4s ease-out;
+}
+
+.title:hover{
+    background-position: left bottom;
+}
+
+.sousMenu{
+    color: var(--blue-color);
+    width: 100%;
+    text-align: left;
+    padding: 0.3em 0.5em;
+    border-bottom: 1px solid var(--blue-color);
+}
+
+.sousMenu:hover{
+    background-color:  var(--blue-color);
+    color: white;
 }
 
 .sousMenuBlock1, .sousMenuBlock2{
@@ -99,40 +136,33 @@ header{
     display: flex;
 }
 
-#menu div.section:hover div.sousMenuBlock1:not(.sousMenuBlock2){
+.titleMenu:hover div.sousMenuBlock1:not(.sousMenuBlock2){
     display: flex;
 }
 
-#menu div.sousMenuBlock1 div:hover div.sousMenuBlock2{
+div.sousMenuBlock1 div:hover div.sousMenuBlock2{
     display: flex;
 }
 
-.sousMenu{
-    color: var(--blue-color);
-    width: 100%;
-    text-align: left;
-    padding: 0.3em 0.5em 0.3em 0.5em;
-    border-bottom: 1px solid var(--blue-color);
-}
 
-.sousMenu:hover{
-    background-color:  var(--blue-color);
-    color: white;
-}
 
-#menuEspace{
-    flex-wrap: wrap;
+.menuEspace{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#menuEspace a{
-    background: linear-gradient(90deg, white, lightskyblue);
-    letter-spacing: 4px;
-    width: 10.5em;
-    margin: 0 1%;
+.menuEspace a{
+    display: flex;
+    justify-content: center;
+    background: var(--red-color);
+    color: white;
+    letter-spacing: 2px;
+    width: 100%;
 }
+
+
+
 
 .header_navbar_burger{
     width: 35px;
