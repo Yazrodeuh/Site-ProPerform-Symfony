@@ -23,13 +23,16 @@ class FormationController extends DefaultController
 
         $contenuFormation = $this->getDoctrine()->getManager()->getRepository(Moduledescription::class);
 
-        return match ($nomFormation) {
-            "immobilier" => $this->render('formation/immobilier.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 1))]),
-            "permis-dexploitation" => $this->render('formation/permisExploitation.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 2))]),
-            "micro-entreprise" => $this->render('formation/microEntreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 3))]),
-            "entreprise" => $this->render('formation/entreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 4))]),
-            default => $this->render('formation/indexFormation.html.twig', ['controller_name' => 'FormationController']),
-        };
+        if($nomFormation === "immobilier"){
+            return $this->render('formation/immobilier.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 1))]);
+        }elseif ($nomFormation === "permis-dexploitation"){
+            return $this->render('formation/permisExploitation.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 2))]);
+        }elseif ($nomFormation === "micro-entreprise"){
+            $this->render('formation/microEntreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 3))]);
+        }elseif ($nomFormation === "entreprise"){
+            $this->render('formation/entreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 4))]);
+        }
+        return $this->render('formation/indexFormation.html.twig', ['controller_name' => 'FormationController']);
     }
 
 
