@@ -1,27 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+{% block title %}
+    {{ parent() }}
+    Formations continue des professionnels de l'immobilier
+{% endblock %}
 
-{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href="{{ asset('css/entreprise/nimes.css') }}"> {% endblock %}
+{% set descriptionPage = " " %} {# TODO Mettre description #}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/entreprise/locaux.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/entreprise/nimes.css') }}">
+{% endblock %}
 
 {% block body %}
 
-    <div id="nimes" class="nms">
-        <img  srcset="{{ asset('img/png/nimes/imgbg-nimes.png') }}" src="{{ asset('img/png/nimes/imgbg-nimes.png') }}" alt="">
-        <div id="img1">
-            <img srcset="{{ asset('img/png/nimes/img1-nimes.png') }}" src="{{ asset('img/png/nimes/img1-nimes.png') }}" alt="">
-        </div>
-        <div id="img2">
-            <img srcset="{{ asset('img/png/nimes/img2-nimes.png') }}" src="{{ asset('img/png/nimes/img2-nimes.png') }}" alt="">
-        </div>
-        <div id="img3">
-            <img srcset="{{ asset('img/png/nimes/img3-nimes.png') }}" src="{{ asset('img/png/nimes/img3-nimes.png') }}" alt="">
-        </div>
+    <div id="nimes" class="lieu">
+        <img  srcset="{{ asset('img/entreprise/Locaux/nimes_frise.png') }}" src="{{ asset('img/entreprise/Locaux/nimes_frise.png') }}" alt="">
         <div class="maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.711216897005!2d4.321236315726953!3d43.82034914962354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b42c2dca10f6c3%3A0xb071862dc6cb101e!2s50%20Impasse%20Laennec%2C%2030900%20N%C3%AEmes!5e0!3m2!1sfr!2sfr!4v1619075970331!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="emplacement">
-            50, Impasse Laennec, 30900 Nîmes
+            <h2><strong>Nîmes</strong></h2>
         </div>
     </div>
 

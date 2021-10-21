@@ -1,29 +1,4 @@
-.enteteFormation{
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: top;
-    position: relative;
-}
 
-.enteteFormation .entete_1{
-    font-size: 52px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    color: white;
-    letter-spacing: 2px;
-}
-
-.enteteFormation .entete_1 div{
-    padding: 0 1%;
-}
-
-.enteteFormation .image_top_texte{
-    color: black;
-    text-align: justify;
-    width: 85%;
-    font-size: 23px;
-}
 
 
 .stages_presentation{

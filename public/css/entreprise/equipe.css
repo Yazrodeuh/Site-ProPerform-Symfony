@@ -2,12 +2,21 @@
     background-image: none;
 }
 
-.entete{
-    position: relative;
+.enteteFormation{
+    background-image: url("/img/entreprise/equipe/equipe_frise.png");
 }
 
-.entete img{
-    width: 100%;
+.enteteFormation .entete_1{
+    margin: 25% 45% 2%;
+    width: 50%;
+}
+
+.enteteFormation .entete_1 div:first-child{
+    background-color: var(--blue-color);
+}
+
+.enteteFormation .image_top_texte{
+    margin: 4%  auto 0 auto;
 }
 
 #anthony, #lea, #jonathan{
@@ -34,34 +43,23 @@
     left: 55.2%;
 }
 
-#prenom_anthony, #prenom_lea, #prenom_jonathan{
-    position: absolute;
+.nom{
     color: white;
-    display: none;
-    font-size: 0.9vw;
-}
-
-#prenom_anthony{
-    top: 53%;
-    left: 20%;
-}
-
-#prenom_lea{
-    top: 53%;
-    left: 35%;
-}
-
-#prenom_jonathan{
-    top: 53%;
-    left: 64%;
+    background-color: var(--red-color);
+    padding: 1.5%;
+    border-radius: 20px;
+    margin: 1% 0 5%;
+    width: 90%;
+    font-size: 20px;
 }
 
 #info_equipe{
     background-color: var(--blue-color);
+    border-radius: 20px;
     padding: 0.5%;
-    width: 15%;
-    right: 4%;
-    top: 16%;
+    width: 18%;
+    right: 3%;
+    top: 8%;
     position: absolute;
     display: none;
 }
@@ -73,7 +71,7 @@
     justify-content: center;
     text-align: center;
     color: white;
-    font-size: 0.9vw;
+    font-size: 18px;
 }
 
 @keyframes animate_top_equipe {
@@ -81,67 +79,10 @@
     to {opacity: 1}
 }
 
-.entete_1{
-    position: absolute;
-    bottom: 30%;
-    left: 40%;
-}
 
-.entete_1 img{
-    width: 18vw;
-}
 
-.entete_bot{
-    font-size: 0.85vw;
-    color: black;
-    width: 75%;
-    margin: auto;
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-}
 
-.contact_organisme{
-    border: 5px solid var(--blue-color);
-    margin: -2.5% auto 1% auto;
-    display: flex;
-    flex-direction: row;
-    z-index: 2;
-    position: relative;
-}
 
-.bot_contact{
-    background-color: var(--blue-color);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bot_contact div{
-    color: white;
-    width: 90%;
-    margin: auto;
-}
-
-.bot_contact_titre{
-    font-size: 150%;
-    letter-spacing: 3px;
-    padding-top: 0.5%;
-}
-
-.bot_contact_text{
-    font-size: 100%;
-    padding: 0.5% 0;
-}
-
-.bot_contact_text div{
-    padding: 1% 0;
-}
-
-.bot_contact_text a{
-    color: white;
-}
 
 @media screen and (max-width:960px){
 

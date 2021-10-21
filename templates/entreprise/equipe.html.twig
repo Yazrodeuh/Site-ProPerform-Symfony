@@ -1,15 +1,42 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+{% block title %}
+    {{ parent() }}
+    Equipe : Découvrez notre équipe et nos juristes {# TODO Mettre title #}
+{% endblock %}
 
-{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href="{{ asset('css/entreprise/equipe.css') }}"> {% endblock %}
+{% set descriptionPage = " " %} {# TODO Mettre description #}
 
-{% block javascripts %} {{ parent() }} <script defer src="{{ asset('js/entreprise/equipe.js') }}"></script> {% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/entreprise/equipe.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script defer src="{{ asset('js/entreprise/equipe.js') }}"></script>
+{% endblock %}
 
 {% block body %}
 
-    <div class="entete">
-        <img srcset="{{ asset('/img/png/equipeTop.png') }}" src="{{ asset('/img/png/equipeTop.png') }}" alt="">
+    <div class="enteteFormation">
+        <div style="display: flex; justify-content: flex-end">
+            <div class="entete_1 js-scroll slide-right">
+                <div>
+                    L'équipe
+                </div>
+            </div>
+        </div>
+        <div class="image_top_texte js-scroll fade-in-bottom">
+            <div>
+                <p>
+                    Nos formateurs, juristes qualifiés & professionnels expérimentés, sauront allier apprentissage et convivialité en vertu de leur expérience pluriannuelle dans le domaine de la formation et de la pédagogie. Dans chaque secteur d’activité, le cadre législatif et réglementaire est en perpétuelle mutation.
+                </p>
+                <p>
+                    Notre objectif premier est de vous permettre d’actualiser vos connaissances dans un cadre dynamique et interactif. Parce que nos formations ne se résument pas à la délivrance de simples informations, notre équipe vous accompagnera tout au long de votre parcours chez Pro’Perform pour perfectionner vos compétences et participer à vos besoins d’évolution professionnelle.
+                </p>
+            </div>
+        </div>
         <div id="anthony">
             <div></div>
         </div>
@@ -19,39 +46,19 @@
         <div  id="jonathan">
             <div></div>
         </div>
-        <div id="prenom_anthony">
-            <div>Anthony JULIA</div>
-        </div>
-        <div id="prenom_lea">
-            <div>Léa BRUET</div>
-        </div>
-        <div id="prenom_jonathan">
-            <div>Jonathan GARCIA</div>
-        </div>
-        <div class="entete_1 js-scroll slide-right">
-            <img srcset="{{ asset('/img/png/ProPerform202103-EQUIPE-Titre.png') }}" src="{{ asset('/img/png/ProPerform202103-EQUIPE-Titre.png') }}" alt="">
-        </div>
         <div id="info_equipe">
             <div></div>
         </div>
-        <div class="entete_bot js-scroll fade-in-bottom">
-            <div>Nos formateurs, juristes qualifiés & professionnels expérimentés, sauront allier apprentissage et convivialité en vertu de leur expérience pluriannuelle dans le domaine de la formation et de la pédagogie. <br>
-                Dans chaque secteur d’activité, le cadre législatif et réglementaire est en perpétuelle mutation. <br>
-                Notre objectif premier est de vous permettre d’actualiser vos connaissances dans un cadre dynamique et interactif. <br>
-                Parce que nos formations ne se résument pas à la délivrance de simples informations, notre équipe vous accompagnera tout au long de votre parcours chez Pro’Perform pour perfectionner vos compétences et participer à vos besoins d’évolution professionnelle.</div>
-        </div>
     </div>
-    <div class="contact_organisme">
-        <div class="flexOne bot_contact">
-            <div>
-                <div class="bot_contact_titre">
-                    CONTACT
-                </div>
-                <div class="bot_contact_text">
-                    Pour toute demande de renseignements, n'hésitez pas à <a href="/contact"> <strong><u id="page_contact">nous contacter</u></strong></a>
-                </div>
-            </div>
-        </div>
+
+    {% include 'formation/contactBasSimple.html.twig' %}
+
+
+
+    <div class="entete">
+
+
     </div>
+
 
 {% endblock %}
