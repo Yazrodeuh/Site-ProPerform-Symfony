@@ -1,29 +1,59 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+{% block title %}
+    {{ parent() }}
+    Formations continue des professionnels de l'immobilier
+{% endblock %}
 
-{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href="{{ asset('css/formation/immobilier.css') }}"> {% endblock %}
+{% set descriptionPage = "Formations continues des professionnels de l’immobilier (Alur) pour renouveler vos cartes professionnelles d’agent immobilier et attestations d’habilitation d’agent commercial." %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/formation/immobilier.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/formation/formation.css') }}">
+{% endblock %}
 
 {% block body %}
 
-    <div class="image_top">
-        <div class="image_top_titre js-scroll slide-right">
-            <!--Formation continue <br> des professionnels de l'immobilier-->
-            <img srcset="{{ asset('img/png/ProPerform202103-IMMO-Titre.png') }}" src="{{ asset('img/png/ProPerform202103-IMMO-Titre.png') }}" alt="titre_immo">
+    <div class="enteteFormation">
+        <div style="display: flex; justify-content: flex-end">
+            <div class="entete_1 js-scroll slide-right">
+                <div>
+                    Formation continue
+                </div>
+                <div>
+                    des professionnels
+                </div>
+                <div>
+                    de l'immobilier
+                </div>
+            </div>
         </div>
         <div class="image_top_texte js-scroll fade-in-bottom">
             <div class="image_top_texte_picto"></div>
             <div>
-                Depuis la Loi Alur du 24 mars 2014, les professionnels de l'immobilier sont tenus d'une obligation de formation continue, dont le respect est vérifié par les CCI à chaque renouvellement de la carte professionnelle d'agent immobilier quelle qu'en soit la mention (Carte Transactions sur immeubles et fonds de commerce, Gestion immobilière...). <br>
-                La durée de formation imposée pour tous les professionnels de l'immobilier est de 14 heures sur une année ou 42 heures au cours de trois années consécutives d'exercice.
+                <p>
+                    Depuis la Loi Alur du 24 mars 2014, les professionnels de l'immobilier sont tenus d'une obligation de formation continue, dont le respect est vérifié par les CCI à chaque renouvellement de la carte professionnelle d'agent immobilier quelle qu'en soit la mention (Carte Transactions sur immeubles et fonds de commerce, Gestion immobilière...).
+                </p>
+                <p>
+                    La durée de formation imposée pour tous les professionnels de l'immobilier est de 14 heures sur une année ou 42 heures au cours de trois années consécutives d'exercice.
+                </p>
             </div>
         </div>
     </div>
-    <div class="stages">
-        <div class="stages_presentation js-scroll fade-in-bottom">
-            <strong>Vous pouvez composer votre formation librement selon vos besoins et votre domaine d'activité en choisissant une ou plusieurs thématiques suivantes d'une durée de 7h chacune. </strong>
+    <div style="padding: 0.5% 0">
+        <div style="margin: 0 10%">
+            <div class="stages_presentation js-scroll fade-in-bottom">
+                <p>
+                    <strong>Vous pouvez composer votre formation librement selon vos besoins et votre domaine d'activité en choisissant une ou plusieurs thématiques suivantes d'une durée de 7h chacune.</strong>
+                </p>
+            </div>
         </div>
-        {% include 'formation/moduleDescription.html.twig' %}
+    </div>
+    <div>
+        <div style="margin: 0 5%">
+            {% include 'formation/moduleDescription.html.twig' %}
+        </div>
     </div>
     <div class="lieu js-scroll fade-in-bottom">
         <div class="lieu_titre">
@@ -39,19 +69,10 @@
         </div>
     </div>
     <div class="bas_de_page js-scroll fade-in-bottom">
-        <p>
-            Le programme de formation est libre dès lors qu'il est en lien direct avec l'activité professionnelle exercée. <br>
+        <div>
+            Le programme de formation est libre dès lors qu'il est en lien direct avec l'activité professionnelle exercée.
             La seule exigence de ce programme étant que durant les trois années consécutives d'exercice, la formation continue inclut au moins deux heures portant sur la non-discrimination à l'accès au logement et au moins deux heures portant sur les autres règles déontologiques.
-        </p>
-    </div>
-    <div class="contact_organisme js-scroll fade-in-bottom">
-        <div class="flexOne bot_contact">
-            <div>
-                CONTACT
-            </div>
-            <div>
-                Pour toute demande de renseignements, n'hésitez pas à <a href="/contact"> <strong><u id="page_contact">nous contacter</u></strong></a>
-            </div>
         </div>
     </div>
+    {% include 'formation/contactBasSimple.html.twig' %}
 {% endblock %}

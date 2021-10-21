@@ -1,0 +1,238 @@
+.enteteFormation{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+.enteteFormation .entete_1{
+    font-size: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.enteteFormation .entete_1 div{
+    padding: 0 1%;
+}
+
+.enteteFormation .image_top_texte{
+    color: black;
+    text-align: justify;
+    width: 85%;
+    font-size: 23px;
+}
+
+
+.stages_presentation{
+    color: var(--blue-color);
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+.box_formation_propose{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.formation_propose{
+    width: 25em;
+    margin: 1%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.formation_propose_header{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    z-index: 2;
+    border-radius: 20px 20px 0 0;
+}
+
+.formation_propose_header_titre_1{
+    font-size: 26px;
+    letter-spacing: 1px;
+    padding: 1%;
+    text-transform: uppercase;
+}
+
+.formation_propose_header_titre_2{
+    margin: auto auto 2%;
+    font-size: 32px;
+    padding: 1%;
+    text-transform: uppercase;
+}
+
+.alias{
+    position: absolute;
+    top: 0.5vh;
+    right: 0.5vw;
+    font-size: 10px;
+}
+
+.formation_propose_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -2%;
+    padding: 0 2%;
+}
+
+.formation_propose_body ul{
+    margin: 0 2% 0 0;
+}
+
+
+.formation_propose_body div:first-child{
+    z-index: 5;
+}
+
+.formation_propose_body .flexEight, .formation_propose_body .flexThree{
+    width: 100%;
+}
+
+.formation_propose_titre_section{
+    text-align: center;
+    color: white;
+    width: 40%;
+    margin: auto;
+    padding: 0.5% 0;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.formation_propose_contenu, .formation_propose_duree{
+    text-align: justify;
+    padding: 4% 3%;
+    margin: auto;
+
+}
+
+.formation_propose_duree{
+    color: var(--rouge-color);
+    font-size: 23px;
+    text-align: center;
+}
+
+.formation_propose_contenu ul{
+    padding-left: 7%;
+}
+
+.formation_propose_informations{
+    width: 100%;
+    text-align: center;
+    margin: 5% auto;
+    font-size: 16px;
+}
+
+.formation_propose_informations a{
+    padding: 1% 2%;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.formation_propose_footer{
+    width: 100%;
+    text-align: center;
+    border-radius:  0  0 20px 20px;
+}
+
+.formation_propose_footer_prix{ padding-bottom: 2%; }
+
+.formation_propose_triangle{
+    display : inline-block;
+    margin-top: -1%;
+    width : 0;
+    border-right : 35px solid transparent;
+    border-left : 35px solid transparent;
+    border-top:  28px solid;
+}
+
+.formation_propose_prix{
+    font-size: 40px;
+    margin: 2%;
+    color: white;
+}
+
+.formation_propose_inscription{ padding: 1% 0; }
+
+.formation_propose_inscription a{
+    padding: 0.5% 6%;
+    background-color: var(--rouge-color);
+    border-radius: 20px;
+    margin: auto;
+    font-size: 16px;
+    color: white;
+    border: 2px solid var(--rouge-color);
+    text-transform: uppercase;
+}
+
+.formation_propose_inscription a:hover{
+    background-color: white;
+    color: var(--rouge-color);
+    font-weight: bold;
+}
+
+.formation_propose_lieu{
+    display: flex;
+    flex-direction: column;
+    border-radius:  0  0 20px 20px;
+}
+
+.formation_propose_lieu div:first-child{
+    border-radius: 20px;
+    margin: 2% 36%;
+    padding: 0.5% 0;
+}
+
+.formation_propose_lieu div:last-child{ margin-bottom: 2%; }
+
+@media screen and (max-width:960px){
+
+    .formation_propose{ width: 100%; }
+    .formation_propose_header_titre_1{ font-size: 3.8vw; }
+    .formation_propose_header_titre_2{ font-size: 5.8vw; }
+    .alias{ font-size: 3vw; }
+    .formation_propose_titre_section{ font-size: 2.5vw; }
+    .formation_propose_contenu{ font-size: 3.2vw; }
+    .formation_propose_duree{ font-size: 3.4vw; }
+    .formation_propose_informations{ font-size: 2.7vw; }
+
+    .formation_propose_triangle{
+        border-right : 18px solid transparent;
+        border-left : 18px solid transparent;
+        border-top:  20px solid;
+    }
+
+    .formation_propose_prix{
+        font-size: 4.5vw;
+    }
+
+    .formation_propose_inscription a{
+        font-size: 2.5vw;
+    }
+
+    .formation_propose_lieu{
+        font-size: 2.3vw;
+    }
+
+}
+

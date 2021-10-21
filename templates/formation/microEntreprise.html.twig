@@ -1,20 +1,43 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+{% block title %}
+    {{ parent() }}
+    Formations continue des professionnels de l'immobilier
+{% endblock %}
 
-{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href="{{ asset('css/formation/microEntreprise.css') }}"> {% endblock %}
+{% set descriptionPage = "Formation de référence pour créer et gérer sa micro-entreprise rapidement. Connaître le fonctionnement de l’auto-entreprise (fiscal et social) et élaborer son projet de création." %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/formation/microEntreprise.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/formation/formation.css') }}">
+{% endblock %}
 
 {% block body %}
-    <div class="image_top">
-        <div class="image_top_titre js-scroll slide-right">
-            <!--Créer sa micro-entreprise-->
-            <img srcset="{{ asset('img/png/ProPerform202104-MICRO-Titre.png') }}" src="{{ asset('img/png/ProPerform202104-MICRO-Titre.png') }}" alt="">
+
+    <div class="enteteFormation">
+        <div style="display: flex; justify-content: flex-end">
+            <div class="entete_1 js-scroll slide-right">
+                <div>
+                    Créer
+                </div>
+                <div>
+                    sa micro-entreprise
+                </div>
+            </div>
         </div>
         <div class="image_top_texte js-scroll fade-in-bottom">
-            <p><strong>Vous avez pour projet de créer une micro-entreprise ?
-                    Vous êtes déjà installé(e) et rencontrez quelques difficultés ?</strong></p>
-            Cette formation complète vous permet de maîtriser les différents statuts envisageables, les obligations administratives, les différentes aides financières, les cotisations sociales et les charges fiscales d'un auto-entrepreneur. <br>
-            L'ensemble des notions spécifiques et des démarches administratives relatives à la création d'une micro-entreprise n'auront plus de secret pour vous.
+            <div>
+                <p style="text-align: center">
+                    <strong>Vous avez pour projet de créer une micro-entreprise ? Vous êtes déjà installé(e) et rencontrez quelques difficultés ?</strong>
+                </p>
+                <p>
+                    Cette formation complète vous permet de maîtriser les différents statuts envisageables, les obligations administratives, les différentes aides financières, les cotisations sociales et les charges fiscales d'un auto-entrepreneur.
+                </p>
+                <p>
+                    L'ensemble des notions spécifiques et des démarches administratives relatives à la création d'une micro-entreprise n'auront plus de secret pour vous.
+                </p>
+            </div>
         </div>
     </div>
     <div class="stages">
@@ -26,14 +49,5 @@
     <div class="tva js-scroll fade-in-bottom">
         <em>* TVA non applicable selon Art. 261.4.4 a du CGI</em>
     </div>
-    <div class="contact_organisme js-scroll fade-in-bottom">
-        <div class="flexOne bot_contact">
-            <div>
-                CONTACT
-            </div>
-            <div>
-                Pour toute demande de renseignements, n'hésitez pas à <a href="/contact"> <strong><u id="page_contact">nous contacter</u></strong></a>
-            </div>
-        </div>
-    </div>
+    {%  include 'formation/contactBasSimple.html.twig' %}
 {% endblock %}

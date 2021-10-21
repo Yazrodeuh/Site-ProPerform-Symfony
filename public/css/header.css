@@ -21,7 +21,6 @@ header{
     bottom: 17%;
     display: flex;
     justify-content: space-around;
-    width: 5%;
 
 }
 
@@ -29,6 +28,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5% 10%;
 }
 
 .reseaux a{
@@ -109,6 +109,7 @@ header{
     text-align: left;
     padding: 0.3em 0.5em;
     border-bottom: 1px solid var(--blue-color);
+    font-size: 17px;
 }
 
 .sousMenu:hover{

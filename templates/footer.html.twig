@@ -1,42 +1,18 @@
-<div class="footer">
-    <div class="footer1">
-        <div class="flexOne footerCatego">
-            <!--<?php echo'<a href="' . $tabLien["planDuSite"] . '">PLAN DU SITE </a>';?>-->
-            <!--<a href="{# path() #}">PLAN DU SITE </a>-->
-            <div>Immobilier</div>
-            {% for module in headerModulesImmo %}
-                <div><a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}"> {{ module.petittitremoduledesc | raw }} {{ module.grandtitremoduledesc | raw }}</a></div>
-            {% endfor %}
-        </div>
-        <div class="flexOne footerCatego">
-            <!--<?php echo'<a href="' . $tabLien["reglement"] . '">PLAN DU SITE </a>';?>-->
-            <!--<a href="{# path() #}">REGLEMENT INTERIEUR </a>-->
-            <div>Formation Permis d'exploitation</div>
-            {% for module in headerModulesPe %}
-                <div><a href="{{ path('module', {'nomFormation': 'permis-dexploitation', 'nomModule': module.nommoduledesc}) }}"> {{ module.petittitremoduledesc | raw }} {{ module.grandtitremoduledesc | raw }}</a></div>
-            {% endfor %}
-        </div>
-        <div class="flexOne footerCatego">
-            <!--<?php echo'<a href="' . $tabLien["mentionLegales"] . '">PLAN DU SITE </a>';?>-->
-            <!--<a href="{# path() #}">MENTIONS LEGALES</a>-->
-            <div>Formation Auto-Entrepreneur</div>
-            {% for module in headerModulesMe %}
-                <div><a href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.nommoduledesc}) }}"> {{ module.petittitremoduledesc | raw }} {{ module.grandtitremoduledesc | raw }}</a></div>
-            {% endfor %}
-        </div>
-        <div class="flexOne footerCatego">
-            <!--<?php echo'<a href="' . $tabLien["cgv"] . '">PLAN DU SITE </a>';?>-->
-            <!--<a href="{# path() #}">CONDITIONS GENERALES DE VENTE</a>-->
-            <div>Auto-Entrepreneur</div>
-            <div><a>test</a></div>
-            <div><a>test</a></div>
-            <div><a>test</a></div>
-            <div><a>test</a></div>
-        </div>
-        <!--<div class="flexOne footerCatego">
-            <?php echo'<a href="' . $tabLien["politiquesConfiden"] . '">PLAN DU SITE </a>';?>
-            <a href="{# path() #}">POLITIQUE DE CONFIDENTIALITE</a>
-        </div>-->
-    </div>
 
+<div class="footer">
+    <div class="flexOne">
+        <a href="{# {{ path('planDuSite') }} #}">Plan du site</a>
+    </div>
+    <div class="flexOne">
+       <a href="{# {{ path('reglement') }} #}">Réglement intérieur</a>
+    </div>
+    <div class="flexOne">
+        <a href="{# {{ path('mentionLegales') }} #}">Mentions légales</a>
+    </div>
+    <div class="flexOne">
+       <a href="{# {{ path('cgv') }} #}">Conditions générales de vente</a>
+    </div>
+    <div class="flexOne">
+        <a href="{# {{ path('politiquesConfiden') }} #}">Politique de confidentialité</a>
+    </div>
 </div>

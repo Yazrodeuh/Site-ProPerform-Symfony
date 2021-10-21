@@ -16,9 +16,14 @@ use Symfony\Component\Routing\Annotation\Route;
 class FormationController extends DefaultController
 {
     /**
-     * @Route("/{nomFormation}", name="formation")
+     * @Route(
+     *     "/{nomFormation}",
+     *      requirements={
+     *     "nomFormation": "immobilier|permis-dexploitation|micro-entreprise|entreprise"
+     *     },
+     *     name="formation")
      */
-    public function formation(Request $request, string $nomFormation=''): Response
+    public function formation(Request $request, string $nomFormation): Response
     {
 
         $contenuFormation = $this->getDoctrine()->getManager()->getRepository(Moduledescription::class);
@@ -28,9 +33,9 @@ class FormationController extends DefaultController
         }elseif ($nomFormation === "permis-dexploitation"){
             return $this->render('formation/permisExploitation.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 2))]);
         }elseif ($nomFormation === "micro-entreprise"){
-            $this->render('formation/microEntreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 3))]);
+            return $this->render('formation/microEntreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 3))]);
         }elseif ($nomFormation === "entreprise"){
-            $this->render('formation/entreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 4))]);
+            return $this->render('formation/entreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idrubriqueformation'=> 4))]);
         }
         return $this->render('formation/indexFormation.html.twig', ['controller_name' => 'FormationController']);
     }

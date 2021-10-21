@@ -13,52 +13,57 @@
                 <div class="alias">{{ module.aliasmoduledesc | raw }}</div>
             </div>
             <div class="formation_propose_body flexEight">
-                <div class="flexThree">
-                    <div class="formation_propose_titre_section">
-                        DURÉE
-                    </div>
-                    <div class="formation_propose_duree">
-                        <strong>{{ module.dureemoduledesc | raw }}</strong>
-                    </div>
-                </div>
-                {% if module.pourquimoduledesc is defined and module.pourquimoduledesc is not null %}
-                    <div class="flexEight">
+                <div style="display: flex; justify-content: space-around; flex-direction: column">
+                    <div>
                         <div class="formation_propose_titre_section">
-                            POUR QUI
+                            Durée
                         </div>
-                        <div class="formation_propose_contenu">
-                            {{ module.pourquimoduledesc | raw }}
-                        </div>
-                    </div>
-                {% endif %}
-                <div class="flexEight">
-                    <div class="formation_propose_titre_section">
-                        OBJECTIFS
-                    </div>
-                    <div class="formation_propose_contenu">
-                        {{ module.objectifsmoduledesc | raw }}
-                    </div>
-                </div>
-                {% if module.orgapedagomoduledesc is defined and module.orgapedagomoduledesc is not null %}
-                    <div class="flexEight">
-                        <div class="formation_propose_titre_section">
-                            ORGANISATION PEDAGOGIQUE
-                        </div>
-                        <div class="formation_propose_contenu">
-                            {{ module.orgapedagomoduledesc | raw }}
+                        <div class="formation_propose_duree">
+                            {{ module.dureemoduledesc | raw }}
                         </div>
                     </div>
-                {% endif %}
-                <div class="formation_propose_informations">
-                    {% if module.idrubriqueformation == 1 %}
-                        <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
-                    {% elseif module.idrubriqueformation == 2 %}
-                        <a href="{{ path('module', {'nomFormation': 'permis-dexploitation', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
-                    {% elseif module.idrubriqueformation == 3 %}
-                        <a href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
-                    {% elseif module.idrubriqueformation == 4 %}
-                        <a href="{{ path('module', {'nomFormation': 'entreprise', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                    {% if module.pourquimoduledesc is defined and module.pourquimoduledesc is not null %}
+                        <div>
+                            <div class="formation_propose_titre_section">
+                                pour qui
+                            </div>
+                            <div class="formation_propose_contenu">
+                                {{ module.pourquimoduledesc | raw }}
+                            </div>
+                        </div>
                     {% endif %}
+                    <div>
+                        <div class="formation_propose_titre_section">
+                            objectifs
+                        </div>
+                        <div class="formation_propose_contenu">
+                            {{ module.objectifsmoduledesc | raw }}
+                        </div>
+                    </div>
+
+                    {% if module.orgapedagomoduledesc is defined and module.orgapedagomoduledesc is not null %}
+                        <div class="flexEight">
+                            <div class="formation_propose_titre_section">
+                                organisation pédagogique
+                            </div>
+                            <div class="formation_propose_contenu">
+                                {{ module.orgapedagomoduledesc | raw }}
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+                <div style="width: 100%">
+                    <div class="formation_propose_informations">
+                        {% if module.idrubriqueformation == 1 %}
+                            <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                        {% elseif module.idrubriqueformation == 2 %}
+                            <a href="{{ path('module', {'nomFormation': 'permis-dexploitation', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                        {% elseif module.idrubriqueformation == 3 %}
+                            <a href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                        {% elseif module.idrubriqueformation == 4 %}
+                            <a href="{{ path('module', {'nomFormation': 'entreprise', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
             <div class="formation_propose_footer flexOne">
@@ -68,7 +73,7 @@
                         <strong>{{ module.prixmoduledesc | raw }}</strong> €*
                     </div>
                     <div class="formation_propose_inscription">
-                        <a href=/inscription_formulaire>JE M'INSCRIS</a>
+                        <a href=/inscription_formulaire>je m'inscris</a>
                     </div>
                 </div>
                 {% if module.lieumoduledesc is defined and module.lieumoduledesc is not null %}

@@ -1,97 +1,27 @@
-main{
-    background-image: url("/img/png/ProPerform202104-Page-MICROfrise.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: top;
+.enteteFormation{
+    background-image: url("/img/formation/micro_entreprise/me_frise.png");
 }
 
-.image_top_titre{
-    text-align: center;
-    padding-top: 15%;
-    margin: auto;
+.enteteFormation .entete_1{
+    margin: 14% 35% 2%;
+    width: 50%;
 }
 
-.image_top_titre img{
-    width: 45%;
+.enteteFormation .entete_1 div:nth-child(1){
+    color: var(--me-accomapagne-colord);
+    background-color: white;
+    margin-right: 75%;
+}
+.enteteFormation .entete_1 div:nth-child(2){
+    background-color: var(--me-accomapagne-colord);
 }
 
-.image_top_texte{
-    color: black;
-    text-align: justify;
-    padding-top: 8%;
-    width: 90%;
-    margin: auto;
-    font-size: 1.8vh;
-}
-
-.image_top_texte p {
-    text-align: center;
-    color: var(--blue-color);
-}
-
-.stages{
-    margin:auto;
-    width: 85%;
-}
-
-.stages_presentation{
-    color: var(--blue-color);
-    height: 100%;
-    font-size: 2vh;
-    text-align: center;
-    margin-top: 1%;
-}
-
-.tva{
-    color: grey;
-    font-size: 90%;
-    text-align: center;
-    width: 100%;
-    margin: auto auto 2%;
-}
-
-@media screen and (max-width:960px){
-
-    .image_top_titre{
-        font-size: 2.2vh;
-        width: 90%;
-    }
-
-    .image_top_titre img{
-        width: 50%;
-    }
-
-    .image_top_texte{
-        margin: auto;
-        width: 90%;
-        padding-top: 5%;
-        font-size: 2.5vw;
-    }
-
-    .stages{
-        margin:auto;
-        width: 90%;
-    }
-
-    .stages_presentation{
-        font-size: 3vw;
-    }
-
-    .tva{
-        font-size: 2.7vw;
-        margin: 1.5% auto 4%;
-    }
-
+.enteteFormation .image_top_texte{
+    margin: 9%  auto 0 auto;
 }
 
 .formation_propose{
     width: 35%;
-}
-
-@media screen and (max-width:960px){
-    .formation_propose{
-        width: 100%;
-    }
 }
 
 .formation_propose:nth-child(3n + 1) .formation_propose_header,
@@ -156,4 +86,54 @@ main{
 .formation_propose:nth-child(3n + 2) .formation_propose_lieu div:nth-child(3n + 1){
     color: var(--me-enligne-colord);
     border: 2px solid var(--me-enligne-colord);
+}
+
+
+.tva{
+    color: grey;
+    font-size: 90%;
+    text-align: center;
+    width: 100%;
+    margin: auto auto 2%;
+}
+
+@media screen and (max-width:960px){
+
+    .image_top_titre{
+        font-size: 2.2vh;
+        width: 90%;
+    }
+
+    .image_top_titre img{
+        width: 50%;
+    }
+
+    .image_top_texte{
+        margin: auto;
+        width: 90%;
+        padding-top: 5%;
+        font-size: 2.5vw;
+    }
+
+    .stages{
+        margin:auto;
+        width: 90%;
+    }
+
+    .stages_presentation{
+        font-size: 3vw;
+    }
+
+    .tva{
+        font-size: 2.7vw;
+        margin: 1.5% auto 4%;
+    }
+
+}
+
+
+@media screen and (max-width:960px){
+    .formation_propose{
+        width: 100%;
+    }
 }

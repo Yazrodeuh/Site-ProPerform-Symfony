@@ -4,35 +4,24 @@ footer {
     margin: auto;
     padding: 0.4% 0;
     width: 100%;
-    position: absolute;
-    font-size: 0.55vw;
+    font-size: 14px;
     color: white;
 }
 
 .footer {
     display: flex;
-    flex-direction: column;
-    background-color: transparent;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     width: 100%;
 }
-
-.footer1{
+.footer div{
     display: flex;
-    flex-direction: row;
-    width: 70%;
-    margin: auto;
     justify-content: center;
+    align-items: center;
 }
 
-.footer1 div{
-    text-align: center;
-}
-
-.footerCatego{
-
-
-}
 
 .footer a {
     /*color: rgb(118, 179, 225);*/
