@@ -53,7 +53,7 @@ main{
 }
 
 #body_view{
-    background-image: url("/img/png/boussoleBot.png");
+    background-image: url("/img/boussoleBot.png");
     background-size: 40% auto;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -62,7 +62,6 @@ main{
 
 a{
     text-decoration: none;
-    color: black;
     vertical-align: center;
 }
 
@@ -117,29 +116,15 @@ h1, h2, h3, h4, h5, h6{
 
 .flexOne{       flex: 1;    }
 .flexTwo{       flex: 2;    }
-.flexThree{     flex:3;     }
+.flexThree{     flex: 3;    }
 .flexFive{      flex: 5;    }
 .flexSix{       flex: 6;    }
 .flexEight{     flex: 8;    }
 .flexNine{      flex: 9;    }
 .flexTen{       flex: 10;   }
 
-.containerFRow{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
-.containerFcenterRow{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
 
 .containerFcenterCol{
     display: flex;
