@@ -2,13 +2,13 @@
     {% for module in modulesFormation %}
         <div class="formation_propose js-scroll fade-in-bottom">
             <div class="formation_propose_header flexOne">
-                {% if module.petittitremoduledesc is defined and module.petittitremoduledesc is not null %}
+                {% if module.categorieModuleDesc is defined and module.categorieModuleDesc is not null %}
                     <div class="formation_propose_header_titre_1">
-                        {{ module.petittitremoduledesc | raw }}
+                        {{ module.categorieModuleDesc | raw }}
                     </div>
                 {% endif %}
                 <div class="formation_propose_header_titre_2">
-                    {{ module.grandtitremoduledesc | raw }}
+                    {{ module.nomModuleDesc | raw }}
                 </div>
                 <div class="alias">{{ module.aliasmoduledesc | raw }}</div>
             </div>
@@ -53,14 +53,14 @@
                 </div>
                 <div style="width: 100%">
                     <div class="formation_propose_informations">
-                        {% if module.idrubriqueformation == 1 %}
-                            <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
-                        {% elseif module.idrubriqueformation == 2 %}
-                            <a href="{{ path('module', {'nomFormation': 'permis-dexploitation', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
-                        {% elseif module.idrubriqueformation == 3 %}
-                            <a href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
-                        {% elseif module.idrubriqueformation == 4 %}
-                            <a href="{{ path('module', {'nomFormation': 'entreprise', 'nomModule': module.nommoduledesc}) }}">Plus d'informations</a>
+                        {% if module.idRubriqueFormation == 1 %}
+                            <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
+                        {% elseif module.idRubriqueFormation == 2 %}
+                            <a href="{{ path('module', {'nomFormation': 'permis-dexploitation', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
+                        {% elseif module.idRubriqueFormation == 3 %}
+                            <a href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
+                        {% elseif module.idRubriqueFormation == 4 %}
+                            <a href="{{ path('module', {'nomFormation': 'entreprise', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
                         {% endif %}
                     </div>
                 </div>
