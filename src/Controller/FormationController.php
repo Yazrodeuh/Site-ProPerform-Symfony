@@ -29,7 +29,6 @@ class FormationController extends DefaultController
         $contenuFormation = $this->getDoctrine()->getManager()->getRepository(ModuleDescription::class);
 
         if($nomFormation === "immobilier"){
-            var_dump($contenuFormation->findBy(array('idRubriqueFormation'=> 1)));
             return $this->render('formation/immobilier.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 1))]);
         }elseif ($nomFormation === "permis-dexploitation"){
             return $this->render('formation/permisExploitation.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 2))]);

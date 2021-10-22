@@ -172,7 +172,7 @@
     border-radius:  0  0 20px 20px;
 }
 
-.formation_propose_lieu div:first-child{
+.formation_propose_lieu_titre{
     border-radius: 20px;
     margin: 2% 36%;
     padding: 0.5% 0;

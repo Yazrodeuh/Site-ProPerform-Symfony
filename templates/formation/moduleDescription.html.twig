@@ -51,7 +51,7 @@
                         </div>
                     {% endif %}
                 </div>
-                <div style="width: 100%">
+                {# <div style="width: 100%">
                     <div class="formation_propose_informations">
                         {% if module.idRubriqueFormation == 1 %}
                             <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
@@ -63,7 +63,7 @@
                             <a href="{{ path('module', {'nomFormation': 'entreprise', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
                         {% endif %}
                     </div>
-                </div>
+                </div> #}
             </div>
             <div class="formation_propose_footer flexOne">
                 <div class="formation_propose_footer_prix">
@@ -77,7 +77,7 @@
                 </div>
                 {% if module.lieumoduledesc is defined and module.lieumoduledesc is not null %}
                     <div class="formation_propose_lieu">
-                        <div>
+                        <div class="formation_propose_lieu_titre">
                             LIEUX
                         </div>
                         <div>

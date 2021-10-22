@@ -3,7 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Actualite;
-use App\Entity\Rubriqueformation;
+use App\Entity\RubriqueFormation;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
@@ -31,7 +31,7 @@ class ActualiteRepository extends ServiceEntityRepository{
        return $this->createQueryBuilder('a')
             ->select('a')
             ->from(Actualite::class, 'a')
-            ->join(Rubriqueformation::class, 'r')
+            ->join(RubriqueFormation::class, 'r')
             ->orderBy('a.dateactualite', 'DESC')
             ->setFirstResult($offset)
             ->setMaxResults($limit);
