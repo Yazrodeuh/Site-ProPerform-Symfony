@@ -89,14 +89,6 @@
 }
 
 
-.tva{
-    color: grey;
-    font-size: 90%;
-    text-align: center;
-    width: 100%;
-    margin: auto auto 2%;
-}
-
 @media screen and (max-width:960px){
 
     .image_top_titre{
@@ -124,10 +116,6 @@
         font-size: 3vw;
     }
 
-    .tva{
-        font-size: 2.7vw;
-        margin: 1.5% auto 4%;
-    }
 
 }
 

@@ -19,7 +19,7 @@
 .enteteAccueil{
     text-align: center;
     position: relative;
-    background-image: url("/img/accueil/equipe-top.png");
+    background-image: url("/img/accueil/equipe-top-retourne.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: top;
@@ -27,12 +27,17 @@
 
 .certification{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
-    margin: 3% 8%;
-    background-color: red;
-    width: 20%;
+    flex-wrap: wrap;
+    margin: 2% 3%;
+    width: 15em;
 }
+.certification div{
+
+}
+
 
 .entete_top img{
     width: 100%;
@@ -41,19 +46,18 @@
 
 .entete_1{
     color: var(--blue-color);
-    margin: 3% 8%;
-    border-radius: 15px;
-    padding: 1%;
-    width: 50%;
+    margin: 1% 25% 3% auto;
     font-size: 37px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 16em;
 }
 
 .entete_1 h1{
-    width: 100%;
+    background-color: white;
+    padding: 0 1%;
 }
 
 .entete_1 h1 strong{
@@ -70,11 +74,12 @@
 
 .entete_1 div:first-child h1 span:nth-child(1){
     color: var(--red-color);
+
 }
 
 .entete_1 div:first-child span:last-child:not(strong span){
     background-color: var(--red-color);
-    padding: 0 1%;
+    padding: 1%;
     color: white;
 }
 .entete_1  div:last-child{
