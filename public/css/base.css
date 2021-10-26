@@ -25,17 +25,19 @@
     --me-enligne-colord: rgb(177, 102, 191);
     --me-enligne-colorl: rgb(251, 227, 255);
 
-    --initial-colorn: rgb(180, 45, 45);
-    --initial-colord: rgb(214, 29, 29);
-    --initial-colorl: rgb(255, 226, 226) ;
+    --pe-initial-colorn: rgb(180, 45, 45);
+    --pe-initial-colord: rgb(214, 29, 29);
+    --pe-initial-colorl: rgb(255, 226, 226) ;
 
-    --renouvellement-colorn: rgb(202, 71, 27);
-    --renouvellement-colord: rgb(232, 78, 25);
-    --renouvellement-colorl: rgb(255, 232, 225);
+    --pe-renouvellement-colorn: rgb(202, 71, 27);
+    --pe-renouvellement-colord: rgb(232, 78, 25);
+    --pe-renouvellement-colorl: rgb(255, 232, 225);
 
-    --chambrehotes-colorn: rgb(227, 123, 27);
-    --chambrehotes-colord: rgb(255, 124, 0);
-    --chambrehotes-colorl: rgb(255, 232, 210);
+    --pe-chambrehotes-colorn: rgb(227, 123, 27);
+    --pe-chambrehotes-colord: rgb(255, 124, 0);
+    --pe-chambrehotes-colorl: rgb(255, 232, 210);
+
+    --entre-performer-colorn: rgb(34, 157, 70);
 }
 
 html {

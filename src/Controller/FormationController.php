@@ -15,31 +15,46 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class FormationController extends DefaultController
 {
+
     /**
-     * @Route(
-     *     "/{nomFormation}",
-     *      requirements={
-     *     "nomFormation": "immobilier|permis-dexploitation|micro-entreprise|entreprise"
-     *     },
-     *     name="formation")
+     * @Route("/immobilier", name="immobilier")
+     * @return Response
      */
-    public function formation(Request $request, string $nomFormation): Response
+    public function immobilier(): Response
     {
-
         $contenuFormation = $this->getDoctrine()->getManager()->getRepository(ModuleDescription::class);
-
-        if($nomFormation === "immobilier"){
-            return $this->render('formation/immobilier.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 1))]);
-        }elseif ($nomFormation === "permis-dexploitation"){
-            return $this->render('formation/permisExploitation.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 2))]);
-        }elseif ($nomFormation === "micro-entreprise"){
-            return $this->render('formation/microEntreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 3))]);
-        }elseif ($nomFormation === "entreprise"){
-            return $this->render('formation/entreprise.html.twig', ['controller_name' => 'FormationController', 'modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 4))]);
-        }
-        return $this->render('formation/indexFormation.html.twig', ['controller_name' => 'FormationController']);
+        return $this->render('formation/immobilier.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 1))]);
     }
 
+    /**
+     * @Route("/permis-exploitation", name="permisExploitation")
+     * @return Response
+     */
+    public function permisExploitation(): Response
+    {
+        $contenuFormation = $this->getDoctrine()->getManager()->getRepository(ModuleDescription::class);
+        return $this->render('formation/permisExploitation.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 2))]);
+    }
+
+    /**
+     * @Route("/devenir-autoentrepreneur", name="autoentrepreneur")
+     * @return Response
+     */
+    public function autoentrepreneur(): Response
+    {
+        $contenuFormation = $this->getDoctrine()->getManager()->getRepository(ModuleDescription::class);
+        return $this->render('formation/microEntreprise.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 3))]);
+    }
+
+    /**
+     * @Route("/creer-son-entreprise", name="entreprise")
+     * @return Response
+     */
+    public function entreprise(): Response
+    {
+        $contenuFormation = $this->getDoctrine()->getManager()->getRepository(ModuleDescription::class);
+        return $this->render('formation/entreprise.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idRubriqueFormation'=> 4))]);
+    }
 
     /**
      * @Route("/{nomFormation}/{nomModule}", name="module")

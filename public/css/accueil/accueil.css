@@ -157,31 +157,31 @@
 }
 
 .formation:nth-child(1) .text_formation{
-    color: var(--formation-immo-colord);
+    color: var( --immo-bleu-colorn);
 }
 .formation:nth-child(1) a{
-    border: 1px solid var(--formation-immo-colord);
+    border: 1px solid var( --immo-bleu-colorn);
 }
 
 .formation:nth-child(2) .text_formation{
-    color: var(--formation-exploit-colord);
+    color: var(--pe-initial-colorn);
 }
 .formation:nth-child(2) a{
-    border: 1px solid var(--formation-exploit-colord);
+    border: 1px solid var(--pe-initial-colorn);
 }
 
 .formation:nth-child(3) .text_formation{
-    color: var(--formation-microe-colord);
+    color: var(--me-accomapagne-colorn);
 }
 .formation:nth-child(3) a{
-    border: 1px solid var(--formation-microe-colord);
+    border: 1px solid var(--me-accomapagne-colorn);
 }
 
 .formation:nth-child(4) .text_formation{
-    color: var(--formation-entreprise-colord);
+    color: var(--entre-performer-colorn);
 }
 .formation:nth-child(4) a{
-    border: 1px solid var(--formation-entreprise-colord);
+    border: 1px solid var(--entre-performer-colorn);
 }
 
 .bouton_formation{
@@ -217,19 +217,19 @@
 
 
 .formation:nth-child(1) .bouton_formation div{
-    background-color: var(--formation-immo-colord);
+    background-color: var(--immo-bleu-colorn);
 }
 
 .formation:nth-child(2) .bouton_formation div{
-    background-color: var(--formation-exploit-colord);
+    background-color: var(--pe-initial-colorn);
 }
 
 .formation:nth-child(3) .bouton_formation div{
-    background-color: var(--formation-microe-colord);
+    background-color: var(--me-accomapagne-colorn);
 }
 
 .formation:nth-child(4) .bouton_formation div{
-    background-color: var(--formation-entreprise-colord);
+    background-color: var(--entre-performer-colorn);
 }
 
 .titre_grand{

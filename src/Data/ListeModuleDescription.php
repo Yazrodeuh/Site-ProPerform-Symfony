@@ -212,7 +212,52 @@ class ListeModuleDescription
             "lieuModuleDesc" => "<div>Dans vos locaux à Montpellier ou Nîmes</div>",
             "lienModuleDesc" => "accompagne",
             "idRubriqueFormation" => 3
-        ]
+        ],
+        [
+            "idModuleDesc" => 11,
+            "categorieModuleDesc" => null,
+            "nomModuleDesc" => "1 journée pour se performer",
+            "aliasModuleDesc" => null,
+            "dureeModuleDesc" => "7h",
+            "pourQuiModuleDesc" => null,
+            "objectifsModuleDesc" => "
+                <div>Acquérir les bases administratives, juridiques et financières indispensables à la création ou reprise d’une entreprise. Notre formateur spécialisé dans l'entrepreneuriat vous accompagne dans votre projet à l’appui d’un bilan de compétence entrepreneuriale.</div>",
+            "orgaPedagoModuleDesc" => null,
+            "prixModuleDesc" => 450,
+            "lieuModuleDesc" => "<div>Dans vos locaux à Montpellier ou Nîmes</div>",
+            "lienModuleDesc" => "1-journee-pour-se-performer",
+            "idRubriqueFormation" => 4
+        ],
+        [
+            "idModuleDesc" => 12,
+            "categorieModuleDesc" => null,
+            "nomModuleDesc" => "3 jours pour se développer",
+            "aliasModuleDesc" => null,
+            "dureeModuleDesc" => "20h",
+            "pourQuiModuleDesc" => null,
+            "objectifsModuleDesc" => "
+                <div>Acquérir les bases administratives, juridiques et financières indispensables à la création ou reprise d’une entreprise. Notre formateur spécialisé dans l'entrepreneuriat vous accompagne personnellement dans votre projet à l’appui d’un bilan de compétence entrepreneuriale et d’un prévisionnel d’activité.</div>",
+            "orgaPedagoModuleDesc" => null,
+            "prixModuleDesc" => 990,
+            "lieuModuleDesc" => "<div>Dans vos locaux à Montpellier ou Nîmes</div>",
+            "lienModuleDesc" => "3-jours-pour-se-développer",
+            "idRubriqueFormation" => 4
+        ],
+        [
+            "idModuleDesc" => 13,
+            "categorieModuleDesc" => null,
+            "nomModuleDesc" => "5 jours pour performer",
+            "aliasModuleDesc" => null,
+            "dureeModuleDesc" => "30h",
+            "pourQuiModuleDesc" => null,
+            "objectifsModuleDesc" => "
+                <div>Acquérir les bases administratives, juridiques et financières indispensables à la création ou reprise d’une entreprise. Notre formateur spécialisé dans l'entrepreneuriat vous accompagne personnellement dans votre projet à l’appui d’un bilan de compétence entrepreneuriale et d’un prévisionnel d’activité.</div>",
+            "orgaPedagoModuleDesc" => null,
+            "prixModuleDesc" => 990,
+            "lieuModuleDesc" => "<div>Dans vos locaux à Montpellier ou Nîmes</div>",
+            "lienModuleDesc" => "5-jours-pour-performer",
+            "idRubriqueFormation" => 4
+        ],
 
 
     ];
