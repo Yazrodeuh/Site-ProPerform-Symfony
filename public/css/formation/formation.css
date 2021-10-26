@@ -25,6 +25,7 @@
 }
 
 .formation_propose_header{
+    position: relative;
     color: white;
     text-align: center;
     display: flex;
@@ -43,16 +44,15 @@
 
 .formation_propose_header_titre_2{
     margin: auto auto 2%;
-    font-size: 32px;
     padding: 1%;
     text-transform: uppercase;
 }
 
 .alias{
     position: absolute;
-    top: 0.5vh;
-    right: 0.5vw;
-    font-size: 10px;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 15px;
 }
 
 .formation_propose_body{

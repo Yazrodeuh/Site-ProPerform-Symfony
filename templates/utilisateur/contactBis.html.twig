@@ -1,0 +1,112 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }}
+    Formations continue des professionnels de l'immobilier
+{% endblock %}
+
+{% set descriptionPage = " " %} {# TODO Mettre description #}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/utilisateur/contact.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="contact_titre">
+        CONTACT
+    </div>
+    <div>
+        <div class="contact_coord_titre">
+            Nos coordonnées
+        </div>
+        <div class="contact_coord_texte">
+            <p><strong>Adresse : </strong> 501, avenue d’Occitanie, 34090 Montpellier </p>
+            <p><strong>Téléphone : </strong> <u><a href="tel:0671867954"> 06 71 86 79 54 </a></u> </p>
+            <p><strong>Adresse mail : </strong> <u><a href="mailto:contact@pro-perfrom.fr">contact@pro-perform.fr</a></u></p>
+        </div>
+    </div>
+    <div class="formulaire">
+        <div class="contact_formulaire_titre">
+            Formulaire de contact
+        </div>
+        <form action="/mail" method="POST">
+            <div class="containerFcenterCol">
+                <div class="contact_formulaire_contenu">
+                    <div class="contact_formulaire_input flexEight">
+                        <div>
+                            <label for="prenom"></label>
+                            <input type="text" id="prenom" name="prenom" placeholder="Prénom*" required pattern="[A-Za-z\-]+" title='Lettres majuscules et minuscules et la caractère << - >>'>
+                        </div>
+                        <div>
+                            <label for="nom"></label>
+                            <input type="text" id="nom" name="nom" placeholder="Nom*" required pattern="[A-Za-z\-]+" title="">
+                        </div>
+                        <div>
+                            <label for="mail"></label>
+                            <input type="email" id="mail" name="mail" placeholder="Mail*" required title="exemple@exemple.com">
+                        </div>
+                        <div>
+                            <label>
+                                <select name="formation" class="formation_liste_choix" required>
+                                    <option value="">Selectionner une option... </option>
+                                    <option value="Immobilier_Transaction">Immobilier - Transaction</option>
+                                    <option value="Immobilier_Gestion_locative">Immobilier - Gestion locative</option>
+                                    <option value="Immobilier_Déontologie,_Discrimination">Immobilier - Déontologie, Discrimination</option>
+                                    <option value="Immobilier_Actualités_juridiques,_Transaction">Immobilier - Actualités juridiques, Transaction</option>
+                                    <option value="Immobilier_Actualités_juridiques,_Gestion_locative">Immobilier - Actualités juridiques, Gestion locative</option>
+                                    <option value="Immobilier_RGPD,_TRACFIN">Immobilier - RGPD, TRACFIN</option>
+                                    <option value="Immobilier_Autre">Immobilier - Autre</option>
+                                    <option value="Permis_d'exploitation_initial">Permis d'exploitation - Initial</option>
+                                    <option value="Permis_d'exploitation_renouvellement">Permis d'exploitation - Renouvellement</option>
+                                    <option value="Permis_d'exploitation_chambre_d'hôtes">Permis d'exploitation - Chambre d'hôtes</option>
+                                    <option value="Permis_d'exploitation_Autre">Permis d'exploitation - Autre</option>
+                                    <option value="Micro-entreprise_Créer_sa_micro-entreprise_ACCOMPAGNE">Micro-entreprise - Créer sa micro-entreprise ACCOMPAGNE</option>
+                                    <option value="Micro-entreprise_Créer_sa_micro-entreprise_EN_LIGNE">Micro-entreprise - Créer sa micro-entreprise EN LIGNE</option>
+                                    <option value="Micro-entreprise_Autre">Micro-entreprise - Autre</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="objet"></label>
+                            <input type="text" id="objet" name="objet" placeholder="Objet*" required>
+                        </div>
+                        <div>
+                            <label for="message"></label>
+                            <textarea name="message" id="message" placeholder="Saisissez votre message ici" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_formulaire_champ">
+                    <em>* champs obligatoires</em>
+                </div>
+                <div class="copie_utilisateur">
+                    <input type="checkbox" id="retourUtil" name="retourUtil">
+                    <label for="retourUtil"> Souhaitez-vous recevoir une copie de votre message ? </label>
+                    <br>
+                    <input type="checkbox" id="cookies" name="cookies" value="cookies" required>
+                    <label for="cookies">En soumettant ce formulaire, "j’accepte que les informations saisies soient exploitées dans le cadre de la présente demande et de la relation commerciale qui puisse en découler". Pour connaitre et exercer vos droits, notamment de retrait de votre consentement à l’utilisation des données collectées par ce formulaire, veuillez consulter <a href="/info/protectionDonneePerso"> <u>notre politique générale sur la protection des données personnelles.</u></a></label>
+                </div>
+                <div class="envoyer">
+                    <input type="hidden" id="recaptchaRep" name="recaptcha-Rep">
+                    <button class="button" type="submit" onclick="mailEnvoye()">ENVOYER</button>
+                </div>
+            </div>
+        </form>
+        <script src="https://www.google.com/recaptcha/api.js?render=6Lf2VKEaAAAAAH3aK6QGI_2tyDV75KTFCW5FwmsW"></script>
+        <script>
+            function onClick(e) {
+                e.preventDefault();
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6Lf2VKEaAAAAAH3aK6QGI_2tyDV75KTFCW5FwmsW', {action: 'submit'}).then(function(token) {
+                        document.getElementById("recaptchaRep").value=token
+                        // Add your logic to submit to your backend server here.
+                    });
+                });
+            }
+        </script>
+    </div>
+
+{% endblock %}

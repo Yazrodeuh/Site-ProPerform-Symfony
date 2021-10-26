@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    {{ parent() }}
     Formations continue des professionnels de l'immobilier
+    {{ parent() }}
 {% endblock %}
 
 {% set descriptionPage = "Formations continues des professionnels de l’immobilier (Alur) pour renouveler vos cartes professionnelles d’agent immobilier et attestations d’habilitation d’agent commercial." %}
@@ -18,15 +18,7 @@
     <div class="enteteFormation">
         <div style="display: flex; justify-content: flex-end">
             <div class="entete_1 js-scroll slide-right">
-                <div>
-                    Formation continue
-                </div>
-                <div>
-                    des professionnels
-                </div>
-                <div>
-                    de l'immobilier
-                </div>
+                <h1>Formation des professionnels de l'immobilier</h1>
             </div>
         </div>
         <div class="image_top_texte js-scroll fade-in-bottom">
@@ -50,7 +42,9 @@
             </div>
         </div>
     </div>
-
+    <div>
+        {% include 'formation/moduleDescription.html.twig' %}
+    </div>
     <div class="lieu js-scroll fade-in-bottom">
         <div class="lieu_titre">
             LIEUX

@@ -19,6 +19,7 @@ class ModeleDescriptionFixture extends Fixture
 
             $modulesDescription = new ModuleDescription();
 
+            $modulesDescription->setIdRubriqueFormation($mesModulesDescription['idRubriqueFormation']);
             $modulesDescription->setCategorieModuleDesc($mesModulesDescription['categorieModuleDesc']);
             $modulesDescription->setNomModuleDesc($mesModulesDescription['nomModuleDesc']);
             $modulesDescription->setAliasModuleDesc($mesModulesDescription['aliasModuleDesc']);

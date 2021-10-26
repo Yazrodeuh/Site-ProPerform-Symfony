@@ -82,7 +82,7 @@ class UtilisateurController extends DefaultController
             return new JsonResponse($request->request->all());
         }*/
 
-        return $this->render('utilisateur/formulaire.html.twig', ['controller_name' => 'UtilisateurController', 'my_form'=>$formInscrit->createView()]);
+        return $this->render('utilisateur/contact.html.twig', ['controller_name' => 'UtilisateurController', 'my_form'=>$formInscrit->createView()]);
     }
 
 

@@ -1,17 +1,58 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+{% block title %}
+    Administration du site
+{% endblock %}
 
-{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href="{{ asset('css/utilisateur/contact.css') }}"> {% endblock %}
+{% set descriptionPage = " " %} {# TODO Mettre description #}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/utilisateur/contact.css') }}">
+{% endblock %}
 
 {% block body %}
+
+
+    <div class="enteteFormation">
+        <div style="display: flex; justify-content: flex-end">
+            <div class="entete_1 js-scroll slide-right">
+                <div>
+                   <h1>Conctact</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="coordonees">
+            <div class="flexEight">
+                <strong>Nos coordonées</strong>
+            </div>
+            <div class="triangle-contact flexOne"></div>
+            <div class="flexTen">
+                <div>
+                    <img src="{{ asset('img/entreprise/contact/contact-us-lieul.png') }}" alt="" width="60" height="60">
+                    <div>501, avenue d’Occitanie, 34090 Montpellier</div>
+                </div>
+                <div>
+                    <img src="{{ asset('img/entreprise/contact/contact-us-tel.png') }}" alt="" width="60" height="60">
+                    <div><u><a href="tel:0671867954"> 06 71 86 79 54 </a></u></div>
+                </div>
+                <div>
+                    <img src="{{ asset('img/entreprise/contact/contact-us-@.png') }}" alt="" width="60" height="60">
+                    <div><u><a href="mailto:contact@pro-perfrom.fr">contact@pro-perform.fr</a></u></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="contact_titre">
         CONTACT
     </div>
     <div>
         <div class="contact_coord_titre">
-            Nos coordonnées
+            <h2>Nos coordonnées</h2>
         </div>
         <div class="contact_coord_texte">
             <p><strong>Adresse : </strong> 501, avenue d’Occitanie, 34090 Montpellier </p>
@@ -19,27 +60,46 @@
             <p><strong>Adresse mail : </strong> <u><a href="mailto:contact@pro-perfrom.fr">contact@pro-perform.fr</a></u></p>
         </div>
     </div>
+    <div style="padding: 0.5% 0">
+        <div style="margin: 0 10%">
+            <div class="stages_presentation js-scroll fade-in-bottom">
+                <p>
+                    <strong>Formulaire de contact</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
     <div class="formulaire">
         <div class="contact_formulaire_titre">
             Formulaire de contact
         </div>
-        <form action="/mail" method="POST">
+        {{ form_start(my_form) }}
+        {{ form_errors(my_form) }}
             <div class="containerFcenterCol">
                 <div class="contact_formulaire_contenu">
                     <div class="contact_formulaire_input flexEight">
                         <div>
-                            <label for="prenom"></label>
-                            <input type="text" id="prenom" name="prenom" placeholder="Prénom*" required pattern="[A-Za-z\-]+" title='Lettres majuscules et minuscules et la caractère << - >>'>
+                            {{ form_label(my_form.prenomC) }}
+                            {{ form_widget(my_form.prenomC) }}
+                            {{ form_errors(my_form.prenomC) }}
                         </div>
                         <div>
-                            <label for="nom"></label>
-                            <input type="text" id="nom" name="nom" placeholder="Nom*" required pattern="[A-Za-z\-]+" title="">
+                            {{ form_label(my_form.nomC) }}
+                            {{ form_widget(my_form.nomC) }}
+                            {{ form_errors(my_form.nomC) }}
                         </div>
                         <div>
-                            <label for="mail"></label>
-                            <input type="email" id="mail" name="mail" placeholder="Mail*" required title="exemple@exemple.com">
+                            {{ form_label(my_form.mailC) }}
+                            {{ form_widget(my_form.mailC) }}
+                            {{ form_errors(my_form.mailC) }}
                         </div>
                         <div>
+                            {{ form_label(my_form.optionC) }}
+                            {{ form_widget(my_form.optionC) }}
+                            {{ form_errors(my_form.optionC) }}
+                        </div>
+                        <!--<div>
                             <label>
                                 <select name="formation" class="formation_liste_choix" required>
                                     <option value="">Selectionner une option... </option>
@@ -60,14 +120,16 @@
                                     <option value="Autre">Autre</option>
                                 </select>
                             </label>
+                        </div>-->
+                        <div>
+                            {{ form_label(my_form.objetC) }}
+                            {{ form_widget(my_form.objetC) }}
+                            {{ form_errors(my_form.objetC) }}
                         </div>
                         <div>
-                            <label for="objet"></label>
-                            <input type="text" id="objet" name="objet" placeholder="Objet*" required>
-                        </div>
-                        <div>
-                            <label for="message"></label>
-                            <textarea name="message" id="message" placeholder="Saisissez votre message ici" required></textarea>
+                            {{ form_label(my_form.messageC) }}
+                            {{ form_widget(my_form.messageC) }}
+                            {{ form_errors(my_form.messageC) }}
                         </div>
                     </div>
                 </div>
@@ -75,18 +137,21 @@
                     <em>* champs obligatoires</em>
                 </div>
                 <div class="copie_utilisateur">
-                    <input type="checkbox" id="retourUtil" name="retourUtil">
-                    <label for="retourUtil"> Souhaitez-vous recevoir une copie de votre message ? </label>
+                    {{ form_widget(my_form.copieC) }}
+                    {{ form_label(my_form.copieC) }}
+                    {{ form_errors(my_form.copieC) }}
                     <br>
-                    <input type="checkbox" id="cookies" name="cookies" value="cookies" required>
-                    <label for="cookies">En soumettant ce formulaire, "j’accepte que les informations saisies soient exploitées dans le cadre de la présente demande et de la relation commerciale qui puisse en découler". Pour connaitre et exercer vos droits, notamment de retrait de votre consentement à l’utilisation des données collectées par ce formulaire, veuillez consulter <a href="/info/protectionDonneePerso"> <u>notre politique générale sur la protection des données personnelles.</u></a></label>
+                    {{ form_widget(my_form.cgvC) | raw }}
+                    {{ form_label(my_form.cgvC) | raw }}
+                    {{ form_errors(my_form.cgvC) }}
                 </div>
                 <div class="envoyer">
                     <input type="hidden" id="recaptchaRep" name="recaptcha-Rep">
-                    <button class="button" type="submit" onclick="mailEnvoye()">ENVOYER</button>
+                    {{ form_label(my_form.envoyerC) }}
+                    {{ form_widget(my_form.envoyerC) }}
                 </div>
             </div>
-        </form>
+        {{ form_end(my_form) }}
         <script src="https://www.google.com/recaptcha/api.js?render=6Lf2VKEaAAAAAH3aK6QGI_2tyDV75KTFCW5FwmsW"></script>
         <script>
             function onClick(e) {
@@ -100,5 +165,4 @@
             }
         </script>
     </div>
-
 {% endblock %}

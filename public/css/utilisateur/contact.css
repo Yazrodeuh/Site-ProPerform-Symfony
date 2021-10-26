@@ -1,3 +1,77 @@
+.enteteFormation{
+    background-image: url("/img/entreprise/contact/contact_frise3.png");
+    background-color: var(--blue-color-l);
+}
+
+.enteteFormation .entete_1{
+    margin: 15% 6% 28%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.enteteFormation .entete_1 div{
+    color: var(--blue-color);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.triangle-contact{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 150px solid transparent;
+    border-bottom : 150px solid transparent;
+    border-left : 150px solid var(--red-color);
+}
+
+
+.coordonees{
+    display: flex;
+    color: white;
+}
+
+.coordonees .flexEight:first-child{
+    background-color: var(--red-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 2px
+}
+
+.coordonees .flexOne{
+    background-color: var(--blue-color)
+}
+
+.coordonees .flexTen:last-child{
+    background-color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: space-around
+}
+
+.coordonees .flexTen:last-child div{
+    display: flex;
+    align-items: center;
+}
+.coordonees .flexTen:last-child img{
+    border-radius: 50%;
+}
+.coordonees .flexTen:last-child div div{
+    padding-left: 3%;
+}
+
+.coordonees a{
+    color: white;
+}
+
+
+
 .contact_titre{
     text-align: center;
     font-size: 250%;
@@ -16,10 +90,10 @@
 }
 
 .formulaire{
-    background-color: var( --blue-color);
+    background-color: var(--blue-color);
     margin: 1% auto;
     width: 45%;
-    border: 15px solid var( --blue-color);
+    border-radius: 20px;
 }
 
 .contact_formulaire_titre{

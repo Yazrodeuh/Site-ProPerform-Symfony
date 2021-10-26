@@ -24,7 +24,7 @@ class ModuleDescription
     /**
      * @var string|null
      *
-     * @ORM\Column(name="petitTitreModuleDesc", type="string", length=50, nullable=true)
+     * @ORM\Column(name="categorieModuleDesc", type="string", length=50, nullable=true)
      */
     private ?string $categorieModuleDesc;
 
@@ -34,15 +34,6 @@ class ModuleDescription
      * @ORM\Column(name="nomModuleDesc", type="string", length=50, nullable=false)
      */
     private string $nomModuleDesc;
-
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="grandTitreModuleDesc", type="string", length=150, nullable=false)
-     */
-    private string $lienModuleDesc;
-
 
 
     /**
@@ -93,6 +84,14 @@ class ModuleDescription
      * @ORM\Column(name="lieuModuleDesc", type="text", length=65535, nullable=true)
      */
     private ?string $lieuModuleDesc;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lienModuleDesc", type="string", length=150, nullable=false)
+     */
+    private string $lienModuleDesc;
+
 
     /**
      * @var int

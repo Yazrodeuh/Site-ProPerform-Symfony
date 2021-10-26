@@ -2,26 +2,8 @@
     background-image: url("/img/formation/immobilier/immo_frise.png");
 }
 
-.enteteFormation .entete_1{
-    margin: 15% 6% 2%;
-    width: 70%;
-}
-
-.enteteFormation .entete_1 div:nth-child(1){
-    background-color: white;
-    color: var(--blue-color);
-    margin-right: 20%;
-}
-.enteteFormation .entete_1 div:nth-child(2){
-    background-color: var(--blue-color);
-}
-.enteteFormation .entete_1 div:nth-child(3){
+.enteteFormation .entete_1 h1{
     background-color: var(--immo-bleu-colorn);
-    margin-right: 15%;
-}
-
-.enteteFormation .image_top_texte{
-    margin: 5%  auto 0 auto;
 }
 
 .enteteFormation  .image_top_texte_picto{

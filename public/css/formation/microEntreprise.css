@@ -2,26 +2,8 @@
     background-image: url("/img/formation/micro_entreprise/me_frise.png");
 }
 
-.enteteFormation .entete_1{
-    margin: 14% 35% 2%;
-    width: 50%;
-}
-
-.enteteFormation .entete_1 div:nth-child(1){
-    color: var(--me-accomapagne-colord);
-    background-color: white;
-    margin-right: 75%;
-}
-.enteteFormation .entete_1 div:nth-child(2){
-    background-color: var(--me-accomapagne-colord);
-}
-
-.enteteFormation .image_top_texte{
-    margin: 9%  auto 0 auto;
-}
-
-.formation_propose{
-    width: 35%;
+.enteteFormation .entete_1 h1{
+    background-color: var(--me-accomapagne-colorn);
 }
 
 .formation_propose:nth-child(3n + 1) .formation_propose_header,

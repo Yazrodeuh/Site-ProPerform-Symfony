@@ -2,13 +2,13 @@
     {% for module in modulesFormation %}
         <div class="formation_propose js-scroll fade-in-bottom">
             <div class="formation_propose_header flexOne">
-                {% if module.categorieModuleDesc is defined and module.categorieModuleDesc is not null %}
+                {# {% if module.categorieModuleDesc is defined and module.categorieModuleDesc is not null %}
                     <div class="formation_propose_header_titre_1">
                         {{ module.categorieModuleDesc | raw }}
                     </div>
-                {% endif %}
+                {% endif %} #}
                 <div class="formation_propose_header_titre_2">
-                    {{ module.nomModuleDesc | raw }}
+                    <h2>{{ module.nomModuleDesc | raw }}</h2>
                 </div>
                 <div class="alias">{{ module.aliasmoduledesc | raw }}</div>
             </div>
@@ -16,7 +16,7 @@
                 <div style="display: flex; justify-content: space-around; flex-direction: column">
                     <div>
                         <div class="formation_propose_titre_section">
-                            Durée
+                            <h3>Durée</h3>
                         </div>
                         <div class="formation_propose_duree">
                             {{ module.dureemoduledesc | raw }}
@@ -25,7 +25,7 @@
                     {% if module.pourquimoduledesc is defined and module.pourquimoduledesc is not null %}
                         <div>
                             <div class="formation_propose_titre_section">
-                                pour qui
+                                <h3>pour qui</h3>
                             </div>
                             <div class="formation_propose_contenu">
                                 {{ module.pourquimoduledesc | raw }}
@@ -34,7 +34,7 @@
                     {% endif %}
                     <div>
                         <div class="formation_propose_titre_section">
-                            objectifs
+                            <h3>objectifs</h3>
                         </div>
                         <div class="formation_propose_contenu">
                             {{ module.objectifsmoduledesc | raw }}
@@ -43,7 +43,7 @@
                     {% if module.orgapedagomoduledesc is defined and module.orgapedagomoduledesc is not null %}
                         <div>
                             <div class="formation_propose_titre_section">
-                                organisation pédagogique
+                                <h3>organisation pédagogique</h3>
                             </div>
                             <div class="formation_propose_contenu">
                                 {{ module.orgapedagomoduledesc | raw }}

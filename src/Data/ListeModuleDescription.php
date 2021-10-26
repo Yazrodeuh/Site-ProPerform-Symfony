@@ -8,8 +8,9 @@ class ListeModuleDescription
     static array $mesModulesDescriptions = [
 
         [
+            "idModuleDesc" => 1,
             "categorieModuleDesc" => "bases juridiques",
-            "nomModuleDesc" => "transaction",
+            "nomModuleDesc" => "bases juridiques transaction",
             "aliasModuleDesc" => "MT01",
             "dureeModuleDesc" => "1 journée (7h)",
             "pourQuiModuleDesc" => null,
@@ -28,8 +29,9 @@ class ListeModuleDescription
             "idRubriqueFormation" => 1
         ],
         [
+            "idModuleDesc" => 2,
             "categorieModuleDesc" => "bases juridiques",
-            "nomModuleDesc" => "gestion locative",
+            "nomModuleDesc" => "bases juridiques gestion locative",
             "aliasModuleDesc" => "MG01",
             "dureeModuleDesc" => "1 journée (7h)",
             "pourQuiModuleDesc" => null,
@@ -49,8 +51,9 @@ class ListeModuleDescription
             "idRubriqueFormation" => 1
         ],
         [
+            "idModuleDesc" => 3,
             "categorieModuleDesc" => null,
-            "nomModuleDesc" => "déontologie - discrimination",
+            "nomModuleDesc" => "déontologie discrimination",
             "aliasModuleDesc" => "MD01",
             "dureeModuleDesc" => "1 journée (7h)",
             "pourQuiModuleDesc" => null,
@@ -62,8 +65,9 @@ class ListeModuleDescription
             "lienModuleDesc" => "deontologie-discrimination",
             "idRubriqueFormation" => 1
         ],[
+            "idModuleDesc" => 4,
             "categorieModuleDesc" => "actualités juridiques",
-            "nomModuleDesc" => "transaction",
+            "nomModuleDesc" => "actualités juridiques transaction",
             "aliasModuleDesc" => "MT02",
             "dureeModuleDesc" => "1 journée (7h)",
             "pourQuiModuleDesc" => null,
@@ -81,8 +85,9 @@ class ListeModuleDescription
             "lienModuleDesc" => "actualites-juridiques-transaction",
             "idRubriqueFormation" => 1
         ],[
+            "idModuleDesc" => 5,
             "categorieModuleDesc" => "actualités juridiques",
-            "nomModuleDesc" => "gestion locative",
+            "nomModuleDesc" => "actualités juridiques gestion locative",
             "aliasModuleDesc" => "MG02",
             "dureeModuleDesc" => "1 journée (7h)",
             "pourQuiModuleDesc" => null,
@@ -100,8 +105,9 @@ class ListeModuleDescription
             "lienModuleDesc" => "actualites-juridiques-gestion-locative",
             "idRubriqueFormation" => 1
         ],[
-            "categorieModuleDesc" => "rgpd - tracfin",
-            "nomModuleDesc" => "transaction",
+            "idModuleDesc" => 6,
+            "categorieModuleDesc" => null,
+            "nomModuleDesc" => "rgpd tracfin",
             "aliasModuleDesc" => "MD02",
             "dureeModuleDesc" => "1 journée (7h)",
             "pourQuiModuleDesc" => null,
@@ -119,6 +125,7 @@ class ListeModuleDescription
             "idRubriqueFormation" => 1
         ],
         [
+            "idModuleDesc" => 7,
             "categorieModuleDesc" => "permis d'exploitation",
             "nomModuleDesc" => "initial",
             "aliasModuleDesc" => null,
@@ -145,6 +152,7 @@ class ListeModuleDescription
             "lienModuleDesc" => "initial",
             "idRubriqueFormation" => 2
         ],[
+            "idModuleDesc" => 8,
             "categorieModuleDesc" => "permis d'exploitation",
             "nomModuleDesc" => "renouvellement",
             "aliasModuleDesc" => null,
@@ -167,6 +175,7 @@ class ListeModuleDescription
             "lienModuleDesc" => "renouvellement",
             "idRubriqueFormation" => 2
         ],[
+            "idModuleDesc" => 9,
             "categorieModuleDesc" => "permis d'exploitation",
             "nomModuleDesc" => "chambre d'hôtes",
             "aliasModuleDesc" => null,
@@ -189,6 +198,7 @@ class ListeModuleDescription
             "lienModuleDesc" => "chambre-dhotes",
             "idRubriqueFormation" => 2
         ],[
+            "idModuleDesc" => 10,
             "categorieModuleDesc" => null,
             "nomModuleDesc" => "créer sa micro entreprise accompagné",
             "aliasModuleDesc" => null,
