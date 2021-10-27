@@ -30,10 +30,10 @@ function setHeight(mod){
 const modal_cookies = document.getElementById("myModal_cookies");
 
 window.addEventListener("load", function(){
-    verificationCookie();
+    //verificationCookie();
 })
 
-document.getElementById("accepter_cookie").addEventListener("click", function (){
+/*document.getElementById("accepter_cookie").addEventListener("click", function (){
     creerCookie("accepte-cookie", "true");
     verificationCookie();
 });
@@ -41,7 +41,7 @@ document.getElementById("accepter_cookie").addEventListener("click", function ()
 document.getElementById("refuser_cookie").addEventListener("click", function (){
     creerCookie("accepte-cookie", "false");
     verificationCookie();
-});
+});*/
 
 function verificationCookie(){
 
@@ -130,8 +130,6 @@ function handleScrollAnimation(){
 
     const scrollElements = document.getElementsByClassName("js-scroll");
 
-    console.log("1")
-
     for (let i = 0; i < scrollElements.length; i++) {
         if (elementInView(scrollElements[i], 1.1)) {
             displayScrollElement(scrollElements[i]);
@@ -141,53 +139,13 @@ function handleScrollAnimation(){
     }
 }
 
-document.onscroll = function (){
-    console.log("oui");
-}
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function (e) {
     handleScrollAnimation();
-    console.log("1");
-});
 
-window.onscroll = function (){
-    console.log("2");
-}
+});
 
 window.addEventListener("load", function () {
     handleScrollAnimation();
 });
 
-
-
-/* editeur de texte */
-
-let range = null;
-let selectedL = null;
-
-window.addEventListener('keydown', myFunction);
-
-function myFunction(){
-
-    if(event.keyCode === 18){
-        document.getElementById("test").innerHTML += "<ul><li></li></ul>"
-    }
-}
-
-document.getElementById("test").addEventListener("mouseleave", function(){
-    selectedL = window.getSelection().toString().length;
-    if(selectedL > 0){
-        range = window.getSelection().getRangeAt(0);
-    }
-});
-
-function addListe(typeListe){
-    let element = document.createElement(typeListe);
-    element.append(document.createElement('li'));
-    document.getElementById("test").appendChild(element);
-}
-
-function getDiv(){
-    console.log(document.querySelector("iframe").contentDocument.body.innerHTML);
-    document.getElementById('texteEcrit').value = document.querySelector("iframe").contentDocument.body.innerHTML;
-}

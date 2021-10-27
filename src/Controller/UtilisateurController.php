@@ -43,47 +43,7 @@ class UtilisateurController extends DefaultController
     }
 
 
-    /**
-     * @Route("/contact", name="contact")
-     */
-    public function contact(Request $request): Response
-    {
 
-        $formInscrit = $this->createForm(ContactType::class);
-
-        $formInscrit->handleRequest($request);
-
-        if($request->isMethod('post') && $formInscrit->isValid() ){
-
-            $em = $this->getDoctrine()->getManager();
-
-            $prenom = $formInscrit['prenomC']->getData();
-            $nom = $formInscrit['nomC']->getData();
-            $mail = $formInscrit['mailC']->getData();
-            $formation = $formInscrit['optionC']->getData();
-            $objet = $formInscrit['objetC']->getData();
-            $message = $formInscrit['messageC']->getData();
-
-            if(mail("contact@pro-perform.fr", )){
-
-            }
-
-            $session = $request->getSession();
-            $session->getFlashBag()->add('message', 'un nouveau produit a été ajouté');
-            $session->set('statut', 'success');
-            print $formInscrit['prenominscrit']->getData();
-            return new JsonResponse($request->request->all());
-        }
-
-
-
-        /*if($request->isMethod('post')){
-
-            return new JsonResponse($request->request->all());
-        }*/
-
-        return $this->render('utilisateur/contact.html.twig', ['controller_name' => 'UtilisateurController', 'my_form'=>$formInscrit->createView()]);
-    }
 
 
 }

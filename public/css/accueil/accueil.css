@@ -178,10 +178,10 @@
 }
 
 .formation:nth-child(4) .text_formation{
-    color: var(--entre-performer-colorn);
+    color: var(--entre-1-colorn);
 }
 .formation:nth-child(4) a{
-    border: 1px solid var(--entre-performer-colorn);
+    border: 1px solid var(--entre-1-colorn);
 }
 
 .bouton_formation{
@@ -208,7 +208,6 @@
 .bouton_formation div{
     color: white;
     border-radius: 30px;
-    font-size: 1.1vw;
     padding: 1%;
     display: block;
     width: 70%;
@@ -229,7 +228,7 @@
 }
 
 .formation:nth-child(4) .bouton_formation div{
-    background-color: var(--entre-performer-colorn);
+    background-color: var(--entre-1-colorn);
 }
 
 .titre_grand{
@@ -275,57 +274,7 @@
     color: var(--blue-color);
 }
 
-#equipe{
-    color: var(--blue-color);
-    background-color: rgb(170, 225, 250);
-    padding: 1%;
-    margin: 1% 0;
-}
 
-.equipe_description{
-    text-align: justify;
-    width: 90%;
-    font-size: 110%;
-}
-
-#equipe_contenu{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-size: 110%;
-}
-
-#equipe_contenu_tete{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-#equipe_contenu_tete div{
-    /*border: 1px solid black;*/
-    cursor: pointer;
-}
-
-.equipe_contenu_prenom{
-    display: flex;
-    flex-direction: row;
-    margin: auto 0 auto auto;
-    width: 93%;
-}
-
-.equipe_contenu_prenom div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    cursor: pointer;
-    width: 9%;
-}
-
-#arretPrefectoral_1{
-    cursor: pointer;
-}
 
 @media screen and (max-width: 1220px){
 
@@ -336,67 +285,3 @@
 
 }
 
-
-
-
-
-
-@media screen and (max-width:960px){
-
-    .entete_1 img{
-        width: 70%;
-    }
-
-    .entete_bot{
-        font-size: 1.5vh;
-        width: 95%;
-    }
-
-    .formations{
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .formation{
-        margin: 4% auto;
-        width: 100%;
-    }
-
-    .image_formation img{
-        width: 15em;
-    }
-
-    .text_formation{
-        font-size: 4.7vw;
-    }
-
-    .bouton_formation a{
-        border: 2px solid white;
-        border-radius: 30px;
-        font-size: 3.4vw;
-        padding: 1% 2.5%;
-        width: 80%;
-    }
-
-    .titre_grand{
-        text-align: center;
-        font-size: 4.7vw;
-        padding: 0.5%;
-    }
-
-    .atout_liste{
-        width: 95%;
-    }
-
-    .atout_liste li{
-        font-size: 1.5vh;
-        padding: 0.2% 0;
-        margin-left: 0;
-    }
-
-    .equipe_description{
-        text-align: justify;
-        width: 85%;
-        font-size: 90%;
-    }
-}

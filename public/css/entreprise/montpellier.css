@@ -2,12 +2,6 @@
     background-image: url("/img/entreprise/Locaux/mtp_frise2.png");
 }
 
-.enteteFormation .image_top_texte{
-    display: flex;
-    justify-content: flex-end;
-    margin: 10% auto auto;
-    padding-bottom: 2%;
-}
 
 @media screen and (max-width:960px){
 

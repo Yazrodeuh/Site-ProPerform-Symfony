@@ -252,7 +252,6 @@ div.sousMenuBlock1 div:hover div.sousMenuBlock2{
     .nav_burger li{
         list-style: none;
         padding: 1.5% 0;
-        font-size: 110%;
     }
 
     .nav_burger li li{

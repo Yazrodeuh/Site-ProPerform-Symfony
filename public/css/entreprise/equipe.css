@@ -86,60 +86,6 @@
 
 @media screen and (max-width:960px){
 
-    #lea{
-        top: 5.5%;
-    }
 
-    #prenom_anthony, #prenom_lea, #prenom_jonathan{
-        font-size: 3vw;
-        color: red;
-    }
-
-    #prenom_anthony{
-        top: 30%;
-        left: 4%;
-    }
-
-    #prenom_lea{
-        top: 30%;
-        left: 33%;
-    }
-
-    #prenom_jonathan{
-        top: 30%;
-        left: 60%;
-    }
-
-    #info_equipe{
-        padding: 0.8%;
-        width: 90%;
-        right: 4%;
-        top: 49%;
-        z-index: 20;
-    }
-
-    #info_equipe div{
-        font-size: 3vw;
-        width: 100%;
-    }
-
-    .entete_1{
-        text-align: center;
-        font-size: 2.5vh;
-        color: var(--blue-color);
-        position: absolute;
-        bottom: 55%;
-        left: 40%;
-    }
-
-    .entete_bot{
-        font-size: 1.4vh;
-        color: black;
-        width: 90%;
-        margin: auto auto 10% auto;
-        position: relative;
-        bottom: 0;
-        left: 0;
-    }
 
 }

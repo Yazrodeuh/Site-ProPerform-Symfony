@@ -2,7 +2,6 @@
     background-image: none;
 }
 
-
 .enteteFormation .entete_1 h1{
     color: var(--blue-color);
     border: 2px solid var(--red-color);
@@ -10,6 +9,14 @@
     text-align: center;
     background-color: white;
     border-radius: 20px;
+}
+
+
+.enteteFormation .image_top_texte{
+    display: flex;
+    justify-content: flex-end;
+    margin: 9% auto auto;
+    padding-bottom: 2%;
 }
 
 .image_top_texte iframe{

@@ -1,17 +1,3 @@
-:root{
-
-    --light-color-formation: 2;
-    --normal-color-formation: 2;
-    --dark-color-formation: 2;
-
-
-
-}
-
-
-
-
-
 .stages_presentation{
     color: var(--blue-color);
     font-size: 25px;
