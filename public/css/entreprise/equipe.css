@@ -11,7 +11,7 @@
     width: 50%;
 }
 
-.enteteFormation .entete_1 div:first-child{
+.enteteFormation .entete_1 h1{
     background-color: var(--blue-color);
 }
 

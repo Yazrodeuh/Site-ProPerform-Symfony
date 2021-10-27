@@ -1,69 +1,16 @@
-
-.maps{
-    top: 54%;
-    right: 22%;
+.enteteFormation{
+    background-image: url("/img/entreprise/Locaux/nimes_frise.png");
 }
 
-
-.maps iframe{
-    width: 30em;
-    height: 20em;
+.enteteFormation .image_top_texte{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10% auto auto;
+    padding-bottom: 2%;
 }
 
-.emplacement{
-    top: 70%;
-    right: 65%;
+@media screen and (max-width:960px) {
 
-}
-
-@media screen and (max-width:960px){
-
-    .nms{
-        position: relative;
-        margin-bottom: 70%;
-    }
-
-    #img1, #img2, #img3{
-        width: 27%;
-        right: 3%;
-    }
-
-    #img1{
-        top: 5%;
-    }
-
-    #img2{
-        top: 35%;
-    }
-
-    #img3{
-        top: 60%;
-    }
-
-    .maps{
-        left: 10%;
-        top: 85%;
-        width: 80%;
-        text-align: center;
-        margin: 6% auto auto;
-    }
-
-    .maps iframe{
-        width: 80vw;
-        height: 25vh;
-        border: 3px solid var(--blue-color)
-    }
-
-    .emplacement{
-        position: absolute;
-        width: 80%;
-        top: 175%;
-        border-radius: 20px;
-        padding: 0.5%;
-        text-align: center;
-        font-size: 1.5vh;
-        margin: auto auto 5%;
-    }
 
 }
 
