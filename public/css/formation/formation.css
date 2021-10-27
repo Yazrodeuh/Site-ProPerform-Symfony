@@ -1,3 +1,17 @@
+:root{
+
+    --light-color-formation: 2;
+    --normal-color-formation: 2;
+    --dark-color-formation: 2;
+
+
+
+}
+
+
+
+
+
 .stages_presentation{
     color: var(--blue-color);
     font-size: 25px;
@@ -23,6 +37,7 @@
     flex-direction: column;
     border-radius: 20px;
 }
+
 
 .formation_propose_header{
     position: relative;
@@ -96,7 +111,7 @@
 }
 
 .formation_propose_duree{
-    color: var(--rouge-color);
+    color: var(--pink-color);
     font-size: 23px;
     text-align: center;
 }
@@ -142,24 +157,25 @@
     font-size: 40px;
     margin: 2%;
     color: white;
+    border-radius:  0  0 20px 20px;
 }
 
 .formation_propose_inscription{ padding: 1% 0; }
 
 .formation_propose_inscription a{
     padding: 0.5% 6%;
-    background-color: var(--rouge-color);
+    background-color: var(--pink-color);
     border-radius: 20px;
     margin: auto;
     font-size: 16px;
     color: white;
-    border: 2px solid var(--rouge-color);
+    border: 2px solid var(--pink-color);
     text-transform: uppercase;
 }
 
 .formation_propose_inscription a:hover{
     background-color: white;
-    color: var(--rouge-color);
+    color: var(--pink-color);
     font-weight: bold;
 }
 
@@ -167,6 +183,7 @@
     display: flex;
     flex-direction: column;
     border-radius:  0  0 20px 20px;
+    background-color: white;
 }
 
 .formation_propose_lieu_titre{
@@ -187,35 +204,46 @@
 }
 
 
+.lieu{
+    width: 30%;
+    margin: 1% auto;
+    border: 2px solid var(--blue-color);
+    border-radius: 10px;
+}
 
-@media screen and (max-width:960px){
+.lieu_titre{
+    background-color: var(--red-color);
+    border-radius: 15px;
+    color: white;
+    margin: -3% auto auto;
+    width: 25%;
+    text-align: center;
+    font-size: 17px;
+    padding: 0.5% 2%;
 
-    .formation_propose{ width: 100%; }
-    .formation_propose_header_titre_1{ font-size: 3.8vw; }
-    .formation_propose_header_titre_2{ font-size: 5.8vw; }
-    .alias{ font-size: 3vw; }
-    .formation_propose_titre_section{ font-size: 2.5vw; }
-    .formation_propose_contenu{ font-size: 3.2vw; }
-    .formation_propose_duree{ font-size: 3.4vw; }
-    .formation_propose_informations{ font-size: 2.7vw; }
+}
 
-    .formation_propose_triangle{
-        border-right : 18px solid transparent;
-        border-left : 18px solid transparent;
-        border-top:  20px solid;
+.lieu_emplacement{
+    color: var(--red-color);
+    text-align: center;
+    margin: 3%;
+}
+
+.lieu_emplacement li{
+    color: black;
+    margin-left: 10%;
+    text-align: left;
+}
+
+
+
+
+@media screen and (max-width:1230px) and (min-width: 200px){
+
+    .lieu{
+        width: 40%;
     }
 
-    .formation_propose_prix{
-        font-size: 4.5vw;
-    }
-
-    .formation_propose_inscription a{
-        font-size: 2.5vw;
-    }
-
-    .formation_propose_lieu{
-        font-size: 2.3vw;
-    }
 
 }
 

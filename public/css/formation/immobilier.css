@@ -2,7 +2,20 @@
     background-image: url("/img/formation/immobilier/immo_frise.png");
 }
 
-.enteteFormation .entete_1 h1{
+.enteteFormation .entete_1{
+    margin: 13% 0 9% 15%;
+}
+
+.enteteFormation .entete_1 span:nth-child(1){
+    color: var(--blue-color);
+    background-color: white;
+}
+
+.enteteFormation .entete_1 span:nth-child(2){
+    background-color: var(--blue-color);
+}
+
+.enteteFormation .entete_1 span:nth-child(3){
     background-color: var(--immo-bleu-colorn);
 }
 
@@ -26,7 +39,6 @@
 .formation_propose:nth-child(3n + 3){
     background-color: var(--immo-orange-colorl);
 }
-
 
 .formation_propose:nth-child(3n + 1) .formation_propose_header,
 .formation_propose:nth-child(3n + 1) .formation_propose_titre_section,
@@ -90,7 +102,6 @@
     font-weight: bold;
 }
 
-
 .formation_propose:nth-child(3n + 1) .formation_propose_triangle{
     border-top-color: var(--immo-bleu-colorl);
 }
@@ -103,36 +114,6 @@
     border-top-color: var(--immo-orange-colorl);
 }
 
-.lieu{
-    width: 25%;
-    margin: 1% auto;
-    border: 2px solid rgb(0, 185, 241);
-    border-radius: 10px;
-}
-
-.lieu_titre{
-    background-color: rgb(0, 185, 241);
-    border-radius: 15px;
-    color: white;
-    margin: -3% auto auto;
-    width: 25%;
-    text-align: center;
-    font-size: 17px;
-    padding: 0.5% 2%;
-
-}
-
-.lieu_emplacement{
-    color: rgb(0, 185, 241);
-    text-align: center;
-    margin: 3%;
-}
-
-.lieu_emplacement li{
-    color: black;
-    margin-left: 10%;
-    text-align: left;
-}
 
 .bas_de_page{
     width: 80%;
@@ -143,57 +124,9 @@
 
 
 
-@media screen and (max-width:960px){
+@media screen and (max-width:1220px) and (min-width: 200px){
 
-    .image_top_titre img{
-        width: 55%;
-    }
 
-    .image_top_texte{
-        width: 90%;
-        font-size: 2.5vw;
-    }
-
-    .image_top_texte_picto{
-        width: 6em;
-        height: 6em;
-    }
-
-    .stages{
-        width: 90%;
-    }
-
-    .stages_presentation{
-        font-size: 2.5vw;
-        width: 100%;
-        margin-top: 1%;
-    }
-
-    .lieu{
-        width: 90%;
-        margin: 4% auto 0 auto;
-        border: 2px solid rgb(0, 185, 241);
-    }
-
-    .lieu_titre{
-        font-size: 100%;
-    }
-
-    .lieu_emplacement{
-        margin: 2%;
-        font-size: 95%;
-    }
-
-    .lieu_emplacement li{
-        margin-left: 6%;
-        text-align: left;
-    }
-
-    .bas_de_page{
-        width: 90%;
-        margin: auto;
-        font-size: 3vw;
-    }
 }
 
 

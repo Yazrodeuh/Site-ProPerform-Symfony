@@ -9,7 +9,8 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('css/formation/immobilier.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/formation/immobilier.css') }}" xmlns="http://www.w3.org/1999/html"
+          xmlns="http://www.w3.org/1999/html">
     <link rel="stylesheet" href="{{ asset('css/formation/formation.css') }}">
 {% endblock %}
 
@@ -18,7 +19,7 @@
     <div class="enteteFormation">
         <div style="display: flex; justify-content: flex-end">
             <div class="entete_1 js-scroll slide-right">
-                <h1>Formation des professionnels de l'immobilier</h1>
+                <h1><span>Formation</span> <span>des professionnels</span> <span>de l'immobilier</span></h1>
             </div>
         </div>
         <div class="image_top_texte js-scroll fade-in-bottom">
@@ -45,19 +46,9 @@
     <div>
         {% include 'formation/moduleDescription.html.twig' %}
     </div>
-    <div class="lieu js-scroll fade-in-bottom">
-        <div class="lieu_titre">
-            LIEUX
+        <div>
+            {% include 'formation/lieu.html.twig' %}
         </div>
-        <div class="lieu_emplacement">
-            3 POSSIBILITÉS POUR CES FORMATONS :
-            <ul>
-                <li>dans nos locaux à Nîmes et Montpellier,</li>
-                <li>dans vos locaux,</li>
-                <li>en classe virtuelle.</li>
-            </ul>
-        </div>
-    </div>
     <div class="bas_de_page js-scroll fade-in-bottom">
         <div>
             Le programme de formation est libre dès lors qu'il est en lien direct avec l'activité professionnelle exercée.

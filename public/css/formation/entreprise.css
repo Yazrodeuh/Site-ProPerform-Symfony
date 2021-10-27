@@ -2,153 +2,129 @@
     background-image: url("/img/formation/entreprise/entreprise_frise.jpeg");
 }
 
-.enteteFormation .entete_1 h1{
+.enteteFormation .entete_1 span:nth-child(1){
+    color: var(--entre-performer-colorn);
+    background-color: white;
+}
+
+.enteteFormation .entete_1 span:nth-child(2){
     background-color: var(--entre-performer-colorn);
 }
 
 
 
-
-
-@media screen and (max-width:960px){
-
-    .image_top_titre img{
-        width: 55%;
-    }
-
-    .image_top_texte{
-        width: 90%;
-        font-size: 2.5vw;
-    }
-
-    .image_top_texte_picto{
-        width: 6em;
-        height: 6em;
-    }
-
-    .stages{
-        width: 90%;
-    }
-
-    .stages_presentation{
-        font-size: 2.5vw;
-        width: 100%;
-        margin-top: 1%;
-    }
-
-    .lieu{
-        width: 90%;
-        margin: 4% auto 0 auto;
-        border: 2px solid rgb(0, 185, 241);
-    }
-
-    .lieu_titre{
-        font-size: 100%;
-    }
-
-    .lieu_emplacement{
-        margin: 2%;
-        font-size: 95%;
-    }
-
-    .lieu_emplacement li{
-        margin-left: 6%;
-        text-align: left;
-    }
-
-    .bas_de_page{
-        width: 90%;
-        margin: auto;
-        font-size: 3vw;
-    }
-}
-
-
-
 .formation_propose:nth-child(3n + 1){
-    background-color: var(--immo-bleu-colorl);
+    background-color: var(--entre-performer-colorl);
 }
 
 .formation_propose:nth-child(3n + 2){
-    background-color: var(--immo-violet-colorl);
+    background-color: var(--entre-performer-colorl);
 }
 
 .formation_propose:nth-child(3n + 3){
-    background-color: var(--immo-orange-colorl);
+    background-color: var(--entre-performer-colorl);
 }
 
 
 .formation_propose:nth-child(3n + 1) .formation_propose_header,
 .formation_propose:nth-child(3n + 1) .formation_propose_titre_section,
 .formation_propose:nth-child(3n + 1) .formation_propose_footer{
-    background-color: var(--immo-bleu-colord);
+    background-color: var(--entre-performer-colord);
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_header,
 .formation_propose:nth-child(3n + 2) .formation_propose_titre_section,
 .formation_propose:nth-child(3n + 2) .formation_propose_footer{
-    background-color: var(--immo-violet-colord);
+    background-color: var(--entre-performer-colord);
 }
 
 .formation_propose:nth-child(3n + 3) .formation_propose_header,
 .formation_propose:nth-child(3n + 3) .formation_propose_titre_section,
 .formation_propose:nth-child(3n + 3) .formation_propose_footer{
-    background-color: var(--immo-orange-colord);
+    background-color: var(--entre-performer-colord);
 }
 
 
 .formation_propose:nth-child(3n + 1) .formation_propose_contenu{
-    color: var(--immo-bleu-colorn);
+    color: var(--entre-performer-colorn);
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_contenu{
-    color: var(--immo-violet-colorn);
+    color: var(--entre-performer-colorn);
 }
 
 .formation_propose:nth-child(3n + 3) .formation_propose_contenu{
-    color: var(--immo-orange-colorn);
+    color: var(--entre-performer-colorn);
 }
 
 
 .formation_propose:nth-child(3n + 1) .formation_propose_informations a{
-    background-color: var(--immo-bleu-colorn);
+    background-color: var(--entre-performer-colorn);
 }
 
 .formation_propose:nth-child(3n + 1) .formation_propose_informations a:hover{
-    color: var(--immo-bleu-colorn);
+    color: var(--entre-performer-colorn);
     background-color: white;
     font-weight: bold;
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_informations a{
-    background-color: var(--immo-violet-colorn);
+    background-color: var(--entre-performer-colorn);
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_informations a:hover{
-    color: var(--immo-violet-colorn);
+    color: var(--entre-performer-colorn);
     background-color: white;
     font-weight: bold;
 }
 
 .formation_propose:nth-child(3n + 3) .formation_propose_informations a{
-    background-color: var(--immo-orange-colorn);
+    background-color: var(--entre-performer-colorn);
 }
 
 .formation_propose:nth-child(3n + 3) .formation_propose_informations a:hover{
-    color: var(--immo-orange-colorn);
+    color: var(--entre-performer-colorn);
     background-color: white;
     font-weight: bold;
 }
 
 
 .formation_propose:nth-child(3n + 1) .formation_propose_triangle{
-    border-top-color: var(--immo-bleu-colorl);
+    border-top-color: var(--entre-performer-colorl);
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_triangle{
-    border-top-color: var(--immo-violet-colorl);
+    border-top-color: var(--entre-performer-colorl);
 }
 
 .formation_propose:nth-child(3n + 3) .formation_propose_triangle{
-    border-top-color: var(--immo-orange-colorl);
+    border-top-color: var(--entre-performer-colorl);
+}
+
+
+.formation_propose:nth-child(3n + 1) .formation_propose_lieu{
+    border: 4px solid var(--entre-performer-colord);
+}
+
+.formation_propose:nth-child(3n + 2) .formation_propose_lieu{
+    border: 4px solid var(--entre-performer-colord);
+}
+
+.formation_propose:nth-child(3n + 3) .formation_propose_lieu{
+    border: 4px solid var(--entre-performer-colord);
+}
+
+.formation_propose:nth-child(3n + 1) .formation_propose_lieu_titre:nth-child(3n + 1){
+    color: var(--entre-performer-colord);
+    border: 2px solid var(--entre-performer-colord);
+}
+
+.formation_propose:nth-child(3n + 2) .formation_propose_lieu_titre:nth-child(3n + 1){
+    color: var(--entre-performer-colord);
+    border: 2px solid var(--entre-performer-colord);
+}
+
+.formation_propose:nth-child(3n + 3) .formation_propose_lieu_titre:nth-child(3n + 3){
+    color: var(--entre-performer-colord);
+    border: 2px solid var(--entre-performer-colord);
 }
