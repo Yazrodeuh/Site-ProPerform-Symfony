@@ -1,7 +1,7 @@
 <div class="box_formation_propose">
     {% for module in modulesFormation %}
         <div class="formation_propose js-scroll fade-in-bottom">
-            <div class="formation_propose_header flexOne">
+            <div class="formation_propose_header">
                 {# {% if module.categorieModuleDesc is defined and module.categorieModuleDesc is not null %}
                     <div class="formation_propose_header_titre_1">
                         {{ module.categorieModuleDesc | raw }}
@@ -11,7 +11,10 @@
                     <h2>{{ module.nomModuleDesc | raw }}</h2>
                 </div>
             </div>
-            <div class="formation_propose_body flexEight">
+            <div>
+
+            </div>
+            <div class="formation_propose_body">
                 <div style="display: flex; justify-content: space-around; flex-direction: column">
                     <div>
                         <div class="formation_propose_titre_section">
@@ -69,7 +72,7 @@
 
                 #}
             </div>
-            <div class="formation_propose_footer flexOne">
+            <div class="formation_propose_footer">
                 <div class="formation_propose_footer_prix">
                     <div class="formation_propose_triangle"></div>
                     <div class="formation_propose_prix">

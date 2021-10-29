@@ -63,17 +63,6 @@
     font-weight: bold;
 }
 
-.formation_propose:nth-child(3n + 1) .formation_propose_triangle{
-    border-top-color: var(--me-enligne-colorl);
-}
-
-.formation_propose:nth-child(3n + 2) .formation_propose_triangle{
-    border-top-color: var(--me-enligne-colorl);
-}
-
-
-
-
 
 .formation_propose:nth-child(3n + 1) .formation_propose_lieu{
     border: 4px solid var(--me-accomapagne-colord);

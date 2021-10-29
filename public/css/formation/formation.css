@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    justify-content: space-between;
 }
 
 
@@ -63,6 +64,8 @@
     justify-content: space-between;
     margin: -2% 0.7% 0;
     padding: 0 2%;
+    background-color: white;
+    height: 100%;
 }
 
 .formation_propose_body ul{
@@ -136,7 +139,7 @@
     width : 0;
     border-right : 35px solid transparent;
     border-left : 35px solid transparent;
-    border-top:  28px solid;
+    border-top:  28px solid white;
 }
 
 .formation_propose_prix{

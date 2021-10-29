@@ -113,23 +113,6 @@
 }
 
 
-.formation_propose:nth-child(4n + 1) .formation_propose_triangle{
-    border-top-color: var(--entre-1-colorl);
-}
-
-.formation_propose:nth-child(4n + 2) .formation_propose_triangle{
-    border-top-color: var(--entre-2-colorl);
-}
-
-.formation_propose:nth-child(4n + 3) .formation_propose_triangle{
-    border-top-color: var(--entre-3-colorl);
-}
-
-.formation_propose:nth-child(4n + 4) .formation_propose_triangle{
-    border-top-color: var(--entre-4-colorl);
-}
-
-
 .formation_propose:nth-child(4n + 1) .formation_propose_lieu{
     border: 4px solid var(--entre-1-colord);
 }
