@@ -15,6 +15,41 @@
         <div>
             Ne manquez plus aucune actualité !
         </div>
+        <div>
+            {{ form_start(form) }}
+            {{ form_errors(form) }}
+            <div>
+                <div class="actu-checkbox">
+                    <div>
+                        {{ form_widget(form.formationsNews) }}
+                        {{ form_label(form.formationsNews) }}
+                        {{ form_errors(form.formationsNews) }}
+                    </div>
+                    <div>
+                        {{ form_widget(form.immoNews) }}
+                        {{ form_label(form.immoNews) }}
+                        {{ form_errors(form.immoNews) }}
+                    </div>
+                    <div>
+                        {{ form_widget(form.debitBoissonNews) }}
+                        {{ form_label(form.debitBoissonNews) }}
+                        {{ form_errors(form.debitBoissonNews) }}
+                    </div>
+                    <div>
+                        {{ form_widget(form.entrepriseNews) }}
+                        {{ form_label(form.entrepriseNews) }}
+                        {{ form_errors(form.entrepriseNews) }}
+                    </div>
+                    <div>
+                        {{ form_widget(form.mail) }}
+                        {{ form_errors(form.mail) }}
+                    </div>
+                </div>
+            </div>
+            {{ form_end(    form) }}
+        </div>
+
+
         <form action="/actualite/suiviActuConfirme" method="post" id="formActu">
             <div class="actu-checkbox">
                 <div class="input_checkbox">
