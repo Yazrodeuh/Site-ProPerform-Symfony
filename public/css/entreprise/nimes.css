@@ -2,6 +2,15 @@
     background-image: url("/img/entreprise/Locaux/nimes_frise.png");
 }
 
+.enteteFormation .entete_1{
+    margin: 12% 0 5%;
+}
+
+.enteteFormation .image_top_texte{
+    margin: 14% auto auto;
+}
+
+
 @media screen and (max-width:960px) {
 
 

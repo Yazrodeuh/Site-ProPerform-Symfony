@@ -1,0 +1,49 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/actualites/infoActu.css') }}">
+{% endblock %}
+
+<div class="info_actu">
+    <div class="juriste">
+        <div>
+            Notre Juriste vous répond gratuitement !
+        </div>
+        <div>
+            <a href="/actualite/contactActu">Posez votre question</a>
+        </div>
+    </div>
+    <div class="newsletter">
+        <div>
+            Ne manquez plus aucune actualité !
+        </div>
+        <form action="/actualite/suiviActuConfirme" method="post" id="formActu">
+            <div class="actu-checkbox">
+                <div class="input_checkbox">
+                    <input type="checkbox" name="Formations" id="Formations">
+                    <label for="Formations">Formations</label>
+                </div>
+                <div class="input_checkbox">
+                    <input type="checkbox" name="immobilier" id="immobilier">
+                    <label for="immobilier">Immobilier</label>
+                </div>
+                <div class="input_checkbox">
+                    <input type="checkbox" name="debitBoissons" id="debitBoissons">
+                    <label for="debitBoissons">Débit de boissons</label>
+                </div>
+                <div class="input_checkbox">
+                    <input type="checkbox" name="creaEntreprise" id="creaEntreprise">
+                    <label for="creaEntreprise">Création d'entreprise</label>
+                </div>
+            </div>
+            <div>
+                <input type="email" name="mailAbonnement" id="mailAbonnement" required placeholder="e-mail">
+            </div>
+            <div class="acceptForm">
+                <input type="checkbox" id="cookies" name="cookies" value="cookies" required>
+                <label for="cookies">J'accepte les conditions générales de vente et la politique de confidentialité</label>
+            </div>
+            <div class="buttonActu">
+                <button id="btn_submit" type="button">Inscrivez-vous dès maintenant</button>
+            </div>
+        </form>
+    </div>
+</div>

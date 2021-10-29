@@ -3,12 +3,10 @@
 }
 
 .enteteFormation .entete_1 h1{
-    color: var(--blue-color);
-    border: 2px solid var(--red-color);
+    color: white;
     padding: 0.5% 1%;
     text-align: center;
-    background-color: white;
-    border-radius: 20px;
+    background-color: var(--blue-color);
 }
 
 

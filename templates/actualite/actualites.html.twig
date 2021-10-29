@@ -1,14 +1,26 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+{% block title %}
+    {{ parent() }}
+    Formations continue des professionnels de l'immobilier
+{% endblock %}
 
-{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href="{{ asset('css/actualites/actualites.css') }}"> {% endblock %}
-{% block javascripts %} {{ parent() }} <script defer src="{{ asset('js/actualites/actualites.js') }}"></script>
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/actualites/actualites.css') }}">
+{% endblock %}
+
+{% set descriptionPage = "Formations continues des professionnels de l’immobilier (Alur) pour renouveler vos cartes professionnelles d’agent immobilier et attestations d’habilitation d’agent commercial." %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script defer src="{{ asset('js/actualites/actualites.js') }}"></script>
+{% endblock %}
 
 {% block body %}
 
 
-    <div class="option_actu" id="option_actu">
+    {# <div class="option_actu" id="option_actu">
         <div class="choixoption" id="tout">
             Toutes les actualités</div>
         <div class="choixoption" id="formations">
@@ -23,22 +35,22 @@
         <div class="choixoption" id="me">
             <img srcset="{{ asset('img/png/me.png') }}" src="{{ asset('img/png/me.png') }}" alt=""> Création d'entreprise
         </div>
-    </div>
+    </div> #}
 
     <div class="pageActu">
-        <!--<div class="slider">
+        {# <div class="slider">
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
                 <div class="slide first">
-                    <img src="villa2.png" alt="">
+                    <img src="{{ actus[0].imageactualite }}" alt="">
                 </div>
                 <div class="slide">
-                    <img src="IMG-28462.png" alt="">
+                    <img src="{{ actus[1].imageactualite }}" alt="">
                 </div>
                 <div class="slide">
-                    <img src="IMG-60522.png" alt="">
+                    <img src="{{ actus[2].imageactualite }}" alt="">
                 </div>
             </div>
             <div class="navigation-manual">
@@ -46,42 +58,40 @@
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
             </div>
-        </div>-->
+        </div> #}
+
+        <div>
+            <div>Actualités</div>
+            <div></div>
+        </div>
+
         <div class="actualites" id="actualites">
 
-            {% for actu in actualites %}
-
-            <!--foreach ($tab as $key => $item){
-
-            $mois = array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
-            $date = explode("-", $item->dateActualite);
-            $dateAjd = $date[2] . " " . $mois[$date[1] -1] . " " . $date[0];
-
-            $rubrique = str_replace(" ", "_", $item->aliasNomRubrique);
-
-            echo '--><div class="actualite '. $rubrique .'"> <a href="/actualite/n°'. $item->idActualite .'">';
-
-                    echo '<div class="img_actu">
-                        <img srcset="'.$item->imageActualite .' 1x, '. $item->imageActualite .' 2x" src="'. $item->imageActualite .'" alt="">
-                    </div>';
-
-                    echo '<div class="actu_titre">'. $item->titreActualite .'</div>';
-
-                    echo '<div class="publication"> Publié le ' . $dateAjd. ' - Actualité ' . $item->aliasNomRubrique . '</div>';
-
-
-                    echo '<div class="actu_desc">'. $item->descriptionActualite .'</div>';
-                    echo '</a></div>';
-            }
-            }else{
-            echo '<h3> Aucune actualité a été publié, revenez plus tard ! </h3>';
-            }*/
-            ?>
-
+            {% for actu in actus %}
+                <div class="actualite">
+                    <a href="">
+                        <div class="img_actu">
+                            <img srcset="{{ actu.imageactualite }}" src="{{ actu.imageactualite }}" alt="" width="100%" style="border-radius: 20px 20px 0 0">
+                        </div>
+                        <div class="contenuActu">
+                            <div style="padding: 2% 5%">
+                                <div class="actu_titre">
+                                    <h2>{{ actu.titreactualite }}</h2></div>
+                                <div class="publication"> {{ actu.dateactualite | date("m/d/Y") }} | {{ actu.titreactualite }}</div>
+                                <div class="actu_desc"> {{ actu.descriptionactualite }} </div>
+                            </div>
+                            <div class="lireActu">
+                                Lire l'actualité
+                            </div>
+                        </div>
+                    </a>
+                </div>
             {% endfor %}
         </div>
-    </div>
 
+        {% include('actualite/infoActu.html.twig') %}
+
+    </div>
 
 
 
@@ -91,6 +101,7 @@
         <div id="numPageBot"></div>
         <div id="right"> >> </div>
     </div>
+
 
 
 {% endblock %}

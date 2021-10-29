@@ -13,118 +13,155 @@
 
 
 
-.formation_propose:nth-child(3n + 1){
+.formation_propose:nth-child(4n + 1){
     background-color: var(--entre-1-colorl);
 }
 
-.formation_propose:nth-child(3n + 2){
+.formation_propose:nth-child(4n + 2){
     background-color: var(--entre-2-colorl);
 }
 
-.formation_propose:nth-child(3n + 3){
+.formation_propose:nth-child(4n + 3){
     background-color: var(--entre-3-colorl);
 }
 
+.formation_propose:nth-child(4n + 4){
+    background-color: var(--entre-4-colorl);
+}
 
-.formation_propose:nth-child(3n + 1) .formation_propose_header,
-.formation_propose:nth-child(3n + 1) .formation_propose_titre_section,
-.formation_propose:nth-child(3n + 1) .formation_propose_footer{
+
+.formation_propose:nth-child(4n + 1) .formation_propose_header,
+.formation_propose:nth-child(4n + 1) .formation_propose_titre_section,
+.formation_propose:nth-child(4n + 1) .formation_propose_footer{
     background-color: var(--entre-1-colord);
 }
 
-.formation_propose:nth-child(3n + 2) .formation_propose_header,
-.formation_propose:nth-child(3n + 2) .formation_propose_titre_section,
-.formation_propose:nth-child(3n + 2) .formation_propose_footer{
+.formation_propose:nth-child(4n + 2) .formation_propose_header,
+.formation_propose:nth-child(4n + 2) .formation_propose_titre_section,
+.formation_propose:nth-child(4n + 2) .formation_propose_footer{
     background-color: var(--entre-2-colord);
 }
 
-.formation_propose:nth-child(3n + 3) .formation_propose_header,
-.formation_propose:nth-child(3n + 3) .formation_propose_titre_section,
-.formation_propose:nth-child(3n + 3) .formation_propose_footer{
+.formation_propose:nth-child(4n + 3) .formation_propose_header,
+.formation_propose:nth-child(4n + 3) .formation_propose_titre_section,
+.formation_propose:nth-child(4n + 3) .formation_propose_footer{
     background-color: var(--entre-3-colord);
 }
 
+.formation_propose:nth-child(4n + 4) .formation_propose_header,
+.formation_propose:nth-child(4n + 4) .formation_propose_titre_section,
+.formation_propose:nth-child(4n + 4) .formation_propose_footer{
+    background-color: var(--entre-4-colord);
+}
 
-.formation_propose:nth-child(3n + 1) .formation_propose_contenu{
+
+.formation_propose:nth-child(4n + 1) .formation_propose_contenu{
     color: var(--entre-1-colorn);
 }
 
-.formation_propose:nth-child(3n + 2) .formation_propose_contenu{
+.formation_propose:nth-child(4n + 2) .formation_propose_contenu{
     color: var(--entre-2-colorn);
 }
 
-.formation_propose:nth-child(3n + 3) .formation_propose_contenu{
+.formation_propose:nth-child(4n + 3) .formation_propose_contenu{
     color: var(--entre-3-colorn);
 }
 
+.formation_propose:nth-child(4n + 4) .formation_propose_contenu{
+    color: var(--entre-4-colorn);
+}
 
-.formation_propose:nth-child(3n + 1) .formation_propose_informations a{
+
+.formation_propose:nth-child(4n + 1) .formation_propose_informations a{
     background-color: var(--entre-1-colorn);
 }
 
-.formation_propose:nth-child(3n + 1) .formation_propose_informations a:hover{
+.formation_propose:nth-child(4n + 1) .formation_propose_informations a:hover{
     color: var(--entre-1-colorn);
     background-color: white;
     font-weight: bold;
 }
 
-.formation_propose:nth-child(3n + 2) .formation_propose_informations a{
+.formation_propose:nth-child(4n + 2) .formation_propose_informations a{
     background-color: var(--entre-2-colorn);
 }
 
-.formation_propose:nth-child(3n + 2) .formation_propose_informations a:hover{
+.formation_propose:nth-child(4n + 2) .formation_propose_informations a:hover{
     color: var(--entre-2-colorn);
     background-color: white;
     font-weight: bold;
 }
 
-.formation_propose:nth-child(3n + 3) .formation_propose_informations a{
+.formation_propose:nth-child(4n + 3) .formation_propose_informations a{
     background-color: var(--entre-3-colorn);
 }
 
-.formation_propose:nth-child(3n + 3) .formation_propose_informations a:hover{
+.formation_propose:nth-child(4n + 3) .formation_propose_informations a:hover{
     color: var(--entre-3-colorn);
     background-color: white;
     font-weight: bold;
 }
 
+.formation_propose:nth-child(4n + 4) .formation_propose_informations a{
+    background-color: var(--entre-4-colorn);
+}
 
-.formation_propose:nth-child(3n + 1) .formation_propose_triangle{
+.formation_propose:nth-child(4n + 4) .formation_propose_informations a:hover{
+    color: var(--entre-4-colorn);
+    background-color: white;
+    font-weight: bold;
+}
+
+
+.formation_propose:nth-child(4n + 1) .formation_propose_triangle{
     border-top-color: var(--entre-1-colorl);
 }
 
-.formation_propose:nth-child(3n + 2) .formation_propose_triangle{
+.formation_propose:nth-child(4n + 2) .formation_propose_triangle{
     border-top-color: var(--entre-2-colorl);
 }
 
-.formation_propose:nth-child(3n + 3) .formation_propose_triangle{
+.formation_propose:nth-child(4n + 3) .formation_propose_triangle{
     border-top-color: var(--entre-3-colorl);
 }
 
+.formation_propose:nth-child(4n + 4) .formation_propose_triangle{
+    border-top-color: var(--entre-4-colorl);
+}
 
-.formation_propose:nth-child(3n + 1) .formation_propose_lieu{
+
+.formation_propose:nth-child(4n + 1) .formation_propose_lieu{
     border: 4px solid var(--entre-1-colord);
 }
 
-.formation_propose:nth-child(3n + 2) .formation_propose_lieu{
+.formation_propose:nth-child(4n + 2) .formation_propose_lieu{
     border: 4px solid var(--entre-2-colord);
 }
 
-.formation_propose:nth-child(3n + 3) .formation_propose_lieu{
+.formation_propose:nth-child(4n + 3) .formation_propose_lieu{
     border: 4px solid var(--entre-3-colord);
 }
 
-.formation_propose:nth-child(3n + 1) .formation_propose_lieu_titre:nth-child(3n + 1){
+.formation_propose:nth-child(4n + 4) .formation_propose_lieu{
+    border: 4px solid var(--entre-4-colord);
+}
+
+.formation_propose:nth-child(4n + 1) .formation_propose_lieu_titre:nth-child(4n + 1){
     color: var(--entre-1-colord);
     border: 2px solid var(--entre-1-colord);
 }
 
-.formation_propose:nth-child(3n + 2) .formation_propose_lieu_titre:nth-child(3n + 1){
+.formation_propose:nth-child(4n + 2) .formation_propose_lieu_titre:nth-child(4n + 2){
     color: var(--entre-2-colord);
     border: 2px solid var(--entre-2-colord);
 }
 
-.formation_propose:nth-child(3n + 3) .formation_propose_lieu_titre:nth-child(3n + 3){
+.formation_propose:nth-child(4n + 3) .formation_propose_lieu_titre:nth-child(4n + 3){
     color: var(--entre-3-colord);
     border: 2px solid var(--entre-3-colord);
+}
+
+.formation_propose:nth-child(4n + 4) .formation_propose_lieu_titre:nth-child(4n + 4){
+    color: var(--entre-4-colord);
+    border: 2px solid var(--entre-4-colord);
 }

@@ -210,7 +210,7 @@ class ListeModuleDescription
         [
             "idModuleDesc" => 11,
             "categorieModuleDesc" => null,
-            "nomModuleDesc" => "Pour se performer",
+            "nomModuleDesc" => "Pour se former",
             "aliasModuleDesc" => null,
             "dureeModuleDesc" => "1 journée (7h)",
             "pourQuiModuleDesc" => null,
@@ -240,7 +240,7 @@ class ListeModuleDescription
         [
             "idModuleDesc" => 13,
             "categorieModuleDesc" => null,
-            "nomModuleDesc" => "Pour performer",
+            "nomModuleDesc" => "Pour se perfectionner",
             "aliasModuleDesc" => null,
             "dureeModuleDesc" => "5 journées (30h)",
             "pourQuiModuleDesc" => null,
@@ -257,7 +257,7 @@ class ListeModuleDescription
             "categorieModuleDesc" => null,
             "nomModuleDesc" => "Création d’entreprise de A à Z",
             "aliasModuleDesc" => null,
-            "dureeModuleDesc" => "??? journées (40h)",
+            "dureeModuleDesc" => "6 journées (40h)",
             "pourQuiModuleDesc" => null,
             "objectifsModuleDesc" => "
                 <div>Acquérir les bases administratives, juridiques et financières indispensables à la création ou reprise d’une entreprise. Notre formateur spécialisé dans l'entrepreneuriat vous accompagne personnellement dans votre projet à l’appui d’une étude de marché, d’un bilan de compétence, d’un prévisionnel d’activité entrepreneuriale, d’un business plan et avec l’élaboration d’outils de gestion et de suivi comptable.</div>",

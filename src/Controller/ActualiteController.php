@@ -16,11 +16,11 @@ class ActualiteController extends DefaultController
     public function actualites(): Response
     {
 
-        $actualites = $this->getDoctrine()->getManager()->getRepository(Actualite::class)->allActualites();
+        $actualites = $this->getDoctrine()->getManager()->getRepository(Actualite::class)->findAll();
         //TODO à finir
 
         return $this->render('actualite/actualites.html.twig', [
-            'controller_name' => 'ActualiteController',
+            'actus' => $actualites,
         ]);
     }
 

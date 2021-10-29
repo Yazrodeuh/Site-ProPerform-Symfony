@@ -11,6 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use function Symfony\Component\Translation\t;
 
 class ContactType extends AbstractType
 {
@@ -18,6 +19,7 @@ class ContactType extends AbstractType
     {
         $builder
             ->add('prenomC', TextType::class, [
+                'required'=> true,
                 'attr' => [
                     'placeholder' => 'Prénom*',
                     'pattern' => '[A-Za-z\-]+',
@@ -25,6 +27,7 @@ class ContactType extends AbstractType
                     'class' => 'input'
                 ]])
             ->add('nomC', TextType::class, [
+                'required'=> true,
                 'attr' => [
                     'placeholder' => 'Nom*',
                     'pattern' => '[A-Za-z\-]+',
@@ -40,6 +43,7 @@ class ContactType extends AbstractType
                     'class' => 'input'
                 ]])
             ->add('optionC', ChoiceType::class, [
+                'required'=> true,
                 'choices' =>[
                     'Formation immobilier' => 'Formation immobilier',
                     'Formation permis d\'exploitation' => 'Formation permis d\'exploitation',
@@ -53,20 +57,21 @@ class ContactType extends AbstractType
                 ]
             ])
             ->add('objetC', TextType::class, [
-                'label'=>false,
+                'required'=> true,
                 'attr' => [
                     'placeholder' => 'Objet*',
                     'title' => 'Objet de la demande de contact',
                     'class' => 'input'
                 ]])
             ->add('messageC', TextareaType::class, [
-                'label'=>false,
+                'required'=> true,
                 'attr' => [
                     'placeholder' => 'Saisissez vore message ici',
                     'class' => 'textarea'
                 ]])
             ->add('copieC', CheckboxType::class, [ 'label'=>'Souhaitez-vous recevoir une copie de votre message ?',])
             ->add('cgvC', CheckboxType::class, [
+                'required'=> true,
                 'label' => "En soumettant ce formulaire, \"j’accepte que les informations saisies soient exploitées dans le cadre de la présente demande et de la relation commerciale qui puisse en découler\". Pour connaitre et exercer vos droits, notamment de retrait de votre consentement à l’utilisation des données collectées par ce formulaire, veuillez consulter <a href=\"\"> <u>notre politique générale sur la protection des données personnelles</u></a>.",
                 'label_html' => true
             ])

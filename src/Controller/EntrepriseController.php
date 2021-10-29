@@ -61,7 +61,7 @@ class EntrepriseController extends DefaultController
 
         $formInscrit->handleRequest($request);
 
-        if($request->isMethod('post') && $formInscrit->isValid() ){
+        /*if($request->isMethod('post') && $formInscrit->isValid() ){
 
             $em = $this->getDoctrine()->getManager();
 
@@ -81,7 +81,7 @@ class EntrepriseController extends DefaultController
             $session->set('statut', 'success');
             print $formInscrit['prenominscrit']->getData();
             return new JsonResponse($request->request->all());
-        }
+        }*/
 
 
 

@@ -27,4 +27,6 @@ class ActualiteType extends AbstractType
             'data_class' => Actualite::class,
         ]);
     }
+
+
 }
