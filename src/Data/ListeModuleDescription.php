@@ -64,7 +64,8 @@ class ListeModuleDescription
             "lieuModuleDesc" => null,
             "lienModuleDesc" => "deontologie-discrimination",
             "idRubriqueFormation" => 1
-        ],[
+        ],
+        [
             "idModuleDesc" => 4,
             "categorieModuleDesc" => "actualités juridiques",
             "nomModuleDesc" => "actualités juridiques transaction",
