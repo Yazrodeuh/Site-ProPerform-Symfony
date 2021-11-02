@@ -85,7 +85,8 @@ class ListeModuleDescription
             "lieuModuleDesc" => null,
             "lienModuleDesc" => "actualites-juridiques-transaction",
             "idRubriqueFormation" => 1
-        ],[
+        ],
+        [
             "idModuleDesc" => 5,
             "categorieModuleDesc" => "actualités juridiques",
             "nomModuleDesc" => "actualités juridiques gestion locative",

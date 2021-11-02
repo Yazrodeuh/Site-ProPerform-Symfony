@@ -258,18 +258,18 @@ class ListeModule
             "versionModule" => "V1 du 01/07/2021"
         ],
         [
-            "idModule" => 1,
-            "nomModule" => "bases juridiques transaction",
-            "aliasModule" => "MT01",
+            "idModule" => 5,
+            "nomModule" => "actualités juridiques gestion locative",
+            "aliasModule" => "MG02",
             "dureeModule" => "1 journée (7h)",
             "pourQuiModule" => null,
             "objectifModule" => "        
-                <div>Assimiler les bases de la transaction immobilière suivant la loi du 2 janvier 1970.</div>
+                <div>Analyser les différentes actualités juridiques et appréhender les risques professionnels liés à ces actualités.</div>
                 <ul>
-                    <li>L'estimation d'un bien, </li>
-                    <li>Le bon de visite, </li>
-                    <li>L'obligation d'information précontractuelle, </li>
-                    <li>Le mandat de recherche, vente... </li>
+                    <li>Le nouveau DPE de 2021, </li>
+                    <li>Le permis de louer, </li>
+                    <li>L'encadrement des loyers, </li>
+                    <li>La hausse des loyers sous-évalués... </li>
                 </ul>",
             "organisationPedagoModule" => null,
             "prixModule" => 350,
@@ -281,51 +281,42 @@ class ListeModule
                     <li> Dans vos locaux (à définir suivant le nombre de participants) ; </li>
                     <li> En classe virtuelle via l’application ZOOM. </li>
                 </ul>",
-            "lienModuleDesc" => "bases-juridiques-transaction",
+            "lienModuleDesc" => "actualites-juridiques-gestion-locative",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
-                <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation).</div>
+                <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
                 <div> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</div>",
             "delaisModule" => "30 jours maximum entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
-            "objectifPedagoModule" => "<div>Acquérir les connaissances de base relatives à la transaction tout en y intégrant des mises en situation permettant d'être apte à appliquer les connaissances acquises relatives à la pratique professionnelle. </div>
-                <div> Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans. </div>",
+            "objectifPedagoModule" => "<div>Disposer des dernières actualités juridiques de la gestion locative tout en y intégrant des mises en situation permettant d'être apte à appliquer les connaissances acquises relatives à la pratique professionnelle.</div>
+                <div>Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans.</div>",
             "modaliteModule" => "
-                <div> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </div> 
-                <div> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM. </div>",
+                <div> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </div>
+                <div>Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM.</div>",
             "programmeModule" => "
                 <ul>
-                    <li>Accueil des stagiaires autour d’un café d’accueil ;</li>
-                    <li>Test d’évaluation d’entrée sous forme de QCM (Correction au cours de la formation une fois le point juridique traité) ;</li>
-                    <li>Rappel des principales règles encadrant la profession :
-                        <ul>
-                            <li>Loi Hoguet,</li>
-                            <li>Le mandat,</li>
-                            <li>La protection de la rémunération,</li>
-                            <li>Les concurrents et leurs encadrements,</li>
-                            <li>L’obligation d’informations précontractuelles,</li>
-                            <li>L’obligation d’un médiateur de la consommation.</li> 
-                        </ul>
-                    </li>
-                    <li>Présentation illustrée par des cas pratiques et mises en situation ;</li>
-                    <li>Test de fin de formation sous forme d’un QCM ;</li>
-                    <li>Tour de table et conclusion ;</li>
-                    <li>Remise d’un livret récapitulatif de la formation. </li>
+                    <li> Accueil des stagiaires autour d’un café d’accueil ;</li>
+                    <li> Test d’évaluation d’entrée sous forme de QCM (Correction au cours de la formation une fois le point juridique traité) ;</li>
+                    <li>  Présentation illustrée par des cas pratiques (tous issus de la jurisprudence actuelle) et des mises en situation ;</li>
+                    <li>  Les thèmes abordés sont variés reprenant les actualités juridiques des dernières années (le nouveau DPE de 2021, la responsabilité du vendeur, la responsabilité de l’acquéreur, vices cachés …) ;</li>
+                    <li> Test de fin de formation sous forme d’un QCM ;</li>
+                    <li> Tour de table et conclusion ;</li>
+                    <li> Remise d’un livret récapitulatif de la formation.</li>
                 </ul>",
             "valeurModule" => "Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession. Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.",
             "versionModule" => "V1 du 01/07/2021"
-        ],[
-            "idModule" => 1,
-            "nomModule" => "bases juridiques transaction",
-            "aliasModule" => "MT01",
+        ],
+        [
+            "idModule" => 6,
+            "nomModule" => "rgpd tracfin",
+            "aliasModule" => "MD02",
             "dureeModule" => "1 journée (7h)",
             "pourQuiModule" => null,
             "objectifModule" => "        
-                <div>Assimiler les bases de la transaction immobilière suivant la loi du 2 janvier 1970.</div>
+                <div>Comprendre les obligations liées à TRACFIN et à la règlementation générale de protection des données.</div>
                 <ul>
-                    <li>L'estimation d'un bien, </li>
-                    <li>Le bon de visite, </li>
-                    <li>L'obligation d'information précontractuelle, </li>
-                    <li>Le mandat de recherche, vente... </li>
+                    <li>Création de son registre RGPD et préparation des autorisations contractuelles RGPD, </li>
+                    <li>Gestion des risques TRACFIN, </li>
+                    <li>Guide des procédures internes d'évaluation TRACFIN. </li>
                 </ul>",
             "organisationPedagoModule" => null,
             "prixModule" => 350,
@@ -337,36 +328,18 @@ class ListeModule
                     <li> Dans vos locaux (à définir suivant le nombre de participants) ; </li>
                     <li> En classe virtuelle via l’application ZOOM. </li>
                 </ul>",
-            "lienModuleDesc" => "bases-juridiques-transaction",
+            "lienModuleDesc" => "rgpd-tracfin",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
-                <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation).</div>
+                <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
                 <div> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</div>",
             "delaisModule" => "30 jours maximum entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
-            "objectifPedagoModule" => "<div>Acquérir les connaissances de base relatives à la transaction tout en y intégrant des mises en situation permettant d'être apte à appliquer les connaissances acquises relatives à la pratique professionnelle. </div>
-                <div> Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans. </div>",
+            "objectifPedagoModule" => "<div>Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans.</div>
+                <div>Etre apte à maitriser les connaissances relatives à la réglementation de la protection des données personnelles (RGPD) et le traitement du renseignement et action contre les circuits financiers (TRACFIN) tout en y intégrant des mises en situation pour adapter les compétences acquises dans le cadre de votre pratique professionnelle.</div>",
             "modaliteModule" => "
-                <div> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </div> 
-                <div> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM. </div>",
-            "programmeModule" => "
-                <ul>
-                    <li>Accueil des stagiaires autour d’un café d’accueil ;</li>
-                    <li>Test d’évaluation d’entrée sous forme de QCM (Correction au cours de la formation une fois le point juridique traité) ;</li>
-                    <li>Rappel des principales règles encadrant la profession :
-                        <ul>
-                            <li>Loi Hoguet,</li>
-                            <li>Le mandat,</li>
-                            <li>La protection de la rémunération,</li>
-                            <li>Les concurrents et leurs encadrements,</li>
-                            <li>L’obligation d’informations précontractuelles,</li>
-                            <li>L’obligation d’un médiateur de la consommation.</li> 
-                        </ul>
-                    </li>
-                    <li>Présentation illustrée par des cas pratiques et mises en situation ;</li>
-                    <li>Test de fin de formation sous forme d’un QCM ;</li>
-                    <li>Tour de table et conclusion ;</li>
-                    <li>Remise d’un livret récapitulatif de la formation. </li>
-                </ul>",
+                <div> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et Quiz. </div>
+                <div> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM.</div>",
+            "programmeModule" => "à compléter",
             "valeurModule" => "Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession. Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.",
             "versionModule" => "V1 du 01/07/2021"
         ],
