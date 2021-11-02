@@ -253,11 +253,11 @@ class ListeModule
             "nomLienModule" => "actualites-juridiques-transaction",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
-                <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
-                <div> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</div>",
+                <p> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </p>
+                <p> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</p>",
             "delaisModule" => "30 jours maximum entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
-            "objectifPedagoModule" => "<div> Disposer des dernières actualités juridiques de la transaction tout en y intégrant des mises en situation permettant d'être apte à appliquer les connaissances acquises relatives à la pratique professionnelle. </div>
-                <div> Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans. </div>",
+            "objectifPedagoModule" => "<p> Disposer des dernières actualités juridiques de la transaction tout en y intégrant des mises en situation permettant d'être apte à appliquer les connaissances acquises relatives à la pratique professionnelle. </p>
+                <p> Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans. </p>",
             "modaliteModule" => "La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM.",
             "programmeModule" => "
                 <ul>
@@ -270,8 +270,8 @@ class ListeModule
                     <li>  Remise d’un livret récapitulatif de la formation.</li>
                 </ul>",
             "valeurModule" => "
-                <div>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</div>
-                <div>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</div>",
+                <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
+                <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</p>",
             "versionModule" => "V1 du 01/07/2021",
             "idFormation"=>1
         ],
@@ -303,14 +303,14 @@ class ListeModule
             "nomLienModule" => "actualites-juridiques-gestion-locative",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
-                <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
-                <div> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</div>",
+                <p> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </p>
+                <p> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</p>",
             "delaisModule" => "30 jours maximum entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
-            "objectifPedagoModule" => "<div>Disposer des dernières actualités juridiques de la gestion locative tout en y intégrant des mises en situation permettant d'être apte à appliquer les connaissances acquises relatives à la pratique professionnelle.</div>
-                <div>Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans.</div>",
+            "objectifPedagoModule" => "<p>Disposer des dernières actualités juridiques de la gestion locative tout en y intégrant des mises en situation permettant d'être apte à appliquer les connaissances acquises relatives à la pratique professionnelle.</p>
+                <p>Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans.</p>",
             "modaliteModule" => "
-                <div> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </div>
-                <div>Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM.</div>",
+                <p> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </p>
+                <p>Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM.</p>",
             "programmeModule" => "
                 <ul>
                     <li> Accueil des stagiaires autour d’un café d’accueil</li>
@@ -322,8 +322,8 @@ class ListeModule
                     <li> Remise d’un livret récapitulatif de la formation.</li>
                 </ul>",
             "valeurModule" => "
-                <div>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</div>
-                <div>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</div>",
+                <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
+                <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</p>",
             "versionModule" => "V1 du 01/07/2021",
             "idFormation"=>1
         ],
@@ -354,18 +354,18 @@ class ListeModule
             "nomLienModule" => "rgpd-tracfin",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
-                <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
-                <div> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</div>",
+                <p> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </p>
+                <p> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</p>",
             "delaisModule" => "30 jours maximum entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
-            "objectifPedagoModule" => "<div>Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans.</div>
-                <div>Etre apte à maitriser les connaissances relatives à la réglementation de la protection des données personnelles (RGPD) et le traitement du renseignement et action contre les circuits financiers (TRACFIN) tout en y intégrant des mises en situation pour adapter les compétences acquises dans le cadre de votre pratique professionnelle.</div>",
+            "objectifPedagoModule" => "<p>Assurer la mise à jour continue des professionnels de l’immobilier tout en perfectionnant les connaissances et compétences déjà acquises pour satisfaire à l’obligation de formation des professionnels de l’immobilier de 14h annuellement ou de 42h tout les 3 ans.</p>
+                <p>Etre apte à maitriser les connaissances relatives à la réglementation de la protection des données personnelles (RGPD) et le traitement du renseignement et action contre les circuits financiers (TRACFIN) tout en y intégrant des mises en situation pour adapter les compétences acquises dans le cadre de votre pratique professionnelle.</p>",
             "modaliteModule" => "
-                <div> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et Quiz. </div>
-                <div> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM.</div>",
+                <p> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et Quiz. </p>
+                <p> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM.</p>",
             "programmeModule" => "à compléter",
             "valeurModule" => "
-                <div>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</div>
-                <div>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</div>",
+                <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
+                <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</p>",
             "versionModule" => "V1 du 01/07/2021",
             "idFormation"=>1
         ],
@@ -402,8 +402,8 @@ class ListeModule
             "nomLienModule" => "initial",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
-                <div> Les exploitants, créateurs ou repreneurs d'entreprises du secteur CHRD (Cafés-Hôtels-Restaurants-Discothèques) se doivent d'obtenir au préalable le Permis d'Exploitation, afin de pouvoir effectuer la déclaration d’ouverture, de mutation, de translation d’un débit de boissons à consommer sur place ou à emporter. </div>
-                <div> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions. </div>",
+                <p> Les exploitants, créateurs ou repreneurs d'entreprises du secteur CHRD (Cafés-Hôtels-Restaurants-Discothèques) se doivent d'obtenir au préalable le Permis d'Exploitation, afin de pouvoir effectuer la déclaration d’ouverture, de mutation, de translation d’un débit de boissons à consommer sur place ou à emporter. </p>
+                <p> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions. </p>",
             "delaisModule" => "15 jours entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
             "objectifPedagoModule" => "
                 <ul>
@@ -413,8 +413,8 @@ class ListeModule
                 </ul>
                 <div> À l’issue de cette formation suivie avec assiduité (émargement d’une feuille de présence), notre organisme agréé au titre de l’article L. 3332-1-1 du Code de la santé publique par un arrêté préfectoral N°2021-03-BPPA vous délivre immédiatement votre Permis d’exploitation sous forme d’une attestation nominative (CERFA N°11407*03 du Ministère de l’Intérieur). </div>",
             "modaliteModule" => "
-                <div>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </div>
-                <div> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM. </div>",
+                <p>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </p>
+                <p> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM. </p>",
             "programmeModule" => "
                 <strong>1ère journée : </strong>
                 <ul>
@@ -463,9 +463,9 @@ class ListeModule
                     <li> Remise du permis d’exploitation </li>
                 </ul>",
             "valeurModule" => "
-                <div> Bien plus qu’une formation obligatoire, notre formation ne se limite pas au programme ministériel prévu pour l’obtention du permis d'exploitation (Arrêté du Ministère de l’Intérieur du 22 juillet 2011). </div>
-                <div>Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons.</div>
-                <div>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </div>",
+                <p> Bien plus qu’une formation obligatoire, notre formation ne se limite pas au programme ministériel prévu pour l’obtention du permis d'exploitation (Arrêté du Ministère de l’Intérieur du 22 juillet 2011). </p>
+                <p>Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons.</p>
+                <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </p>",
             "versionModule" => "V1 du 01/07/2021",
             "idFormation"=>2
         ],
@@ -499,8 +499,8 @@ class ListeModule
             "nomLienModule" => "renouvellement",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
-               <div> Pour les exploitants souhaitant renouveler leur permis d’exploitation initial ou pouvant justifier de 10 ans d’expérience dans la gestion d’un débit de boissons sans avoir le permis d’exploitation initial. </div>
-                <div> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</div>",
+                <p> Pour les exploitants souhaitant renouveler leur permis d’exploitation initial ou pouvant justifier de 10 ans d’expérience dans la gestion d’un débit de boissons sans avoir le permis d’exploitation initial. </p>
+                <p> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</p>",
             "delaisModule" => "15 jours entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
             "objectifPedagoModule" => "
                 <ul>
@@ -510,8 +510,8 @@ class ListeModule
                 </ul>
                 <div> À l’issue de cette formation suivie avec assiduité (émargement d’une feuille de présence), notre organisme agréé au titre de l’article L. 3332-1-1 du Code de la santé publique par un arrêté préfectoral N°2021-03-BPPA vous délivre immédiatement votre Permis d’exploitation sous forme d’une attestation nominative (CERFA N°11407*03 du Ministère de l’Intérieur). </div>",
             "modaliteModule" => "
-                <div> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </div>
-                <div> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM. </div>",
+                <p> La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </p>
+                <p> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM. </p>",
             "programmeModule" => "
                 <ul>
                     <li> Accueil des stagiaires autour d’un café d’accueil</li>
@@ -535,9 +535,9 @@ class ListeModule
                     <li> Remise du permis d’exploitation </li>
                 </ul>",
             "valeurModule" => "
-                <div> Bien plus qu’une formation obligatoire, notre formation ne se limite pas au programme ministériel prévu pour l’obtention du permis d'exploitation (Arrêté du Ministère de l’Intérieur du 22 juillet 2011). </div>
-                <div> Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons. </div>
-                <div> Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </div>",
+                <p> Bien plus qu’une formation obligatoire, notre formation ne se limite pas au programme ministériel prévu pour l’obtention du permis d'exploitation (Arrêté du Ministère de l’Intérieur du 22 juillet 2011). </p>
+                <p> Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons. </p>
+                <p> Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </p>",
             "versionModule" => "V1 du 01/07/2021",
             "idFormation"=>2
         ],
@@ -571,8 +571,8 @@ class ListeModule
             "nomLienModule" => "chambre-dhotes",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
-                <div> Les loueurs de chambres d’hôtes proposant des boissons alcoolisées en accompagnement des repas. </div>
-                <div> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</div>",
+                <p> Les loueurs de chambres d’hôtes proposant des boissons alcoolisées en accompagnement des repas. </p>
+                <p> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</p>",
             "delaisModule" => "15 jours entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
             "objectifPedagoModule" => "
                 <ul>
@@ -582,8 +582,8 @@ class ListeModule
                 </ul>
                 <div> À l’issue de cette formation suivie avec assiduité (émargement d’une feuille de présence), notre organisme agréé au titre de l’article L. 3332-1-1 du Code de la santé publique par un arrêté préfectoral N°2021-03-BPPA vous délivre immédiatement votre Permis d’exploitation sous forme d’une attestation nominative (CERFA N°11407*03 du Ministère de l’Intérieur). </div>",
             "modaliteModule" => "
-                <div>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </div>
-                <div> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM. </div>",
+                <p>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </p>
+                <p> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM. </p>",
             "programmeModule" => "
                 <ul>
                     <li> Accueil des stagiaires autour d’un café d’accueil</li>
@@ -603,79 +603,102 @@ class ListeModule
                     <li> Remise du permis d’exploitation </li>
                 </ul>",
             "valeurModule" => "
-                <div> Bien plus qu’une formation obligatoire, notre formation ne se limite pas au programme ministériel prévu pour l’obtention du permis d'exploitation (Arrêté du Ministère de l’Intérieur du 22 juillet 2011). </div>
-                <div>Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons.</div>
-                <div>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </div>",
+                <p> Bien plus qu’une formation obligatoire, notre formation ne se limite pas au programme ministériel prévu pour l’obtention du permis d'exploitation (Arrêté du Ministère de l’Intérieur du 22 juillet 2011). </p>
+                <p>Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons.</p>
+                <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </p>",
             "versionModule" => "V1 du 01/07/2021",
             "idFormation"=>2
         ],
-        /*[
+        [
             "idModule" => 10,
-            "nomModule" => "chambre d'hôtes",
-            "aliasModule" => "PECH",
-            "dureeModule" => "1 journée (8h)",
-            "pourQuiModule" => "
-               <div>Pour les exploitants de chambres d'hôtes souhaitant proposer des boissons alcoolisées, en particulier pour les tables d'hôtes.</div>",
+            "nomModule" => "Créer sa micro entreprise accompagné",
+            "aliasModule" => "MEA",
+            "dureeModule" => "1 journée (7h)",
+            "pourQuiModule" => null,
             "objectifModule" => "        
-                <ul>
-                    <li>Obtenir le permis d'exploitation spécifique pour l'exploitation d'une chambre d'hôtes.</li>
-                    <li>Se mettre à jour sur la règlementation en vigueur pour la gestion d'un débit de boissons.</li>
-                </ul>",
-            "organisationPedagoModule" => "
-                <ul>
-                    <li>En présentiel ou en classe virtuelle, par petits groupes (14 stagiaires maximum).</li>
-                    <li>Évaluation par QCM en entrée et sortie de stage.</li>
-                </ul>",
-            "prixModule" => 190,
-            "lieuModule" => null,
+                <div>Acquérir les bases du statut auto-entrepreneur.</div>
+                <div>Notre formateur spécialisé dans l'entreprenariat vous accompagne dans votre projet avec des mises en situation et des exercices individualisés.</div>",
+            "organisationPedagoModule" => null,
+            "prixModule" => 250,
+            "lieuModule" => "<div>Dans nos locaux à Montpellier ou Nîmes</div>",
             "lieuDetailModule" => "
-                <ul>
-                    <li> 501, avenue d’Occitanie - 34090 Montpellier </li>
-                    <li> 50, impasse Laennec - 30900 Nîmes </li>
-                    <li> Dans vos locaux (à définir suivant le nombre de participants) </li>
-                    <li> En classe virtuelle via l’application ZOOM </li>
+                <ul> 
+                    <li> 501, avenue d’Occitanie - 34090 Montpellier ;</li>
+                    <li> 50, impasse Laennec - 30900 Nîmes ;</li>
                 </ul>",
-            "nomLienModule" => "chambre-dhotes",
-            "prerequisModule" => "Aucune connaissance préalable requise.",
+            "nomLienModule" => "creer-sa-micro-entreprise-accompagne",
+            "prerequisModule" => "Admission après entretien téléphonique pour toutes personnes désirant créer son entreprise sous le statut de micro-entrepreneur ou souhaitant connaitre ce statut.",
             "publicModule" => "
-                <div> Les loueurs de chambres d’hôtes proposant des boissons alcoolisées en accompagnement des repas. </div>
-                <div> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</div>",
-            "delaisModule" => "15 jours entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
+                <p>Toute personne (salarié, demandeur d’emploi, agent immobilier…) ayant un projet de création d’une micro-entreprise.</p>
+                <p> Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</p>",
+            "delaisModule" => "15 jours maximum entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
             "objectifPedagoModule" => "
-                <ul>
-                    <li> Etre apte à maitriser les différentes connaissances sur les dispositions du Code de la Santé publique plus particulièrement sur les grands principes des conditions d’ouverture d’un débit de boissons, la prévention et la lutte contre l’alcoolisme, la protection des mineurs et la répression de l’ivresse publique, la législation sur les stupéfiants, la revente de tabac, la lutte contre le bruit, les faits susceptibles d’entraîner une fermeture administrative, les principes généraux de la responsabilité civile et pénale</li>
-                    <li> Se mettre à jour sur la réglementation et les sanctions en vigueur pour l’exploitation d’un débit de boisson</li>
-                    <li> Assurer avec sérénité et sécurité l’exploitation de votre établissement grâce aux compétences acquises.</li>
-                </ul>
-                <div> À l’issue de cette formation suivie avec assiduité (émargement d’une feuille de présence), notre organisme agréé au titre de l’article L. 3332-1-1 du Code de la santé publique par un arrêté préfectoral N°2021-03-BPPA vous délivre immédiatement votre Permis d’exploitation sous forme d’une attestation nominative (CERFA N°11407*03 du Ministère de l’Intérieur). </div>",
+                <p>Être apte à maitriser les bases du statut d’auto-entrepreneur pour vous permettre de créer votre entreprise et vous consacrer pleinement à votre future activité professionnelle.</p>
+                <p>L’ensemble des notions spécifiques et des démarches administratives relatives à la création d'une micro-entreprise n’auront plus de secret pour vous en terme de compétences.</p>",
             "modaliteModule" => "
-                <div>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation, cas pratiques et quiz. </div>
-                <div> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM. </div>",
+                <div>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation et des exercices individualisés avec corrections en groupe.</div>",
             "programmeModule" => "
                 <ul>
-                    <li> Accueil des stagiaires autour d’un café d’accueil</li>
-                    <li> Test d’évaluation d’entrée sous forme de QCM (25 questions)</li>
-                    <li> Présentation liminaire de la formation avec la raison d’être de l’obligation de formation mentionnée au deuxième alinéa de l’article R.3332-4-1 du Code de la santé publique adaptée à l’activité spécifique des loueurs de chambres d’hôtes</li>
-                    <li> Les conditions liées à la personne (la nationalité, la capacité juridique, les incompatibilités, le permis d’exploitation et son renouvellement)</li>
-                    <li> Les conditions liées à la licence (la classification des boissons, les boissons interdites de vente en France, les conditions de délivrance et de validité d’une licence, les restrictions)</li>
-                    <li> La vie d’une licence (les transferts, les interdictions de transfert, la translation d’une licence, la mutation d’une licence)</li>
-                    <li> La déclaration administrative, les obligations fiscales, le bail commercial, la mise aux normes handicapés de l’établissement, la sécurité préventive, les déclarations communes aux métiers de bouche)</li>
-                    <li> Les obligations d’exploitation (l’étalage obligatoire des boissons sans alcool, les affichages obligatoires, l’information sur le prix)</li>
-                    <li> Les obligations en matière de prévention et de protection de la santé publique et aspects pratiques (la prévention et la lutte contre l’alcoolisme, la répression de l'ivresse publique, la publicité des boissons alcoolisées , l’interdiction de vente et d'offre de boissons alcooliques aux mineurs et les sanctions encourues, conduite à tenir face à un mineur voulant se voir servir de l'alcool, la vérification de la majorité du client, la réglementation de l'interdiction de fumer et les sanctions)</li>
-                    <li> Les fermetures administratives </li>
-                    <li> Réglementation locale (le règlement sanitaire départemental, la réglementation contre le bruit, les heures d’ouverture et de fermeture des établissements, les spécificités locales)</li>
-                    <li> Correction du test d’évaluation d'entrée avec distribution de la correction une fois les points juridiques abordés</li>
-                    <li> Test d’évaluation de sortie QCM (25 questions)</li>
-                    <li> Remise d’un livret récapitulatif de la formation</li>
-                    <li> Remise du permis d’exploitation </li>
+                    <li> Accueil des stagiaires autour d’un café d’accueil </li>
+                    <li> Test d’évaluation d’entrée sous forme de QCM (Correction au cours de la formation une fois le point juridique traité) ;</li>
+                </ul>
+                <strong>Préambule</strong>
+                <strong> Principes de l’auto-entrepreneuriat :</strong>
+                <ul>
+                    <li> Les obligations comptables ;</li>
+                    <li> L'immatriculation au RCS et RM (distinction activités commerciales et artisanales) ;</li>
+                    <li> Différents types de sociétés unipersonnelles :
+                        <ul>
+                            <li> Entreprise Individuelle (EI), </li>
+                            <li> Entreprise Individuelle à Responsabilité Limitée (EIRL), </li>
+                            <li> Entreprise Unipersonnelle à Responsabilité Limitée (EURL), </li>
+                            <li> Focus sur le conjoint collaborateur ou salarié. </li>
+                        </ul>
+                    </li>
+                </ul>
+                <strong> Charges fiscales de l’auto-entrepreneuriat :</strong>
+                <ul>
+                    <li> Impôt sur le revenu (IR) : 
+                        <ul> 
+                            <li> Statut classique, </li>
+                            <li> Versement libératoire. </li>
+                        </ul>
+                    </li>
+                    <li> Franchise en base de TVA ;</li>
+                    <li> Cotisation Foncière des Entreprises (CFE),</li>
+                    <li> Taxe de frais de chambre consulaire. </li>
+                </ul>
+                <strong> Formalités de l’auto-entrepreneuriat :</strong>
+                <ul> 
+                    <li> Obligations administratives : 
+                        <ul>
+                            <li> Documents à fournir, </li>
+                            <li> Démonstration des formalités. </li>
+                        </ul>
+                    </li>
+                </ul>
+                <strong> Cotisations sociales de l’auto-entrepreneuriat :</strong>
+                <ul>
+                    <li> Calcul des cotisations sociales ;</li>
+                    <li> Exonérations (ARCE) ; </li>
+                    <li> Aides particulières ; </li>
+                    <li> Organisme d'accompagnement. </li>
+                </ul>
+                <strong> Fin de l’auto-entrepreneuriat : </strong>
+                <ul>
+                    <li> Cessation d’activité ;</li>
+                    <li> Dépassement des seuils et changement de forme sociale. </li>
+                </ul>
+                <ul>
+                    <li> Test de fin de formation sous forme d’un QCM ; </li>
+                    <li> Tour de table et conclusion ; </li>
+                    <li> Remise d’un livret de fin de formation. </li>
                 </ul>",
             "valeurModule" => "
-                <div> Bien plus qu’une formation obligatoire, notre formation ne se limite pas au programme ministériel prévu pour l’obtention du permis d'exploitation (Arrêté du Ministère de l’Intérieur du 22 juillet 2011). </div>
-                <div>Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons.</div>
-                <div>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </div>",
+                <p>La formation aboutira à l’immatriculation de votre entreprise avec l’aide du formateur.</p>",
             "versionModule" => "V1 du 01/07/2021",
             "idFormation"=>2
-        ],*/
+        ],
 
 
     ];
