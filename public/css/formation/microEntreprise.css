@@ -15,23 +15,19 @@
     background-color: var(--me-1-color);
 }
 
-.formation_propose:nth-child(3n + 1){
-    background-color: var(--me-accomapagne-colorl);
-}
-
-.formation_propose:nth-child(3n + 2){
-    background-color: var(--me-enligne-colorl);
-}
-
+.formation_propose:nth-child(3n + 1),
 .formation_propose:nth-child(3n + 1) .formation_propose_header,
 .formation_propose:nth-child(3n + 1) .formation_propose_titre_section,
-.formation_propose:nth-child(3n + 1) .formation_propose_footer{
+.formation_propose:nth-child(3n + 1) .formation_propose_footer,
+.formation_propose:nth-child(3n + 1) .formation_propose_informations a{
     background-color: var(--me-1-color);
 }
 
+.formation_propose:nth-child(3n + 2),
 .formation_propose:nth-child(3n + 2) .formation_propose_header,
 .formation_propose:nth-child(3n + 2) .formation_propose_titre_section,
-.formation_propose:nth-child(3n + 2) .formation_propose_footer{
+.formation_propose:nth-child(3n + 2) .formation_propose_footer,
+.formation_propose:nth-child(3n + 2) .formation_propose_informations a{
     background-color: var(--me-2-color);
 }
 
@@ -43,18 +39,11 @@
     color: var(--me-2-color);
 }
 
-.formation_propose:nth-child(3n + 1) .formation_propose_informations a{
-    background-color: var(--me-1-color);
-}
 
 .formation_propose:nth-child(3n + 1) .formation_propose_informations a:hover{
     color: var(--me-1-color);
     background-color: white;
     font-weight: bold;
-}
-
-.formation_propose:nth-child(3n + 2) .formation_propose_informations a{
-    background-color: var(--me-2-color);
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_informations a:hover{
