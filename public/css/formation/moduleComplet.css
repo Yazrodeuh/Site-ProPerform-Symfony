@@ -1,0 +1,14 @@
+.enteteFormation .entete_1{
+    margin: 10% 0;
+}
+
+.js-scroll:nth-child(2n + 1){
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.js-scroll {
+    padding: 2% 0;
+    line-height: 1.5em;
+}
+

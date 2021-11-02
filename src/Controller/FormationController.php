@@ -61,7 +61,7 @@ class FormationController extends DefaultController
         if($nomModule != null){
             return $this->render('formation/moduleComplet.html.twig', ['moduleFormation' => $contenuFormation->findBy(array('nomLienModule'=> $nomModule))[0]]);
         }else {
-            return $this->render('formation/permisExploitation.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idFormation' => 3))]);
+            return $this->render('formation/microEntreprise.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idFormation' => 3))]);
         }
     }
 
@@ -77,7 +77,7 @@ class FormationController extends DefaultController
         if($nomModule != null){
             return $this->render('formation/moduleComplet.html.twig', ['moduleFormation' => $contenuFormation->findBy(array('nomLienModule'=> $nomModule))[0]]);
         }else {
-            return $this->render('formation/permisExploitation.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idFormation' => 4))]);
+            return $this->render('formation/entreprise.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idFormation' => 4))]);
         }
     }
 

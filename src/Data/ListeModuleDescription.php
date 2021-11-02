@@ -106,7 +106,8 @@ class ListeModuleDescription
             "lieuModuleDesc" => null,
             "lienModuleDesc" => "actualites-juridiques-gestion-locative",
             "idRubriqueFormation" => 1
-        ],[
+        ],
+        [
             "idModuleDesc" => 6,
             "categorieModuleDesc" => null,
             "nomModuleDesc" => "rgpd tracfin",
@@ -151,7 +152,8 @@ class ListeModuleDescription
             "lieuModuleDesc" => null,
             "lienModuleDesc" => "initial",
             "idRubriqueFormation" => 2
-        ],[
+        ],
+        [
             "idModuleDesc" => 8,
             "categorieModuleDesc" => "permis d'exploitation",
             "nomModuleDesc" => "renouvellement",
@@ -172,7 +174,8 @@ class ListeModuleDescription
             "lieuModuleDesc" => null,
             "lienModuleDesc" => "renouvellement",
             "idRubriqueFormation" => 2
-        ],[
+        ],
+        [
             "idModuleDesc" => 9,
             "categorieModuleDesc" => "permis d'exploitation",
             "nomModuleDesc" => "chambre d'hôtes",

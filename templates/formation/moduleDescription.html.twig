@@ -19,7 +19,7 @@
                             <strong>{{ module.dureemodule | raw }}</strong>
                         </div>
                     </div>
-                    {% if module.pourquimoduledesc is defined and module.pourquimoduledesc is not null %}
+                    {% if module.pourquimodule is defined and module.pourquimodule is not null %}
                         <div>
                             <div class="formation_propose_titre_section">
                                 <h3>pour qui</h3>
@@ -37,13 +37,13 @@
                             {{ module.objectifmodule | raw }}
                         </div>
                     </div>
-                    {% if module.orgapedagomoduledesc is defined and module.orgapedagomoduledesc is not null %}
+                    {% if module.organisationPedagoModule is defined and module.organisationPedagoModule is not null %}
                         <div>
                             <div class="formation_propose_titre_section">
                                 <h3>organisation pédagogique</h3>
                             </div>
                             <div class="formation_propose_contenu">
-                                {{ module.orgapedagomoduledesc | raw }}
+                                {{ module.organisationPedagoModule | raw }}
                             </div>
                         </div>
                     {% endif %}
@@ -77,13 +77,13 @@
                         <a href=/inscription_formulaire>Je m'inscris</a>
                     </div>
                 </div>
-                {% if module.lieumoduledesc is defined and module.lieumoduledesc is not null %}
+                {% if module.lieuModule is defined and module.lieuModule is not null %}
                     <div class="formation_propose_lieu">
                         <div class="formation_propose_lieu_titre">
                             LIEUX
                         </div>
                         <div>
-                            {{ module.lieumoduledesc | raw }}
+                            {{ module.lieuModule | raw }}
                         </div>
                     </div>
                 {% endif %}

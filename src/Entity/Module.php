@@ -61,6 +61,12 @@ class Module
     private int $prixModule;
 
     /**
+     * @var string
+     * @ORM\Column(type="text")
+     */
+    private string $tarifInfoModule;
+
+    /**
      * @var string|null
      * @ORM\Column(type="text", nullable=true)
      */
@@ -132,6 +138,9 @@ class Module
      */
     private int $idFormation;
 
+    /**
+     * @return int
+     */
     public function getIdModule(): int
     {
         return $this->idModule;
@@ -145,11 +154,18 @@ class Module
         $this->idModule = $idModule;
     }
 
+    /**
+     * @return string
+     */
     public function getNomModule(): string
     {
         return $this->nomModule;
     }
 
+    /**
+     * @param string $nomModule
+     * @return $this
+     */
     public function setNomModule(string $nomModule): self
     {
         $this->nomModule = $nomModule;
@@ -157,11 +173,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getAliasModule(): string
     {
         return $this->aliasModule;
     }
 
+    /**
+     * @param string $aliasModule
+     * @return $this
+     */
     public function setAliasModule(string $aliasModule): self
     {
         $this->aliasModule = $aliasModule;
@@ -169,11 +192,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getDureeModule(): string
     {
         return $this->dureeModule;
     }
 
+    /**
+     * @param string $dureeModule
+     * @return $this
+     */
     public function setDureeModule(string $dureeModule): self
     {
         $this->dureeModule = $dureeModule;
@@ -181,11 +211,18 @@ class Module
         return $this;
     }
 
-    public function getPourQuiModule(): string
+    /**
+     * @return string|null
+     */
+    public function getPourQuiModule(): ?string
     {
         return $this->pourQuiModule;
     }
 
+    /**
+     * @param string|null $pourQuiModule
+     * @return $this
+     */
     public function setPourQuiModule(?string $pourQuiModule): self
     {
         $this->pourQuiModule = $pourQuiModule;
@@ -193,11 +230,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getObjectifModule(): string
     {
         return $this->objectifModule;
     }
 
+    /**
+     * @param string $objectifModule
+     * @return $this
+     */
     public function setObjectifModule(string $objectifModule): self
     {
         $this->objectifModule = $objectifModule;
@@ -205,11 +249,18 @@ class Module
         return $this;
     }
 
-    public function getOrganisationPedagoModule(): string
+    /**
+     * @return string|null
+     */
+    public function getOrganisationPedagoModule(): ?string
     {
         return $this->organisationPedagoModule;
     }
 
+    /**
+     * @param string|null $organisationPedagoModule
+     * @return $this
+     */
     public function setOrganisationPedagoModule(?string $organisationPedagoModule): self
     {
         $this->organisationPedagoModule = $organisationPedagoModule;
@@ -217,6 +268,9 @@ class Module
         return $this;
     }
 
+    /**
+     * @return int
+     */
     public function getPrixModule(): int
     {
         return $this->prixModule;
@@ -236,7 +290,23 @@ class Module
     /**
      * @return string
      */
-    public function getLieuModule(): string
+    public function getTarifInfoModule(): string
+    {
+        return $this->tarifInfoModule;
+    }
+
+    /**
+     * @param string $tarifInfoModule
+     */
+    public function setTarifInfoModule(string $tarifInfoModule): void
+    {
+        $this->tarifInfoModule = $tarifInfoModule;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLieuModule(): ?string
     {
         return $this->lieuModule;
     }
@@ -268,13 +338,18 @@ class Module
         $this->lieuDetailsModule = $lieuDetailsModule;
     }
 
-
-
+    /**
+     * @return string
+     */
     public function getNomLienModule(): string
     {
         return $this->nomLienModule;
     }
 
+    /**
+     * @param string $nomLienModule
+     * @return $this
+     */
     public function setNomLienModule(string $nomLienModule): self
     {
         $this->nomLienModule = $nomLienModule;
@@ -282,11 +357,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getPrerequisModule(): string
     {
         return $this->prerequisModule;
     }
 
+    /**
+     * @param string $prerequisModule
+     * @return $this
+     */
     public function setPrerequisModule(string $prerequisModule): self
     {
         $this->prerequisModule = $prerequisModule;
@@ -294,11 +376,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getPublicModule(): string
     {
         return $this->publicModule;
     }
 
+    /**
+     * @param string $publicModule
+     * @return $this
+     */
     public function setPublicModule(string $publicModule): self
     {
         $this->publicModule = $publicModule;
@@ -306,11 +395,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getDelaisModule(): string
     {
         return $this->delaisModule;
     }
 
+    /**
+     * @param string $delaisModule
+     * @return $this
+     */
     public function setDelaisModule(string $delaisModule): self
     {
         $this->delaisModule = $delaisModule;
@@ -318,11 +414,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getObjectifPedagoModule(): string
     {
         return $this->objectifPedagoModule;
     }
 
+    /**
+     * @param string $objectifPedagoModule
+     * @return $this
+     */
     public function setObjectifPedagoModule(string $objectifPedagoModule): self
     {
         $this->objectifPedagoModule = $objectifPedagoModule;
@@ -330,11 +433,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getModaliteModule(): string
     {
         return $this->modaliteModule;
     }
 
+    /**
+     * @param string $modaliteModule
+     * @return $this
+     */
     public function setModaliteModule(string $modaliteModule): self
     {
         $this->modaliteModule = $modaliteModule;
@@ -342,11 +452,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getProgrammeModule(): string
     {
         return $this->programmeModule;
     }
 
+    /**
+     * @param string $programmeModule
+     * @return $this
+     */
     public function setProgrammeModule(string $programmeModule): self
     {
         $this->programmeModule = $programmeModule;
@@ -354,11 +471,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getValeurModule(): string
     {
         return $this->valeurModule;
     }
 
+    /**
+     * @param string $valeurModule
+     * @return $this
+     */
     public function setValeurModule(string $valeurModule): self
     {
         $this->valeurModule = $valeurModule;
@@ -366,11 +490,18 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getVersionModule(): string
     {
         return $this->versionModule;
     }
 
+    /**
+     * @param string $versionModule
+     * @return $this
+     */
     public function setVersionModule(string $versionModule): self
     {
         $this->versionModule = $versionModule;

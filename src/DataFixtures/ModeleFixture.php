@@ -28,6 +28,7 @@ class ModeleFixture extends Fixture
             $modules->setObjectifModule($mesModules['objectifModule']);
             $modules->setOrganisationPedagoModule($mesModules['organisationPedagoModule']);
             $modules->setPrixModule($mesModules['prixModule']);
+            $modules->setTarifInfoModule($mesModules['tarifInfoModule']);
             $modules->setLieuModule($mesModules['lieuModule']);
             $modules->setLieuDetailsModule($mesModules['lieuDetailModule']);
             $modules->setNomLienModule($mesModules['nomLienModule']);

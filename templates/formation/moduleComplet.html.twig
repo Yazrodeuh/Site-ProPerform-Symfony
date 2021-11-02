@@ -9,99 +9,192 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{{ asset('css/formation/moduleComplet.css') }}">
 {% endblock %}
 
 {% block body %}
 
-    <div style="width: 70%; margin: auto; ">
-        <div style="display: flex; justify-content: center; font-size: 1.3vw">
-            <div style="width: 20%; color: white; text-align: center; margin: 2% auto 1%">
-                {# {{ moduleFormation.getSectionmodulecomplet() | raw }} #}
-            </div>
-        </div>
-        <div class="titreCouleur" style="text-align: center; font-size: 1.4vw;">
-            <strong>{{ moduleFormation.nomModule | raw }}</strong>
-        </div>
-        <div class="espace">
-            <div class="titreCouleur">
-                Prérequis :
-            </div>
-            <div>
-                {{ moduleFormation.prerequismodule| raw }}
-            </div>
-        </div>
-        <div class="espace">
-            <div class="titreCouleur">
-                Public visé :
-            </div>
-            <div>
-                {{ moduleFormation.publicmodule | raw }}
-            </div>
-        </div>
-        <div class="espace">
-            <div class="titreCouleur">
-                La durée de la formation :
-            </div>
-            <div>
-                {{ moduleFormation.dureemodule | raw }}
-            </div>
-        </div>
-        <div class="espace">
-            <div class="titreCouleur">
-                Délais d'accès :
-            </div>
-            <div>
-                {{ moduleFormation.delaismodule | raw }}
-            </div>
-        </div>
-        <div class="espace">
-            <div class="titreCouleur">
-                Lieux de formations :
-            </div>
-            <div>
-                {{ moduleFormation.lieuDetailsModule | raw }}
-            </div>
-        </div>
-        <div class="espace">
-            <div class="titreCouleur">
-                Les objectifs :
-            </div>
-            <div>
-                {{ moduleFormation.objectifPedagoModule | raw }}
-            </div>
-        </div>
-        <div class="espace">
-            <div class="titreCouleur">
-                Modalités pédagogiques :
-            </div>
-            <div>
-                {{ moduleFormation.modaliteModule | raw }}
-            </div>
-        </div>
-        <div class="espace" style=" padding: 1%">
-            <div class="titreCouleur" style="text-align: center">
-                Programme
-            </div>
-            <div>
-                {{ moduleFormation.programmeModule | raw }}
-            </div>
-        </div>
-        <div class="espace">
-            <div class="titreCouleur">
-                Tarifs :
-            </div>
-            <div>
-                {{ moduleFormation.prixModule | raw }}
-            </div>
-        </div>
-        <div class="espace" style="background-color: padding: 1%">
-            <div class="titreCouleur" style="color: var(--blue-color); text-align: center">
-                La valeur ajoutée de nos formations :
-            </div>
-            <div>
-                {{ moduleFormation.valeurModule | raw }}
+
+    <div class="enteteFormation">
+        <div style="display: flex; justify-content: flex-end; background-image: linear-gradient(to bottom, transparent 0, var(--blue-color) 30%, var(--blue-color) 70%, transparent)">
+            <div class="entete_1 js-scroll slide-right">
+                <h1><strong>{{ moduleFormation.nomModule | raw }}</strong></h1>
             </div>
         </div>
     </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>Les prérequis : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    {{ moduleFormation.prerequismodule| raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>Le public visé : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    {{ moduleFormation.publicmodule | raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>La durée : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    <p>{{ moduleFormation.dureemodule | raw }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>Les délais d'accès : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    <p>{{ moduleFormation.delaismodule | raw }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>Le(s) lieu(s) : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    {{ moduleFormation.lieuDetailsModule | raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>Les objectifs : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    {{ moduleFormation.objectifPedagoModule | raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>Les modalités pédagogiques : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    {{ moduleFormation.modaliteModule | raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>Le programme : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    {{ moduleFormation.programmeModule | raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>Le tarif : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    <p>
+                        <strong>{{ moduleFormation.prixModule | raw }} € net</strong>, TVA non applicable selon Art. 261.4.4 a du CGI.
+                    </p>
+                    <p>
+                        {{ moduleFormation.tarifInfoModule | raw }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 10%">
+                <div>
+                    <h2>Notre valeur ajouté : </h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%">
+                <div>
+                    {{ moduleFormation.valeurModule | raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-scroll fade-in-bottom">
+        <div style="padding: 1% 0;">
+            <div style="margin: 0 15%; text-align: center">
+                <p>
+                    {{ moduleFormation.versionModule | raw }}
+                </p>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
