@@ -5,41 +5,18 @@
     --red-color-l: rgba(217, 8, 20, 0.5);
     --pink-color: rgb(220, 25, 169);
 
-    --immo-bleu-colorn: rgb(93, 169, 221);
-    --immo-bleu-colord: rgb(93, 169, 221);
-    --immo-bleu-colorl: rgb(225, 233, 246);
+    --immo-1-color: rgb(93, 169, 221);
+    --immo-2-color: rgb(136, 130, 189);
+    --immo-3-color: rgb(249, 169, 127);
 
-    --immo-violet-colorn: rgb(136, 130, 189);
-    --immo-violet-colord: rgb(136, 130, 189);
-    --immo-violet-colorl: rgb(238, 236, 246);
+    --me-1-color: rgb(92, 36, 131);
+    --me-2-color: rgb(177, 102, 191);
 
-    --immo-orange-colorn: rgb(244, 131, 101);
-    --immo-orange-colord: rgb(249, 169, 127);
-    --immo-orange-colorl: rgb(253, 236, 228);
+    --pe-1-color: rgb(230, 50, 50);
+    --pe-2-color: rgb(232, 78, 25);
+    --pe-3-color: rgb(255, 124, 0);
 
-    --me-accomapagne-colorn: rgb(92, 36, 131);
-    --me-accomapagne-colord: rgb(92, 36, 131);
-    --me-accomapagne-colorl: rgb(236, 225, 240);
-
-    --me-enligne-colorn: rgb(177, 102, 191);
-    --me-enligne-colord: rgb(177, 102, 191);
-    --me-enligne-colorl: rgb(251, 227, 255);
-
-    --pe-initial-colord: rgb(180, 45, 45);
-    --pe-initial-colorn: rgb(214, 29, 29);
-    --pe-initial-colorl: rgb(255, 226, 226) ;
-
-    --pe-renouvellement-colord: rgb(202, 71, 27);
-    --pe-renouvellement-colorn: rgb(232, 78, 25);
-    --pe-renouvellement-colorl: rgb(255, 232, 225);
-
-    --pe-chambrehotes-colord: rgb(227, 123, 27);
-    --pe-chambrehotes-colorn: rgb(255, 124, 0);
-    --pe-chambrehotes-colorl: rgb(255, 232, 210);
-
-    --entre-1-colorn: rgb(104, 163, 155);
     --entre-1-colord: rgb(104, 163, 155);
-    --entre-1-colorl: rgb(185, 208, 204);
 
     --entre-2-colorn: rgb(122, 156, 115);
     --entre-2-colord: rgb(122, 156, 115);
@@ -50,7 +27,7 @@
     --entre-3-colorl: rgb(210, 223, 194);
 
     --entre-4-colorn: rgb(90, 129, 110);
-    --entre-4-colord: rgb(90, 129, 110);
+    --entre-4-colord: rgb(89, 129, 109);
     --entre-4-colorl: rgb(177, 189, 195);
 
 

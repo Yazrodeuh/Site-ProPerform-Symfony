@@ -1,6 +1,6 @@
 :root{
     --immo-bleu-colorn: rgb(93, 169, 221);
-    --immo-bleu-colord: rgb(147, 190, 230);
+    --immo-1-color: rgb(147, 190, 230);
     --immo-bleu-colordo: rgba(147, 190, 230, 0.3);
     --immo-bleu-colorno: rgba(93, 169, 221, 0.3);
 }
@@ -40,7 +40,7 @@ main .titre div:first-child{
 main h1{
     padding: 0;
     margin: 0;
-    color: var(--immo-bleu-colord);
+    color: var(--immo-1-color);
     font-weight: normal;
     font-size: 1.6vw;
 }
@@ -48,7 +48,7 @@ main h1{
 main h2{
     padding: 0;
     margin: 0;
-    background-color: var(--immo-bleu-colord);
+    background-color: var(--immo-1-color);
     color: white;
     font-size: 1.6vw;
 }
@@ -56,7 +56,7 @@ main h2{
 main h3{
     padding: 0;
     margin: auto;
-    color: var(--immo-bleu-colord);
+    color: var(--immo-1-color);
     font-size: 1.2vw;
     text-indent: -1vw;
 }

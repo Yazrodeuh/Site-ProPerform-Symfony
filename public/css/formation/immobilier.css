@@ -17,7 +17,7 @@
 }
 
 .enteteFormation .entete_1 span:nth-child(3){
-    background-color: var(--immo-bleu-colorn);
+    background-color: var(--immo-1-color);
 }
 
 .enteteFormation  .image_top_texte_picto{
@@ -30,74 +30,74 @@
 }
 
 .formation_propose:nth-child(3n + 1){
-    background-color: var(--immo-bleu-colorn);
+    background-color: var(--immo-1-color);
 }
 
 .formation_propose:nth-child(3n + 2){
-    background-color: var(--immo-violet-colorn);
+    background-color: var(--immo-2-color);
 }
 
 .formation_propose:nth-child(3n + 3){
-    background-color: var(--immo-orange-colord);
+    background-color: var(--immo-3-color);
 }
 
 .formation_propose:nth-child(3n + 1) .formation_propose_header,
 .formation_propose:nth-child(3n + 1) .formation_propose_titre_section,
 .formation_propose:nth-child(3n + 1) .formation_propose_footer{
-    background-color: var(--immo-bleu-colord);
+    background-color: var(--immo-1-color);
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_header,
 .formation_propose:nth-child(3n + 2) .formation_propose_titre_section,
 .formation_propose:nth-child(3n + 2) .formation_propose_footer{
-    background-color: var(--immo-violet-colord);
+    background-color: var(--immo-2-color);
 }
 
 .formation_propose:nth-child(3n + 3) .formation_propose_header,
 .formation_propose:nth-child(3n + 3) .formation_propose_titre_section,
 .formation_propose:nth-child(3n + 3) .formation_propose_footer{
-    background-color: var(--immo-orange-colord);
+    background-color: var(--immo-3-color);
 }
 
 .formation_propose:nth-child(3n + 1) .formation_propose_contenu{
-    color: var(--immo-bleu-colorn);
+    color: var(--immo-1-color);
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_contenu{
-    color: var(--immo-violet-colorn);
+    color: var(--immo-2-color);
 }
 
 .formation_propose:nth-child(3n + 3) .formation_propose_contenu{
-    color: var(--immo-orange-colorn);
+    color: var(--immo-3-color);
 }
 
 
 .formation_propose:nth-child(3n + 1) .formation_propose_informations a{
-    background-color: var(--immo-bleu-colorn);
+    background-color: var(--immo-1-color);
 }
 
 .formation_propose:nth-child(3n + 1) .formation_propose_informations a:hover{
-    color: var(--immo-bleu-colorn);
+    color: var(--immo-1-color);
     background-color: white;
     font-weight: bold;
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_informations a{
-    background-color: var(--immo-violet-colorn);
+    background-color: var(--immo-2-color);
 }
 
 .formation_propose:nth-child(3n + 2) .formation_propose_informations a:hover{
-    color: var(--immo-violet-colorn);
+    color: var(--immo-2-color);
     background-color: white;
     font-weight: bold;
 }
 
 .formation_propose:nth-child(3n + 3) .formation_propose_informations a{
-    background-color: var(--immo-orange-colorn);
+    background-color: var(--immo-3-color);
 }
 
 .formation_propose:nth-child(3n + 3) .formation_propose_informations a:hover{
-    color: var(--immo-orange-colorn);
+    color: var(--immo-3-color);
     background-color: white;
     font-weight: bold;
 }
