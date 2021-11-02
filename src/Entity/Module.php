@@ -26,7 +26,7 @@ class Module
 
     /**
      * @var string
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=10, unique=true)
      */
     private string $aliasModule;
 
@@ -37,10 +37,10 @@ class Module
     private string $dureeModule;
 
     /**
-     * @var string
+     * @var string|null
      * @ORM\Column(type="text", nullable=true)
      */
-    private string $pourQuiModule;
+    private ?string $pourQuiModule;
 
     /**
      * @var string
@@ -49,10 +49,10 @@ class Module
     private string $objectifModule;
 
     /**
-     * @var string
+     * @var string|null
      * @ORM\Column(type="text", nullable=true)
      */
-    private string $organisationPedagoModule;
+    private ?string $organisationPedagoModule;
 
     /**
      * @var int
@@ -61,10 +61,10 @@ class Module
     private int $prixModule;
 
     /**
-     * @var string
-     * @ORM\Column(type="text")
+     * @var string|null
+     * @ORM\Column(type="text", nullable=true)
      */
-    private string $lieuModule;
+    private ?string $lieuModule;
 
     /**
      * @var string
@@ -74,7 +74,7 @@ class Module
 
     /**
      * @var string
-     * @ORM\Column(type="string", length=150)
+     * @ORM\Column(type="string", length=150, unique=true)
      */
     private string $nomLienModule;
 
@@ -127,14 +127,22 @@ class Module
     private string $versionModule;
 
     /**
-     * @var string
-     * @ORM\Column(type="string", length=100)
+     * @var int
+     * @ORM\Column(type="integer")
      */
-    private string $couleurModule;
+    private int $idFormation;
 
     public function getIdModule(): int
     {
         return $this->idModule;
+    }
+
+    /**
+     * @param int $idModule
+     */
+    public function setIdModule(int $idModule): void
+    {
+        $this->idModule = $idModule;
     }
 
     public function getNomModule(): string
@@ -178,7 +186,7 @@ class Module
         return $this->pourQuiModule;
     }
 
-    public function setPourQuiModule(string $pourQuiModule): self
+    public function setPourQuiModule(?string $pourQuiModule): self
     {
         $this->pourQuiModule = $pourQuiModule;
 
@@ -202,7 +210,7 @@ class Module
         return $this->organisationPedagoModule;
     }
 
-    public function setOrganisationPedagoModule(string $organisationPedagoModule): self
+    public function setOrganisationPedagoModule(?string $organisationPedagoModule): self
     {
         $this->organisationPedagoModule = $organisationPedagoModule;
 
@@ -214,6 +222,10 @@ class Module
         return $this->prixModule;
     }
 
+    /**
+     * @param int $prixModule
+     * @return $this
+     */
     public function setPrixModule(int $prixModule): self
     {
         $this->prixModule = $prixModule;
@@ -221,16 +233,19 @@ class Module
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getLieuModule(): string
     {
         return $this->lieuModule;
     }
 
     /**
-     * @param string $lieuModule
+     * @param string|null $lieuModule
      * @return $this
      */
-    public function setLieuModule(string $lieuModule): self
+    public function setLieuModule(?string $lieuModule): self
     {
         $this->lieuModule = $lieuModule;
 
@@ -363,15 +378,19 @@ class Module
         return $this;
     }
 
-    public function getCouleurModule(): string
+    /**
+     * @return int
+     */
+    public function getIdFormation(): int
     {
-        return $this->couleurModule;
+        return $this->idFormation;
     }
 
-    public function setCouleurModule(string $couleurModule): self
+    /**
+     * @param int $idFormation
+     */
+    public function setIdFormation(int $idFormation): void
     {
-        $this->couleurModule = $couleurModule;
-
-        return $this;
+        $this->idFormation = $idFormation;
     }
 }

@@ -30,7 +30,7 @@ class ListeModule
                     <li> Dans vos locaux (à définir suivant le nombre de participants) ; </li>
                     <li> En classe virtuelle via l’application ZOOM. </li>
                 </ul>",
-            "lienModuleDesc" => "bases-juridiques-transaction",
+            "nomLienModule" => "bases-juridiques-transaction",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
                 <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation).</div>
@@ -61,7 +61,8 @@ class ListeModule
                     <li>Remise d’un livret récapitulatif de la formation. </li>
                 </ul>",
             "valeurModule" => "Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession. Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.",
-            "versionModule" => "V1 du 01/07/2021"
+            "versionModule" => "V1 du 01/07/2021",
+            "idFormation"=>1
         ],
         [
             "idModule" => 2,
@@ -88,7 +89,7 @@ class ListeModule
                     <li>Dans vos locaux (à définir suivant le nombre de participants) ;</li>
                     <li>En classe virtuelle via l’application ZOOM. </li>
                 </ul>",
-            "lienModuleDesc" => "bases-juridiques-gestion-locative",
+            "nomLienModule" => "bases-juridiques-gestion-locative",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
                 <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
@@ -136,7 +137,8 @@ class ListeModule
                     <li> Remise d’un livret récapitulatif de la formation.</li> 
                 </ul>",
             "valeurModule" => "Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession. Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.",
-            "versionModule" => "V1 du 01/07/2021"
+            "versionModule" => "V1 du 01/07/2021",
+            "idFormation"=>1
         ],
         [
             "idModule" => 3,
@@ -155,7 +157,7 @@ class ListeModule
                     <li> Dans vos locaux (à définir suivant le nombre de participants) ; </li>
                     <li> En classe virtuelle via l’application ZOOM. </li>
                 </ul>",
-            "lienModuleDesc" => "deontologie-discrimination",
+            "nomLienModule" => "deontologie-discrimination",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
                 <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
@@ -209,7 +211,8 @@ class ListeModule
                     <li>  Remise d’un livret récapitulatif de la formation. </li>
                 </ul>",
             "valeurModule" => "Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession. Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.",
-            "versionModule" => "V1 du 01/07/2021"
+            "versionModule" => "V1 du 01/07/2021",
+            "idFormation"=>1
         ],
         [
             "idModule" => 4,
@@ -235,7 +238,7 @@ class ListeModule
                     <li> Dans vos locaux (à définir suivant le nombre de participants) ; </li>
                     <li> En classe virtuelle via l’application ZOOM. </li>
                 </ul>",
-            "lienModuleDesc" => "actualites-juridiques-transaction",
+            "nomLienModule" => "actualites-juridiques-transaction",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
                 <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
@@ -255,7 +258,8 @@ class ListeModule
                     <li>  Remise d’un livret récapitulatif de la formation.</li>
                 </ul>",
             "valeurModule" => "Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession. Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.",
-            "versionModule" => "V1 du 01/07/2021"
+            "versionModule" => "V1 du 01/07/2021",
+            "idFormation"=>1
         ],
         [
             "idModule" => 5,
@@ -281,7 +285,7 @@ class ListeModule
                     <li> Dans vos locaux (à définir suivant le nombre de participants) ; </li>
                     <li> En classe virtuelle via l’application ZOOM. </li>
                 </ul>",
-            "lienModuleDesc" => "actualites-juridiques-gestion-locative",
+            "nomLienModule" => "actualites-juridiques-gestion-locative",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
                 <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
@@ -303,7 +307,8 @@ class ListeModule
                     <li> Remise d’un livret récapitulatif de la formation.</li>
                 </ul>",
             "valeurModule" => "Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession. Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.",
-            "versionModule" => "V1 du 01/07/2021"
+            "versionModule" => "V1 du 01/07/2021",
+            "idFormation"=>1
         ],
         [
             "idModule" => 6,
@@ -328,7 +333,7 @@ class ListeModule
                     <li> Dans vos locaux (à définir suivant le nombre de participants) ; </li>
                     <li> En classe virtuelle via l’application ZOOM. </li>
                 </ul>",
-            "lienModuleDesc" => "rgpd-tracfin",
+            "nomLienModule" => "rgpd-tracfin",
             "prerequisModule" => "Aucune connaissance préalable requise.",
             "publicModule" => "
                 <div> Les gérants, les salariés, les agents commerciaux et plus généralement toute personne devant justifier de cette formation pour le renouvellement des cartes des professionnels de l’immobilier (Carte T ou Attestation d’Habilitation). </div>
@@ -341,7 +346,8 @@ class ListeModule
                 <div> Les stagiaires sont sollicités également en début et en fin de formation afin d’évaluer leurs connaissances via des QCM.</div>",
             "programmeModule" => "à compléter",
             "valeurModule" => "Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession. Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.",
-            "versionModule" => "V1 du 01/07/2021"
+            "versionModule" => "V1 du 01/07/2021",
+            "idFormation"=>1
         ],
 
 

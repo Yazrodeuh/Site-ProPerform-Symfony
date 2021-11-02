@@ -2,13 +2,8 @@
     {% for module in modulesFormation %}
         <div class="formation_propose js-scroll fade-in-bottom">
             <div class="formation_propose_header">
-                {# {% if module.categorieModuleDesc is defined and module.categorieModuleDesc is not null %}
-                    <div class="formation_propose_header_titre_1">
-                        {{ module.categorieModuleDesc | raw }}
-                    </div>
-                {% endif %} #}
                 <div class="formation_propose_header_titre_2">
-                    <h2>{{ module.nomModuleDesc | raw }}</h2>
+                    <h2>{{ module.nomModule | raw }}</h2>
                 </div>
             </div>
             <div>
@@ -21,7 +16,7 @@
                             <h3>Durée</h3>
                         </div>
                         <div class="formation_propose_duree">
-                            <strong>{{ module.dureemoduledesc | raw }}</strong>
+                            <strong>{{ module.dureemodule | raw }}</strong>
                         </div>
                     </div>
                     {% if module.pourquimoduledesc is defined and module.pourquimoduledesc is not null %}
@@ -30,7 +25,7 @@
                                 <h3>pour qui</h3>
                             </div>
                             <div class="formation_propose_contenu">
-                                {{ module.pourquimoduledesc | raw }}
+                                {{ module.pourquimodule | raw }}
                             </div>
                         </div>
                     {% endif %}
@@ -39,7 +34,7 @@
                             <h3>objectifs</h3>
                         </div>
                         <div class="formation_propose_contenu">
-                            {{ module.objectifsmoduledesc | raw }}
+                            {{ module.objectifmodule | raw }}
                         </div>
                     </div>
                     {% if module.orgapedagomoduledesc is defined and module.orgapedagomoduledesc is not null %}
@@ -55,7 +50,7 @@
                 </div>
                 <div style="width: 100%">
                     <div class="formation_propose_informations">
-                        <a href="">Plus d'informations</a>
+                        <a href="{{ path('immobilier', {'nomModule': module.nomLienModule}) }}">Plus d'informations</a>
                     </div>
                 </div>
                 {#
@@ -76,7 +71,7 @@
                 <div class="formation_propose_footer_prix">
                     <div class="formation_propose_triangle"></div>
                     <div class="formation_propose_prix">
-                        <strong>{{ module.prixmoduledesc | raw }}</strong> €*
+                        <strong>{{ module.prixmodule | raw }}</strong> €*
                     </div>
                     <div class="formation_propose_inscription">
                         <a href=/inscription_formulaire>Je m'inscris</a>

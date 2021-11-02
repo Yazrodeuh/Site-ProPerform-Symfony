@@ -1,35 +1,34 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} Formations continue des professionnels de l'immobilier {% endblock %}
+{% block title %}
+    {{ parent() }}
+    Formations continue des professionnels de l'immobilier
+{% endblock %}
 
-{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href=""> {% endblock %}
+{% set descriptionPage = "Formations continues des professionnels de l’immobilier (Alur) pour renouveler vos cartes professionnelles d’agent immobilier et attestations d’habilitation d’agent commercial." %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="">
+{% endblock %}
 
 {% block body %}
-    <style>
-        .espace{
-            margin: 2% 0;
-        }
 
-        .titreCouleur{
-            color: var({{ moduleFormation.couleurModuleComplet ~ 'n' }});
-            font-size: 1.15vw;
-        }
-    </style>
     <div style="width: 70%; margin: auto; ">
         <div style="display: flex; justify-content: center; font-size: 1.3vw">
-            <div style="width: 20%; background-color: var({{ moduleFormation.couleurModuleComplet ~ 'd'}}); color: white; text-align: center; margin: 2% auto 1%">
-                {{ moduleFormation.getSectionmodulecomplet() | raw }}
+            <div style="width: 20%; color: white; text-align: center; margin: 2% auto 1%">
+                {# {{ moduleFormation.getSectionmodulecomplet() | raw }} #}
             </div>
         </div>
         <div class="titreCouleur" style="text-align: center; font-size: 1.4vw;">
-            <strong>{{ moduleFormation.getNommodulecomplet() | raw }}</strong>
+            <strong>{{ moduleFormation.nomModule | raw }}</strong>
         </div>
         <div class="espace">
             <div class="titreCouleur">
                 Prérequis :
             </div>
             <div>
-                {{ moduleFormation.getPrerequismodulecomplet() | raw }}
+                {{ moduleFormation.prerequismodule| raw }}
             </div>
         </div>
         <div class="espace">
@@ -37,7 +36,7 @@
                 Public visé :
             </div>
             <div>
-                {{ moduleFormation.getPublicmodulecomplet() | raw }}
+                {{ moduleFormation.publicmodule | raw }}
             </div>
         </div>
         <div class="espace">
@@ -45,7 +44,7 @@
                 La durée de la formation :
             </div>
             <div>
-                {{ moduleFormation.getDureemodulecomplet() | raw }}
+                {{ moduleFormation.dureemodule | raw }}
             </div>
         </div>
         <div class="espace">
@@ -53,7 +52,7 @@
                 Délais d'accès :
             </div>
             <div>
-                {{ moduleFormation.getDelaismodulecomplet() | raw }}
+                {{ moduleFormation.delaismodule | raw }}
             </div>
         </div>
         <div class="espace">
@@ -61,7 +60,7 @@
                 Lieux de formations :
             </div>
             <div>
-                {{ moduleFormation.getLieumodulecomplet() | raw }}
+                {{ moduleFormation.lieuDetailsModule | raw }}
             </div>
         </div>
         <div class="espace">
@@ -69,7 +68,7 @@
                 Les objectifs :
             </div>
             <div>
-                {{ moduleFormation.getObjectifsmodulecomplet() | raw }}
+                {{ moduleFormation.objectifPedagoModule | raw }}
             </div>
         </div>
         <div class="espace">
@@ -77,18 +76,15 @@
                 Modalités pédagogiques :
             </div>
             <div>
-                {{ moduleFormation.getModalitesmodulecomplet() | raw }}
+                {{ moduleFormation.modaliteModule | raw }}
             </div>
         </div>
-        <div class="espace" style="background-color: var({{ moduleFormation.couleurModuleComplet ~ 'l'}}); padding: 1%">
+        <div class="espace" style=" padding: 1%">
             <div class="titreCouleur" style="text-align: center">
                 Programme
             </div>
-            <div class="titreCouleur" style="text-align: center">
-                {{ moduleFormation.sectionmodulecomplet | raw ~ ' ' ~ moduleFormation.nommodulecomplet | raw }}
-            </div>
             <div>
-                {{ moduleFormation.getProgrammemodulecomplet() | raw }}
+                {{ moduleFormation.programmeModule | raw }}
             </div>
         </div>
         <div class="espace">
@@ -96,15 +92,15 @@
                 Tarifs :
             </div>
             <div>
-                {{ moduleFormation.getTarifsmodulecomplet() | raw }}
+                {{ moduleFormation.prixModule | raw }}
             </div>
         </div>
-        <div class="espace" style="background-color: var({{ moduleFormation.couleurModuleComplet ~ 'l'}}); padding: 1%">
+        <div class="espace" style="background-color: padding: 1%">
             <div class="titreCouleur" style="color: var(--blue-color); text-align: center">
                 La valeur ajoutée de nos formations :
             </div>
             <div>
-                {{ moduleFormation.getValeurmodulecomplet() | raw }}
+                {{ moduleFormation.valeurModule | raw }}
             </div>
         </div>
     </div>
