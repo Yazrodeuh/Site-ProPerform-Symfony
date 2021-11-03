@@ -46,7 +46,7 @@
 
 .entete_1{
     color: var(--blue-color);
-    margin: 1% 25% 3% auto;
+    margin: 1% 25% 2% auto;
     font-size: 37px;
     display: flex;
     width: 22em;
@@ -55,10 +55,8 @@
 
 .entete_1 h1 {
     font-size: 35px;
-    background-color: var(--blue-color);
     color: white;
     border-radius: 20px;
-    padding: 1% 2%;
 }
 
 .entete_1 h1 strong{
@@ -71,7 +69,9 @@
 
 .entete_1 h1 span:nth-child(1){
     color: var(--red-color);
-
+}
+.entete_1 h1 span:nth-child(3){
+    background-color: var(--blue-color);
 }
 
 
