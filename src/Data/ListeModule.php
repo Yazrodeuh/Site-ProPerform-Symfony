@@ -67,6 +67,7 @@ class ListeModule
                 <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
                 <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</p>",
             "versionModule" => "V1 du 01/07/2021",
+            "couleurModule"=>"rgb(93, 169, 221)",
             "idFormation"=>1
         ],
         [
@@ -146,6 +147,7 @@ class ListeModule
                 <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
                 <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</div>",
             "versionModule" => "V1 du 01/07/2021",
+            "couleurModule"=>"rgb(136, 130, 189)",
             "idFormation"=>1
         ],
         [
@@ -223,6 +225,7 @@ class ListeModule
                 <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
                 <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</p>",
             "versionModule" => "V1 du 01/07/2021",
+            "couleurModule"=>"rgb(249, 169, 127)",
             "idFormation"=>1
         ],
         [
@@ -273,6 +276,7 @@ class ListeModule
                 <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
                 <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</p>",
             "versionModule" => "V1 du 01/07/2021",
+            "couleurModule" => "rgb(93, 169, 221)",
             "idFormation"=>1
         ],
         [
@@ -325,6 +329,7 @@ class ListeModule
                 <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
                 <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</p>",
             "versionModule" => "V1 du 01/07/2021",
+            "couleurModule"=>"rgb(136, 130, 189)",
             "idFormation"=>1
         ],
         [
@@ -367,6 +372,7 @@ class ListeModule
                 <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
                 <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</p>",
             "versionModule" => "V1 du 01/07/2021",
+            "couleurModule"=>"rgb(249, 169, 127)",
             "idFormation"=>1
         ],
         [
@@ -467,6 +473,7 @@ class ListeModule
                 <p>Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons.</p>
                 <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </p>",
             "versionModule" => "V1 du 01/07/2021",
+            "couleurModule" => "rgb(230, 50, 50)",
             "idFormation"=>2
         ],
         [
@@ -539,6 +546,7 @@ class ListeModule
                 <p> Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons. </p>
                 <p> Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </p>",
             "versionModule" => "V1 du 01/07/2021",
+            "couleurModule" => "rgb(232, 78, 25)",
             "idFormation"=>2
         ],
         [
@@ -607,6 +615,7 @@ class ListeModule
                 <p>Notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exploitation d’un débit de boissons.</p>
                 <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences. </p>",
             "versionModule" => "V1 du 01/07/2021",
+            "couleurModule" => "rgb(255, 124, 0)",
             "idFormation"=>2
         ],
         [
@@ -620,6 +629,7 @@ class ListeModule
                 <div>Notre formateur spécialisé dans l'entreprenariat vous accompagne dans votre projet avec des mises en situation et des exercices individualisés.</div>",
             "organisationPedagoModule" => null,
             "prixModule" => 250,
+            "tarifInfoModule" => "Ce tarif comprend la formation sur place, la délivrance d’une attestation de fin de formation et un livret de fin formation. Le tarif ne comprend pas les éventuels frais d'hébergement et de restauration du stagiaire. ",
             "lieuModule" => "<div>Dans nos locaux à Montpellier ou Nîmes</div>",
             "lieuDetailModule" => "
                 <ul> 
@@ -697,7 +707,8 @@ class ListeModule
             "valeurModule" => "
                 <p>La formation aboutira à l’immatriculation de votre entreprise avec l’aide du formateur.</p>",
             "versionModule" => "V1 du 01/07/2021",
-            "idFormation"=>2
+            "couleurModule" => "rgb(92, 36, 131)",
+            "idFormation"=>3
         ],
 
 

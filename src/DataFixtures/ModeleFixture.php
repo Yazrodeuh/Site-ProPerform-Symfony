@@ -40,6 +40,7 @@ class ModeleFixture extends Fixture
             $modules->setProgrammeModule($mesModules['programmeModule']);
             $modules->setValeurModule($mesModules['valeurModule']);
             $modules->setVersionModule($mesModules['versionModule']);
+            $modules->setCouleurModule($mesModules['couleurModule']);
             $modules->setIdFormation($mesModules['idFormation']);
 
             $manager->persist($modules);
@@ -47,7 +48,6 @@ class ModeleFixture extends Fixture
         }
 
         $manager->flush();
-
 
     }
 }

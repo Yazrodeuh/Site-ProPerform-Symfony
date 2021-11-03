@@ -1,7 +1,7 @@
 <div class="box_formation_propose">
     {% for module in modulesFormation %}
-        <div class="formation_propose js-scroll fade-in-bottom">
-            <div class="formation_propose_header">
+        <div class="formation_propose js-scroll fade-in-bottom"  style="background-color: {{ module.couleurModule }}">
+            <div class="formation_propose_header" style="background-color: {{ module.couleurModule }}">
                 <div class="formation_propose_header_titre_2">
                     <h2>{{ module.nomModule | raw }}</h2>
                 </div>
@@ -12,7 +12,7 @@
             <div class="formation_propose_body">
                 <div style="display: flex; justify-content: space-around; flex-direction: column">
                     <div>
-                        <div class="formation_propose_titre_section">
+                        <div class="formation_propose_titre_section" style="background-color: {{ module.couleurModule }}">
                             <h3>Durée</h3>
                         </div>
                         <div class="formation_propose_duree">
@@ -21,28 +21,28 @@
                     </div>
                     {% if module.pourquimodule is defined and module.pourquimodule is not null %}
                         <div>
-                            <div class="formation_propose_titre_section">
+                            <div class="formation_propose_titre_section" style="background-color: {{ module.couleurModule }}">
                                 <h3>pour qui</h3>
                             </div>
-                            <div class="formation_propose_contenu">
+                            <div class="formation_propose_contenu" style="color: {{ module.couleurModule }}">
                                 {{ module.pourquimodule | raw }}
                             </div>
                         </div>
                     {% endif %}
                     <div>
-                        <div class="formation_propose_titre_section">
+                        <div class="formation_propose_titre_section" style="background-color: {{ module.couleurModule }}">
                             <h3>objectifs</h3>
                         </div>
-                        <div class="formation_propose_contenu">
+                        <div class="formation_propose_contenu" style="color: {{ module.couleurModule }}">
                             {{ module.objectifmodule | raw }}
                         </div>
                     </div>
                     {% if module.organisationPedagoModule is defined and module.organisationPedagoModule is not null %}
                         <div>
-                            <div class="formation_propose_titre_section">
+                            <div class="formation_propose_titre_section" style="background-color: {{ module.couleurModule }}">
                                 <h3>organisation pédagogique</h3>
                             </div>
-                            <div class="formation_propose_contenu">
+                            <div class="formation_propose_contenu" style="color: {{ module.couleurModule }}">
                                 {{ module.organisationPedagoModule | raw }}
                             </div>
                         </div>
@@ -50,24 +50,11 @@
                 </div>
                 <div style="width: 100%">
                     <div class="formation_propose_informations">
-                        <a href="{{ path('immobilier', {'nomModule': module.nomLienModule}) }}">Plus d'informations</a>
+                        <a href="{{ path('immobilier', {'nomModule': module.nomLienModule}) }}" style="background-color: {{ module.couleurModule }}">Plus d'informations</a>
                     </div>
                 </div>
-                {#
-
-                        {% if module.idRubriqueFormation == 1 %}
-                            <a href="{{ path('module', {'nomFormation': 'immobilier', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
-                        {% elseif module.idRubriqueFormation == 2 %}
-                            <a href="{{ path('module', {'nomFormation': 'permis-dexploitation', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
-                        {% elseif module.idRubriqueFormation == 3 %}
-                            <a href="{{ path('module', {'nomFormation': 'micro-entreprise', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
-                        {% elseif module.idRubriqueFormation == 4 %}
-                            <a href="{{ path('module', {'nomFormation': 'entreprise', 'nomModule': module.lienModuleDesc}) }}">Plus d'informations</a>
-                        {% endif %}
-
-                #}
             </div>
-            <div class="formation_propose_footer">
+            <div class="formation_propose_footer" style="background-color: {{ module.couleurModule }}">
                 <div class="formation_propose_footer_prix">
                     <div class="formation_propose_triangle"></div>
                     <div class="formation_propose_prix">

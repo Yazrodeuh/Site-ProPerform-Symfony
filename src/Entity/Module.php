@@ -133,6 +133,12 @@ class Module
     private string $versionModule;
 
     /**
+     * @var string
+     * @ORM\Column(type="string", length=25)
+     */
+    private string $couleurModule;
+
+    /**
      * @var int
      * @ORM\Column(type="integer")
      */
@@ -523,5 +529,21 @@ class Module
     public function setIdFormation(int $idFormation): void
     {
         $this->idFormation = $idFormation;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCouleurModule(): string
+    {
+        return $this->couleurModule;
+    }
+
+    /**
+     * @param string $couleurModule
+     */
+    public function setCouleurModule(string $couleurModule): void
+    {
+        $this->couleurModule = $couleurModule;
     }
 }

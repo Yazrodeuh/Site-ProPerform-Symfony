@@ -96,7 +96,6 @@
     text-align: justify;
     padding: 4% 3%;
     margin: auto;
-
 }
 
 .formation_propose_duree{
@@ -122,7 +121,15 @@
     color: white;
     cursor: pointer;
     text-align: center;
-    border: 2px solid white;
+    transition: all 0.4s ease-out;
+
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+.formation_propose .formation_propose_informations a:hover{
+    transform: scale(1.1);
 }
 
 .formation_propose_footer{

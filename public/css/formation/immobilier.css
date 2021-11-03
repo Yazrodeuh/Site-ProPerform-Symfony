@@ -29,68 +29,12 @@
     margin: -3% 0 0 2%;
 }
 
-.formation_propose:nth-child(3n + 1),
-.formation_propose:nth-child(3n + 1) .formation_propose_header,
-.formation_propose:nth-child(3n + 1) .formation_propose_titre_section,
-.formation_propose:nth-child(3n + 1) .formation_propose_footer,
-.formation_propose:nth-child(3n + 1) .formation_propose_informations a{
-    background-color: var(--immo-1-color);
-}
-
-.formation_propose:nth-child(3n + 2),
-.formation_propose:nth-child(3n + 2) .formation_propose_header,
-.formation_propose:nth-child(3n + 2) .formation_propose_titre_section,
-.formation_propose:nth-child(3n + 2) .formation_propose_footer,
-.formation_propose:nth-child(3n + 2) .formation_propose_informations a{
-    background-color: var(--immo-2-color);
-}
-
-.formation_propose:nth-child(3n + 3),
-.formation_propose:nth-child(3n + 3) .formation_propose_header,
-.formation_propose:nth-child(3n + 3) .formation_propose_titre_section,
-.formation_propose:nth-child(3n + 3) .formation_propose_footer,
-.formation_propose:nth-child(3n + 3) .formation_propose_informations a{
-    background-color: var(--immo-3-color);
-}
-
-.formation_propose:nth-child(3n + 1) .formation_propose_contenu{
-    color: var(--immo-1-color);
-}
-
-.formation_propose:nth-child(3n + 2) .formation_propose_contenu{
-    color: var(--immo-2-color);
-}
-
-.formation_propose:nth-child(3n + 3) .formation_propose_contenu{
-    color: var(--immo-3-color);
-}
-
-.formation_propose:nth-child(3n + 1) .formation_propose_informations a:hover{
-    color: var(--immo-1-color);
-    background-color: white;
-    font-weight: bold;
-}
-
-.formation_propose:nth-child(3n + 2) .formation_propose_informations a:hover{
-    color: var(--immo-2-color);
-    background-color: white;
-    font-weight: bold;
-}
-
-.formation_propose:nth-child(3n + 3) .formation_propose_informations a:hover{
-    color: var(--immo-3-color);
-    background-color: white;
-    font-weight: bold;
-}
-
-
 .bas_de_page{
     width: 80%;
     margin: auto;
     padding: 1% 0;
     text-align: justify;
 }
-
 
 
 @media screen and (max-width:1220px) and (min-width: 200px){
