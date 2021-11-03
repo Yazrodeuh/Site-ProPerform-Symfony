@@ -709,7 +709,7 @@ class ListeModule
             "versionModule" => "V1 du 01/07/2021",
             "couleurModule" => "rgb(92, 36, 131)",
             "idFormation"=>3
-        ],
+        ]
 
 
     ];
