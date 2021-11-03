@@ -13,7 +13,6 @@ class Module
     /**
      * @var int
      * @ORM\Id
-     * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
     private int $idModule;

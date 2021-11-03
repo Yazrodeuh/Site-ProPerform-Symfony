@@ -18,20 +18,10 @@
     --pe-2-color: rgb(232, 78, 25);
     --pe-3-color: rgb(255, 124, 0);
 
-    --entre-1-colord: rgb(104, 163, 155);
-
-    --entre-2-colorn: rgb(122, 156, 115);
-    --entre-2-colord: rgb(122, 156, 115);
-    --entre-2-colorl: rgb(190, 203, 183);
-
-    --entre-3-colorn: rgb(152, 191, 128);
-    --entre-3-colord: rgb(152, 191, 128);
-    --entre-3-colorl: rgb(210, 223, 194);
-
-    --entre-4-colorn: rgb(90, 129, 110);
-    --entre-4-colord: rgb(89, 129, 109);
-    --entre-4-colorl: rgb(177, 189, 195);
-
+    --entre-1-color: rgb(104, 163, 155);
+    --entre-2-color: rgb(122, 156, 115);
+    --entre-3-color: rgb(152, 191, 128);
+    --entre-4-color: rgb(89, 129, 109);
 
 }
 

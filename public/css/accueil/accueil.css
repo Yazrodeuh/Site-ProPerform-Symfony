@@ -166,10 +166,10 @@
 }
 
 .formation:nth-child(4) .text_formation{
-    color: var(--entre-1-colord);
+    color: var(--entre-1-color);
 }
 .formation:nth-child(4) a{
-    border: 1px solid var(--entre-1-colord);
+    border: 1px solid var(--entre-1-color);
 }
 
 .bouton_formation{
@@ -216,7 +216,7 @@
 }
 
 .formation:nth-child(4) .bouton_formation div{
-    background-color: var(--entre-1-colord);
+    background-color: var(--entre-1-color);
 }
 
 .titre_grand{
