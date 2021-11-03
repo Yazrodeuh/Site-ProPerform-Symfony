@@ -628,7 +628,7 @@ class ListeModule
                 <div>Acquérir les bases du statut auto-entrepreneur.</div>
                 <div>Notre formateur spécialisé dans l'entreprenariat vous accompagne dans votre projet avec des mises en situation et des exercices individualisés.</div>",
             "organisationPedagoModule" => null,
-            "prixModule" => 250,
+            "prixModule" => 350,
             "tarifInfoModule" => "Ce tarif comprend la formation sur place, la délivrance d’une attestation de fin de formation et un livret de fin formation. Le tarif ne comprend pas les éventuels frais d'hébergement et de restauration du stagiaire. ",
             "lieuModule" => "<div>Dans nos locaux à Montpellier ou Nîmes</div>",
             "lieuDetailModule" => "
