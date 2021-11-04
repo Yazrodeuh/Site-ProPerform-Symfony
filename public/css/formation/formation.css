@@ -88,8 +88,11 @@
     margin: auto;
     padding: 0.5% 0;
     border-radius: 20px;
-    font-size: 14px;
     text-transform: uppercase;
+}
+
+.formation_propose_titre_section h3{
+    font-size: 16px;
 }
 
 .formation_propose_contenu, .formation_propose_duree{
@@ -118,10 +121,10 @@
 .formation_propose_informations a{
     padding: 1% 2%;
     border-radius: 20px;
-    color: white;
+    background-color: white;
     cursor: pointer;
     text-align: center;
-    transition: all 0.4s ease-out;
+    transition: all 0.2s ease-out;
 
     display: block;
     width: 40%;

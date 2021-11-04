@@ -14,10 +14,15 @@
 
 {% block body %}
 
-
+    <style>
+        .js-scroll.fade-in-bottom:nth-child(2n + 1){
+            background-color: {{ moduleFormation.couleurModule | raw }};
+            color: white;
+        }
+    </style>
     <div class="enteteFormation">
-        <div style="display: flex; justify-content: flex-end; background-image: linear-gradient(to bottom, transparent 0, var(--pe-1-color) 30%, var(--pe-1-color) 70%, transparent)">
-            <div class="entete_1 js-scroll slide-right">
+        <div style="display: flex; justify-content: center">
+            <div class="entete_1 js-scroll slide-right" style="background-color: {{ moduleFormation.couleurModule | raw }}">
                 <h1><strong>{{ moduleFormation.nomModule | raw }}</strong></h1>
             </div>
         </div>

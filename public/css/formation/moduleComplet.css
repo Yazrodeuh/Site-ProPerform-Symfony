@@ -1,5 +1,7 @@
 .enteteFormation .entete_1{
-    margin: 10% 0;
+    margin: 10% 20%;
+    padding: 1% 2%;
+    border-radius: 20px;
 }
 
 .js-scroll.fade-in-bottom:nth-child(2n + 1){

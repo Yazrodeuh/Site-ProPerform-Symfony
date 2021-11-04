@@ -4,7 +4,6 @@
 
 .enteteFormation .entete_1 h1{
     color: white;
-    padding: 0.5% 1%;
     text-align: center;
     background-color: var(--blue-color);
 }

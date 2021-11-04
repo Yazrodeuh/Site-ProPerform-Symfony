@@ -13,10 +13,6 @@
 }
 
 .enteteFormation .entete_1 span:nth-child(2){
-    background-color: var(--blue-color);
-}
-
-.enteteFormation .entete_1 span:nth-child(3){
     background-color: var(--immo-1-color);
 }
 
