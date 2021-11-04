@@ -33,7 +33,7 @@
 .pageActu{
     margin: 2% 0;
     position: relative;
-    padding-right: 19%;
+    padding-right: 18%;
 
 }
 
@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .actualite{
@@ -99,7 +99,7 @@
 }
 
 .actualite .actu_titre h2{
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.1em;
 }
 
@@ -113,6 +113,7 @@
 .actualite .actu_desc{
     text-align: justify;
     margin: 1%;
+    font-size: 18px;
 }
 
 .lireActu{

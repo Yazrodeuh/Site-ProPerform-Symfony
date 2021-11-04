@@ -71,14 +71,14 @@
                 <div class="actualite">
                     <a href="">
                         <div class="img_actu">
-                            <img srcset="{{ actu.imageactualite }}" src="{{ actu.imageactualite }}" alt="" width="100%" style="border-radius: 20px 20px 0 0">
+                            <img srcset="{{ actu.imageactualite }}" src="{{ actu.imageactualite }}" alt="{{ actu.titreactualite }}" title="{{ actu.titreactualite }}" width="100%" style="border-radius: 20px 20px 0 0">
                         </div>
                         <div class="contenuActu">
                             <div style="padding: 2% 5%">
                                 <div class="actu_titre">
                                     <h2>{{ actu.titreactualite }}</h2></div>
                                 <div class="publication"> {{ actu.dateactualite | date("m/d/Y") }} | {{ actu.titreactualite }}</div>
-                                <div class="actu_desc"> {{ actu.descriptionactualite }} </div>
+                                <div class="actu_desc"> {{ actu.descriptionactualite | slice(0, 150)}} ...</div>
                             </div>
                             <div class="lireActu">
                                 Lire l'actualité

@@ -25,17 +25,25 @@ class ActualiteRepository extends ServiceEntityRepository{
     }
 
 
-    public function allActualites(string $offset, int $limit): QueryBuilder
+    public function getActuPage(string $offset, int $limit):QueryBuilder
     {
-
-       return $this->createQueryBuilder('a')
+        return $this->createQueryBuilder('a')
             ->select('a')
             ->from(Actualite::class, 'a')
             ->join(RubriqueFormation::class, 'r')
             ->orderBy('a.dateactualite', 'DESC')
             ->setFirstResult($offset)
             ->setMaxResults($limit);
+    }
 
+
+    public function allActualites()
+    {
+
+       return $this->createQueryBuilder('a')
+           ->orderBy('a.dateactualite', 'DESC')
+           ->getQuery()
+           ->getResult();
     }
 
 
