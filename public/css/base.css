@@ -100,7 +100,7 @@ h3{
 
 
 .enteteFormation .image_top_texte{
-    color: black;
+    color: var(--blue-color);
     text-align: justify;
     width: 85%;
     margin: 5%  auto auto;

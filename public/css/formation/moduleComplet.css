@@ -9,8 +9,9 @@
     color: white;
 }
 
-.js-scroll {
+.js-scroll:not(:first-child) {
     padding: 2% 0;
     line-height: 1.5em;
+    text-align: justify;
 }
 
