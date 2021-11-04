@@ -377,7 +377,7 @@ class ListeModule
         ],
         [
             "idModule" => 7,
-            "nomModule" => "Initial",
+            "nomModule" => "Permis d'exploitation Initial",
             "aliasModule" => "PEI",
             "dureeModule" => "2,5 journées (20h)",
             "pourQuiModule" => "
@@ -478,7 +478,7 @@ class ListeModule
         ],
         [
             "idModule" => 8,
-            "nomModule" => "Renouvellement",
+            "nomModule" => "Permis d'exploitation Renouvellement",
             "aliasModule" => "PER",
             "dureeModule" => "1 journée (7h)",
             "pourQuiModule" => "
@@ -551,7 +551,7 @@ class ListeModule
         ],
         [
             "idModule" => 9,
-            "nomModule" => "Chambre d'hôtes",
+            "nomModule" => "Permis d'exploitation Chambre d'hôtes",
             "aliasModule" => "PECH",
             "dureeModule" => "1 journée (8h)",
             "pourQuiModule" => "
@@ -620,7 +620,7 @@ class ListeModule
         ],
         [
             "idModule" => 10,
-            "nomModule" => "Créer sa micro entreprise accompagné",
+            "nomModule" => "Créer sa micro entreprise",
             "aliasModule" => "MEA",
             "dureeModule" => "1 journée (7h)",
             "pourQuiModule" => null,

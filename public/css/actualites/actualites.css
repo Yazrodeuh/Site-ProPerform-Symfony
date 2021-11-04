@@ -1,40 +1,119 @@
-.option_actu{
-    position: fixed;
-    left: 2%;
-    top: 40%;
+.choixoption{
     display: flex;
-    flex-direction: column;
-    width: 12vw;
-    padding-left: 0.7%;
-    border-left: 2px ridge rgb(176, 176, 176);
+    justify-content: space-between;
+    padding: 1% 10%;
 }
 
-.option_actu .choixoption{
-    padding: 2%;
-    margin: 2% auto;
-    cursor: pointer;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+.choixoption h1{
+    font-size: 35px;
 }
 
-.option_actu .choixoption img{
-    width: 15%;
-    padding-right: 3%;
-}
 
-.option_actu .choixoption:hover, .option_actu .selected{
-    box-shadow: 1px 1px 12px #555;
-    border-radius: 5px;
-}
 
 .pageActu{
     margin: 2% 0;
     position: relative;
-    padding-right: 18%;
+}
 
+
+.slider{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    font-size: 18px;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    transition: 2s;
+    position: relative;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-manualActu{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual-btn{
+    border: 2px solid var(--blue-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: var(--blue-color);
+}
+
+#radio1:checked ~ .firstSlide{
+    margin-left: 0;
+}
+#radio2:checked ~ .firstSlide{
+    margin-left: -25%;
+}
+#radio3:checked ~ .firstSlide{
+    margin-left: -50%;
+}
+#radio4:checked ~ .firstSlide{
+    margin-left: -75%;
+}
+
+
+
+#radio1:checked ~ .navigation-manual .auto-btn1{
+    background-color: var(--blue-color);
+}
+
+#radio2:checked ~ .navigation-manual .auto-btn2{
+    background-color: var(--blue-color);
+}
+
+#radio3:checked ~ .navigation-manual .auto-btn3{
+    background-color: var(--blue-color);
+}
+
+#radio4:checked ~ .navigation-manual .auto-btn4{
+    background-color: var(--blue-color);
+}
+
+
+
+
+
+.contenuPage{
+    display: flex;
 }
 
 .actualites{
@@ -51,7 +130,7 @@
     display: flex;
     flex-direction: column;
     /*border: 1px solid black;*/
-    width: 21em;
+    width: 18em;
 
 }
 

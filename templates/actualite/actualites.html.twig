@@ -20,87 +20,123 @@
 {% block body %}
 
 
-    {# <div class="option_actu" id="option_actu">
-        <div class="choixoption" id="tout">
-            Toutes les actualités</div>
-        <div class="choixoption" id="formations">
-            <img srcset="{{ asset('img/png/formationRond.png') }}" src="{{ asset('img/png/formationRond.png') }}" alt="">Formations
+    <div class="slider" id="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide firstSlide">
+                <img src="{{ actus[0].imageactualite }}" alt="">
+            </div>
+            <div class="slide">
+                <img src="{{ actus[1].imageactualite }}" alt="">
+            </div>
+            <div class="slide">
+                <img src="{{ actus[2].imageactualite }}" alt="">
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn auto-btn1"></label>
+                <label for="radio2" class="manual-btn auto-btn2"></label>
+                <label for="radio3" class="manual-btn auto-btn3"></label>
+                <label for="radio4" class="manual-btn auto-btn4"></label>
+            </div>
         </div>
-        <div class="choixoption" id="immo">
-            <img srcset="{{ asset('img/png/immo.png') }}" src="{{ asset('img/png/immo.png') }}" alt=""> Immobilier
-        </div>
-        <div class="choixoption" id="pe">
-            <img srcset="{{ asset('img/png/pe.png') }}" src="{{ asset('img/png/pe.png') }}" alt=""> Débit de boissons
-        </div>
-        <div class="choixoption" id="me">
-            <img srcset="{{ asset('img/png/me.png') }}" src="{{ asset('img/png/me.png') }}" alt=""> Création d'entreprise
-        </div>
-    </div> #}
+    </div>
+    <script type="text/javascript">
+        let count = 1;
+
+        function carousel(){
+            document.getElementById("radio" + count).checked = true;
+            count++;
+            if(count > 4 ) count = 1;
+        }
+
+        function updateInterval(radio){
+            clearInterval(move);
+            count = radio;
+            move = setInterval(carousel, 5000);
+        }
+
+        document.getElementById("radio1").addEventListener("click", function (){
+            updateInterval(1)
+        });
+        document.getElementById("radio2").addEventListener("click", function (){
+            updateInterval(2)
+        });
+        document.getElementById("radio3").addEventListener("click", function (){
+            updateInterval(3)
+        });
+        document.getElementById("radio4").addEventListener("click", function (){
+            updateInterval(4)
+        });
+
+        carousel();
+        let move = setInterval(carousel, 5000);
+
+    </script>
+
 
     <div class="pageActu">
-        {# <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <div class="slide first">
-                    <img src="{{ actus[0].imageactualite }}" alt="">
+
+        <div class="contenuPage">
+            <div class="flexFive">
+                <div class="choixoption">
+                    <div><h1>Actualités</h1></div>
+                    <div>
+                        <label for="categorieActu">Trier par :</label>
+                        <select id="categorieActu">
+                            <option value="0" selected>Toutes les actus</option>
+                            <option value="1">Formations</option>
+                            <option value="2">Immobilier</option>
+                            <option value="3">Débit de boissons</option>
+                            <option value="4">Création d'entreprise</option>
+                        </select>
+
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="{{ actus[1].imageactualite }}" alt="">
+                <div class="actualites" id="actualites">
+
+                    {% for actu in actus %}
+                        <div class="actualite">
+                            <a href="">
+                                <div class="img_actu">
+                                    <img srcset="{{ actu.imageactualite }}" src="{{ actu.imageactualite }}" alt="{{ actu.titreactualite }}" title="{{ actu.titreactualite }}" width="100%" style="border-radius: 20px 20px 0 0">
+                                </div>
+                                <div class="contenuActu">
+                                    <div style="padding: 2% 5%">
+                                        <div class="actu_titre">
+                                            <h2>{{ actu.titreactualite }}</h2></div>
+                                        <div class="publication"> {{ actu.dateactualite | date("m/d/Y") }} | {{ actu.titreactualite }}</div>
+                                        <div class="actu_desc"> {{ actu.descriptionactualite | slice(0, 150)}} ...</div>
+                                    </div>
+                                    <div class="lireActu">
+                                        Lire l'actualité
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
                 </div>
-                <div class="slide">
-                    <img src="{{ actus[2].imageactualite }}" alt="">
+                <div class="numero_page">
+                    <div id="nbActuTotal" style="display: none"></div>
+                    <div id="left"> << </div>
+                    <div id="numPageBot"></div>
+                    <div id="right"> >> </div>
                 </div>
             </div>
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
+            <div id="infos" class="flexOne" style="position: relative">
+                {% include('actualite/infoActu.html.twig') %}
             </div>
-        </div> #}
-
-        <div>
-            <div>Actualités</div>
-            <div></div>
         </div>
-
-        <div class="actualites" id="actualites">
-
-            {% for actu in actus %}
-                <div class="actualite">
-                    <a href="">
-                        <div class="img_actu">
-                            <img srcset="{{ actu.imageactualite }}" src="{{ actu.imageactualite }}" alt="{{ actu.titreactualite }}" title="{{ actu.titreactualite }}" width="100%" style="border-radius: 20px 20px 0 0">
-                        </div>
-                        <div class="contenuActu">
-                            <div style="padding: 2% 5%">
-                                <div class="actu_titre">
-                                    <h2>{{ actu.titreactualite }}</h2></div>
-                                <div class="publication"> {{ actu.dateactualite | date("m/d/Y") }} | {{ actu.titreactualite }}</div>
-                                <div class="actu_desc"> {{ actu.descriptionactualite | slice(0, 150)}} ...</div>
-                            </div>
-                            <div class="lireActu">
-                                Lire l'actualité
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-
-        {% include('actualite/infoActu.html.twig') %}
 
     </div>
 
 
 
-    <div class="numero_page">
-        <div id="nbActuTotal" style="display: none"></div>
-        <div id="left"> << </div>
-        <div id="numPageBot"></div>
-        <div id="right"> >> </div>
-    </div>
+
 
 
 

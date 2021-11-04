@@ -1,9 +1,8 @@
 
 .info_actu{
-    position: fixed;
+    position: absolute;
     right: 0;
-    top: 25%;
-    width: 17%;
+    top: 5%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,12 @@
     font-size: 16px;
 }
 
+.info_actu_fixed{
+
+}
+
 .juriste, .newsletter{
+    position: relative;
     padding: 3%;
     border: 1px solid var(--red-color);
     border-right: none;

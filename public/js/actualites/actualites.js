@@ -1,7 +1,7 @@
 
 let idRubrique = -1;
 
-window.addEventListener("load", function (){
+/*window.addEventListener("load", function (){
     optionSelected("tout");
     idRubrique = -1;
     numeroPage = 1;
@@ -47,7 +47,7 @@ document.getElementById("me").addEventListener("click", function (){
     numeroPage = 1;
 
     actualiserPage();
-})
+})*/
 
 /**
  *
@@ -81,19 +81,19 @@ const numPageAffiche = document.getElementById("numPageBot");
 const divActu = document.getElementById("actualites");
 
 
-buttonRight.addEventListener("click", function (){
+/*buttonRight.addEventListener("click", function (){
     if(numeroPage >= 1){
         numeroPage++;
         actualiserPage();
     }
-});
+});*/
 
-buttonLeft.addEventListener("click", function (){
+/*buttonLeft.addEventListener("click", function (){
     if(numeroPage > 1){
         numeroPage--;
         actualiserPage();
     }
-});
+});*/
 
 
 
@@ -216,3 +216,19 @@ function afficherButton(){
         buttonRight.style.cursor = "pointer"
     }
 }
+
+
+
+window.addEventListener("scroll", function (){
+    console.log(window.pageYOffset)
+    console.log(document.body.offsetHeight)
+    console.log(window.pageYOffset / document.body.offsetHeight)
+    console.log(document.getElementById("infos").offsetWidth)
+    console.log("")
+    if(window.pageYOffset > document.getElementById("slider").offsetHeight){
+        document.getElementById("info_actu").style.position = "fixed";
+    }else {
+        document.getElementById("info_actu").style.position = "absolute";
+
+    }
+});
