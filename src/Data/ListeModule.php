@@ -644,7 +644,7 @@ class ListeModule
             "delaisModule" => "15 jours maximum entre votre demande d’inscription et votre formation sous réserve d’acceptation des conditions générales de vente, du règlement intérieur et de la signature de la convention de formation, et le cas échéant, dès validation de votre financement.",
             "objectifPedagoModule" => "
                 <p>Être apte à maitriser les bases du statut d’auto-entrepreneur pour vous permettre de créer votre entreprise et vous consacrer pleinement à votre future activité professionnelle.</p>
-                <p>L’ensemble des notions spécifiques et des démarches administratives relatives à la création d'une micro-entreprise n’auront plus de secret pour vous en terme de compétences.</p>",
+                <p>L’ensemble des notions spécifiques et des démarches administratives relatives à la création d'une micro-entreprise n’auront plus de secret pour vous en termes de compétences.</p>",
             "modaliteModule" => "
                 <div>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct avec des mises en situation et des exercices individualisés avec corrections en groupe.</div>",
             "programmeModule" => "
@@ -656,11 +656,11 @@ class ListeModule
                 <strong> Principes de l’auto-entrepreneuriat :</strong>
                 <ul>
                     <li> Les obligations comptables ;</li>
-                    <li> L'immatriculation au RCS et RM (distinction activités commerciales et artisanales) ;</li>
+                    <li> L'immatriculation aux RCS et RM (distinction activité commerciale et artisanale)</li>
                     <li> Différents types de sociétés unipersonnelles :
                         <ul>
-                            <li> Entreprise Individuelle (EI), </li>
-                            <li> Entreprise Individuelle à Responsabilité Limitée (EIRL), </li>
+                            <li> Entreprise Individuelle (EI)</li>
+                            <li> Entreprise Individuelle à Responsabilité Limitée (EIRL)</li>
                             <li> Entreprise Unipersonnelle à Responsabilité Limitée (EURL), </li>
                             <li> Focus sur le conjoint collaborateur ou salarié. </li>
                         </ul>
@@ -706,7 +706,7 @@ class ListeModule
                 </ul>",
             "valeurModule" => "
                 <p>La formation aboutira à l’immatriculation de votre entreprise avec l’aide du formateur.</p>",
-            "versionModule" => "V1 du 01/07/2021",
+            "versionModule" => "V2 du 01/09/2021",
             "couleurModule" => "rgb(92, 36, 131)",
             "idFormation"=>3
         ],

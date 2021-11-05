@@ -19,39 +19,48 @@
 
 {% block body %}
 
+    <div class="affichageSlider">
 
     <div class="slider" id="slider">
         <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-
-            <div class="slide firstSlide">
-                <img src="{{ actus[0].imageactualite }}" alt="">
+            <div class="slide" id="firstSlide">
+                <a href="">
+                    <img src="{{ actus[0].imageactualite }}" alt="{{ actus[0].titreactualite }}" title="{{ actus[0].titreactualite }}" width="">
+                </a>
             </div>
             <div class="slide">
-                <img src="{{ actus[1].imageactualite }}" alt="">
+                <a href="">
+                    <img src="{{ actus[1].imageactualite }}" alt="{{ actus[1].titreactualite }}" title="{{ actus[1].titreactualite }}">
+                </a>
             </div>
             <div class="slide">
-                <img src="{{ actus[2].imageactualite }}" alt="">
+                <a href="">
+                    <img src="{{ actus[2].imageactualite }}" alt="{{ actus[2].titreactualite }}" title="{{ actus[2].titreactualite }}">
+                </a>
             </div>
-
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn auto-btn1"></label>
-                <label for="radio2" class="manual-btn auto-btn2"></label>
-                <label for="radio3" class="manual-btn auto-btn3"></label>
-                <label for="radio4" class="manual-btn auto-btn4"></label>
+        </div>
+        <div class="navigation-manual">
+            <div class="dispositionBtnCarousel">
+                <div class="manual-btn" id="auto-btn0"></div>
+                <div class="manual-btn" id="auto-btn1"></div>
+                <div class="manual-btn" id="auto-btn2"></div>
             </div>
         </div>
     </div>
+    </div>
     <script type="text/javascript">
-        let count = 1;
+        let count = 0;
+        let countBefore = 2;
 
         function carousel(){
-            document.getElementById("radio" + count).checked = true;
+            console.log("-" + (count * 25) + "%")
+            document.getElementById("firstSlide").style.marginLeft = "-" + (count * 25) + "%";
+            document.getElementById("auto-btn" + count).style.backgroundColor = "var(--blue-color)"
+            document.getElementById("auto-btn" + countBefore).style.backgroundColor = "var(--red-color)"
+            countBefore = count;
             count++;
-            if(count > 4 ) count = 1;
+            if(count > 2 ) count = 0;
+
         }
 
         function updateInterval(radio){
@@ -60,18 +69,7 @@
             move = setInterval(carousel, 5000);
         }
 
-        document.getElementById("radio1").addEventListener("click", function (){
-            updateInterval(1)
-        });
-        document.getElementById("radio2").addEventListener("click", function (){
-            updateInterval(2)
-        });
-        document.getElementById("radio3").addEventListener("click", function (){
-            updateInterval(3)
-        });
-        document.getElementById("radio4").addEventListener("click", function (){
-            updateInterval(4)
-        });
+
 
         carousel();
         let move = setInterval(carousel, 5000);

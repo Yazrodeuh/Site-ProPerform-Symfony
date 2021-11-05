@@ -225,10 +225,9 @@ window.addEventListener("scroll", function (){
     console.log(window.pageYOffset / document.body.offsetHeight)
     console.log(document.getElementById("infos").offsetWidth)
     console.log("")
-    if(window.pageYOffset > document.getElementById("slider").offsetHeight){
+    /*if(window.pageYOffset > document.getElementById("slider").offsetHeight){
         document.getElementById("info_actu").style.position = "fixed";
     }else {
         document.getElementById("info_actu").style.position = "absolute";
-
-    }
+    }*/
 });

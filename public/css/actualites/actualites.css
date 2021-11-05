@@ -15,11 +15,16 @@
     position: relative;
 }
 
+.affichageSlider{
+    margin: 3% 6%
+}
 
 .slider{
     width: 100%;
-    height: 80%;
+    height: 100%;
     overflow: hidden;
+    border-radius: 20px;
+    position: relative;
 }
 
 .slides{
@@ -27,6 +32,7 @@
     height: 100%;
     display: flex;
     font-size: 18px;
+    position: relative;
 }
 
 .slides input{
@@ -39,33 +45,41 @@
     position: relative;
 }
 
-.slide img{
+.slide a{
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide img{
+    width: 100%;
 }
 
 .navigation-manual{
+
     position: absolute;
+    bottom: 5%;
     width: 100%;
-    margin-top: 30%;
     display: flex;
     justify-content: center;
 }
 
-.navigation-manualActu{
-    position: absolute;
-    bottom: 0;
-    left: 45%;
+
+
+.dispositionBtnCarousel{
+    background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1%;
+    border-radius: 20px;
 }
 
 .manual-btn{
     border: 2px solid var(--blue-color);
-    padding: 5px;
+    padding: 4px 20px;
     border-radius: 10px;
     cursor: pointer;
+    background-color: red;
     transition: 1s;
 }
 
@@ -77,18 +91,7 @@
     background-color: var(--blue-color);
 }
 
-#radio1:checked ~ .firstSlide{
-    margin-left: 0;
-}
-#radio2:checked ~ .firstSlide{
-    margin-left: -25%;
-}
-#radio3:checked ~ .firstSlide{
-    margin-left: -50%;
-}
-#radio4:checked ~ .firstSlide{
-    margin-left: -75%;
-}
+
 
 
 
@@ -101,10 +104,6 @@
 }
 
 #radio3:checked ~ .navigation-manual .auto-btn3{
-    background-color: var(--blue-color);
-}
-
-#radio4:checked ~ .navigation-manual .auto-btn4{
     background-color: var(--blue-color);
 }
 
