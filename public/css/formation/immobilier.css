@@ -3,26 +3,27 @@
 
 }
 
-.enteteFormation .entete_1{
-    margin: 13% 0 9% 15%;
+.enteteFormation .titreEntete{
+    padding: 7% 0 9% 20%;
 }
 
-.enteteFormation .entete_1 span:nth-child(1){
-    color: var(--blue-color);
-    background-color: white;
-}
-
-.enteteFormation .entete_1 span:nth-child(2){
+.enteteFormation .entete_1 {
     background-color: var(--immo-1-color);
 }
 
-.enteteFormation  .image_top_texte_picto{
-    background: url("/img/formation/immobilier/tarif_unique_350.png");
-    background-size: 100% 100%;
-    width: 10em;
-    height: 10em;
-    float: right;
-    margin: -3% 0 0 2%;
+.enteteFormation .textEntete{
+    border: 2px solid var(--immo-1-color);
+}
+
+
+
+.enteteFormation .textEntete{
+    display: flex;
+    flex-direction: row;
+}
+
+.enteteFormation .textEntete div:first-child{
+    padding-right: 2%;
 }
 
 .bas_de_page{

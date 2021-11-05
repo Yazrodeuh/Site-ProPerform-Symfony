@@ -11,7 +11,7 @@
 
 {% block body %}
 
-    <div class="enteteAccueil">
+    <div class="enteteFormation">
         <div style="display: flex; justify-content: flex-start">
             <div class="certification js-scroll slide-right">
                 <div class="flexTwo" style="display: flex; align-items: flex-start; flex-direction: column; margin: 1% 3%">
@@ -29,26 +29,24 @@
                 </div>
             </div>
         </div>
-        <div style="display: flex; justify-content: flex-end; width: 100%">
+        <div class="titreEntete">
             <div class="entete_1 js-scroll slide-right">
-                <h1><strong><span>Pro'</span>Perform,</strong> <br> <span>le partenaire de votre progression profesionnelle</span></h1>
+                <h1>Le partenaire de votre progression profesionnelle</h1>
             </div>
         </div>
-        <div>
-            <div class="entete_bot">
-                <div>
-                    <p>
-                        Engagée depuis plus de 10 ans dans le secteur de la formation, Pro’Perform propose des formations qualifiées et qualifiantes afin de répondre à vos besoins d’évolution professionnelle.
-                    </p>
-                </div>
+        <div class="image_top_texte js-scroll fade-in-bottom">
+            <div>
+                <p>
+                    Engagée depuis plus de 10 ans dans le secteur de la formation, Pro’Perform propose des formations qualifiées et qualifiantes afin de répondre à vos besoins d’évolution professionnelle.
+                </p>
             </div>
         </div>
     </div>
-    <div style="padding: 1% 0;">
+    <div style="padding: 1% 0;" class="js-scroll fade-in-bottom">
         <div class="titre_grand" style="color: var(--blue-color)">
             <h2>Nos formations</h2>
         </div>
-        <div class="formations js-scroll fade-in-bottom">
+        <div class="formations">
             <div class="formation">
                 <a href="{{ path('immobilier') }}">
                     <div class="image_formation">

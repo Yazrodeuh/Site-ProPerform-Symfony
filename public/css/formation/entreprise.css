@@ -2,16 +2,11 @@
     background-image: url("/img/formation/entreprise/entreprise_frise.jpeg");
 }
 
-.enteteFormation .entete_1 span:nth-child(1){
-    color: var(--entre-1-color);
-    background-color: white;
-}
-
-.enteteFormation .entete_1 span:nth-child(2){
+.enteteFormation .entete_1 {
     background-color: var(--entre-1-color);
 }
 
 
-.image_top_texte{
-    padding-bottom: 1%;
+.enteteFormation .textEntete{
+    border: 2px solid var(--entre-1-color);
 }

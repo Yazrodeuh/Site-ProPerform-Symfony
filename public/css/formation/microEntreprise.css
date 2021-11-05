@@ -2,17 +2,16 @@
     background-image: url("/img/formation/micro_entreprise/me_frise.png");
 }
 
-.enteteFormation .entete_1{
-    margin: 17% 0 5% 25%;
+.enteteFormation .titreEntete{
+    padding: 17% 0 3% 25%;
 }
 
-.enteteFormation .entete_1 span:nth-child(1){
-    color: var(--me-1-color);
-    background-color: white;
-}
-
-.enteteFormation .entete_1 span:nth-child(2){
+.enteteFormation .entete_1 {
     background-color: var(--me-1-color);
+}
+
+.enteteFormation .textEntete{
+    border: 2px solid var(--me-1-color);
 }
 
 
