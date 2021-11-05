@@ -2,21 +2,9 @@
     background-image: none;
 }
 
-.enteteFormation .entete_1 h1{
-    color: white;
-    text-align: center;
-    background-color: var(--blue-color);
-}
 
-
-.enteteFormation .image_top_texte{
-    display: flex;
-    justify-content: flex-end;
-    margin: 9% auto auto;
-    padding-bottom: 2%;
-}
 
 .image_top_texte iframe{
-    width: 30em;
-    height: 20em;
+    width: 25em;
+    height: 18em;
 }
