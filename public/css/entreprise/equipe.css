@@ -6,6 +6,10 @@
     background-image: url("/img/entreprise/equipe/equipe_frise.png");
 }
 
+.enteteFormation .entete_1{
+    width: auto;
+}
+
 .enteteFormation .titreEntete{
     padding: 27% 0 1%;
 }

@@ -102,7 +102,7 @@
 }
 
 .formation_propose_duree{
-    color: var(--red-color);
+    color: var(--blue-color);
     font-size: 23px;
     text-align: center;
 }
@@ -167,16 +167,16 @@
     border-radius: 20px;
     margin: auto;
     font-size: 16px;
-    color: var(--red-color);
-    border-bottom: 2px solid var(--red-color);
+    color: var(--blue-color);
+    border-bottom: 2px solid var(--blue-color);
     font-weight: bold;
     transition: all .2s ease-out;
 }
 
 .formation_propose_inscription a:hover{
     background-color: white;
-    color: var(--blue-color);
-    border-color: var(--blue-color);
+    color: var(--red-color);
+    border-color: var(--red-color);
     font-weight: bold;
 }
 
