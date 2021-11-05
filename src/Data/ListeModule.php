@@ -720,18 +720,42 @@ class ListeModule
                 <div>Acquérir les bases administratives, juridiques et financières indispensables à la création ou reprise d’une entreprise. Notre formateur spécialisé dans l'entrepreneuriat vous accompagne dans votre projet à l’appui d’un bilan de compétence entrepreneuriale.</div>",
             "organisationPedagoModule" => null,
             "prixModule" => 450,
-            "tarifInfoModule" => "",
+            "tarifInfoModule" => "Ce tarif comprend la formation sur place, la délivrance d’une attestation de fin de formation et un livret de fin formation. Le tarif ne comprend pas les éventuels frais d'hébergement et de restauration du stagiaire. ",
             "lieuModule" => "<div>Dans nos locaux à Montpellier ou Nîmes</div>",
-            "lieuDetailModule" => "",
+            "lieuDetailModule" => "
+                <ul>
+                    <li>501 avenue d’Occitanie 34090 Montpellier</li>
+                    <li>50 Impasse Laennec, 30900 Nîmes</li>
+                </ul>",
             "nomLienModule" => "pour-se-former",
-            "prerequisModule" => "",
-            "publicModule" => "",
-            "delaisModule" => "",
-            "objectifPedagoModule" => "",
-            "modaliteModule" => "",
-            "programmeModule" => "",
-            "valeurModule" => "",
-            "versionModule" => "V1 du 01/07/2021",
+            "prerequisModule" => "Aucune connaissance préalable requise. Cependant un projet de création ou de reprise d’une entreprise est indispensable.",
+            "publicModule" => "
+                <p>Toute personne (salarié, demandeur d’emploi…) ayant un projet de création ou de reprise d’une entreprise.</p>
+                <p>Formations accessibles à tous. Pour les personnes en situation de handicap (Déficiences motrices, auditives, visuelles, mentales et psychiques), veuillez contacter Mme Léa Bruet (Référent handicap) au 06 71 86 79 54 pour adapter votre accueil et votre formation dans les meilleures conditions.</p>",
+            "delaisModule" => "2 jours minimum, entre votre demande d’inscription et le début de votre formation (Article 5 des Conditions Générales de Mon Compte Formation).",
+            "objectifPedagoModule" => "
+                <p>Évaluer vos compétences entrepreneuriales (déterminer une stratégie de développement de vos compétences en amont de votre projet) tout en identifiant vos atouts et points de vigilance vous permettant d’être apte à appliquer les connaissances acquises à votre future pratique professionnelle. </p>
+                <p>Définir une structure juridique adaptée pour optimiser votre rémunération, vos charges, avantages fiscaux et sociaux.</p>",
+            "modaliteModule" => "
+                <div>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct.</div>
+                <ul>
+                    <li>Autoévaluation sous forme de QCM</li>
+                    <li>Mise en situation et cas pratiques</li>
+                    <li>Bilan de compétences entrepreneuriales</li>
+                    <li>Remise d’un livret de fin de formation</li>
+                </ul>",
+            "programmeModule" => "
+                <div><strong>Introduction</strong> : Échange avec le stagiaire (projets, expériences, ambitions, etc.).</div>
+                <ul>
+                    <li>Évaluation sous forme de QCM</li>
+                    <li>Bilan de compétences entrepreneuriales (prédéfinir un concept cohérent avec vos aspirations et vos compétences)</li>
+                    <li>Caractériser les différentes sociétés possibles (SARL, EURL, SAS, SASU, Micro-entreprise) et description les démarches à accomplir</li>
+                    <li>Présentation des différents régimes fiscaux et sociaux</li>
+                    <li>Test de fin de formation sous forme d’un QCM</li>
+                    <li>Remise d’un livret de fin de formation</li>
+                </ul>",
+            "valeurModule" => "Votre formation est individuelle, personnalisée et adaptée à votre projet.",
+            "versionModule" => "V1 du 01/10/2021",
             "couleurModule" => "rgb(104, 163, 155)",
             "idFormation"=>4
         ],
@@ -745,18 +769,43 @@ class ListeModule
                  <div>Acquérir les bases administratives, juridiques et financières indispensables à la création ou reprise d’une entreprise. Notre formateur spécialisé dans l'entrepreneuriat vous accompagne personnellement dans votre projet à l’appui d’un bilan de compétence entrepreneuriale et d’un prévisionnel d’activité.</div>",
             "organisationPedagoModule" => null,
             "prixModule" => 990,
-            "tarifInfoModule" => "",
+            "tarifInfoModule" => "Ce tarif comprend la formation sur place, la délivrance d’une attestation de fin de formation et un livret de fin formation. Le tarif ne comprend pas les éventuels frais d'hébergement et de restauration du stagiaire.",
             "lieuModule" => "<div>Dans nos locaux à Montpellier ou Nîmes</div>",
-            "lieuDetailModule" => "",
+            "lieuDetailModule" => "
+                <ul>
+                    <li>501 avenue d’Occitanie 34090 Montpellier</li>
+                    <li>50 Impasse Laennec, 30900 Nîmes</li>
+                </ul>",
             "nomLienModule" => "pour-se-developper",
-            "prerequisModule" => "",
-            "publicModule" => "",
-            "delaisModule" => "",
-            "objectifPedagoModule" => "",
-            "modaliteModule" => "",
-            "programmeModule" => "",
-            "valeurModule" => "",
-            "versionModule" => "V1 du 01/07/2021",
+            "prerequisModule" => "Aucune connaissance préalable requise. Cependant, un projet de création ou de reprise d’une entreprise est indispensable.",
+            "publicModule" => "Toute personne (salarié, demandeur d’emploi…) ayant un projet de création ou de reprise d’entreprise.",
+            "delaisModule" => "Les heures peuvent être effectuées dans le cadre d’un planning sur mesure (week-end, matinée …) adapté à vos disponibilités.",
+            "objectifPedagoModule" => "
+                <p>Évaluer vos compétences entrepreneuriales (prédéfinir un concept cohérent avec vos aspirations et vos compétences) tout en identifiant vos atouts et les points de vigilance.</p>
+                <p>Vérifier la viabilité de votre projet (évaluer le potentiel commercial, la rentabilité, la capacité à gérer une rémunération, etc.).</p>
+                <p>Définir un modèle économique et une structure juridique pour optimiser votre rémunération , vos charges fiscales et sociales ainsi que les différents avantages auxquels vous avez droit. </p>
+                <p>Élaborer un prévisionnel d’activité.</p>",
+            "modaliteModule" => "
+                <div>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct.</div>
+                <ul>
+                    <li>Autoévaluation sous forme de QCM</li>
+                    <li>Remise d’un livret de fin de formation</li>
+                </ul>",
+            "programmeModule" => "
+            <div><strong>Introduction</strong> : Échange avec le stagiaire sur son expérience, ses ambitions, les conséquences possibles sur ses habitudes de vie…</div>
+            <ul>
+                <li>Évaluation sous forme de QCM.</li>
+                <li>Bilan de compétences entrepreneuriales (déterminer une stratégie de développement de vos compétences en amont de votre projet).</li>
+                <li>Caractériser les différentes sociétés possibles (SARL, EURL, SAS, SASU, micro-entreprise) et descriptions des démarches à accomplir .</li>
+                <li>Présentation des différents régimes fiscaux et sociaux (impôts, versement, TVA, calcul des cotisations sociales, aides et exonérations).</li>
+                <li>Réglementation en droit du travail (recrutement, contrat , charges sociales, etc.).</li>
+                <li>Les assurances obligatoires et facultatives.</li>
+                <li>Pré-élaboration d’un prévisionnel d’activité.</li>
+                <li>Test de fin de formation sous forme d’un QCM </li>
+                <li>Remise d’un livret de fin de formation</li>
+            </ul>",
+            "valeurModule" => "Votre formation est individuelle, personnalisée et adaptée à votre projet.",
+            "versionModule" => "V1 du 01/10/2021",
             "couleurModule" => "rgb(122, 156, 115)",
             "idFormation" => 4
         ],
@@ -770,18 +819,52 @@ class ListeModule
                  <div>Acquérir les bases administratives, juridiques et financières indispensables à la création ou reprise d’une entreprise. Notre formateur spécialisé dans l'entrepreneuriat vous accompagne personnellement dans votre projet à l’appui d’un bilan de compétence, d’un prévisionnel d’activité entrepreneuriale, d’un business plan et avec l’élaboration d’outils de gestion et de suivi comptable.</div>",
             "organisationPedagoModule" => null,
             "prixModule" => 1390,
-            "tarifInfoModule" => "",
+            "tarifInfoModule" => "Ce tarif comprend la formation sur place, la délivrance d’une attestation de fin de formation et un livret de fin formation. Le tarif ne comprend pas les éventuels frais d'hébergement et de restauration du stagiaire.",
             "lieuModule" => "<div>Dans nos locaux à Montpellier ou Nîmes</div>",
-            "lieuDetailModule" => "",
+            "lieuDetailModule" => "
+                <ul>
+                    <li>501 avenue d’Occitanie 34090 Montpellier</li>
+                    <li>50 Impasse Laennec, 30900 Nîmes</li>
+                </ul>",
             "nomLienModule" => "pour-se-perfectionner",
-            "prerequisModule" => "",
-            "publicModule" => "",
-            "delaisModule" => "",
-            "objectifPedagoModule" => "",
-            "modaliteModule" => "",
-            "programmeModule" => "",
-            "valeurModule" => "",
-            "versionModule" => "V1 du 01/07/2021",
+            "prerequisModule" => "Aucune connaissance préalable requise. Cependant, un projet de création ou de reprise d’une entreprise est indispensable.",
+            "publicModule" => "Toute personne (salarié, demandeur d’emploi…) ayant un projet de création ou de reprise d’entreprise.",
+            "delaisModule" => "12 jours minimum entre votre demande d’inscription et le début de votre formation (Article 5 des Conditions Générales de Mon Compte Formation).",
+            "objectifPedagoModule" => "
+                <ul>
+                    <li>Évaluer vos compétences entrepreneuriales (Prédéfinir un concept cohérent avec vos aspirations et vos compétences) tout en identifiant vos atouts et les points de vigilance.</li>
+                    <li>Vérifier la viabilité de votre projet (Evaluer le potentiel commercial, la rentabilité, la capacité à gérer une rémunération, etc.).</li>
+                    <li>Définir un modèle économique et une structure juridique pour optimiser votre rémunération , vos charges fiscales et sociales ainsi que les différents avantages auxquels vous avez droit. </li>
+                    <li>Pré-élaborer un business plan et un prévisionnel d’activité.</li>
+                </ul>",
+            "modaliteModule" => "
+                <div>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct.</div>
+                <ul>
+                    <li>Autoévaluation sous forme de QCM</li>
+                    <li>Bilan de compétences entrepreneuriales</li>
+                    <li>Rédaction d’un business plan (tendance générale du marché, étude locale, etc.)</li>
+                    <li>Réalisation d’un prévisionnel d’activité</li>
+                    <li>Remise d’un livret de fin de formation</li>
+                </ul>",
+            "programmeModule" => "
+                <div><strong>Introduction</strong> : Échange avec le stagiaire sur son expérience, ses ambitions, les conséquences possibles sur ses habitudes de vie…</div>
+                <ul>
+                    <li>Évaluation sous forme de QCM</li>
+                    <li>Bilan de compétences entrepreneuriales (déterminer une stratégie de développement de vos compétences en amont de votre projet).</li>
+                    <li>Étude de marché avec une confrontation du produit/service au besoin du consommateur.</li>
+                    <li>Action commerciale et réglementation.</li>
+                    <li>Caractériser les différentes sociétés possibles (SARL, EURL, SAS, SASU, micro-entreprise) et descriptions des démarches à accomplir .</li>
+                    <li>Présentation des différents régimes fiscaux et sociaux (impôts, versement, TVA, calcul des cotisations sociales, aides et exonérations).</li>
+                    <li>Réglementation en droit du travail (recrutement, contrat , charges sociales, etc.).</li>
+                    <li>Organisation administrative et comptables avec élaboration d’outils de gestion et de suivi.</li>
+                    <li>Les assurances obligatoires et facultatives.</li>
+                    <li>Pré-élaboration d’un business plan.</li>
+                    <li>Pré-élaboration d’un prévisionnel d’activité.</li>
+                    <li>Test de fin de formation sous forme d’un QCM </li>
+                    <li>Remise d’un livret de fin de formation</li>
+                </ul>",
+            "valeurModule" => "Notre formation personnalisée adaptée à votre projet est une réelle opportunité d’assimiler toutes les informations administratives, juridiques et financières nécessaires à la création ou reprise d’entreprises .",
+            "versionModule" => "V1 du 01/10/2021",
             "couleurModule" => "rgb(152, 191, 128)",
             "idFormation" => 4
         ],
@@ -795,18 +878,52 @@ class ListeModule
                  <div>Acquérir les bases administratives, juridiques et financières indispensables à la création ou reprise d’une entreprise. Notre formateur spécialisé dans l'entrepreneuriat vous accompagne personnellement dans votre projet à l’appui d’une étude de marché, d’un bilan de compétence, d’un prévisionnel d’activité entrepreneuriale, d’un business plan et avec l’élaboration d’outils de gestion et de suivi comptable.</div>",
             "organisationPedagoModule" => null,
             "prixModule" => 1990,
-            "tarifInfoModule" => "",
+            "tarifInfoModule" => "Ce tarif comprend la formation sur place, la délivrance d’une attestation de fin de formation et un livret de fin formation. Le tarif ne comprend pas les éventuels frais d'hébergement et de restauration du stagiaire.",
             "lieuModule" => "<div>Dans nos locaux à Montpellier ou Nîmes</div>",
-            "lieuDetailModule" => "",
+            "lieuDetailModule" => "
+                <ul>
+                    <li>501 avenue d’Occitanie 34090 Montpellier</li>
+                    <li>50 Impasse Laennec, 30900 Nîmes</li>
+                </ul>",
             "nomLienModule" => "creation-entreprise-de-a-a-z",
-            "prerequisModule" => "",
-            "publicModule" => "",
-            "delaisModule" => "",
-            "objectifPedagoModule" => "",
-            "modaliteModule" => "",
-            "programmeModule" => "",
-            "valeurModule" => "",
-            "versionModule" => "V1 du 01/07/2021",
+            "prerequisModule" => "Aucune connaissance préalable requise. Cependant, un projet de création ou de reprise d’une entreprise est indispensable.",
+            "publicModule" => "Toute personne (salarié, demandeur d’emploi…) ayant un projet de création ou de reprise d’entreprise.",
+            "delaisModule" => "12 jours minimum entre votre demande d’inscription et le début de votre formation (Article 5 des Conditions Générales de Mon Compte Formation).",
+            "objectifPedagoModule" => "
+                <ul>
+                    <li>Évaluer vos compétences entrepreneuriales (Prédéfinir un concept cohérent avec vos aspirations et vos compétences) tout en identifiant vos atouts et les points de vigilance.</li>
+                    <li>Vérifier la viabilité de votre projet (Evaluer le potentiel commercial, la rentabilité, la capacité à gérer une rémunération, etc.).</li>
+                    <li>Définir un modèle économique et une structure juridique pour optimiser votre rémunération , vos charges fiscales et sociales ainsi que les différents avantages auxquels vous avez droit. </li>
+                    <li>Pré-élaborer un business plan et un prévisionnel d’activité.</li>
+                </ul>",
+            "modaliteModule" => "
+                <div>La formation est dispensée à l’oral à l’appui de diapositives projetées en direct.</div>
+                <ul>
+                    <li>Autoévaluation sous forme de QCM</li>
+                    <li>Bilan de compétences entrepreneuriales</li>
+                    <li>Rédaction d’un business plan (tendance générale du marché, étude locale, etc.)</li>
+                    <li>Réalisation d’un prévisionnel d’activité</li>
+                    <li>Remise d’un livret de fin de formation</li>
+                </ul>",
+            "programmeModule" => "
+                <div><strong>Introduction</strong> : Échange avec le stagiaire sur son expérience, ses ambitions, les conséquences possibles sur ses habitudes de vie…</div>
+                <ul>
+                    <li>valuation sous forme de QCM.</li>
+                    <li>Étude de marché (SWOT) avec une confrontation du produit/service au besoin du consommateur. </li>
+                    <li>Bilan de compétences entrepreneuriales (déterminer une stratégie de développement de vos compétences en amont de votre projet).</li>
+                    <li>Action commerciale et réglementation.</li>
+                    <li>Caractériser les différentes sociétés possibles (SARL, EURL, SAS, SASU, micro-entreprise) et descriptions des démarches à accomplir .</li>
+                    <li>Présentation des différents régimes fiscaux et sociaux (impôts, versement, TVA, calcul des cotisations sociales, aides et exonérations).</li>
+                    <li>Réglementation en droit du travail (recrutement, contrat , charges sociales, etc.).</li>
+                    <li>Organisation administrative et comptables avec élaboration d’outils de gestion et de suivi.</li>
+                    <li>Les assurances obligatoires et facultatives.</li>
+                    <li>Pré-élaboration d’un business plan.</li>
+                    <li>Pré-élaboration d’un prévisionnel d’activité.</li>
+                    <li>Test de fin de formation sous forme d’un QCM </li>
+                    <li>Remise d’un livret de fin de formation</li>
+                </ul>",
+            "valeurModule" => "Votre formation est individuelle, personnalisée et adaptée à votre projet.",
+            "versionModule" => "V1 du 01/10/2021",
             "couleurModule" => "rgb(89, 129, 109)",
             "idFormation" => 4
         ],
