@@ -6,17 +6,12 @@
     background-image: url("/img/entreprise/equipe/equipe_frise.png");
 }
 
-.enteteFormation .entete_1{
-    margin: 25% 45% 2%;
-    width: 50%;
-}
-
-.enteteFormation .entete_1 h1{
-    background-color: var(--blue-color);
+.enteteFormation .titreEntete{
+    padding: 27% 0 1%;
 }
 
 .enteteFormation .image_top_texte{
-    margin: 4%  auto 0 auto;
+    padding: 2% 0 1%;
 }
 
 #anthony, #lea, #jonathan{
