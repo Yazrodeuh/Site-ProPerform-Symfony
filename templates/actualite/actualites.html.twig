@@ -41,9 +41,9 @@
         </div>
         <div class="navigation-manual">
             <div class="dispositionBtnCarousel">
-                <div class="manual-btn" id="auto-btn0"></div>
-                <div class="manual-btn" id="auto-btn1"></div>
-                <div class="manual-btn" id="auto-btn2"></div>
+                <div class="manual-btn selected" id="auto-btn0"></div>
+                <div class="manual-btn notSelected" id="auto-btn1"></div>
+                <div class="manual-btn notSelected" id="auto-btn2"></div>
             </div>
         </div>
     </div>
@@ -53,10 +53,11 @@
         let countBefore = 2;
 
         function carousel(){
-            console.log("-" + (count * 25) + "%")
             document.getElementById("firstSlide").style.marginLeft = "-" + (count * 25) + "%";
-            document.getElementById("auto-btn" + count).style.backgroundColor = "var(--blue-color)"
-            document.getElementById("auto-btn" + countBefore).style.backgroundColor = "var(--red-color)"
+            document.getElementById("auto-btn" + count).classList.add("selected")
+            document.getElementById("auto-btn" + count).classList.remove("notSelected")
+            document.getElementById("auto-btn" + countBefore).classList.add("notSelected")
+            document.getElementById("auto-btn" + countBefore).classList.remove("selected")
             countBefore = count;
             count++;
             if(count > 2 ) count = 0;
@@ -68,8 +69,6 @@
             count = radio;
             move = setInterval(carousel, 5000);
         }
-
-
 
         carousel();
         let move = setInterval(carousel, 5000);
@@ -125,7 +124,7 @@
                     <div id="right"> >> </div>
                 </div>
             </div>
-            <div id="infos" class="flexOne" style="position: relative">
+            <div id="infos" class="flexOne">
                 {% include('actualite/infoActu.html.twig') %}
             </div>
         </div>

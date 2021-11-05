@@ -221,13 +221,14 @@ function afficherButton(){
 
 window.addEventListener("scroll", function (){
     console.log(window.pageYOffset)
-    console.log(document.body.offsetHeight)
-    console.log(window.pageYOffset / document.body.offsetHeight)
-    console.log(document.getElementById("infos").offsetWidth)
+    console.log(document.getElementById("infos").offsetLeft)
     console.log("")
-    /*if(window.pageYOffset > document.getElementById("slider").offsetHeight){
+    /*if(window.pageYOffset > document.getElementById("slider").offsetHeight + document.getElementById("bandeau_top").offsetHeight + document.getElementById("nav_fixed_on_scroll").offsetHeight){
         document.getElementById("info_actu").style.position = "fixed";
+        document.getElementById("info_actu").style.width = "17%";
     }else {
         document.getElementById("info_actu").style.position = "absolute";
+        document.getElementById("info_actu").style.width = "100%";
+
     }*/
 });

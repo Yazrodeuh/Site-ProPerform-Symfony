@@ -1,91 +1,93 @@
-<div id="bandeau_top" class="headerBandeau">
-    <div class="reseaux">
-        <div>
-            <a href="https://www.facebook.com/FormationsProperform/">
-                <img src="{{ asset('img/header/facebook-logo.png') }}" alt="Facebook" width="35" height="35" title="Facebook Pro'Perform">
-            </a>
-        </div>
-        <div>
-            <a href="https://www.linkedin.com/company/pro-perform-formations/">
-                <img src="{{ asset('img/header/linkedin.jpg') }}" alt="Linkedin" width="35" height="35" title="LinkedIn Pro'Perform">
-            </a>
+<div class="header">
+    <div id="bandeau_top" class="headerBandeau">
+        <div class="reseaux">
+            <div>
+                <a href="https://www.facebook.com/FormationsProperform/">
+                    <img src="{{ asset('img/header/facebook-logo.png') }}" alt="Facebook" width="35" height="35" title="Facebook Pro'Perform">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/company/pro-perform-formations/">
+                    <img src="{{ asset('img/header/linkedin.jpg') }}" alt="Linkedin" width="35" height="35" title="LinkedIn Pro'Perform">
+                </a>
+            </div>
         </div>
     </div>
 
-</div>
-<div id="nav_fixed_on_scroll">
-    <div id="header_navigation" >
-        <div class="nav_burger">
-            <div>
-                <ul>
-                    <li><a href="$tabLien[accueil]">ACCUEIL</a></li>
-                    <li class="bg_blue"><span>FORMATIONS</span>
-                        <ul>
-                            <li> <a href="$tabLien[immobilier]">Immobilier</a></li>
-                            <li> <a href="$tabLien[permisexploitation]">Permis d\'exploitation</a></li>
-                            <li> <a href="$tabLien[microentreprise]">Micro-entreprise</a></li>
-                        </ul>
-                    </li>
-                    <li> <a href="$tabLien[equipe]">EQUIPE</a></li>
-                    <li> <span>LES LOCAUX</span>
-                        <ul>
-                            <li><?php echo'<a href="' . $tabLien["montpellier"] . '">Montpellier</a>';?></li>
-                            <li><?php echo'<a href="' . $tabLien["nimes"] . '">Nîmes</a>';?></li>
-                        </ul>
-                    </li>
-                    <li> <?php echo'<a href="' . $tabLien["contact"] . '">';?>CONTACT</a></li>
-                    <li class="bg_blue"> <?php echo'<a href="' . $tabLien["actu"] . '">';?>ACTUALITES</a></li>
-                    <li>
-                        <?php
+    <div id="nav_fixed_on_scroll">
+        <div id="header_navigation" >
+            <div class="nav_burger">
+                <div>
+                    <ul>
+                        <li><?php echo'<a href="' . $tabLien["accueil"] . '">'; ?>ACCUEIL</a></li>
+                        <li class="bg_blue"><span>FORMATIONS</span>
+                            <ul>
+                                <li> <?php echo'<a href="' . $tabLien["immobilier"] . '">Immobilier</a>';?></li>
+                                <li> <?php echo'<a href="' . $tabLien["permisexploitation"] . '">Permis d\'exploitation</a>';?></li>
+                                <li> <?php echo'<a href="' . $tabLien["microentreprise"] . '">Micro-entreprise</a>';?></li>
+                            </ul>
+                        </li>
+                        <li> <?php echo'<a href="' . $tabLien["equipe"] . '">';?>EQUIPE</a></li>
+                        <li> <span>LES LOCAUX</span>
+                            <ul>
+                                <li><?php echo'<a href="' . $tabLien["montpellier"] . '">Montpellier</a>';?></li>
+                                <li><?php echo'<a href="' . $tabLien["nimes"] . '">Nîmes</a>';?></li>
+                            </ul>
+                        </li>
+                        <li> <?php echo'<a href="' . $tabLien["contact"] . '">';?>CONTACT</a></li>
+                        <li class="bg_blue"> <?php echo'<a href="' . $tabLien["actu"] . '">';?>ACTUALITES</a></li>
+                        <li>
+                            <?php
                                     if (isset($_SESSION['idUtilisateur'])) {
                                         echo '<a href="/utilisateur/connecte">MON ESPACE</a>';
-                        }else{
-                        echo '<a href="/connexion">MON ESPACE</a>';
-                        }
-                        ?>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="header_navbar_burger">
-            <span class="header_navbar_burger_icons"></span>
-        </div>
-        <div id="header_nav" class="nav">
-            <div class="flexOne menuAccueil">
-                <a href="{{ path('index') }}">
-                    <img srcset="{{ asset('img/header/maison-blanche.png') }}" src="{{ asset('img/header/maison-blanche.png') }}" alt="accueil Pro'Perform" title="accueil" aria-label="Pro'Perform-accueil" width="20" height="20">
-                </a>
-            </div>
-            <div class="flexEight menuPricipal">
-                <div class="titleMenu"> <a class="title"> Formations</a>
-                    <div class="sousMenuBlock1">
-                        <div> <a class="sousMenu" href="{{ path('immobilier') }}">Immobilier</a></div>
-                        <div> <a class="sousMenu" href="{{ path('permisExploitation') }}">Permis d'exploitation</a></div>
-                        <div> <a class="sousMenu" href="{{ path('autoentrepreneur') }}">Autoentrepreneur</a></div>
-                        <div> <a class="sousMenu" href="{{ path('entreprise') }}">Entreprise</a></div>
-                    </div>
+                            }else{
+                            echo '<a href="/connexion">MON ESPACE</a>';
+                            }
+                            ?>
+                        </li>
+                    </ul>
                 </div>
-                <div class="titleMenu"> <a class="title" href="{{ path('equipe')}}">L'équipe</a></div>
-                <div class="titleMenu"> <a class="title">Les locaux</a>
-                    <div class="sousMenuBlock1">
-                        <div><a class="sousMenu" href="{{ path('locaux', {'ville': 'montpellier'})}}">Montpellier</a></div>
-                        <div><a class="sousMenu" href="{{ path('locaux', {'ville': 'nimes'})}}">Nîmes</a></div>
-                    </div>
-                </div>
-                <div class="titleMenu"><a class="title" href="{{ path('contact')}}">Contact</a></div>
-                <div class="titleMenu"><a class="title" href="{{ path('actualites') }}">Actualités</a></div>
             </div>
-            <div class="flexOne menuEspace">
-                {# <?php
-                                if (isset($_SESSION['idUtilisateur'])) {
-                                    echo '<a href="/utilisateur/connecte">MON ESPACE</a>';
-                }else{
-                echo '<a href="/connexion">MON ESPACE</a>';
-                }
-                ?> #}
+            <div class="header_navbar_burger">
+                <span class="header_navbar_burger_icons"></span>
+            </div>
+            <div id="header_nav" class="nav">
+                <div class="flexOne menuAccueil">
+                    <a href="{{ path('index') }}">
+                        <img srcset="{{ asset('img/header/maison-blanche.png') }}" src="{{ asset('img/header/maison-blanche.png') }}" alt="accueil Pro'Perform" title="accueil" aria-label="Pro'Perform-accueil" width="20" height="20">
+                    </a>
+                </div>
+                <div class="flexEight menuPricipal">
+                    <div class="titleMenu"> <a class="title"> Formations</a>
+                        <div class="sousMenuBlock1">
+                            <div> <a class="sousMenu" href="{{ path('immobilier') }}">Immobilier</a></div>
+                            <div> <a class="sousMenu" href="{{ path('permisExploitation') }}">Permis d'exploitation</a></div>
+                            <div> <a class="sousMenu" href="{{ path('autoentrepreneur') }}">Autoentrepreneur</a></div>
+                            <div> <a class="sousMenu" href="{{ path('entreprise') }}">Entreprise</a></div>
+                        </div>
+                    </div>
+                    <div class="titleMenu"> <a class="title" href="{{ path('equipe')}}">L'équipe</a></div>
+                    <div class="titleMenu"> <a class="title">Les locaux</a>
+                        <div class="sousMenuBlock1">
+                            <div><a class="sousMenu" href="{{ path('locaux', {'ville': 'montpellier'})}}">Montpellier</a></div>
+                            <div><a class="sousMenu" href="{{ path('locaux', {'ville': 'nimes'})}}">Nîmes</a></div>
+                        </div>
+                    </div>
+                    <div class="titleMenu"><a class="title" href="{{ path('contact')}}">Contact</a></div>
+                    <div class="titleMenu"><a class="title" href="{{ path('actualites') }}">Actualités</a></div>
+                </div>
+                <div class="flexOne menuEspace">
+                    {# <?php
+                                    if (isset($_SESSION['idUtilisateur'])) {
+                                        echo '<a href="/utilisateur/connecte">MON ESPACE</a>';
+                    }else{
+                    echo '<a href="/connexion">MON ESPACE</a>';
+                    }
+                    ?>#}
 
-                <a href="">Mon espace</a>
+                    <a href="">Mon espace</a>
 
+                </div>
             </div>
         </div>
     </div>

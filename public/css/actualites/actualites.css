@@ -79,33 +79,23 @@
     padding: 4px 20px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: red;
     transition: 1s;
+}
+
+.notSelected{
+    background-color: var(--red-color);
+}
+
+.manual-btn:hover, .selected{
+    background-color: var(--blue-color);
 }
 
 .manual-btn:not(:last-child){
     margin-right: 40px;
 }
 
-.manual-btn:hover{
-    background-color: var(--blue-color);
-}
 
 
-
-
-
-#radio1:checked ~ .navigation-manual .auto-btn1{
-    background-color: var(--blue-color);
-}
-
-#radio2:checked ~ .navigation-manual .auto-btn2{
-    background-color: var(--blue-color);
-}
-
-#radio3:checked ~ .navigation-manual .auto-btn3{
-    background-color: var(--blue-color);
-}
 
 
 
