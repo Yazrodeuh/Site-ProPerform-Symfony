@@ -1,0 +1,13 @@
+
+
+.test {
+    background: #B8C1C8;
+    border-bottom: 1px solid #989EA4;
+    border-top: 1px solid #717D85;
+
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
