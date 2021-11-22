@@ -36,9 +36,6 @@ body{
     margin: auto;
 }
 
-main{
-    font-size: 20px;
-}
 
 #body_view{
     background-image: url("/img/boussoleBot.png");
@@ -59,9 +56,12 @@ li{
     border: none;
 }
 
-
-
-
+.bg-image-entete{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
 
 .enteteFormation{
     background-size: 100%;
@@ -82,7 +82,7 @@ li{
     letter-spacing: 2px;
     text-align: center;
     background-color: var(--blue-color);
-    width: 30em;
+    width: 35em;
     padding: 1% 2%;
     border-radius: 20px;
 }

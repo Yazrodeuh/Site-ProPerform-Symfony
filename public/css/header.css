@@ -1,4 +1,4 @@
-header{
+/*header{
     position: relative;
     width: 100%;
     top : 0;
@@ -19,22 +19,23 @@ header{
     background-repeat: no-repeat, no-repeat;
     background-position: center, right;
     padding: 4%;
+    position: relative;
 }
 
 .reseaux{
     position: absolute;
     right: 5%;
-    bottom: 17%;
+    bottom: 0;
     display: flex;
     justify-content: space-around;
-
+    padding: 1%;
+    background-color: red;
 }
 
 .reseaux div{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5% 10%;
 }
 
 .reseaux a{
@@ -272,9 +273,23 @@ div.sousMenuBlock1 div:hover div.sousMenuBlock2{
 
     /*.bg_blue {
         background-color: lightblue;
-    }*/
+    }
 
 
 
 
+}*/
+
+#navbar_top{
+    background-color: var(--blue-color);
 }
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: var(--red-color);
+}
+
+

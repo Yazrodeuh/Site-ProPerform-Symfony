@@ -25,24 +25,23 @@
         {# Run `composer require symfony/webpack-encore-bundle`and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
             <link rel="stylesheet" href="{{ asset('css/base.css') }}">
             <link rel="stylesheet" href="{{ asset('css/header.css') }}">
             <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
-
         {% endblock %}
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
+            <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
             <script defer src="{{ asset('js/base.js') }}"></script>
             <script defer src="{{ asset('js/header.js') }}"></script>
             <script defer src="{{ asset('js/ajax.js') }}"></script>
         {% endblock %}
     </head>
     <body id="body_view">
-        <header>
-            {% include 'header.html.twig' %}
-        </header>
-        <main>
+            {% include 'header2.html.twig' %}
+        <main id="main">
             {% block body %}{% endblock %}
         </main>
         <footer>

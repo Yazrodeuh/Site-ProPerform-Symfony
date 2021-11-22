@@ -1,4 +1,33 @@
-<div class="box_formation_propose">
+
+<div class="w-100 d-flex row row-cols-1 g-4 m-auto pb-5">
+
+    {% for module in modulesFormation %}
+        <div class="col-lg-4 rounded-10">
+            <div class="card h-100 border-0 rounded-10">
+                <div class="card-header border-0 text-center " style="background-color: {{ module.couleurModule }}">
+                    <h2>{{ module.nomModule | raw }}</h2>
+                </div>
+                <div class="card-body" style="border: 3px solid {{ module.couleurModule }}">
+                    <h5 class="card-title"><u>Objectifs : </u></h5>
+                    <p class="card-text">{{ module.objectifmodule | raw }}</p>
+                </div>
+                <div class="card-footer border-0 text-center" style="background-color: {{ module.couleurModule }}">
+                    <a href="{{ path('immobilier', {'nomModule': module.nomLienModule}) }}" class="btn btn-primary rounded-pill">
+                        Plus d'informations
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+
+
+{# <div class="box_formation_propose">
     {% for module in modulesFormation %}
         <div class="formation_propose js-scroll fade-in-bottom"  style="background-color: {{ module.couleurModule }}">
             <div class="formation_propose_header" style="background-color: {{ module.couleurModule }}">
@@ -6,12 +35,9 @@
                     <h2>{{ module.nomModule | raw }}</h2>
                 </div>
             </div>
-            <div>
-
-            </div>
             <div class="formation_propose_body">
                 <div style="display: flex; justify-content: space-around; flex-direction: column">
-                    <div>
+                    {# <div>
                         <div class="formation_propose_titre_section" style="background-color: {{ module.couleurModule }}">
                             <h3>Durée</h3>
                         </div>
@@ -37,7 +63,7 @@
                             {{ module.objectifmodule | raw }}
                         </div>
                     </div>
-                    {% if module.organisationPedagoModule is defined and module.organisationPedagoModule is not null %}
+                    {# {% if module.organisationPedagoModule is defined and module.organisationPedagoModule is not null %}
                         <div>
                             <div class="formation_propose_titre_section" style="background-color: {{ module.couleurModule }}">
                                 <h3>organisation pédagogique</h3>
@@ -80,4 +106,4 @@
 </div>
 <div class="tva js-scroll fade-in-bottom">
     <em>* TVA non applicable selon Art. 261.4.4 a du CGI</em>
-</div>
+</div> #}

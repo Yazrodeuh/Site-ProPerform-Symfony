@@ -15,35 +15,44 @@
 {% endblock %}
 
 {% block body %}
+<div class="bg-image-entete" style="background-image: url('{{ asset('img/formation/immobilier/immo_frise.png') }}')">
 
-    <div class="enteteFormation">
-        <div class="titreEntete">
-            <div class="entete_1 js-scroll slide-right">
+    <div class="pt-5">
+        <div class="py-5 d-flex justify-content-center">
+            <div class="text-center p-3 rounded-pill" style="background-color: var(--immo-1-color)">
                 <h1>Formations des agents immobiliers (Loi ALUR)</h1>
             </div>
         </div>
-        <div class="image_top_texte js-scroll fade-in-bottom">
-            <div class="textEntete">
-                <div>
-                    <p>
-                        Depuis <strong>la Loi Alur</strong> du 24 mars 2014, <strong>les professionnels de l'immobilier</strong> sont tenus d'une obligation de <strong>formation continue</strong>, dont le respect est vérifié par les CCI (Chambre de Commerce et d'Industrie) à chaque renouvellement de <strong>la carte professionnelle d'agent immobilier</strong> quelle qu'en soit la mention (Carte Transactions sur immeubles et fonds de commerce, Gestion immobilière...).
-                    </p>
-                    <p>
-                        La durée de formation imposée pour tous les professionnels de l'immobilier est de 14 heures sur une année ou 42 heures au cours de trois années consécutives d'exercice.
-                    </p>
-                </div>
-                <div class="image_top_texte_picto">
-                    <img src="{{ asset('img/formation/immobilier/tarif_unique_350.png') }}" alt="" width="100%">
+    </div>
+    <div class="container ">
+        <div class="w-100 d-flex row row-cols-1 g-4 my-2">
+            <div class="col-12">
+                <div class="card h-100 border-2 rounded" style="border-color: var(--immo-1-color)">
+                    <div class="card-body">
+                        <div class="card-text d-flex flex-row align-items-center" >
+                            <div>
+                                <p>
+                                    Depuis <strong>la Loi Alur</strong> du 24 mars 2014, <strong>les professionnels de l'immobilier</strong> sont tenus d'une obligation de <strong>formation continue</strong>, dont le respect est vérifié par les CCI (Chambre de Commerce et d'Industrie) à chaque renouvellement de <strong>la carte professionnelle d'agent immobilier</strong> quelle qu'en soit la mention (Carte Transactions sur immeubles et fonds de commerce, Gestion immobilière...).
+                                </p>
+                                <p>
+                                    La durée de formation imposée pour tous les professionnels de l'immobilier est de 14 heures sur une année ou 42 heures au cours de trois années consécutives d'exercice.
+                                </p>
+                            </div>
+                            <div class="ps-4">
+                                <img src="{{ asset('img/formation/immobilier/tarif_unique_350.png') }}" alt="" width="170px" height="170px">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div style="padding: 0.5% 0">
-        <div style="margin: 0 10%">
-            <div class="stages_presentation js-scroll fade-in-bottom">
-                <p>
-                    <strong>Vous pouvez composer votre formation librement selon vos besoins et votre domaine d'activité en choisissant une ou plusieurs thématiques suivantes d'une durée de 7h chacune.</strong>
-                </p>
+        <div class="py-3">
+            <div >
+                <div>
+                    <p>
+                        <strong>Vous pouvez composer votre formation librement selon vos besoins et votre domaine d'activité en choisissant une ou plusieurs thématiques suivantes d'une durée de 7h chacune.</strong>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -60,4 +69,6 @@
         </div>
     </div>
     {% include 'formation/contactBasSimple.html.twig' %}
+
+</div>
 {% endblock %}

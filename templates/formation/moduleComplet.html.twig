@@ -14,7 +14,126 @@
 
 {% block body %}
 
-    <style>
+    <div class="container my-4">
+        <div class="my-5 p-3 text-center rounded" style="background-color: {{ moduleFormation.couleurModule | raw }}">
+
+                <h1><strong>{{ moduleFormation.nomModule | raw }}</strong></h1>
+
+        </div>
+        <div class="w-100 d-flex row row-cols-1 g-4">
+            <div class="col-lg-12 col-md-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Le public visé : </h5>
+                        <div class="card-text">
+                            {{ moduleFormation.publicmodule | raw }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Les prérequis : </h5>
+                        <div class="card-text">
+                            {{ moduleFormation.prerequismodule| raw }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Les délais d'accès : </h5>
+                        <div class="card-text">
+                            <p>{{ moduleFormation.delaismodule | raw }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Les objectifs : </h5>
+                        <div class="card-text">
+                            {{ moduleFormation.objectifPedagoModule | raw }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Les modalités pédagogiques :  </h5>
+                        <div class="card-text">
+                            {{ moduleFormation.modaliteModule | raw }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-sm-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Le programme : </h5>
+                        <div class="card-text">
+                            {{ moduleFormation.programmeModule | raw }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Les lieux : </h5>
+                        <div class="card-text">
+                            {{ moduleFormation.lieuDetailsModule | raw }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Notre valeur ajoutée : </h5>
+                        <div class="card-text">
+                            {{ moduleFormation.valeurModule | raw }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">La durée : </h5>
+                        <div class="card-text">
+                            <p>{{ moduleFormation.dureemodule | raw }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Le tarif : </h3>
+                        <div class="card-text">
+                            <div>
+                                <p>
+                                    <strong>{{ moduleFormation.prixModule | raw }} € net</strong>, TVA non applicable selon Art. 261.4.4 a du CGI.
+                                </p>
+                                <p>
+                                    {{ moduleFormation.tarifInfoModule | raw }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {# <style>
         .js-scroll.fade-in-bottom:nth-child(2n + 1){
             background-color: {{ moduleFormation.couleurModule | raw }};
             color: white;
@@ -201,5 +320,13 @@
             </div>
         </div>
     </div>
-
+    #}
+    <style>
+        .card{
+            border-color: {{ moduleFormation.couleurModule | raw }};
+        }
+        .card-title{
+            color: {{ moduleFormation.couleurModule | raw }};
+        }
+    </style>
 {% endblock %}

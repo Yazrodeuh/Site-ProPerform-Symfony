@@ -1,3 +1,5 @@
+
+
 .stages_presentation{
     color: var(--blue-color);
     font-size: 25px;
@@ -16,7 +18,7 @@
 }
 
 .formation_propose{
-    width: 23em;
+    width: 27em;
     margin: 1%;
     padding: 0;
     display: flex;

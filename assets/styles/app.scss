@@ -1,9 +1,18 @@
-$primary-color:rgb(235, 235, 235);
+
 
 // Bootstrap
-$headings-color: rgb(9, 34, 116);
 @import "~bootstrap/scss/bootstrap";
 
 h1{
   color: white;
+}
+
+.card-header:first-child {
+  text-transform: uppercase;
+  color: white;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card-footer:last-child{
+  border-radius:0 0 1.5rem 1.5rem ;
 }
