@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="20.5694in" height="4.94444in"
+     viewBox="0 0 1481 356">
+  <path id="Pointe blanche"
+        fill="none" stroke="black" stroke-width="1"
+        d="M 503.75,8.25
+           C 503.75,8.25 478.50,156.00 478.50,156.00
+             478.50,156.00 416.86,128.69 413.00,127.25
+             413.00,127.25 504.25,8.50 503.75,8.25 Z" />
+</svg>

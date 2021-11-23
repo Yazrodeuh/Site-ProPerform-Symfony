@@ -11,8 +11,23 @@
 
 {% block body %}
 
-    <div class="enteteFormation">
-        <div style="display: flex; justify-content: flex-start">
+    <div class="bg-image-entete" style="background-image: url('{{ asset('img/accueil/equipe_frise_retourne.png') }}')">
+        <div class="p-5 js-scroll slide-right">
+            <div class="py-5">
+                <h1 class="h1"><span>Votre centre</span> <br> <span>de formation</span> <br> <span>profesionnelle</span></h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="mt-5 pt-4 h5">
+                <p>
+                    <strong>Engagée depuis plus de 10 ans dans le secteur de la formation, Pro’Perform propose des formations qualifiées et qualifiantes afin de répondre à vos besoins d’évolution professionnelle.</strong>
+                </p>
+            </div>
+        </div>
+
+        {# <<div>
+        div style="display: flex; justify-content: flex-start">
             <div class="certification js-scroll slide-right">
                 <div class="flexTwo" style="display: flex; align-items: flex-start; flex-direction: column; margin: 1% 3%">
                     <div>
@@ -31,74 +46,69 @@
         </div>
         <div class="titreEntete">
             <div class="entete_1 js-scroll slide-right">
-                <h1 class="h1">Le partenaire de votre progression profesionnelle</h1>
+
             </div>
         </div>
         <div class="image_top_texte js-scroll fade-in-bottom">
             <div>
-                <p>
-                    <strong>Engagée depuis plus de 10 ans dans le secteur de la formation, Pro’Perform propose des formations qualifiées et qualifiantes afin de répondre à vos besoins d’évolution professionnelle.</strong>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div style="padding: 1% 0;" class="js-scroll fade-in-bottom">
-        <div class="titre_grand" style="color: var(--blue-color)">
-            <h2 class="h2"><strong>Nos formations</strong></h2>
-        </div>
-        <div class="formations">
-            <div class="formation">
-                <a href="{{ path('immobilier') }}">
-                    <div class="image_formation">
-                        <img srcset="{{ asset('img/accueil/agentCommerceImmo.png') }}" src="{{ asset('img/accueil/agentCommerceImmo.png') }}" alt="immobilier">
-                    </div>
-                    <div class="text_formation">
-                        <h3 class="h3">Immobilier</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="formation">
-                <a href="{{ path('permisExploitation') }}">
-                    <div class="image_formation">
-                        <img srcset="{{ asset('img/accueil/permisExploitation.png') }}" src="{{ asset('img/accueil/permisExploitation.png') }}" alt="permis-exploitation">
-                    </div>
-                    <div class="text_formation">
-                        <h3 class="h3">Permis d'exploitation</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="formation">
-                <a href="{{ path('autoentrepreneur') }}">
-                    <div class="image_formation">
-                        <img srcset="{{ asset('img/accueil/microentreprise.png') }}" src="{{ asset('img/accueil/microentreprise.png') }}" alt="micro-entreprise">
-                    </div>
-                    <div class="text_formation">
-                        <h3 class="h3">Autoentrepreneur</h3>
-                    </div>
-                </a>
 
             </div>
-            <div class="formation">
-                <a href="{{ path('entreprise') }}">
-                    <div class="image_formation flexOne">
-                        <img srcset="{{ asset('img/png/entreprise.png') }}" src="{{ asset('img/png/entreprise.png') }}" alt="micro-entreprise">
-                    </div>
-                    <div class="text_formation">
-                        <h3 class="h3">Entreprise</h3>
-                    </div>
-                </a>
-            </div>
         </div>
-    </div>
-    <div style="padding: 1% 0; background-color: var(--blue-color)"  class="js-scroll fade-in-bottom">
-        <div style="margin: 0 10%">
-            <div style="color: white">
-                <div class="titre_grand">
-                    <h2>Les atouts Pro'Perform</h2>
+    </div>#}
+        <div class="js-scroll fade-in-bottom py-5">
+            <div style="color: var(--blue-color)" class="text-center">
+                <h2 class="h2"><strong>Nos formations</strong></h2>
+            </div>
+            <div class="formations">
+                <div class="formation">
+                    <a href="{{ path('immobilier') }}">
+                        <div class="image_formation">
+                            <img srcset="{{ asset('img/accueil/agentCommerceImmo.png') }}" src="{{ asset('img/accueil/agentCommerceImmo.png') }}" alt="immobilier">
+                        </div>
+                        <div class="text_formation">
+                            <h3 class="h3">Immobilier</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="atout_liste">
-                    <ul>
+                <div class="formation">
+                    <a href="{{ path('permisExploitation') }}">
+                        <div class="image_formation">
+                            <img srcset="{{ asset('img/accueil/permisExploitation.png') }}" src="{{ asset('img/accueil/permisExploitation.png') }}" alt="permis-exploitation">
+                        </div>
+                        <div class="text_formation">
+                            <h3 class="h3">Permis d'exploitation</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="formation">
+                    <a href="{{ path('autoentrepreneur') }}">
+                        <div class="image_formation">
+                            <img srcset="{{ asset('img/accueil/microentreprise.png') }}" src="{{ asset('img/accueil/microentreprise.png') }}" alt="micro-entreprise">
+                        </div>
+                        <div class="text_formation">
+                            <h3 class="h3">Autoentrepreneur</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="formation">
+                    <a href="{{ path('entreprise') }}">
+                        <div class="image_formation flexOne">
+                            <img srcset="{{ asset('img/png/entreprise.png') }}" src="{{ asset('img/png/entreprise.png') }}" alt="micro-entreprise">
+                        </div>
+                        <div class="text_formation">
+                            <h3 class="h3">Entreprise</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: var(--blue-color)" class="js-scroll fade-in-bottom py-5">
+            <div class="container" style="color: white">
+                <div class="text-center pb-2">
+                    <h2 class="h2"><strong>Les atouts Pro'Perform</strong></h2>
+                </div>
+                <div class="d-flex px-5 atout_liste w-100">
+                    <ul class="w-100 px-5">
                         <li> Des formations professionnelles reconnues ; </li>
                         <li> Une équipe de formateurs diplômés et expérimentés ; </li>
                         <li> Des formations interactives avec des exercices pratiques ;</li>
@@ -108,16 +118,16 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div style="padding: 1% 0;" class="confiance js-scroll fade-in-bottom">
-        <div style="margin: 0 10%">
-            <div class="titre_grand">
-                <h2>Ils nous ont fait confiance</h2>
-            </div>
-            <div class="avis">
-                <a href="https://www.google.com/search?q=Pro%27Perform&rlz=1C1CHBF_frFR875FR875&oq=properform&aqs=chrome.0.69i59l2j69i60l4.2609j0j7&sourceid=chrome&ie=UTF-8#lrd=0x12b6af0587b109c5:0x4868f8a6f7e9c0d6,1,,,">Voir tous les avis</a>
+        <div class="confiance js-scroll fade-in-bottom py-5">
+            <div class="container">
+                <div class="text-center pb-2">
+                    <h2 class="h2"><strong>Ils nous ont fait confiance</strong></h2>
+                </div>
+                <div class="avis">
+                    <a href="https://www.google.com/search?q=Pro%27Perform&rlz=1C1CHBF_frFR875FR875&oq=properform&aqs=chrome.0.69i59l2j69i60l4.2609j0j7&sourceid=chrome&ie=UTF-8#lrd=0x12b6af0587b109c5:0x4868f8a6f7e9c0d6,1,,,">Voir tous les avis</a>
+                </div>
             </div>
         </div>
+        {% include 'formation/contactBasDetail.html.twig' %}
     </div>
-    {% include 'formation/contactBasDetail.html.twig' %}
 {% endblock %}

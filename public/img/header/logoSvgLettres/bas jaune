@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="20.5694in" height="4.94444in"
+     viewBox="0 0 1481 356">
+  <path id="bas jaune"
+        fill="none" stroke="black" stroke-width="1"
+        d="M 399.50,207.25
+           C 410.50,213.75 412.00,217.75 429.25,220.25
+             429.25,220.25 388.50,274.25 388.50,274.25
+             388.50,274.25 399.50,207.25 399.50,207.25 Z" />
+</svg>

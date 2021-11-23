@@ -2,10 +2,6 @@
     background-image: none;
 }
 
-.enteteFormation{
-    background-image: url("/img/accueil/equipe_frise_retourne.png");
-}
-
 .certification{
     display: flex;
     flex-direction: column;
@@ -174,15 +170,12 @@
 
 .atout_liste li {
     list-style: none;
-    line-height: 1.5em;
-    margin-left: 12%;
 }
 
 .atout_liste li:before{
     content: "•";
     color: red;
     padding-right: 0.5%;
-    font-size: 25px;
 }
 
 .confiance{
