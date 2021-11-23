@@ -1,26 +1,25 @@
-
-<div class="w-100 d-flex row row-cols-1 g-4 m-auto pb-5">
-
-    {% for module in modulesFormation %}
-        <div class="col-lg-4">
-            <div class="card h-100 border-0">
-                <div class="card-header border-0 text-center " style="background-color: {{ module.couleurModule }}">
-                    <h2>{{ module.nomModule | raw }}</h2>
-                </div>
-                <div class="card-body" style="border: 3px solid {{ module.couleurModule }}">
-                    <h5 class="card-title"><u>Objectifs : </u></h5>
-                    <p class="card-text">{{ module.objectifmodule | raw }}</p>
-                </div>
-                <div class="card-footer border-0 text-center" style="background-color: {{ module.couleurModule }}">
-                    <a href="{{ path('immobilier', {'nomModule': module.nomLienModule}) }}" class="btn btn-primary rounded-pill">
-                        Plus d'informations
-                    </a>
+<div class="container-xl container-md">
+    <div class="w-100 d-flex justify-content-center row g-4 m-auto py-3">
+        {% for module in modulesFormation %}
+            <div class="col-xl-4  col-lg-6 col-sm-12">
+                <div class="card h-100 border-0">
+                    <div class="card-header border-0 text-center " style="background-color: {{ module.couleurModule }}">
+                        <h2>{{ module.nomModule | raw }}</h2>
+                    </div>
+                    <div class="card-body" style="border: 3px solid {{ module.couleurModule }}">
+                        <h5 class="card-title"><u>Objectifs : </u></h5>
+                        <p class="card-text">{{ module.objectifmodule | raw }}</p>
+                    </div>
+                    <div class="card-footer border-0 text-center" style="background-color: {{ module.couleurModule }}">
+                        <a href="{{ path('immobilier', {'nomModule': module.nomLienModule}) }}" class="btn btn-primary rounded-pill">
+                            Plus d'informations
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 </div>
-
 
 
 
