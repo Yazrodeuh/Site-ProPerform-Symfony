@@ -18,21 +18,30 @@
 {% endblock %}
 
 {% block body %}
-
-    <div class="enteteFormation">
-        <div class="titreEntete">
-            <div class="entete_1 js-scroll slide-right">
-                <h1>L'équipe</h1>
+    <div class="bg-image-entete" style="background-image: url( {{ asset('img/entreprise/equipe/equipe_frise.png')}} )">
+        <div class="pt-5">
+            <div class="py-5 d-flex justify-content-center">
+                <div class="text-center p-3 rounded-pill bg-blueColor">
+                    <h1>L'équipe</h1>
+                </div>
             </div>
         </div>
-        <div class="image_top_texte js-scroll fade-in-bottom">
-            <div class="textEntete">
-                <p>
-                    Nos formateurs, juristes qualifiés & professionnels expérimentés, sauront allier apprentissage et convivialité en vertu de leur expérience pluriannuelle dans le domaine de la formation et de la pédagogie. Dans chaque secteur d’activité, le cadre législatif et réglementaire est en perpétuelle mutation.
-                </p>
-                <p>
-                    Notre objectif premier est de vous permettre d’actualiser vos connaissances dans un cadre dynamique et interactif. Parce que nos formations ne se résument pas à la délivrance de simples informations, notre équipe vous accompagnera tout au long de votre parcours chez Pro’Perform pour perfectionner vos compétences et participer à vos besoins d’évolution professionnelle.
-                </p>
+        <div class="container-lg ">
+            <div class="w-100 d-flex row row-cols-1 g-4 my-2 m-auto">
+                <div class="col-12">
+                    <div class="card h-100 border-2 rounded-10 border-bleuColor">
+                        <div class="card-body">
+                            <div class="card-text d-flex flex-column text-justify">
+                               <p>
+                                   Nos formateurs, juristes qualifiés et professionnels expérimentés, sauront allier apprentissage et convivialité en vertu de leur expérience pluriannuelle dans le domaine de la formation et de la pédagogie. Dans chaque secteur d’activité, le cadre législatif et réglementaire est en perpétuelle mutation.
+                               </p>
+                               <p>
+                                   Notre objectif premier est de vous permettre d’actualiser vos connaissances dans un cadre dynamique et interactif. Parce que nos formations ne se résument pas à la délivrance de simples informations, notre équipe vous accompagnera tout au long de votre parcours chez Pro’Perform pour perfectionner vos compétences et participer à vos besoins d’évolution professionnelle.
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="anthony">
@@ -47,16 +56,6 @@
         <div id="info_equipe">
             <div></div>
         </div>
+        {% include 'formation/contactBasSimple.html.twig' %}
     </div>
-
-    {% include 'formation/contactBasSimple.html.twig' %}
-
-
-
-    <div class="entete">
-
-
-    </div>
-
-
 {% endblock %}

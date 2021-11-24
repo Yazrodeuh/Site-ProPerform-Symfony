@@ -8,14 +8,6 @@ $pinkColor: rgb(220, 25, 169);
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
-:root{
-  --blue-color: $blueColor;
-  --blue-color-l: $blueColorLight;
-  --red-color: $redColor;
-  --red-color-l: rgba(217, 8, 20, 0.5);
-  --pink-color: rgb(220, 25, 169);
-}
-
 h1{
   color: white;
 }
@@ -88,5 +80,13 @@ body{
 
 .bg-blueColor{
     background-color: $blueColor;
+}
+
+.border-bleuColor{
+  border-color: $blueColor !important;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
