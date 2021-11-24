@@ -78,15 +78,23 @@ body{
   transform: scale(1.15);
 }
 
-.bg-blueColor{
+.bg-blueC{
     background-color: $blueColor;
 }
 
-.border-bleuColor{
+.border-bleuC{
   border-color: $blueColor !important;
 }
 
 .text-justify{
   text-align: justify;
+}
+
+.color-blueC{
+  color: $blueColor;
+}
+
+.color-whiteC{
+  color: white;
 }
 
