@@ -16,33 +16,8 @@
     padding: 0;
 }
 
-
-.formations{
-    width: 100%;
-    margin: auto;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .formation{
-    margin: 1% 2.2%; /* //TODO margin cote 2.5 si entreprise */
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 21em;
-    border-radius: 50%;
-}
-
-.formation a{
-    display: block;
-    cursor: pointer;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 21rem;
 }
 
 .formation a img{
@@ -59,61 +34,24 @@
     text-align: center;
 }
 
-.image_formation{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.image_formation img{
-    width: 100%;
-    border-radius: 50%;
-
-}
-
-.text_formation{
-    position: absolute;
-    top: 70%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: white;
-    width: 100%;
-    padding: 1% 0;
-}
-
-.text_formation h3{
-    margin: auto;
-}
-
-.formation:nth-child(1) .text_formation{
-    color: var( --immo-1-color);
-}
 .formation:nth-child(1) a{
     border: 1px solid var( --immo-1-color);
+    color: var( --immo-1-color);
 }
 
-.formation:nth-child(2) .text_formation{
-    color: var(--pe-1-color);
-}
 .formation:nth-child(2) a{
     border: 1px solid var(--pe-1-color);
+    color: var(--pe-1-color);
 }
 
-.formation:nth-child(3) .text_formation{
-    color: var(--me-1-color);
-}
 .formation:nth-child(3) a{
     border: 1px solid var(--me-1-color);
+    color: var(--me-1-color);
 }
 
-.formation:nth-child(4) .text_formation{
-    color: var(--entre-1-color);
-}
 .formation:nth-child(4) a{
     border: 1px solid var(--entre-1-color);
+    color: var(--entre-1-color);
 }
 
 .bouton_formation{

@@ -7,7 +7,10 @@
 
 {% set descriptionPage = "Formations professionnelles pour adultes : droit immobilier (Alur), permis d’exploitation (débits de boissons et restaurants), auto-entrepreneurs (création de micro-entreprise)." %}
 
-{% block stylesheets %} {{ parent() }} <link rel="stylesheet" href="{{ asset('css/accueil/accueil.css') }}"> {% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/accueil/accueil.css') }}">
+{% endblock %}
 
 {% block body %}
 
@@ -17,7 +20,6 @@
                 <h1 class="h1"><span>Votre centre</span> <br> <span>de formation</span> <br> <span>profesionnelle</span></h1>
             </div>
         </div>
-
         <div class="container">
             <div class="mt-5 pt-4 h5">
                 <p>
@@ -25,81 +27,64 @@
                 </p>
             </div>
         </div>
-
-        {# <<div>
-        div style="display: flex; justify-content: flex-start">
-            <div class="certification js-scroll slide-right">
-                <div class="flexTwo" style="display: flex; align-items: flex-start; flex-direction: column; margin: 1% 3%">
-                    <div>
-                        <img srcset="{{ asset('img/accueil/logoQualiopi-300dpi-Avec Marianne.png') }}" src="{{ asset('img/accueil/logoQualiopi-300dpi-Avec Marianne.png') }}" alt="datadoc" width="243" height="130">
-                    </div>
-                    <div style="font-size: 15px; text-align: justify">
-                        <div>La certification qualité a été délivré au titre de la catégorie d'action suivante : </div>
-                        <div style="text-transform: uppercase"><strong>actions de formation</strong></div>
-                    </div>
-                </div>
-                <hr style="width: 100%">
-                <div class="flexOne" style="display: flex; align-items: center; margin: 1% 3%">
-                    <img srcset="{{ asset('img/accueil/datadoc.png') }}" src="{{ asset('img/accueil/datadoc.png') }}" alt="datadoc" width="130" height="130">
-                </div>
-            </div>
-        </div>
-        <div class="titreEntete">
-            <div class="entete_1 js-scroll slide-right">
-
-            </div>
-        </div>
-        <div class="image_top_texte js-scroll fade-in-bottom">
-            <div>
-
-            </div>
-        </div>
-    </div>#}
         <div class="js-scroll fade-in-bottom py-5">
             <div style="color: var(--blue-color)" class="text-center">
                 <h2 class="h2"><strong>Nos formations</strong></h2>
             </div>
-            <div class="formations">
-                <div class="formation">
-                    <a href="{{ path('immobilier') }}" title="Voir nos formations Immobilier">
-                        <div class="image_formation">
-                            <img srcset="{{ asset('img/accueil/agentCommerceImmo.png') }}" src="{{ asset('img/accueil/agentCommerceImmo.png') }}" alt="immobilier">
+            <div class="w-100 m-auto position-relative d-flex flex-row flex-wrap justify-content-center align-items-center text-center">
+
+                {% for formation in formations %}
+                    <div class="formation m-3 d-flex flex-column position-relative rounded-circle">
+                        <a class="d-block rounded-circle overflow-hidden" href="{{ path(formation.pathFormation) }}" title="Voir nos formations Immobilier">
+                            <div class="m-0 h-100 d-flex justify-content-center align-items-center">
+                                <img srcset="{{ asset('img/formation/' ~ formation.pathFormation ~ '/' ~ formation.vignetteFormation) }}" src="{{ asset('img/formation/' ~ formation.pathFormation ~ '/' ~ formation.vignetteFormation) }}" alt="immobilier" width="100%" height="100%">
+                            </div>
+                            <div class="position-absolute d-flex align-items-center justify-content-center w-100 py-1" style="background-color: white; top: 70%">
+                                <h3 class="h3 m-auto">{{ formation.nomFormation }}</h3>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+                {# <div class="formation m-3 d-flex flex-column position-relative rounded-circle">
+                    <a class="d-block rounded-circle overflow-hidden" href="{{ path('immobilier') }}" title="Voir nos formations Immobilier">
+                        <div class="m-0 h-100 d-flex justify-content-center align-items-center">
+                            <img srcset="{{ asset('img/accueil/agentCommerceImmo.png') }}" src="{{ asset('img/accueil/agentCommerceImmo.png') }}" alt="immobilier" width="100%" height="100%">
                         </div>
-                        <div class="text_formation">
-                            <h3 class="h3">Immobilier</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="formation">
-                    <a href="{{ path('permisExploitation') }}" title="Voir nos formation Permis d'exploitation">
-                        <div class="image_formation">
-                            <img srcset="{{ asset('img/accueil/permisExploitation.png') }}" src="{{ asset('img/accueil/permisExploitation.png') }}" alt="permis-exploitation">
-                        </div>
-                        <div class="text_formation">
-                            <h3 class="h3">Permis d'exploitation</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="formation">
-                    <a href="{{ path('autoentrepreneur') }}" title="Voir nos informations Autoentrepreneur">
-                        <div class="image_formation">
-                            <img srcset="{{ asset('img/accueil/microentreprise.png') }}" src="{{ asset('img/accueil/microentreprise.png') }}" alt="micro-entreprise">
-                        </div>
-                        <div class="text_formation">
-                            <h3 class="h3">Autoentrepreneur</h3>
+                        <div class="position-absolute d-flex align-items-center justify-content-center w-100 py-1" style="background-color: white; top: 70%">
+                            <h3 class="h3 m-auto">Immobilier</h3>
                         </div>
                     </a>
                 </div>
-                <div class="formation">
-                    <a href="{{ path('entreprise') }}" title="Voir nos formations Entreprise">
-                        <div class="image_formation flexOne">
-                            <img srcset="{{ asset('img/png/entreprise.png') }}" src="{{ asset('img/png/entreprise.png') }}" alt="micro-entreprise">
+                <div class="formation m-3 d-flex flex-column position-relative rounded-circle">
+                    <a class="d-block rounded-circle overflow-hidden" href="{{ path('permisExploitation') }}" title="Voir nos formation Permis d'exploitation">
+                        <div class="m-0 h-100 d-flex justify-content-center align-items-center">
+                            <img srcset="{{ asset('img/accueil/permisExploitation.png') }}" src="{{ asset('img/accueil/permisExploitation.png') }}" alt="permis-exploitation" width="100%" height="100%">
                         </div>
-                        <div class="text_formation">
-                            <h3 class="h3">Entreprise</h3>
+                        <div class="position-absolute d-flex align-items-center justify-content-center w-100 py-1" style="background-color: white; top: 70%">
+                            <h3 class="h3 m-auto">Permis d'exploitation</h3>
                         </div>
                     </a>
                 </div>
+                <div class="formation m-3 d-flex flex-column position-relative rounded-circle">
+                    <a class="d-block rounded-circle overflow-hidden" href="{{ path('autoentrepreneur') }}" title="Voir nos informations Autoentrepreneur">
+                        <div class="m-0 h-100 d-flex justify-content-center align-items-center">
+                            <img srcset="{{ asset('img/accueil/microentreprise.png') }}" src="{{ asset('img/accueil/microentreprise.png') }}" alt="micro-entreprise" width="100%" height="100%">
+                        </div>
+                        <div class="position-absolute d-flex align-items-center justify-content-center w-100 py-1" style="background-color: white; top: 70%">
+                            <h3 class="h3 m-auto">Autoentrepreneur</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="formation m-3 d-flex flex-column position-relative rounded-circle">
+                    <a class="d-block rounded-circle overflow-hidden" href="{{ path('entreprise') }}" title="Voir nos formations Entreprise">
+                        <div class="m-0 h-100 d-flex justify-content-center align-items-center">
+                            <img srcset="{{ asset('img/png/entreprise.png') }}" src="{{ asset('img/png/entreprise.png') }}" alt="micro-entreprise" width="100%" height="100%">
+                        </div>
+                        <div class="position-absolute d-flex align-items-center justify-content-center w-100 py-1" style="background-color: white; top: 70%">
+                            <h3 class="h3 m-auto">Entreprise</h3>
+                        </div>
+                    </a>
+                </div> #}
             </div>
         </div>
         <div style="background-color: var(--blue-color)" class="js-scroll fade-in-bottom py-5">
