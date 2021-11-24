@@ -28,6 +28,7 @@ class FormationFixture extends Fixture
             $formation->setTextEntete($value['textEntete']);
             $formation->setPhraseFormation($value['phraseFormation']);
             $formation->setBackgroundImgFormation($value['backgroungImgFormation']);
+            $formation->setColorFormation($value['colorFormation']);
 
             $manager->persist($formation);
         }

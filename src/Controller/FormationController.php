@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Formation;
 use App\Entity\Module;
 use App\Entity\Modulecomplet;
 use App\Entity\ModuleDescription;
@@ -29,7 +30,11 @@ class FormationController extends DefaultController
         if($nomModule != null){
             return $this->render('formation/moduleComplet.html.twig', ['moduleFormation' => $contenuFormation->findBy(array('nomLienModule'=> $nomModule))[0]]);
         }else{
-            return $this->render('formation/immobilier.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idFormation'=> 1))]);
+            $infoFormation = $this->getDoctrine()->getManager()->getRepository(Formation::class)->findBy(array("nomFormation" => 'Immobilier'))[0];
+            return $this->render('formation/immobilier.html.twig', [
+                'modulesFormation' => $contenuFormation->findBy(array('idFormation'=> 1)),
+                'infoFormation' => $infoFormation
+            ]);
         }
     }
 
@@ -45,7 +50,11 @@ class FormationController extends DefaultController
         if($nomModule != null){
             return $this->render('formation/moduleComplet.html.twig', ['moduleFormation' => $contenuFormation->findBy(array('nomLienModule'=> $nomModule))[0]]);
         }else {
-            return $this->render('formation/permisExploitation.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idFormation' => 2))]);
+            $infoFormation = $this->getDoctrine()->getManager()->getRepository(Formation::class)->findBy(array("nomFormation" => 'Permis d\'exploitation'))[0];
+            return $this->render('formation/permisExploitation.html.twig', [
+                'modulesFormation' => $contenuFormation->findBy(array('idFormation' => 2)),
+                'infoFormation' => $infoFormation
+            ]);
         }
     }
 
@@ -61,7 +70,11 @@ class FormationController extends DefaultController
         if($nomModule != null){
             return $this->render('formation/moduleComplet.html.twig', ['moduleFormation' => $contenuFormation->findBy(array('nomLienModule'=> $nomModule))[0]]);
         }else {
-            return $this->render('formation/microEntreprise.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idFormation' => 3))]);
+            $infoFormation = $this->getDoctrine()->getManager()->getRepository(Formation::class)->findBy(array("nomFormation" => 'Autoentrepreneur'))[0];
+            return $this->render('formation/microEntreprise.html.twig', [
+                'modulesFormation' => $contenuFormation->findBy(array('idFormation' => 3)),
+                'infoFormation' => $infoFormation
+            ]);
         }
     }
 
@@ -77,7 +90,11 @@ class FormationController extends DefaultController
         if($nomModule != null){
             return $this->render('formation/moduleComplet.html.twig', ['moduleFormation' => $contenuFormation->findBy(array('nomLienModule'=> $nomModule))[0]]);
         }else {
-            return $this->render('formation/entreprise.html.twig', ['modulesFormation' => $contenuFormation->findBy(array('idFormation' => 4))]);
+            $infoFormation = $this->getDoctrine()->getManager()->getRepository(Formation::class)->findBy(array("nomFormation" => 'Entreprise'))[0];
+            return $this->render('formation/entreprise.html.twig', [
+                'modulesFormation' => $contenuFormation->findBy(array('idFormation' => 4)),
+                'infoFormation' => $infoFormation
+            ]);
         }
     }
 

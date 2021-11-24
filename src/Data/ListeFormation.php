@@ -20,10 +20,11 @@ class ListeFormation
                                 </p>
                             </div>
                             <div class='ps-4'>
-                                <img src='{{ asset(\"img/formation/immobilier/tarif_unique_350.png\") }}' alt='' width='170px' height='170px'>
+                                <img src='/img/formation/immobilier/tarif_unique_350.png' alt='' width='170px' height='170px'>
                             </div>",
             'phraseFormation' => "<strong>Vous pouvez composer votre formation librement selon vos besoins et votre domaine d'activité en choisissant une ou plusieurs thématiques suivantes d'une durée de 7h chacune.</strong>",
             'backgroungImgFormation' => "immo_frise.png",
+            'colorFormation' => 'rgb(93, 169, 221)'
         ],
         [
             'idFormation' => 2,
@@ -41,6 +42,7 @@ class ListeFormation
                             </div>",
             'phraseFormation' => "<strong>Nous proposons ainsi 3 formations : le PE Initial, le PE Renouvellement et le PE spécial Chambre d'hôtes.</strong>",
             'backgroungImgFormation' => "pe_frise.png",
+            'colorFormation' => 'rgb(230, 50, 50)'
         ],
         [
             'idFormation' => 3,
@@ -61,6 +63,7 @@ class ListeFormation
                             </div>",
             'phraseFormation' => "<strong>Nous vous proposons ainsi une formule :</strong>",
             'backgroungImgFormation' => "me_frise.png",
+            'colorFormation' => 'rgb(92, 36, 131)'
         ],
         [
             'idFormation' => 4,
@@ -77,7 +80,8 @@ class ListeFormation
                                 </p>
                             </div>",
             'phraseFormation' => "<strong>Nous vous proposons ainsi quatre formules :</strong>",
-            'backgroungImgFormation' => "enntreprise_frise.png",
+            'backgroungImgFormation' => "entreprise_frise.jpeg",
+            'colorFormation' => 'rgb(104, 163, 155)'
         ],
     ];
 
