@@ -2,11 +2,3 @@
     background-image: url("/img/formation/entreprise/entreprise_frise.jpeg");
 }
 
-.enteteFormation .entete_1 {
-    background-color: var(--entre-1-color);
-}
-
-
-.enteteFormation .textEntete{
-    border: 2px solid var(--entre-1-color);
-}

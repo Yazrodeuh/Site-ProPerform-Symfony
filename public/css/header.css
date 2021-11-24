@@ -280,16 +280,7 @@ div.sousMenuBlock1 div:hover div.sousMenuBlock2{
 
 }*/
 
-#navbar_top{
-    background-color: var(--blue-color);
-}
 
-.nav-link{
-    color: white;
-}
 
-.nav-link:hover, .nav-link:focus{
-    color: var(--red-color);
-}
 
 

@@ -53,7 +53,7 @@ class FormationRepository extends ServiceEntityRepository
     public function requestAccueil()
     {
         return $this->createQueryBuilder('f')
-            ->select('f.vignetteFormation', 'f.id', 'f.pathFormation', 'f.nomFormation')
+            ->select('f.vignetteFormation', 'f.pathFormation', 'f.nomFormation', 'f.colorFormation')
             ->getQuery()
             ->getResult();
     }

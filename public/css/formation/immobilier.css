@@ -7,14 +7,6 @@
     padding: 7% 0 9% 20%;
 }
 
-.enteteFormation .entete_1 {
-    background-color: var(--immo-1-color);
-}
-
-.enteteFormation .textEntete{
-    border: 2px solid var(--immo-1-color);
-}
-
 
 
 .enteteFormation .textEntete{
