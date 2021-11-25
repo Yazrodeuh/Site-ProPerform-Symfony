@@ -16,14 +16,13 @@
 
 {% block body %}
 <div class="bg-image-entete" style="background-image: url('{{ asset('img/formation/immobilier/' ~ infoFormation.backgroundImgFormation) }}')">
-
-    <div class="pt-5">
-        <div class="py-5 d-flex justify-content-center">
-            <div class="text-center p-3 rounded-pill" style="background-color: {{ infoFormation.colorFormation }}">
-                <h1>{{ infoFormation.titrePage }}</h1>
+    {# <div class="py-5 js-scroll slide-right">
+        <div class="my-5 py-5 d-flex justify-content-center rounded-5">
+            <div class="text-center p-3 rounded-10" style="background-color: {{ infoFormation.colorFormation }}">
+                <h1>{{ infoFormation.titrePage | raw}}</h1>
             </div>
         </div>
-    </div>
+    </div> #}
 
     {% include 'formation/formation.html.twig' %}
 

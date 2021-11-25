@@ -145,7 +145,7 @@ class ListeModule
                 </ul>",
             "valeurModule" => "
                 <p>Bien plus qu’une formation obligatoire, notre formation est une réelle opportunité d’assimiler toutes les informations juridiques nécessaires à l’exercice de votre profession.</p>
-                <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</div>",
+                <p>Nos formations se déroulant dans un cadre convivial, c’est également pour vous l’occasion de rencontrer différents professionnels du secteur et de partager vos expériences.</p>",
             "versionModule" => "V1 du 01/07/2021",
             "couleurModule"=>"rgb(136, 130, 189)",
             "idFormation"=>1

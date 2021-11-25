@@ -10,7 +10,8 @@ class ListeFormation
             'nomFormation' => 'Immobilier',
             'vignetteFormation' => 'vignetteImmo.png',
             'pathFormation' => 'immobilier',
-            'titrePage' => 'Formation des agents immobilier (Loi ALUR)',
+            /*'titrePage' => 'Formation des agents immobilier (Loi ALUR)',*/
+            'titrePage' => '<span>Formation continue et obligatoire</span> <br> <span> des professionnels de l\'immobilier</span>',
             'textEntete' => "<div>
                                 <p>
                                     Depuis <strong>la Loi Alur</strong> du 24 mars 2014, <strong>les professionnels de l'immobilier</strong> sont tenus d'une obligation de <strong>formation continue</strong>, dont le respect est vérifié par les CCI (Chambre de Commerce et d'Industrie) à chaque renouvellement de <strong>la carte professionnelle d'agent immobilier</strong> quelle qu'en soit la mention (Carte Transactions sur immeubles et fonds de commerce, Gestion immobilière...).
@@ -31,7 +32,7 @@ class ListeFormation
             'nomFormation' => 'Permis d\'exploitation',
             'vignetteFormation' => 'vignettePe.png',
             'pathFormation' => 'permisExploitation',
-            'titrePage' => 'Le permis d\'exploitation',
+            'titrePage' => 'Nos formations pour le permis d\'exploitation',
             'textEntete' => "<div>
                                 <p>
                                     Depuis 2006, la loi impose \"une formation spécifique sur les droits et obligations attachés à l'exploitation d'un débit de boissons (...)\".
@@ -49,7 +50,7 @@ class ListeFormation
             'nomFormation' => 'Autoentrepreneur',
             'vignetteFormation' => 'vignetteAutoEn.png',
             'pathFormation' => 'autoentrepreneur',
-            'titrePage' => 'Devenir autoentrepeneur',
+            'titrePage' => 'Devenir autoentrepreneur <br> et créer sa microentreprise',
             'textEntete' => "<div>
                                 <p class=\"text-center\">
                                     <strong>Vous avez pour projet de créer une micro-entreprise ? Vous êtes déjà installé(e) et rencontrez quelques difficultés ?</strong>
@@ -70,7 +71,7 @@ class ListeFormation
             'nomFormation' => 'Entreprise',
             'vignetteFormation' => 'vignetteEntre.png',
             'pathFormation' => 'entreprise',
-            'titrePage' => 'Créer son entreprise',
+            'titrePage' => 'Nos formations pour la création d\'entreprise',
             'textEntete' => "<div>
                                 <p class=\"text-center\">
                                     <strong>Vous avez pour projet de créer ou reprendre une entreprise ?</strong>
