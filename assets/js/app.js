@@ -12,7 +12,29 @@ const $ = require('jquery');
 require('bootstrap');
 import Vue from 'vue';
 
-$(document).ready(function() {
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+    'use strict';
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation');
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach((form) => {
+        form.addEventListener('submit', (event) => {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+        console.log("cououc")
+    });
+})();
+
+
+/*$(document).ready(function() {
     $('[data-toggle="popover"]').popover();
 });
 
@@ -23,4 +45,5 @@ Vue.component('button-counter', {
         }
     },
     template: '<button v-on:click="count++">Vous m\'avez cliqué {{ count }}fois.</button>'
-})
+})*/
+

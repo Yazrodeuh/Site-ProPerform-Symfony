@@ -14,45 +14,144 @@
 {% block body %}
 
 
-    <div class="enteteFormation">
-        <div style="display: flex; justify-content: flex-end">
-            <div class="entete_1 js-scroll slide-right">
-                <h1>Contact</h1>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="coordonees">
-            <div class="flexEight">
-                <h2><strong>Nos coordonées</strong></h2>
-            </div>
-            <div class="triangle-contact flexOne"></div>
-            <div class="flexTen">
-                <div>
-                    <img src="{{ asset('img/entreprise/contact/contact-us-lieul.png') }}" alt="" width="60" height="60">
-                    <div>501, avenue d’Occitanie, 34090 Montpellier</div>
-                </div>
-                <div>
-                    <img src="{{ asset('img/entreprise/contact/contact-us-tel.png') }}" alt="" width="60" height="60">
-                    <div><u><a href="tel:0671867954"> 06 71 86 79 54 </a></u></div>
-                </div>
-                <div>
-                    <img src="{{ asset('img/entreprise/contact/contact-us-@.png') }}" alt="" width="60" height="60">
-                    <div><u><a href="mailto:contact@pro-perfrom.fr">contact@pro-perform.fr</a></u></div>
+    <div class="bg-image-entete" style="background-image: url({{ asset('img/entreprise/contact/contact_frise5.png') }}); background-position: 0 -5%;">
+        <div class="pt-5">
+            <div class="py-5 d-flex justify-content-center">
+                <div class="text-center p-3 rounded-pill bg-blueC">
+                    <h1>Contactez-nous</h1>
                 </div>
             </div>
         </div>
+        <div>
+            {% include 'alert.html.twig' %}
+        </div>
+        <div class="d-flex w-100 color-whiteC coordonees flex-column flex-lg-row">
+            <div class="flexEight bg-redC d-flex align-items-center justify-content-center">
+                <h2><strong>Nos coordonnées</strong></h2>
+            </div>
+            <div class="triangle-contact flexOne d-inline-block h-auto w-auto bg-blueC"></div>
+            <div class="flexTen bg-blueC d-flex flex-column justify-content-around ">
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle" src="{{ asset('img/entreprise/contact/contact-us-lieul.png') }}" alt="" width="60" height="60">
+                    <div class="d-flex align-items-center ps-3">
+                        <h3 class="h5">501, avenue d’Occitanie, 34090 Montpellier</h3>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle" src="{{ asset('img/entreprise/contact/contact-us-tel.png') }}" alt="" width="60" height="60">
+                    <div class="d-flex align-items-center ps-3">
+                        <h3 class="h5">
+                            <a class="color-whiteC" href="tel:0671867954"> 06 71 86 79 54 </a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle" src="{{ asset('img/entreprise/contact/contact-us-@.png') }}" alt="" width="60" height="60">
+                    <div class="d-flex align-items-center ps-3">
+                        <h3 class="h5">
+                            <a class="color-whiteC" href="mailto:contact@pro-perfrom.fr">contact@pro-perform.fr</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test" class="py-3" style="background-image: linear-gradient(to bottom, white 55%, transparent 100%)">
+            <div class="container py-2">
+                <div class="text-center py-3">
+                    <h2>Formulaire de contact</h2>
+                </div>
+                <div>
+                    {{ form_start(my_form, {'attr': {'class': 'needs-validation', 'novalidate': ''}}) }}
+                    {{ form_errors(my_form) }}
+                    <div class="row justify-content-center g-3">
+                        <div class="col-md-5 px-4 py-2">
+                            <div class="form-floating">
+                                {{ form_widget(my_form.prenomC) }}
+                                {{ form_label(my_form.prenomC) }}
+                                {{ form_errors(my_form.prenomC) }}
+                                <div class="invalid-feedback">
+                                    Veuillez remplir ce champ obligatoire.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 px-4 py-2">
+                            <div class="form-floating">
+                                {{ form_widget(my_form.nomC) }}
+                                {{ form_label(my_form.nomC) }}
+                                {{ form_errors(my_form.nomC) }}
+                                <div class="invalid-feedback">
+                                    Veuillez remplir ce champ obligatoire.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 px-4 py-2">
+                            <div class="form-floating">
+                                {{ form_widget(my_form.mailC) }}
+                                {{ form_label(my_form.mailC) }}
+                                {{ form_errors(my_form.mailC) }}
+                                <div class="invalid-feedback">
+                                    L'adresse e-mail doit être indiquée dans un format approprié.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 px-4 py-2">
+                            <div class="form-floating">
+                                {{ form_widget(my_form.telC) }}
+                                {{ form_label(my_form.telC) }}
+                                {{ form_errors(my_form.telC) }}
+                            </div>
+                        </div>
+                        <div class="col-md-10 px-4 py-2">
+                            <div class="form-floating">
+                                {{ form_widget(my_form.optionC) }}
+                                {{ form_label(my_form.optionC) }}
+                                {{ form_errors(my_form.optionC) }}
+                                <div class="invalid-feedback">
+                                    Veuillez sélectionner l'objet de la demande de contact.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10 px-4 py-2">
+                            <div class="form-floating">
+                                {{ form_widget(my_form.messageC) }}
+                                {{ form_label(my_form.messageC) }}
+                                {{ form_errors(my_form.messageC) }}
+                            </div>
+                        </div>
+                        <div class="col-md-10 px-4 py-2">
+                            <div class="form-check">
+                                {{ form_widget(my_form.copieC) }}
+                                {{ form_label(my_form.copieC) }}
+                                {{ form_errors(my_form.copieC) }}
+                            </div>
+                        </div>
+                        <div class="col-md-10 px-4 py-2">
+                            <div class="form-check">
+                                {{ form_widget(my_form.cgvC)}}
+                                {{ form_label(my_form.cgvC) | raw}}
+                                {{ form_errors(my_form.cgvC) }}
+                            </div>
+                        </div>
+
+                        <div class="col-10 text-center">
+                            <input type="hidden" id="recaptchaRep" name="recaptcha-Rep">
+                            {{ form_label(my_form.envoyerC) }}
+                            {{ form_widget(my_form.envoyerC) }}
+                        </div>
+
+
+                    </div>
+                    {{ form_end(my_form) }}
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <div style="padding: 3% 0 2%">
-        <div style="margin: 0 10%">
-            <div class="stages_presentation">
-                <h2><strong>Formulaire de contact</strong></h2>
-            </div>
-        </div>
-    </div>
 
-    <div style="margin: 0 25%">
+
+
+    {# <div style="margin: 0 25%">
 
         {{ form_start(my_form) }}
         {{ form_errors(my_form) }}
@@ -105,7 +204,7 @@
 
         {{ form_end(my_form) }}
 
-    </div>
+    </div> #}
 
     {# <div class="formulaire">
         <div class="contact_formulaire_titre">

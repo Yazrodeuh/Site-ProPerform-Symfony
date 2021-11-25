@@ -81,6 +81,9 @@ body{
 .bg-blueC{
     background-color: $blueColor;
 }
+.bg-redC{
+  background-color: $redColor;
+}
 
 .border-bleuC{
   border-color: $blueColor !important;
@@ -98,3 +101,8 @@ body{
   color: white;
 }
 
+.triangle-contact{
+  border-top : 150px solid transparent;
+  border-bottom : 150px solid transparent;
+  border-left : 150px solid $redColor;
+}

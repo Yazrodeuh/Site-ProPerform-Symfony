@@ -25,9 +25,9 @@ class EntrepriseController extends DefaultController
     public function locaux(Request $request, string $ville): Response
     {
         if($ville == "montpellier"){
-            return $this->render('entreprise/montpellier.html.twig', ['controller_name' => 'EntrepriseController']);
+            return $this->render('entreprise/montpellier.html.twig', []);
         }elseif ($ville == "nimes"){
-            return $this->render('entreprise/nimes.html.twig', ['controller_name' => 'EntrepriseController']);
+            return $this->render('entreprise/nimes.html.twig', []);
         }else{
             return $this->render('entreprise/nimes.html.twig', ['controller_name' => 'EntrepriseController']);
         }
@@ -61,6 +61,23 @@ class EntrepriseController extends DefaultController
 
         $formInscrit->handleRequest($request);
 
+        if($request->isMethod('post') && $formInscrit->isValid()){
+            var_dump($formInscrit->getData());
+
+
+
+
+
+
+
+            $session = $request->getSession();
+            $session->getFlashBag()->add('message', 'Votre demande de contact à bien été prise en compte !');
+            $session->set('statut', 'success');
+
+        }
+
+        //var_dump($formInscrit->getData());
+
         /*if($request->isMethod('post') && $formInscrit->isValid() ){
 
             $em = $this->getDoctrine()->getManager();
@@ -90,7 +107,7 @@ class EntrepriseController extends DefaultController
             return new JsonResponse($request->request->all());
         }*/
 
-        return $this->render('entreprise/contact.html.twig', ['controller_name' => 'UtilisateurController', 'my_form'=>$formInscrit->createView()]);
+        return $this->render('entreprise/contact.html.twig', ['', 'my_form'=>$formInscrit->createView()]);
     }
 
 
