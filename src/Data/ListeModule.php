@@ -13,7 +13,7 @@ class ListeModule
             "dureeModule" => "1 journée (7h)",
             "pourQuiModule" => null,
             "objectifModule" => "        
-                <div>Assimiler les bases de la transaction immobilière suivant la loi du 2 janvier 1970.</div>
+                <div>Assimiler les bases de la transaction immobilière suivant la loi du 2 janvier 1970 :</div>
                 <ul>
                     <li>L'estimation d'un bien </li>
                     <li>Le bon de visite </li>
@@ -77,7 +77,7 @@ class ListeModule
             "dureeModule" => "1 journée (7h)",
             "pourQuiModule" => null,
             "objectifModule" => "        
-                <div>Posséder les bases de la gestion locative suivant la loi du 6 juillet 1989.</div>
+                <div>Posséder les bases de la gestion locative suivant la loi du 6 juillet 1989 :</div>
                 <ul>
                     <li>L'état des lieux </li>
                     <li>Les baux </li>
@@ -235,7 +235,7 @@ class ListeModule
             "dureeModule" => "1 journée (7h)",
             "pourQuiModule" => null,
             "objectifModule" => "        
-                <div>Analyser les différentes actualités juridiques et appréhender les risques professionnels liés à ces actualités.</div>
+                <div>Analyser les différentes actualités juridiques et appréhender les risques professionnels liés à ces actualités :</div>
                 <ul>
                     <li>Le nouveau DPE de 2021 </li>
                     <li>La responsabilité du vendeur </li>
@@ -286,7 +286,7 @@ class ListeModule
             "dureeModule" => "1 journée (7h)",
             "pourQuiModule" => null,
             "objectifModule" => "        
-                <div>Analyser les différentes actualités juridiques et appréhender les risques professionnels liés à ces actualités.</div>
+                <div>Analyser les différentes actualités juridiques et appréhender les risques professionnels liés à ces actualités :</div>
                 <ul>
                     <li>Le nouveau DPE de 2021 </li>
                     <li>Le permis de louer </li>
@@ -339,7 +339,7 @@ class ListeModule
             "dureeModule" => "1 journée (7h)",
             "pourQuiModule" => null,
             "objectifModule" => "        
-                <div>Comprendre les obligations liées à TRACFIN et à la règlementation générale de protection des données.</div>
+                <div>Comprendre les obligations liées à TRACFIN et à la règlementation générale de protection des données :</div>
                 <ul>
                     <li>Création de son registre RGPD et préparation des autorisations contractuelles RGPD </li>
                     <li>Gestion des risques TRACFIN </li>

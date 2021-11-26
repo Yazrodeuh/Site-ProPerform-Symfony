@@ -3,7 +3,7 @@ body{
 }
 
 #anthony, #lea, #jonathan{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     position: absolute;
     cursor: pointer;
 }

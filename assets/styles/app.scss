@@ -106,3 +106,14 @@ body{
   border-bottom : 150px solid transparent;
   border-left : 150px solid $redColor;
 }
+
+.atout-liste-accueil li{
+  list-style: none;
+}
+
+.atout-liste-accueil li:before{
+  content: "•";
+  font-size: 1.3rem;
+  color: red;
+  padding-right: 0.4rem;
+}

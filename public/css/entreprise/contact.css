@@ -2,32 +2,6 @@
 
 
 
-.formulaire_contact{
-    width: 100%;
-}
-
-.formulaire_contact .input, .formulaire_contact .select, .formulaire_contact .textarea{
-    padding: 0;
-    border: none;
-    border-bottom: 1px solid var(--blue-color);
-    width: 100%;
-    outline: none;
-    background-color: transparent;
-    font-weight: normal;
-}
-
-
-
-.formulaire_contact .textarea{
-    border: 1px solid var(--blue-color);
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 10em;
-    max-height: 30em;
-}
-
-
-
 
 
 .copie_utilisateur{
