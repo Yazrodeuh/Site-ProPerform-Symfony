@@ -9,9 +9,6 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('css/formation/immobilier.css') }}" xmlns="http://www.w3.org/1999/html"
-          xmlns="http://www.w3.org/1999/html">
-    <link rel="stylesheet" href="{{ asset('css/formation/formation.css') }}">
 {% endblock %}
 
 {% block body %}
@@ -30,7 +27,7 @@
         {% include 'formation/lieu.html.twig' %}
     </div>
     <div class="container-lg ">
-        <div class="px-3">
+        <div class="px-4 text-justify">
             Le programme de formation est libre dès lors qu'il est en lien direct avec l'activité professionnelle exercée.
             La seule exigence de ce programme étant que durant les trois années consécutives d'exercice, la formation continue inclut au moins deux heures portant sur la non-discrimination à l'accès au logement et au moins deux heures portant sur les autres règles déontologiques.
         </div>

@@ -1,21 +1,21 @@
 <header>
     <div class="py-2" id="headerInfo">
-        <div class="d-flex justify-content-around">
-            <div class="d-flex col-3 justify-content-start align-items-center">
+        <div class="d-flex justify-content-around px-md-0 px-3">
+            <div class="d-flex col-md-3 col-6 justify-content-start align-items-center">
                 <div class="d-flex flex-column">
-                    <div class="">
+                    <div>
                         <img srcset="{{ asset('img/accueil/logoQualiopi-300dpi-Avec Marianne.png') }}"
-                             src="{{ asset('img/accueil/logoQualiopi-300dpi-Avec Marianne.png') }}" alt="datadoc"
-                             width="50%">
+                             src="{{ asset('img/accueil/logoQualiopi-300dpi-Avec Marianne.png') }}" alt="Qualiopi"
+                             width="180">
                     </div>
                     <div class="">
                         <div><small><small>La certification qualité a été délivré au titre de la catégorie d'action suivante : <strong style="text-transform: uppercase">actions de formation</strong></small></small></div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column col-5 justify-content-center align-items-center color-blueC">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1485 360" width="400px">
+            <div class="d-none d-md-flex flex-column col-5 justify-content-center align-items-center color-blueC px-3">
+                <div class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1485 360" width="90%">
                         <path id="P-pro" fill="var(--red-color)"
                               d="M 0.00,49.00 C 0.00,49.00 103.00,49.00 103.00,49.00 103.00,49.00 128.00,52.00 134.00,57.00 151.41,65.81 162.96,85.59 163.00,105.00 163.00,105.00 168.25,139.50 145.87,163.87 142.00,167.74 130.29,174.47 125.00,176.24 114.38,179.81 91.01,180.21 88.75,179.00 86.07,177.56 68.42,156.51 64.00,149.00 64.00,149.00 103.00,149.00 103.00,149.00 130.10,148.64 146.75,112.09 124.00,90.02 113.43,79.77 107.00,81.00 107.25,81.00 107.25,81.00 29.35,83.20 30.00,81.75 30.00,82.00 29.00,229.00 29.00,229.00 29.00,229.00 0.00,229.00 0.00,229.00 0.00,229.00 0.00,49.00 0.00,49.00 Z"/>
                         <path id="R-pro" fill="var(--red-color)"
@@ -70,29 +70,39 @@
                         <path id="Sélection #11" fill="var(--blue-color)"
                               d="M 1164.00,355.00 C 1164.00,351.74 1164.55,341.45 1164.73,341.09 1167.08,338.73 1227.45,341.14 1231.96,338.65 1239.10,334.71 1240.64,326.23 1234.00,321.45 1230.23,318.74 1224.42,319.01 1220.00,319.00 1220.00,319.00 1194.00,319.00 1194.00,319.00 1186.19,319.00 1180.13,319.60 1173.02,315.47 1159.33,307.55 1159.08,282.97 1173.02,275.20 1181.58,270.45 1192.58,271.00 1202.00,271.00 1202.00,271.00 1249.00,271.00 1249.00,271.00 1249.00,271.00 1249.00,287.00 1249.00,287.00 1249.00,287.00 1185.17,285.59 1182.55,287.45 1177.22,291.24 1176.00,301.13 1182.55,304.73 1188.79,308.16 1214.77,307.01 1223.00,307.00 1231.78,306.99 1240.85,305.38 1247.44,313.18 1255.99,323.28 1256.41,354.63 1229.00,355.00 1229.00,355.00 1164.00,355.00 1164.00,355.00 Z"/>
                     </svg>
+
                 </div>
                 <div class="text-center border-top mt-2 pt-1">
                     Le partenaire de votre progression professionnelle
                 </div>
             </div>
-            <div class="d-flex col-3 justify-content-end align-items-center">
+            <div class="d-flex col-md-3 col-6 justify-content-end align-items-center">
                 <img srcset="{{ asset('img/accueil/datadoc.png') }}" src="{{ asset('img/accueil/datadoc.png') }}"
-                     alt="datadoc" width="30%">
+                     alt="datadoc" width="110">
             </div>
         </div>
     </div>
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark border-bottom bg-blueC"
+    <nav id="navbar_top" class="navbar navbar-expand-md navbar-dark border-bottom bg-blueC"
          style="border-color: white !important;">
-        <div class="container">
+        <div class="container-fluid">
+            <div class="d-md-none d-flex">
+                <a class="navbar-brand bg-white py-1 px-2" href="{{ path('index') }}">
+                    <img src="{{ asset('img/header/logoPro.png') }}" alt="" width="150">
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-md-between" id="main_nav">
+            <div class="collapse navbar-collapse justify-content-between ms-lg-0 ms-4" id="main_nav">
                 <div>
-                    <a class="nav-link" href="{{ path('index') }}">Accueil</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('index') }}">Accueil</a>
+                        </li>
+                    </ul>
                 </div>
                 <div>
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
@@ -138,7 +148,11 @@
                     </ul>
                 </div>
                 <div>
-                    <a class="nav-link" href="">Mon espace</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('index') }}">Mon espace</a>
+                        </li>
+                    </ul>
                 </div>
             </div> <!-- navbar-collapse.// -->
         </div> <!-- container-fluid.// -->
