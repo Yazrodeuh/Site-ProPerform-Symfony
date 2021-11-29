@@ -145,5 +145,9 @@
     <orderEntry type="library" name="masonry-layout" level="application" />
     <orderEntry type="library" name="@popperjs" level="application" />
     <orderEntry type="library" name="bootstrap-icons" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="jquery-3.3.1.slim" level="application" />
+    <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>

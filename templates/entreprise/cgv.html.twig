@@ -1,0 +1,345 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Administration du site
+{% endblock %}
+
+{% set descriptionPage = " " %} {# TODO Mettre description #}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+
+{% block body %}
+
+
+    <div class="container">
+        <div class="py-2 js-scroll slide-right">
+            <div class="my-5 py-5 d-flex justify-content-center rounded-5">
+                <div class="text-center px-2 py-1 rounded-10 bg-blueC">
+                    <h1>Conditions Générales de Vente</h1>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">CGV à l'égard des PROFESSIONNELS (art. L. 441-1 du Code de la consommation)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">CGV à l'égard des PARTICULIERS</button>
+            </li>
+        </ul>
+        <div class="tab-content border border-top-0 p-3 mb-4" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="text-justify">
+                    Il a été conclu entre, d'une part :
+                    <p>La société PRO'PERFORM domiciliée au 501, avenue d'Occitanie, 34090 Montpellier, au capital social de 2000 €, immatriculée au Registre du Commerce et des Sociétés de Montpellier sous le numéro SIRET 89192943200013, représentée par M. Jonathan GARCIA et M. Anthony JULIA en qualité de co-gérants, dûment habilités aux fins des présentes.
+                    La société peut être jointe par courriel en allant sur la page <a href="{{ path('contact') }}">contact</a> via le menu d'entête du site.
+                        Ci-après « l'Organisme de formation » ou « la société PRO'PERFORM ».</p>
+                </div>
+                <div class="text-justify">
+                    Et d'autre part :
+                    <p>La personne physique procédant à l'achat de services de la société, ci-après, « le Client », ou « le participant ».</p>
+                </div>
+                <div>
+                    <p>Il a été exposé et convenu ce qui suit :</p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 1 : Objet et champ d'application</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 1.1</h3>
+                    <p>Les conditions générales de vente décrites ci-après détaillent les droits et obligations de la société Pro'PERFORM qui organise et dispense des formations professionnelles et de son Client.</p>
+                    <p>Toute prestation accomplie par la société PRO'PERFORM implique donc l'adhésion sans réserve du Client aux présentes conditions générales de vente. Sauf dérogation formelle et expresse de l'Organisme de formation, ces conditions prévalent sur tout autre document du Client, et notamment sur toutes conditions générales d'achat.</p>
+                    <p>Ces conditions générales de vente (CGV) sont susceptibles d’être mises à jour librement et à tout moment par la société PRO'PERFORM. Le site internet <a href="https://www.pro-perform.fr">www.pro-perform.fr</a> publie toujours la dernière version à la connaissance de tous. Les éventuelles modifications ne peuvent ouvrir de droit à aucune indemnité au profit du Client.</p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 1.2</h3>
+                    <p>Ces CGV concernent les formations présentielles incluant, ou non, des modules digitaux effectués par le Client à distance, ainsi que les formations distancielles suivies sous forme d'enseignements en ligne. Les formations présentielles peuvent être réalisées dans les locaux de la société PRO'PERFORM, dans des locaux loués par l'Organisme de formation ou dans les locaux du Client.</p>
+                    <p>Les formations concernées s'entendent des formations proposées aux catalogues et sur le site internet de l'Organisme de formation ainsi que des formations organisées à la demande du Client. Il est entendu que le terme « Formation » seul concerne chacun des types de Formations précités. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 2 : Inscription</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 2.1</h3>
+                    <div>La demande d'inscription à une Formation doit être faite par le Client par l'un des moyens suivants :
+                        <ol>
+                            <li>Une inscription sur le site internet de la société PRO'PERFORM à l'adresse suivante : <a href="https://www.pro-perform.fr">www.pro-perform.fr</a></li>
+                            <li>L'envoi d'un courriel (à l'adresse électronique <a href="mailto:contact@pro-perform.fr">contact@pro-perform.fr</a>) indiquant la demande d'inscription et contenant les coordonnées du Client (nom, prénom, fonction, adresse, raison sociale le cas échéant), ainsi que les dates, l'intitulé de la Formation et le nombre de participants que le Client souhaite inscrire.</li>
+                        </ol>
+                    </div>
+                    <p>Toute commande de Formation est ferme et définitive</p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 2.2</h3>
+                    <p>Pour toute inscription, un accusé de réception est adressé au Client dans les quarante-huit [48] heures qui suivent la réception de la demande d'inscription, accompagnée d'une convention de formation. L'accusé ne vaut pas confirmation de la tenue de la Formation. Le Client devra retourner un exemplaire de la convention de formation, revêtu le cas échéant du cachet de l'entreprise, à l'Organisme de formation. </p>
+                    <p>La confirmation de la tenue de la session se fait au plus tard sept [7] jours calendaires avant la Formation. Le Client recevra une convocation et toutes informations pratiques relatives à sa Formation, dont les horaires exacts et le lieu de la Formation. Le lieu de Formation indiqué sur les supports de communication n'est pas contractuel. En fonction des salles disponibles, la société PRO'PERFORM peut convoquer les participants à une autre adresse dans le même secteur géographique. </p>
+                    <p>Dans les quinze [15] jours calendaires qui suivent la Formation, la société PRO'PERFORM adresse aux personnes indiquées par le Client lors de la commande, la facture de la Formation ainsi que l'attestation de fin de Formation. Il appartient au Client de vérifier l'imputabilité de l'action de Formation. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 3 : Modalités d'exécution de la Formation</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 3.1</h3>
+                    <p>La société PRO'PERFORM est libre d'utiliser les méthodes et outils pédagogiques de son choix, qui relèvent de sa seule compétence. Les durées des Formations sont précisées sur le site internet et sur les documents de communication libres d'accès de l'Organisme de formation. Pour la qualité de la Formation, un nombre minimum et un nombre maximum de participants sont définis pour chaque session. L'Organisme de formation s'engage à ne pas dépasser le nombre prévu. </p>
+                    <p>Les participants des Formations réalisées dans les locaux de la société PRO'PERFORM sont tenus de respecter le règlement intérieur de l'Organisme de formation. Dans le cas où la formation se déroule dans des locaux loués expressément par la société PRO'PERFORM, les participants sont tenus de respecter le règlement intérieur de l’établissement d'accueil. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 3.2</h3>
+                    <p>La société PRO'PERFORM limite le nombre de participants à quatorze [14] personnes, sauf cas particulier. L'Organisme de formation se réserve le droit, si le nombre de participants à une formation est jugé insuffisant sur le plan pédagogique, d'annuler cette formation au plus tard dix [10] jours calendaires avant la date prévue. L'Organisme de formation peut maintenir ses Formations même avec un nombre réduit de participants si le thème s'y prête et si les conditions de déroulement sont réunies. La société PRO'PERFORM se réserve le droit de reporter la formation, de modifier le lieu de son déroulement, le contenu de son programme ou de remplacer un animateur, si des circonstances indépendantes de sa volonté l'y obligent. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 3.3</h3>
+                    <div>
+                        La société PRO'PERFORM se réserve le droit, sans indemnité de quelque nature que ce soit :
+                        <ol>
+                            <li>De refuser toute inscription ou accès à un Client qui ne serait pas à jour de ses paiements</li>
+                            <li>D'exclure tout participant qui aurait procédé à de fausses déclarations lors de son inscription ou dont le comportement gênerait le bon déroulement de la formation et/ou manquerait gravement au règlement intérieur de l'Organisme de formation ou de l’établissement d'accueil de la Formation</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 3.4</h3>
+                    <p>L'Organisme de formation ne saurait être tenu responsable d'une quelconque erreur ou d'un oubli constaté dans la documentation (ci-après « la Documentation ») remise au Client. Cette dernière doit être considérée comme un support pédagogique qui ne saurait être considéré comme un manuel pratique ou un document à caractère officiel. De plus, les annexes documentaires fournies sont de complément à la Formation et ne sont de nature à engager la responsabilité de la société PRO'PERFORM quant à leur exhaustivité. Par ailleurs, l'Organisme de formation n'est pas tenu d'assurer une quelconque mise à jour de la Documentation postérieurement à la Formation. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 4 : Annulation et Remplacement</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 4.1</h3>
+                    <p>Pour être prise en compte, toute annulation doit être communiquée par écrit.</p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 4.2</h3>
+                    <p>Les remplacements de participants sont admis à tout moment, sans frais, sous réserve d'en informer par écrit PRO'PERFORM et de lui transmettre les noms et coordonnées du ou des remplaçants au plus tard la veille de la formation. Le participant dispose de la faculté d'annuler une inscription sans frais sous réserve d'en informer la société PRO'PERFORM par lettre recommandée avec accusé de réception ou par courriel avec accusé de réception à l'adresse <a href="mailto:contact@pro-perform.fr">contact@pro-perform.fr</a>, reçu au plus tard vingt [20] jours calendaires avant la date de la formation. </p>
+                    <p>En cas d'annulation reçue moins de vingt [20] jours et au moins quinze [15] jours calendaires avant la date du premier jour de la formation (ou du premier module pour un cycle ou une formation intégrant du elearning), PRO'PERFORM facture 50% des frais de stage à titre d'indemnités. En deçà de quinze [15] jours, PRO'PERFORM facture 100% des frais de stage à titre d'indemnités. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 4.3</h3>
+                    <p>Toute formation à laquelle le participant ne s'est pas présenté ou n'a assisté que partiellement les frais de stage seront facturés à 100% à titre d'indemnités. Pour les formations sur mesure, le report d'une session ne donne pas lieu à facturation des indemnités d'annulation sous la réserve d'un engagement écrit du client sur les nouvelles dates de réalisation. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 5 : Tarifs et Paiement</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 5.1</h3>
+                    <p>Les prix des formations professionnelles vendues sont ceux en vigueur au jour de la prise de l'inscription par le client. Ils sont indiqués en euros et calculés hors taxes sur les documents de communication de l'Organisme de formation et sur les bulletins d'inscription. La facturation se fera sans mention de taxe, que le client soit ou non assujetti à la TVA. L’organisme de formation est exonéré de TVA au titre de son activité de formation en application de l’article 261-4- 4° du Code général des impôts. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 5.2</h3>
+                    <p>Les frais calculés comprennent la formation, la documentation pédagogique remise pendant la formation, les fichiers électroniques mis à disposition le cas échéant. Les cafés d'accueil sont offerts ; sauf sur certains stages, en fonction de la mention indiquée sur le programme. Les frais liés aux déplacements et à l'hébergement des formateurs sont facturés en sus. </p>
+                    <p>Le Client a la possibilité de bénéficier de tarifs dégressifs en cas d'inscriptions à plusieurs formations ou en cas d'inscription de plusieurs participants à une ou plusieurs formations. Les remises et offres commerciales proposées par la société PRO'PERFORM peuvent être communiquées par téléphone auprès du secrétariat au <a href="tel:0671867954">06 71 86 79 54</a> ou par courriel à l'adresse <a href="mailto:contact@pro-perform.fr">contact@pro-perform.fr</a>. </p>
+                    <div> Les factures sont payables à réception ou le cas échéant selon l’échéancier convenu et accepté par écrit par l'Organisme de formation. Le règlement intégral devra intervenir à réception de la facture 30 jours fin de mois. Le règlement du prix de la formation s'effectue soit :
+                        <ol>
+                            <li>Par virement bancaire</li>
+                            <li>Par chèque à l'ordre de la société PRO'PERFORM</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 5.3</h3>
+                    <p>En cas de paiement effectué par un des opérateurs de compétences (OPCO), fonds d'assurance formation (FAF), le dossier de prise en charge doit parvenir à la société PRO'PERFORM avant le 1er jour de la formation. Si la société PRO'PERFORM n'a pas réceptionné l'accord de financement, le Client sera facturé de l'intégralité du coût de la formation. En cas de prise en charge partielle, la part non prise en charge sera directement facturée au Client. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 5.4</h3>
+                    <p>Toute facture non payée à échéance portera de plein droit, intérêt au taux d'intérêt appliqué par la Banque Centrale Européenne à son opération de refinancement la plus récente majoré de 10 [dix] points. Application d'une indemnité forfaitaire de 40 € en cas de retard de paiement (art. L. 441-3, L.441-4 et L.441-6 du Code de commerce) en sus des pénalités de retard à défaut de paiement d'une seule facture à son échéance, l'intégralité des sommes dues par le Client deviendra immédiatement exigible. Toute facture recouvrée par la société PRO'PERFORM sera majorée, à titre de clause pénale non réductible au sens des articles 1231-3 et 1231-5 du Code Civil, d'une indemnité fixée à 15 [quinze] % du montant des sommes exigibles. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 6 : Responsabilités et Indemnités </h2>
+                </div>
+                <div class="text-justify">
+                    <p>L'employeur, ou selon le cas le participant, s'oblige à souscrire et maintenir en prévision et pendant la durée de la formation une assurance responsabilité civile couvrant les dommages corporels, matériels, immatériels, directs et indirects susceptibles d’être causés par ses agissements ou ceux de ses préposés au préjudice de PRO'PERFORM ou des participants. Il s'oblige également à souscrire et maintenir une assurance responsabilité civile désignant également comme assuré PRO'PERFORM pour tous les agissements préjudiciables aux tiers qui auraient été causés par son préposé, et, contenant une clause de renonciation à recours, de telle sorte que PRO'PERFORM ne puisse être recherchée ou inquiétée.</p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 7 : Propriété intellectuelle</h2>
+                </div>
+                <div class="text-justify">
+                    <p>Dans le cadre du respect des droits de propriété intellectuelle attachés aux supports de cours ou autres ressources pédagogiques mises à la seule disposition des participants de la formation, le Client s'interdit de reproduire, directement ou indirectement, en totalité ou en partie, d'adapter, de modifier, de traduire, de représenter, de commercialiser ou de diffuser à des membres de son personnel non participants aux formations de la société PRO'PERFORM ou à des tiers, les dits supports et ressources pédagogiques sans l'autorisation expresse, préalable et écrite de l'Organisme de formation ou de ses ayants droit. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 8 : Informatique et Libertés</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 8.1</h3>
+                    <p>Conformément aux dispositions de la loi n°2004-801 du 6 août 2004 modifiant la loi n°78-17 du 6 janvier 1978 dite « Loi Informatique et Libertés », relative à l'informatique, aux fichiers et aux libertés ainsi que conformément au Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données, seules les informations à caractère personnelles strictement nécessaires au traitement de votre inscription sont demandées au Client et transmises au service de la société PRO'PERFORM. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 8.2</h3>
+                    <div>Conformément aux dispositions en vigueur, la société PRO'PERFORM permet au Client d'exercer ses droits d'accès, de rectification et d'opposition en s'adressant :
+                        <ul>
+                            <li>Par courier postal à Pro'Perform, 501 avenue d'Occitanie, 34090 Montpellier</li>
+                            <li>Par téléphone au <a href="tel:0671867954">06 71 86 79 54</a></li>
+                            <li>Par couriel avec accusé de réception à l'adresse <a href="mailto:contact@pro-perform.fr">contact@pro-perform.fr</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 9 : Loi applicable et Attribution de compétence</h2>
+                </div>
+                <div class="text-justify">
+                    <p>Le présent accord résultant de l'acceptation des conditions générales de vente (CGV) est régi par le droit français.</p>
+                    <p>En cas de litige sur l'existence, l'interprétation ou l'exécution de l'une de ses stipulations, les parties tenteront d'y mettre un terme amiablement. À défaut d'accord amiable des parties, le tribunal de commerce de Montpellier sera seul compétent pour connaître du litige.</p>
+                    <p>Toute inscription à un stage ou achat d'une prestation sur mesure vaut acceptation des présentes conditions générales de vente. </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="text-justify">
+                    Il a été conclu entre, d'une part :
+                    <p>La société PRO'PERFORM domiciliée au 501, avenue d'Occitanie, 34090 Montpellier, au capital social de 2000 €, immatriculée au Registre du Commerce et des Sociétés de Montpellier sous le numéro SIRET 89192943200013, représentée par M. Jonathan GARCIA et M. Anthony JULIA en qualité de co-gérants, dûment habilités aux fins des présentes.
+                        La société peut être jointe par courriel en allant sur la page <a href="{{ path('contact') }}">contact</a> via le menu d'entête du site.
+                        Ci-après « l'Organisme de formation » ou « la société PRO'PERFORM ».</p>
+                </div>
+                <div class="text-justify">
+                    Et d'autre part :
+                    <p>La personne physique procédant à l'achat de services de la société, ci-après, « le Client », ou « le participant ».</p>
+                </div>
+                <div>
+                    <p>Il a été exposé et convenu ce qui suit :</p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 1 : Objet et champ d'application</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 1.1</h3>
+                    <p>Les conditions générales de vente décrites ci-après détaillent les droits et obligations de la société Pro'PERFORM qui organise et dispense des formations professionnelles et de son Client.</p>
+                    <p>Toute prestation accomplie par la société PRO'PERFORM implique donc l'adhésion sans réserve du Client aux présentes conditions générales de vente. Sauf dérogation formelle et expresse de l'Organisme de formation, ces conditions prévalent sur tout autre document du Client, et notamment sur toutes conditions générales d'achat.</p>
+                    <p>Ces conditions générales de vente (CGV) sont susceptibles d’être mises à jour librement et à tout moment par la société PRO'PERFORM. Le site internet <a href="https://www.pro-perform.fr">www.pro-perform.fr</a> publie toujours la dernière version à la connaissance de tous. Les éventuelles modifications ne peuvent ouvrir de droit à aucune indemnité au profit du Client.</p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 1.2</h3>
+                    <p>Ces CGV concernent les formations présentielles incluant, ou non, des modules digitaux effectués par le Client à distance, ainsi que les formations distancielles suivies sous forme d'enseignements en ligne. Les formations présentielles peuvent être réalisées dans les locaux de la société PRO'PERFORM, dans des locaux loués par l'Organisme de formation ou dans les locaux du Client.</p>
+                    <p>Les formations concernées s'entendent des formations proposées aux catalogues et sur le site internet de l'Organisme de formation ainsi que des formations organisées à la demande du Client. Il est entendu que le terme « Formation » seul concerne chacun des types de Formations précités. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 2 : Inscription</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 2.1</h3>
+                    <div>La demande d'inscription à une Formation doit être faite par le Client par l'un des moyens suivants :
+                        <ol>
+                            <li>Une inscription sur le site internet de la société PRO'PERFORM à l'adresse suivante : <a href="https://www.pro-perform.fr">www.pro-perform.fr</a></li>
+                            <li>L'envoi d'un courriel (à l'adresse électronique <a href="mailto:contact@pro-perform.fr">contact@pro-perform.fr</a>) indiquant la demande d'inscription et contenant les coordonnées du Client (nom, prénom, fonction, adresse, raison sociale le cas échéant), ainsi que les dates, l'intitulé de la Formation et le nombre de participants que le Client souhaite inscrire.</li>
+                        </ol>
+                    </div>
+                    <p>Toute commande de Formation est ferme et définitive</p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 2.2</h3>
+                    <p>Pour toute inscription, un accusé de réception est adressé au Client dans les quarante-huit [48] heures qui suivent la réception de la demande d'inscription, accompagnée d'une convention de formation. L'accusé ne vaut pas confirmation de la tenue de la Formation. Le Client devra retourner un exemplaire de la convention de formation, revêtu le cas échéant du cachet de l'entreprise, à l'Organisme de formation. </p>
+                    <p>La confirmation de la tenue de la session se fait au plus tard sept [7] jours calendaires avant la Formation. Le Client recevra une convocation et toutes informations pratiques relatives à sa Formation, dont les horaires exacts et le lieu de la Formation. Le lieu de Formation indiqué sur les supports de communication n'est pas contractuel. En fonction des salles disponibles, la société PRO'PERFORM peut convoquer les participants à une autre adresse dans le même secteur géographique. </p>
+                    <p>Dans les quinze [15] jours calendaires qui suivent la Formation, la société PRO'PERFORM adresse aux personnes indiquées par le Client lors de la commande, la facture de la Formation ainsi que l'attestation de fin de Formation. Il appartient au Client de vérifier l'imputabilité de l'action de Formation. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 3 : Modalités d'exécution de la Formation</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 3.1</h3>
+                    <p>La société PRO'PERFORM est libre d'utiliser les méthodes et outils pédagogiques de son choix, qui relèvent de sa seule compétence. Les durées des Formations sont précisées sur le site internet et sur les documents de communication libres d'accès de l'Organisme de formation. Pour la qualité de la Formation, un nombre minimum et un nombre maximum de participants sont définis pour chaque session. L'Organisme de formation s'engage à ne pas dépasser le nombre prévu. </p>
+                    <p>Les participants des Formations réalisées dans les locaux de la société PRO'PERFORM sont tenus de respecter le règlement intérieur de l'Organisme de formation. Dans le cas où la formation se déroule dans des locaux loués expressément par la société PRO'PERFORM, les participants sont tenus de respecter le règlement intérieur de l’établissement d'accueil. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 3.2</h3>
+                    <p>La société PRO'PERFORM limite le nombre de participants à quatorze [14] personnes, sauf cas particulier. L'Organisme de formation se réserve le droit, si le nombre de participants à une formation est jugé insuffisant sur le plan pédagogique, d'annuler cette formation au plus tard dix [10] jours calendaires avant la date prévue. L'Organisme de formation peut maintenir ses Formations même avec un nombre réduit de participants si le thème s'y prête et si les conditions de déroulement sont réunies. La société PRO'PERFORM se réserve le droit de reporter la formation, de modifier le lieu de son déroulement, le contenu de son programme ou de remplacer un animateur, si des circonstances indépendantes de sa volonté l'y obligent. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 3.3</h3>
+                    <div>
+                        La société PRO'PERFORM se réserve le droit, sans indemnité de quelque nature que ce soit :
+                        <ol>
+                            <li>De refuser toute inscription ou accès à un Client qui ne serait pas à jour de ses paiements</li>
+                            <li>D'exclure tout participant qui aurait procédé à de fausses déclarations lors de son inscription ou dont le comportement gênerait le bon déroulement de la formation et/ou manquerait gravement au règlement intérieur de l'Organisme de formation ou de l’établissement d'accueil de la Formation</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 3.4</h3>
+                    <p>L'Organisme de formation ne saurait être tenu responsable d'une quelconque erreur ou d'un oubli constaté dans la documentation (ci-après « la Documentation ») remise au Client. Cette dernière doit être considérée comme un support pédagogique qui ne saurait être considéré comme un manuel pratique ou un document à caractère officiel. De plus, les annexes documentaires fournies sont de complément à la Formation et ne sont de nature à engager la responsabilité de la société PRO'PERFORM quant à leur exhaustivité. Par ailleurs, l'Organisme de formation n'est pas tenu d'assurer une quelconque mise à jour de la Documentation postérieurement à la Formation. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 4 : Annulation et Remplacement</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 4.1</h3>
+                    <p>Le participant dispose de la faculté d'annuler une inscription sans frais sous réserve d'en informer la société PRO'PERFORM par lettre recommandée avec accusé de réception à l’adresse suivante : Pro’Perform - 501 Avenue d’Occitanie - 34090 Montpellier ou par courriel avec accusé de réception à l'adresse contact@pro-perform.fr, dans un délai de dix [10] jours calendaires (article L. 6353-5 du Code du travail) et de quatorze [14] jours calendaires (article L. 221-18 du Code de la consommation) pour les contrats conclus « hors établissement ». </p>
+                    <p>Si, par suite de force majeure dûment reconnue, le stagiaire est empêché de suivre la formation, il peut rompre le contrat. Dans ce cas, seules les prestations effectivement dispensées sont rémunérées (article L. 6353-7 du Code du travail). </p>
+                    <p>En cas d'annulation de la formation par le stagiaire pour un autre motif que la force majeure dûment reconnue, le présent contrat est résilié à l’expiration dudit délai de rétraction, les frais de stage seront facturés à 100% à titre d'indemnités.</p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 4.2</h3>
+                    <p>Toute formation à laquelle le participant ne s'est pas présenté ou n'a assisté que partiellement les frais de stage seront facturés à 100% à titre d'indemnités. Pour les formations sur mesure, le report d'une session ne donne pas lieu à facturation des indemnités d'annulation sous la réserve d'un engagement écrit du client sur les nouvelles dates de réalisation.</p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 5 : Conditions de règlement et de prise en charge</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 5.1</h3>
+                    <p>Les prix des formations professionnelles vendues sont ceux en vigueur au jour de la prise de l'inscription par le client. Ils sont indiqués en euros et calculés hors taxes sur les documents de communication de l'Organisme de formation et sur les bulletins d'inscription. La facturation se fera sans mention de taxe, que le client soit ou non assujetti à la TVA. L’organisme de formation est exonéré de TVA au titre de son activité de formation en application de l’article 261-4- 4° du Code général des impôts. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 5.2</h3>
+                    <p>Les frais calculés comprennent la formation, la documentation pédagogique remise pendant la formation, les fichiers électroniques mis à disposition le cas échéant. Les cafés d'accueil sont offerts ; sauf sur certains stages, en fonction de la mention indiquée sur le programme. Les frais liés aux déplacements et à l'hébergement des formateurs sont facturés en sus. </p>
+                    <p>Le Client a la possibilité de bénéficier de tarifs dégressifs en cas d'inscriptions à plusieurs formations ou en cas d'inscription de plusieurs participants à une ou plusieurs formations. Les remises et offres commerciales proposées par la société PRO'PERFORM peuvent être communiquées par téléphone auprès du secrétariat au <a href="tel:0671867954">06 71 86 79 54</a> ou par courriel à l'adresse <a href="mailto:contact@pro-perform.fr">contact@pro-perform.fr</a>. </p>
+                    <div> Les factures sont payables à réception ou le cas échéant selon l’échéancier convenu et accepté par écrit par l'Organisme de formation. Le règlement intégral devra intervenir à réception de la facture 30 jours fin de mois. Le règlement du prix de la formation s'effectue soit :
+                        <ol>
+                            <li>Par virement bancaire</li>
+                            <li>Par chèque à l'ordre de la société PRO'PERFORM</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 5.3</h3>
+                    <p>En cas de paiement effectué par un des opérateurs de compétences (OPCO), fonds d'assurance formation (FAF), le dossier de prise en charge doit parvenir à la société PRO'PERFORM avant le 1er jour de la formation. Si la société PRO'PERFORM n'a pas réceptionné l'accord de financement, le Client sera facturé de l'intégralité du coût de la formation. En cas de prise en charge partielle, la part non prise en charge sera directement facturée au Client. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 5.4</h3>
+                    <p>Toute facture non payée à échéance portera de plein droit, intérêt au taux d'intérêt appliqué par la Banque Centrale Européenne à son opération de refinancement la plus récente majoré de 10 [dix] points. Application d'une indemnité forfaitaire de 40 € en cas de retard de paiement (art. L. 441-3, L.441-4 et L.441-6 du Code de commerce) en sus des pénalités de retard à défaut de paiement d'une seule facture à son échéance, l'intégralité des sommes dues par le Client deviendra immédiatement exigible. Toute facture recouvrée par la société PRO'PERFORM sera majorée, à titre de clause pénale non réductible au sens des articles 1231-3 et 1231-5 du Code Civil, d'une indemnité fixée à quinze [15] % du montant des sommes exigibles. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 6 : Responsabilités et Indemnités </h2>
+                </div>
+                <div class="text-justify">
+                    <p>L'employeur, ou selon le cas le participant, s'oblige à souscrire et maintenir en prévision et pendant la durée de la formation une assurance responsabilité civile couvrant les dommages corporels, matériels, immatériels, directs et indirects susceptibles d’être causés par ses agissements ou ceux de ses préposés au préjudice de PRO'PERFORM ou des participants. Il s'oblige également à souscrire et maintenir une assurance responsabilité civile désignant également comme assuré PRO'PERFORM pour tous les agissements préjudiciables aux tiers qui auraient été causés par son préposé, et, contenant une clause de renonciation à recours, de telle sorte que PRO'PERFORM ne puisse être recherchée ou inquiétée.</p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 7 : Propriété intellectuelle</h2>
+                </div>
+                <div class="text-justify">
+                    <p>Dans le cadre du respect des droits de propriété intellectuelle attachés aux supports de cours ou autres ressources pédagogiques mises à la seule disposition des participants de la formation, le Client s'interdit de reproduire, directement ou indirectement, en totalité ou en partie, d'adapter, de modifier, de traduire, de représenter, de commercialiser ou de diffuser à des membres de son personnel non participants aux formations de la société PRO'PERFORM ou à des tiers, les dits supports et ressources pédagogiques sans l'autorisation expresse, préalable et écrite de l'Organisme de formation ou de ses ayants droit. </p>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 8 : Informatique et Libertés</h2>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 8.1</h3>
+                    <p>Conformément aux dispositions de la loi n°2004-801 du 6 août 2004 modifiant la loi n°78-17 du 6 janvier 1978 dite « Loi Informatique et Libertés », relative à l'informatique, aux fichiers et aux libertés ainsi que conformément au Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données, seules les informations à caractère personnelles strictement nécessaires au traitement de votre inscription sont demandées au Client et transmises au service de la société PRO'PERFORM. </p>
+                </div>
+                <div class="text-justify">
+                    <h3 class="h5">Article 8.2</h3>
+                    <div>Conformément aux dispositions en vigueur, la société PRO'PERFORM permet au Client d'exercer ses droits d'accès, de rectification et d'opposition en s'adressant :
+                        <ul>
+                            <li>Par courier postal à Pro'Perform, 501 avenue d'Occitanie, 34090 Montpellier</li>
+                            <li>Par téléphone au <a href="tel:0671867954">06 71 86 79 54</a></li>
+                            <li>Par couriel avec accusé de réception à l'adresse <a href="mailto:contact@pro-perform.fr">contact@pro-perform.fr</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="py-2 text-center">
+                    <h2 class="h4">Article 9 : Loi applicable et Attribution de compétence</h2>
+                </div>
+                <div class="text-justify">
+                    <p>Le présent accord résultant de l'acceptation des conditions générales de vente (CGV) est régi par le droit français.</p>
+                    <p>En cas de litige sur l'existence, l'interprétation ou l'exécution de l'une de ses stipulations, les parties tenteront d'y mettre un terme amiablement. À défaut d'accord amiable des parties, le tribunal de commerce de Montpellier sera seul compétent pour connaître du litige.</p>
+                    <p>Toute inscription à un stage ou achat d'une prestation sur mesure vaut acceptation des présentes conditions générales de vente. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}

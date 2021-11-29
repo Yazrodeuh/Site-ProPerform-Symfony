@@ -34,6 +34,25 @@ import Vue from 'vue';
 })();
 
 
+/**
+ *
+ * @param {String} nomRequete
+ * @param {function} callback
+ */
+function requeteAjax(nomRequete, callback){
+
+    let requete = new XMLHttpRequest();
+
+    requete.open("GET", nomRequete, true);
+
+    requete.addEventListener("load", function (){
+        callback(requete)
+    })
+    requete.send(null);
+}
+
+
+
 /*$(document).ready(function() {
     $('[data-toggle="popover"]').popover();
 });

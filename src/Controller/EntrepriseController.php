@@ -43,11 +43,20 @@ class EntrepriseController extends DefaultController
     }
 
     /**
-     * @Route("/mentions-legales", name="mentionLegales")
+     * @Route("reglement-interieur", name="reglementInterieur")
+     */
+    public function reglementInterieur(): Response
+    {
+        return $this->render('entreprise/reglementInterieur.html.twig', []);
+
+    }
+    /**
+     * @Route("mentions-legales", name="mentionsLegales")
      */
     public function mentionLegales(): Response
     {
-        return $this->render('entreprise/mentionLegales.html.twig', ['controller_name' => 'EntrepriseController']);
+        return $this->render('entreprise/mentionsLegales.html.twig', []);
+
     }
 
 

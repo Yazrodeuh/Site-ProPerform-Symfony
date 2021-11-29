@@ -16,7 +16,7 @@ class Formation
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private int $id;
+    private int $idFormation;
 
     /**
      * @ORM\Column(type="string", length=255, unique=true)
@@ -68,9 +68,9 @@ class Formation
     /**
      * @return int
      */
-    public function getId(): int
+    public function getIdFormation(): int
     {
-        return $this->id;
+        return $this->idFormation;
     }
 
     /**
@@ -207,11 +207,11 @@ class Formation
     }
 
     /**
-     * @param int $id
+     * @param int $idFormation
      */
-    public function setId(int $id): void
+    public function setIdFormation(int $idFormation): void
     {
-        $this->id = $id;
+        $this->idFormation = $idFormation;
     }
 
     /**

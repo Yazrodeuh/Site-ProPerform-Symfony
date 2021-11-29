@@ -20,7 +20,7 @@ class FormationFixture extends Fixture
 
             $formation = new Formation();
 
-            $formation->setId($value['idFormation']);
+            $formation->setIdFormation($value['idFormation']);
             $formation->setNomFormation($value['nomFormation']);
             $formation->setVignetteFormation($value['vignetteFormation']);
             $formation->setPathFormation($value['pathFormation']);

@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Actualite;
 use App\Entity\User;
 use App\Form\NewsLetterType;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -24,6 +25,7 @@ class ActualiteController extends DefaultController
 
         $news = $this->createForm(NewsLetterType::class);
         $news->handleRequest($request);
+
 
 
         return $this->render('actualite/actualites.html.twig', [
@@ -59,6 +61,33 @@ class ActualiteController extends DefaultController
         return $image;
     }
 
+    /**
+     * @param Request $request
+     * @return JsonResponse|Response
+     * @Route("/actualites/ajaxRequest", name="ajax")
+     */
+    public function ajaxRequest(Request $request){
+
+        $actus = $this->getDoctrine()->getManager()->getRepository(Actualite::class)->findBy(array('nomFormation' => 'Immobilier'));
+
+        var_dump('coucou');
+
+        if($request->isXmlHttpRequest()){
+
+            $jsonData = array();
+            $id = 0;
+
+            foreach ($actus as $actu){
+                $temp = array(
+                    'titreactualite' => $actu.getTitreactualite(),
+                    'descriptionactualite' => $actu.getDescriptionactualite()
+                );
+                $jsonData[$id++] = $temp;
+            }
+            return new JsonResponse($jsonData);
+        }
+
+    }
 
 
 

@@ -1,39 +1,9 @@
 
-.info_actu{
-    position: sticky;
-    right: 0;
-    top: 5%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 16px;
-}
 
-.juriste, .newsletter{
-    position: relative;
-    padding: 3%;
-    border: 1px solid var(--red-color);
-    border-right: none;
-    border-radius: 20px 0 0 20px;
-    margin: 5% 0;
-}
-.juriste div{
-    padding: 2%;
-}
 
-.juriste a{
-    background-color: var(--blue-color);
-    color: white;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10%;
-    padding: 1%;
-    border-radius: 20px;
-    border: 1px solid transparent;
-}
+
+
 
 .juriste a:hover{
     background-color: white;

@@ -1,0 +1,150 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Administration du site
+{% endblock %}
+
+{% set descriptionPage = " " %} {# TODO Mettre description #}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+
+{% block body %}
+
+<div class="">
+    <div class="py-2 js-scroll slide-right">
+        <div class="my-5 py-5 d-flex justify-content-center rounded-5">
+            <div class="text-center px-2 py-1 rounded-10 bg-blueC">
+                <h1>Mentions légales</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="w-100 row g-4">
+            <div class="col-lg-3 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">RCS de Montpellier :</h2>
+                        <div class="card-text">
+                            891929432
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Déclaration d'activité auprès de l'adresse DREETS OCCITANIE (cet enregistrement ne vaut pas agrément de l'état) :</h2>
+                        <div class="card-text">
+                            76341093634
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Gérant de l’entreprise :</h2>
+                        <div class="card-text">
+                            M. Anthony JULIA et M. Jonathan GARCIA
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Responsable du contenu :</h2>
+                        <div class="card-text">
+                            M. Anthony JULIA
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Création technique :</h2>
+                        <div class="card-text">
+                            M. Maxime POUJOL
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Création graphique :</h2>
+                        <div class="card-text">
+                            M. Frédéric REYNAUD
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Siège social :</h2>
+                        <div class="card-text">
+                            501, avenue d’Occitanie, 34090 Montpellier
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Téléphone :</h2>
+                        <div class="card-text">
+                            <a href="tel:0671867954">06 71 86 79 54</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Email :</h2>
+                        <div class="card-text">
+                            <a href="mailto:contact@pro-perform.fr">contact@pro-perform.fr</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Site Web : </h2>
+                        <div class="card-text">
+                            <a href="https://www.pro-perform.fr">
+                                https://www.pro-perform.fr
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Hébergeur : </h2>
+                        <div class="card-text">
+                            <a href="https://www.ovh.com/fr/">OVH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 text-justify">
+            Reproduction :
+            <p>Toutes les marques citées, noms de produits ou de services, ainsi que les logos sont les propriétés de leurs sociétés respectives. Les textes et photos, éléments graphiques et le design du site sont la propriété exclusive de la société Pro'Perform conformément au code de la propriété intellectuelle. Toute reproduction devra faire l'objet d'une demande préalable en envoyant un courriel à <a href="mailto:contact@pro-perform.fr">contact@pro-perform.fr</a>. </p>
+        </div>
+    </div>
+
+
+
+</div>
+
+{% endblock %}

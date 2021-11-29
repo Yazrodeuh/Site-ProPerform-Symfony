@@ -14,7 +14,8 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script defer src="{{ asset('js/actualites/actualites.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="{{ asset('js/actualites/actus.js') }}"></script>
 {% endblock %}
 
 {% block body %}
@@ -31,7 +32,7 @@
             </div>
             <div class="carousel-inner rounded-5">
                 <div class="carousel-item active">
-                    <img src="{{ actus[0].imageactualite }}" alt="{{ actus[0].titreactualite }}" title="{{ actus[0].titreactualite }}" width=""/>
+                    <img src="{{ actus[0].imageactualite }}" alt="{{ actus[0].titreactualite }}" title="{{ actus[0].titreactualite }}" width="100%"/>
                     <div class="carousel-caption d-none d-md-flex justify-content-center" style="bottom: 2rem">
                         <div>
                             <a class="btn btn-primary"> En savoir plus</a>
@@ -39,7 +40,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ actus[1].imageactualite }}" alt="{{ actus[1].titreactualite }}" title="{{ actus[1].titreactualite }}" width="">
+                    <img src="{{ actus[1].imageactualite }}" alt="{{ actus[1].titreactualite }}" title="{{ actus[1].titreactualite }}" width="100%">
                     <div class="carousel-caption d-none d-md-flex justify-content-center" style="bottom: 2rem">
                         <div>
                             <a class="btn btn-primary"> En savoir plus</a>
@@ -47,15 +48,16 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <a href="" class="d-block w-100">
-                        <img src="{{ actus[2].imageactualite }}" alt="{{ actus[2].titreactualite }}" title="{{ actus[2].titreactualite }}" width="">
-                    </a>
+                    <img src="{{ actus[2].imageactualite }}" alt="{{ actus[2].titreactualite }}" title="{{ actus[2].titreactualite }}" width="100%">
+                    <div class="carousel-caption d-none d-md-flex justify-content-center" style="bottom: 2rem">
+                        <div>
+                            <a class="btn btn-primary"> En savoir plus</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <div class="position-relative py-2">
         <div class="d-flex flex-lg-row flex-column">
@@ -66,14 +68,14 @@
                             <h1 class="color-blueC">Actualités</h1>
                         </div>
                         <div class="form-floating">
-                            <select name="categorieActu" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <select name="categorieActu" class="form-select" id="categorieActu" aria-label="Floating label select example">
                                 <option value="0" selected>Toutes les actus</option>
-                                <option value="1">Formations</option>
-                                <option value="2">Immobilier</option>
-                                <option value="3">Débit de boissons</option>
-                                <option value="4">Création d'entreprise</option>
+                                <option value="Formations">Formations</option>
+                                <option value="Immobilier">Immobilier</option>
+                                <option value="Permis d'exploitation">Débit de boissons</option>
+                                <option value="Autoentrepreneur">Création d'entreprise</option>
                             </select>
-                            <label for="floatingSelect">Trier par :</label>
+                            <label for="categorieActu">Trier par :</label>
                         </div>
                     </div>
                     <div class="row g-4 m-auto py-3 container-sm">
@@ -85,7 +87,9 @@
                                         <img class="card-img-top" srcset="{{ actu.imageactualite }}" src="{{ actu.imageactualite }}" alt="{{ actu.titreactualite }}" title="{{ actu.titreactualite }}">
                                         <div class="card-body">
                                             <h2 class="h5 card-title">{{ actu.titreactualite }}</h2>
-                                            <p><small class="text-muted">{{ actu.dateactualite | date("m/d/Y") }} | {{ actu.titreactualite }}</small></p>
+                                            <div class="text-center">
+                                                <small class="text-muted">- {{ actu.dateactualite | date("m/d/Y") }} -</small>
+                                            </div>
                                             <p class="card-text">{{ actu.descriptionactualite | slice(0, 150)}} ...</p>
                                         </div>
                                     </a>
@@ -116,22 +120,10 @@
                             </div>
                         {% endfor %}
                     </div> #}
-                    <div class="numero_page">
-                        <div id="nbActuTotal" style="display: none"></div>
-                        <div id="left"> << </div>
-                        <div id="numPageBot"></div>
-                        <div id="right"> >> </div>
-                    </div>
                 </div>
                 <div class="col-lg-3">
                     {% include('actualite/infoActu.html.twig') %}
                 </div>
-            </div>
-            <div class="flexFive">
-
-            </div>
-            <div id="infos" class="flexOne">
-{# {% include('actualite/infoActu.html.twig') %} #}
             </div>
         </div>
 

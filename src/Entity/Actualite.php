@@ -16,7 +16,6 @@ class Actualite
 {
     /**
      * @var int
-     *
      * @ORM\Column(name="idActualite", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
@@ -24,11 +23,10 @@ class Actualite
     private int $idactualite;
 
     /**
-     * @var int
-     *
-     * @ORM\Column(name="idRubriqueFormation", type="integer", nullable=false)
+     * @var string
+     * @ORM\Column(name="nomFormation", type="string", length=100, nullable=false)
      */
-    private int $idrubriqueformation;
+    private string $nomFormation;
 
     /**
      * @var string
@@ -82,19 +80,19 @@ class Actualite
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getIdrubriqueformation(): int
+    public function getNomFormation(): string
     {
-        return $this->idrubriqueformation;
+        return $this->nomFormation;
     }
 
     /**
-     * @param int $idrubriqueformation
+     * @param string $nomFormation
      */
-    public function setIdrubriqueformation(int $idrubriqueformation): void
+    public function setNomFormation(string $nomFormation): void
     {
-        $this->idrubriqueformation = $idrubriqueformation;
+        $this->nomFormation = $nomFormation;
     }
 
     /**

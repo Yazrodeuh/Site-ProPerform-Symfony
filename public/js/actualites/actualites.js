@@ -49,10 +49,8 @@ document.getElementById("me").addEventListener("click", function (){
     actualiserPage();
 })*/
 
-/**
- *
- * @param {String} select
- */
+
+
 function optionSelected(select){
 
     let options = document.getElementsByClassName("choixoption");

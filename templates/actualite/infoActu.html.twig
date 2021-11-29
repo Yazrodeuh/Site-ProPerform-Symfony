@@ -2,53 +2,15 @@
     <link rel="stylesheet" href="{{ asset('css/actualites/infoActu.css') }}">
 {% endblock %}
 
-<div class="info_actu" id="info_actu">
-    <div class="juriste">
-        <div>
-            Notre Juriste vous répond gratuitement !
+<div class="position-sticky top-25 mt-5">
+    <div class="juriste d-flex justify-content-center flex-column align-items-center p-2 border border-2 border-bleuC rounded-10">
+        <div class="text-center">
+            <h3 class="h4">Notre juriste vous répond gratuitement !</h3>
         </div>
         <div>
-            <a href="/actualite/contactActu">Posez votre question</a>
+            <a class="btn btn-primary" href="/actualite/contactActu">Posez votre question</a>
         </div>
     </div>
-    <div class="newsletter">
-        <div>
-            Ne manquez plus aucune actualité !
-        </div>
-        <div>
-            {{ form_start(form) }}
-            {{ form_errors(form) }}
-            <div>
-                <div class="actu-checkbox">
-                    <div>
-                        {{ form_widget(form.formationsNews) }}
-                        {{ form_label(form.formationsNews) }}
-                        {{ form_errors(form.formationsNews) }}
-                    </div>
-                    <div>
-                        {{ form_widget(form.immoNews) }}
-                        {{ form_label(form.immoNews) }}
-                        {{ form_errors(form.immoNews) }}
-                    </div>
-                    <div>
-                        {{ form_widget(form.debitBoissonNews) }}
-                        {{ form_label(form.debitBoissonNews) }}
-                        {{ form_errors(form.debitBoissonNews) }}
-                    </div>
-                    <div>
-                        {{ form_widget(form.entrepriseNews) }}
-                        {{ form_label(form.entrepriseNews) }}
-                        {{ form_errors(form.entrepriseNews) }}
-                    </div>
-                    <div>
-                        {{ form_widget(form.mail) }}
-                        {{ form_errors(form.mail) }}
-                    </div>
-                </div>
-            </div>
-            {{ form_end(form) }}
-        </div>
-
 
         {# <form action="/actualite/suiviActuConfirme" method="post" id="formActu">
             <div class="actu-checkbox">

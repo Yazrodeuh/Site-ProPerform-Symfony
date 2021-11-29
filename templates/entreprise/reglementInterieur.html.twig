@@ -1,0 +1,230 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Administration du site
+{% endblock %}
+
+{% set descriptionPage = " " %} {# TODO Mettre description #}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="">
+        <div class="py-2 js-scroll slide-right">
+            <div class="my-5 py-5 d-flex justify-content-center rounded-5">
+                <div class="text-center px-2 py-1 rounded-10 bg-blueC">
+                    <h1>Réglement Intérieur</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container position-relative">
+
+            <div class="py-2 mt-2">
+                <h2 class="text-center text-uppercase">Titre I - Préambule</h2>
+            </div>
+
+            <div class="text-justify py-2">
+                <h3>Article 1 - Objet et champ d'application du règlement</h3>
+                <p>Le présent règlement s’applique à toutes les personnes participantes à une action de formation
+                    organisée par l’organisme Pro’Perform conformément aux dispositions des articles L.6352-3 et
+                    R.6352-1 à R.6352-15 du Code du travail.
+                </p>
+                <p>
+                    Le règlement définit les règles d’hygiène et de sécurité, les règles générales et permanentes
+                    relatives à la discipline et l’échelle des sanctions pouvant être prises vis-à-vis des stagiaires
+                    qui y contreviennent.
+                </p>
+                <p>Il vise à l’instauration d’une ambiance de travail sereine, favorable à l’acquisition de savoirs et d’un climat de respect mutuel.</p>
+                <p>Ce règlement intérieur est disponible et consultable sur le site internet de Pro’Perform et est affiché dans ses locaux. Il peut être mis à disposition du stagiaire sur simple demande.</p>
+                <p>Il s’applique de plein droit à toute personne qui participe à une action de formation proposée par Pro’Perfom. Ainsi, chaque stagiaire est considéré comme ayant accepté les termes du présent règlement lorsqu’il suit une formation dispensée par Pro’Perform et accepte de fait que des mesures soient prises à son égard en cas d’inobservation de ce dernier.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 2 - Lieux d’application du règlement </h3>
+                <p>La formation aura lieu soit dans les locaux de Pro’Perfom, soit dans des locaux extérieurs. Les dispositions du présent Règlement sont applicables non seulement au sein des locaux de Pro’Perfom, mais également dans tout local ou espace accessoire à l’organisme pour délivrer une formation.</p>
+                <p>Toutefois, conformément à l'article R.6352-1 du Code du Travail, lorsque la formation se déroule dans une entreprise ou un établissement déjà doté d'un règlement intérieur, les mesures d'hygiène et de sécurité applicables aux stagiaires sont celles de ce dernier.</p>
+            </div>
+
+            <div class="py-2 mt-2">
+                <h2 class="text-center text-uppercase">Titre II - Règles d'hygiène et de sécurité</h2>
+            </div>
+
+            <div class="text-justify py-2">
+                <h3>Article 3 - Principes généraux </h3>
+                <div>La prévention des risques d’accidents et de maladies est impérative et exige de chacun le respect :
+                    <ul>
+                        <li>des prescriptions applicables en matière d’hygiène et de sécurité sur les lieux de formation</li>
+                        <li>de toute consigne imposée soit par la direction de l’organisme de formation soit par le formateur</li>
+                    </ul>
+                </div>
+                <p>Chaque stagiaire doit ainsi veiller à sa sécurité personnelle et à celle des autres en respectant, en fonction de sa formation, les consignes générales et particulières en matière d’hygiène et de sécurité. S’il constate un dysfonctionnement du système de sécurité, il en avertit immédiatement la direction de l’organisme de formation.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 4 - Consignes en cas d’incendie</h3>
+                <p>Conformément aux articles R. 4227-28 et suivants du Code du travail, les consignes d'incendie et notamment un plan de localisation des extincteurs et des issues de secours sont affichés dans les locaux de formation de manière à être connus de tous les stagiaires. Les stagiaires sont tenus d’exécuter sans délai l’ordre d’évacuation donné par l’animateur du stage ou par un salarié de l’établissement. Les consignes, en vigueur dans l’établissement, à observer en cas de péril et spécialement d’incendie, doivent être scrupuleusement respectées.En cas d’alerte, le stagiaire doit cesser toute activité de formation et suivre dans le calme les instructions du représentant habilité de l’organisme de formation ou des services de secours. </p>
+                <p>Tout stagiaire témoin d’un début d’incendie doit immédiatement appeler les secours en composant le 18 ou le 112 et alerter un représentant de l’organisme de formation.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 5 - Consignes en cas d’accident</h3>
+                <p>Tout accident ou incident survenu à l'occasion ou en cours de formation doit être immédiatement déclaré par le participant accidenté ou les personnes  témoins de l'accident, au responsable de l'organisme de formation.</p>
+                <p>Conformément à l'article R. 6342-3 du Code du travail, l'accident survenu au participant aussi bien sur le lieu de formation que sur le trajet emprunté pour assister à cette formation doit faire l'objet d'une déclaration par le responsable de l’organisme de formation auprès de la caisse de sécurité sociale.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 6 - Les « gestes barrières » face au COVID-19</h3>
+                <div>
+                    Pour se protéger et protéger les autres :
+                    <ul>
+                        <li>Se laver très régulièrement les mains ou utiliser une solution hydro-alcoolique</li>
+                        <li>Tousser ou éternuer dans son coude ou dans un mouchoir</li>
+                        <li>Utiliser un mouchoir à usage unique et le jeter</li>
+                        <li>Saluer sans se serrer la main ou embrassades</li>
+                        <li>Appliquer une distanciation sociale en maintenant un minimum de deux  mètres d’écart avec les autres</li>
+                        <li>Porter un masque durant toute la formation</li>
+                        <li>Aération des pièces le plus souvent possible, au minimum quelques minutes toutes les heures</li>
+                        <li>Rester chez vous en cas de symptômes évocateurs (toux, difficultés respiratoires, fièvre, etc…)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 7 - Boissons alcoolisées et drogues</h3>
+                <p>L’introduction ou la consommation de drogue ou de boissons alcoolisées dans les locaux est formellement interdite.</p>
+                <p>Il est interdit aux stagiaires de pénétrer ou de séjourner dans l’établissement en état d’ivresse ou sous l’emprise de drogue.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 8 - Interdiction de fumer ou vapoter</h3>
+                <p>En application du décret du 15 novembre 2006 fixant les conditions d'application de l'interdiction de fumer dans les lieux affectés à un usage collectif et le décret du 27 avril 2017 relatif aux conditions d’application de l’interdiction de vapoter dans certains lieux à usage collectif, il est interdit de fumer ou vapoter dans les salles de formation et plus généralement dans l’enceinte de l’organisme de formation.</p>
+            </div>
+
+            <div class="py-2 mt-2">
+                <h2 class="text-uppercase text-center">Titre III - discipline générale</h2>
+            </div>
+
+            <div class="text-justify py-2">
+                <h3>Article 9 - Assiduités du stagiaire en formation</h3>
+                <div>
+                    <h4>Article 9.1 - Horaires de formation</h4>
+                    <p>Les horaires de formation sont fixés par Pro’Perform et portés à la connaissance des participants par la convocation. Les participants sont tenus de respecter ces horaires. Pro’Perform se  réserve la possibilité de modifier les horaires de formation en fonction des nécessités de service. Le non-respect de ces horaires peut entraîner des sanctions.</p>
+                </div>
+                <div>
+                    <h4>Article 9.2 - Ponctualité</h4>
+                    <p>Les stagiaires sont tenus d'être présents au stage au moins 5 minutes avant son début. En cas de retard, le formateur est en droit de ne pas les accepter.</p>
+                </div>
+                <div>
+                    <h4>Article 9.3 - Absences, retards ou départs anticipés</h4>
+                    <p>En cas d’absence, de retard ou de départ avant l’horaire prévu, les stagiaires doivent avertir l’organisme de formation et s’en justifier auprès du formateur ou du responsable de la formation. Toute absence non justifiée constitue une faute et pourra être sanctionnée (non délivrance de la feuille d’émargement , attestation de présence, ect.).</p>
+                </div>
+                <div>
+                    <h4>Article 9.4 - Formalisme attaché au suivi de la formation</h4>
+                    <p>La présence de chacun des stagiaires doit s’accompagner d’une participation active et de l’accomplissement d’efforts personnels.</p>
+                    <p>Le stagiaire a pour devoir de vérifier les courriels qui lui sont adressés. Le stagiaire est tenu de signer la feuille d’émargement pour chaque demi-journée. Il peut lui être demandé de réaliser un bilan de la formation ou un examen de fin de formation.</p>
+                    <p>A l’issue de l’action de formation, il se voit remettre une attestation de fin de formation et une attestation de présence au stage à transmettre, selon le cas, à son employeur ou à l’organisme qui finance l’action.</p>
+                    <p>Au plus tard, à l’entrée en stage, le stagiaire remet à l’organisme de formation les documents demandés lors de l’inscription.</p>
+                </div>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 10 - Tenue et comportement </h3>
+                <p>Les stagiaires sont invités à se présenter au lieu de formation en tenue décente et à avoir un comportement correct à l'égard de toute personne présente dans l’organisme.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 11 - Accès aux locaux de l’organisme</h3>
+                <p>Les stagiaires ont accès à l’établissement exclusivement pour suivre le stage auquel ils sont inscrits. Ils ne peuvent y entrer ou y demeurer à d’autres fins, sauf autorisation de la direction. Il est formellement interdit d’être accompagné ou de faciliter l’introduction de personnes non inscrites. D’introduire dans l’établissement un animal, même de très petite taille, de procéder à la vente de biens ou de services, de causer du désordre et, d’une manière générale, de faire obstacle au bon déroulement du stage.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 12 - Usage du matériel</h3>
+                <p>Chaque stagiaire a l'obligation de conserver en bon état le matériel qui lui est confié en vue de sa formation. Les stagiaires sont tenus d'utiliser le matériel conformément à son objet. L’utilisation du matériel à d'autres fins, notamment personnelles est interdite, sauf pour le matériel mis à disposition à cet effet. À la fin du stage, le stagiaire est tenu de restituer tout matériel et document en sa possession appartenant à l’organisme de formation, sauf les documents pédagogiques distribués en cours de formation.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 13 - Propriété intellectuelle </h3>
+                <p>La documentation pédagogique remise lors des sessions de formation est protégée par le Code de la propriété intellectuelle et ne peut être utilisée que pour un strict usage personnel.</p>
+                <p>Le stagiaire n’a pas le droit d’enregistrer, de photographier ou de filmer les sessions de formation, et de façon générale dans les locaux.</p>
+                <div>
+                    Il est formellement interdit aux stagiaires :
+                    <ul>
+                        <li>de communiquer à autrui ses codes d’accès personnels à la plateforme de formation (identifiant et mot de passe), l’URL de son serveur d’exercice</li>
+                        <li>d’utiliser le compte d’un autre stagiaire pour suivre une formation</li>
+                        <li>de modifier, copier ou diffuser les supports de formation, et d’enregistrer ou de filmer les sessions de formation</li>
+                        <li>d’utiliser le serveur d’exercice à toute autre fin que celle prévue dans le cadre de la formation</li>
+                    </ul>
+                </div>
+                <p>En cas de mauvaise utilisation du serveur d’exercice ou de faille de sécurité, l’organisme de formation se réserve le droit de refuser l’accès au stagiaire.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 14 - Droit à l’image</h3>
+                <p>Le stagiaire est informé que les photos prises par l’organisme de formation pourront être utilisées dans le cadre de communications. S’il s’y oppose, le stagiaire devra le faire de façon expresse.</p>
+                <p>De la même façon, les sessions en distanciel sont filmées ; la webcaméra doit être ouverte.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 15 - Documentation pédagogique</h3>
+                <p>La documentation pédagogique remise lors des sessions de formation est protégée au titre des droits d’auteur et ne peut être réutilisée autrement que pour un strict usage personnel.</p>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 16 - Perte, vol ou endommagement de biens personnels des stagiaires</h3>
+                <p>Pro’Perform décline toute responsabilité en cas de perte, vol ou détérioration des objets personnels de toute nature déposés par les stagiaires dans les locaux de formation.</p>
+            </div>
+
+            <div class="py-2 mt-2">
+                <h2 class="text-uppercase text-center">Titre IV - Mesures disciplinaires</h2>
+            </div>
+
+            <div class="text-justify py-2">
+                <h3>Article 17 - Sanctions disciplinaires</h3>
+                <p>Tout manquement du stagiaire à l’une des prescriptions du présent règlement intérieur pourra faire l’objet d’une sanction prononcée par le responsable de l’organisme de formation ou son représentant.</p>
+                <div>Tout agissement considéré comme fautif pourra, en fonction de sa nature et de sa gravité, faire l’objet de l’une ou l’autre des sanctions suivantes :
+                    <ul>
+                        <li>Avertissement écrit par le responsable de l’organisme de formation</li>
+                        <li>Blâme</li>
+                        <li>Exclusion définitive de la formation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-justify py-2">
+                <h3>Article 18 - Procédures disciplinaires</h3>
+                <p>Tout manquement du stagiaire à l'une des dispositions du présent Règlement Intérieur pourra faire l'objet d'une sanction ou d’une procédure disciplinaire régie par les articles R 6352-3 à R 6532-8 du Code du travail reproduits à la suite.</p>
+                <div>
+                    <h4>Article R6352-3</h4>
+                    <p>Constitue une sanction, toute mesure, autre que les observations verbales, prise par le directeur de l'organisme de formation ou son représentant, à la suite d'un agissement du stagiaire ou de l'apprenti considéré par lui comme fautif, que cette mesure soit de nature à affecter immédiatement ou non la présence de l'intéressé dans la formation ou à mettre en cause la continuité de la formation qu'il reçoit.
+                        Les amendes ou autres sanctions pécuniaires sont interdites.</p>
+                </div>
+                <div>
+                    <h4>Article R6352-4</h4>
+                    <p>Aucune sanction ne peut être infligée au stagiaire ou à l'apprenti sans que celui-ci ait été informé au préalable des griefs retenus contre lui.</p>
+                </div>
+                <div>
+                    <h4>Article R6352-5</h4>
+                    <div>Lorsque le directeur de l'organisme de formation ou son représentant envisage de prendre une sanction qui a une incidence, immédiate ou non, sur la présence d'un stagiaire ou d'un apprenti dans une formation, il est procédé comme suit :
+                        <ol>
+                            <li>Le directeur ou son représentant convoque le stagiaire ou l'apprenti en lui indiquant l'objet de cette convocation. Celle-ci précise la date, l'heure et le lieu de l'entretien. Elle est écrite et est adressée par lettre recommandée ou remise à l'intéressé contre décharge</li>
+                            <li>Au cours de l'entretien, le stagiaire ou l'apprenti peut se faire assister par la personne de son choix, notamment le délégué de stage. La convocation mentionnée au 1° fait état de cette faculté</li>
+                            <li>Le directeur ou son représentant indique le motif de la sanction envisagée et recueille les explications du stagiaire ou de l'apprenti</li>
+                        </ol>
+                    </div>
+                    <p>L'employeur de l'apprenti est informé de cette procédure, de son objet et du motif de la sanction envisagée.</p>
+                </div>
+                <div>
+                    <h4>Article R6352-6</h4>
+                    <p>La sanction ne peut intervenir moins d'un jour franc ni plus de quinze jours après l'entretien. Elle fait l'objet d'une décision écrite et motivée, notifiée au stagiaire ou à l'apprenti par lettre recommandée ou remise contre récépissé.</p>
+                </div>
+                <div>
+                    <h4>Article R6352-7</h4>
+                    <p>Lorsque l'agissement a rendu indispensable une mesure conservatoire d'exclusion temporaire à effet immédiat, aucune sanction définitive, relative à cet agissement, ne peut être prise sans que la procédure prévue à l'article R. 6352-4 et, éventuellement, aux articles R. 6352-5 et R. 6352-6, ait été observée.</p>
+                </div>
+                <div>
+                    <h4>Article R6352-8</h4>
+                    <p>Le directeur de l'organisme de formation informe l'employeur et l'organisme financeur de la sanction prise.</p>
+                </div>
+            </div>
+            <div class="my-4">
+                <div>Le présent règlement  peut être amené à évoluer.</div>
+                <div>La dernière mise à jour a été effectuée le 02/04/2021.</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+{% endblock %}
